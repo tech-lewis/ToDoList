@@ -13,7 +13,7 @@
 #import "BiDToDoItem.h"
 #import "UIImage+ImageEffects.h"
 
-@interface BiDToDoListViewController ()<FoldableDelegate>
+@interface BiDToDoListViewController ()<FoldableDelegate, UIAlertViewDelegate>
 
 @property (nonatomic, strong) FoldableView *foldableView;
 @property (nonatomic, strong) NSIndexPath *selectedIndexPath;
@@ -99,9 +99,21 @@ static NSString *CellIdentifier = @"ListCell";
 
 - (void)playButtonPressed:(id)sender
 {
-    [self performSegueWithIdentifier:@"SegueToMusicList" sender:self];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:@"您需要播放音乐吗?" delegate:self cancelButtonTitle:@"Help" otherButtonTitles:@"播放音乐", nil];
+    [alertView show];
 }
 
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == alertView.cancelButtonIndex)
+    {
+        /// 打开网页 但是不支持UIWebView了
+        NSLog(@"%@-%@", [[UIDevice currentDevice] systemName], [[UIDevice currentDevice] systemVersion]);
+    }
+    else
+    {
+        [self performSegueWithIdentifier:@"SegueToMusicList" sender:self];
+    }
+}
 
 #pragma mark - Lifecycle
 - (void)viewDidLoad
