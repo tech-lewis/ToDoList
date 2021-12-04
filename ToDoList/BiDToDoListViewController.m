@@ -291,14 +291,16 @@ static NSString *CellIdentifier = @"ListCell";
         
         
         // 添加删除线
-        NSUInteger nameLength = [[item itemName] length];
-        [name addAttribute:NSStrikethroughStyleAttributeName
-                     value:@(NSUnderlinePatternSolid|NSUnderlineStyleThick)
-                     range:NSMakeRange(0, nameLength)];
-        [name addAttribute:NSStrikethroughColorAttributeName
-                     value:[UIColor orangeColor]
-                     range:NSMakeRange(0, nameLength)];
-        
+        if ([UIDevice currentDevice].systemVersion.doubleValue >= 7.0)
+        {
+            NSUInteger nameLength = [[item itemName] length];
+            [name addAttribute:NSStrikethroughStyleAttributeName
+                         value:@(NSUnderlinePatternSolid|NSUnderlineStyleThick)
+                         range:NSMakeRange(0, nameLength)];
+            [name addAttribute:NSStrikethroughColorAttributeName
+                         value:[UIColor orangeColor]
+                         range:NSMakeRange(0, nameLength)];
+        }
         swipeCell.textLabel.attributedText = name;
     }
     else if (sender.state == UIGestureRecognizerStateChanged)
@@ -324,7 +326,18 @@ static NSString *CellIdentifier = @"ListCell";
     if (sender.state == UIGestureRecognizerStateBegan)
     {
         // NSLog(@"%@", NSStringFromCGPoint(selectedCell.frame.origin));
-        
+        if ([UIDevice currentDevice].systemVersion.doubleValue < 7.0)
+        {
+            /// iOS 7之前的老系统兼容
+            // 更新该行的Item备注
+            BiDToDoItem *selectedItem = self.toDoItems[self.selectedIndexPath.row];
+            selectedItem = self.foldableView.item;
+            self.editorViewController = [[BiDEditorViewController alloc] init];
+            [self performSelector:@selector(segueToEditorView)
+                       withObject:nil
+                       afterDelay:0.5];
+            
+        }
 
         CGSize imageSize = CGSizeMake(self.view.bounds.size.width, point.y);
         
@@ -441,12 +454,17 @@ static NSString *CellIdentifier = @"ListCell";
         
         // 添加删除线
         NSUInteger nameLength = [[item itemName] length];
-        [name addAttribute:NSStrikethroughStyleAttributeName
-                     value:@(NSUnderlinePatternSolid|NSUnderlineStyleThick)
-                     range:NSMakeRange(0, nameLength)];
-        [name addAttribute:NSStrikethroughColorAttributeName
-                     value:[UIColor orangeColor]
-                     range:NSMakeRange(0, nameLength)];
+//#ifndef __IPHONE_7_0
+        if ([UIDevice currentDevice].systemVersion.doubleValue >= 7.0)
+        {
+            [name addAttribute:NSStrikethroughStyleAttributeName
+                         value:@(NSUnderlinePatternSolid|NSUnderlineStyleThick)
+                         range:NSMakeRange(0, nameLength)];
+            [name addAttribute:NSStrikethroughColorAttributeName
+                         value:[UIColor orangeColor]
+                         range:NSMakeRange(0, nameLength)];
+        }
+
     }
     else
     {
@@ -455,13 +473,16 @@ static NSString *CellIdentifier = @"ListCell";
         cell.textLabel.font = [UIFont boldSystemFontOfSize:18];
         
         // 隐藏删除线
-        NSUInteger nameLength = [[item itemName] length];
-        [name addAttribute:NSStrikethroughStyleAttributeName
-                     value:@(NSUnderlinePatternSolid|NSUnderlineStyleNone)
-                     range:NSMakeRange(0, nameLength)];
-        [name addAttribute:NSStrikethroughColorAttributeName
-                     value:[UIColor clearColor]
-                     range:NSMakeRange(0, nameLength)];
+        if ([UIDevice currentDevice].systemVersion.doubleValue >= 7.0)
+        {
+            NSUInteger nameLength = [[item itemName] length];
+            [name addAttribute:NSStrikethroughStyleAttributeName
+                         value:@(NSUnderlinePatternSolid|NSUnderlineStyleNone)
+                         range:NSMakeRange(0, nameLength)];
+            [name addAttribute:NSStrikethroughColorAttributeName
+                         value:[UIColor clearColor]
+                         range:NSMakeRange(0, nameLength)];
+        }
     }
     
     

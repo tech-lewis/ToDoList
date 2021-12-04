@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2277DE61275B571200FE30A0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2277DE60275B571200FE30A0 /* icon.png */; };
 		C505DA3B1BBD3639009C94A6 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = C505DA3A1BBD3639009C94A6 /* line.png */; };
 		C50604781B8F52A700A0F065 /* MusicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C50604771B8F52A700A0F065 /* MusicListViewController.m */; };
 		C5161EA51ACFCA76005E9CF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5161EA41ACFCA76005E9CF6 /* Foundation.framework */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2277DE60275B571200FE30A0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		C505DA3A1BBD3639009C94A6 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
 		C50604761B8F52A700A0F065 /* MusicListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicListViewController.h; sourceTree = "<group>"; };
 		C50604771B8F52A700A0F065 /* MusicListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicListViewController.m; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 			children = (
 				C55FD82C1BA4851500D68486 /* Cell Background.png */,
 				C505DA3A1BBD3639009C94A6 /* line.png */,
+				2277DE60275B571200FE30A0 /* icon.png */,
 				C5D181EE1BC1237300591BDE /* defaultArtistImage.png */,
 				C5161EAC1ACFCA76005E9CF6 /* ToDoList-Info.plist */,
 				C5161EAD1ACFCA76005E9CF6 /* InfoPlist.strings */,
@@ -325,6 +328,7 @@
 				C5161ED41ACFCAA4005E9CF6 /* Main.storyboard in Resources */,
 				C505DA3B1BBD3639009C94A6 /* line.png in Resources */,
 				C5161EAF1ACFCA76005E9CF6 /* InfoPlist.strings in Resources */,
+				2277DE61275B571200FE30A0 /* icon.png in Resources */,
 				C55FD82D1BA4851500D68486 /* Cell Background.png in Resources */,
 				C553ED441BA52B0A006DD23E /* ContentCellViewController.xib in Resources */,
 				C5161EB71ACFCA76005E9CF6 /* Images.xcassets in Resources */,
@@ -474,10 +478,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ToDoList/ToDoList-Prefix.pch";
 				INFOPLIST_FILE = "ToDoList/ToDoList-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -488,10 +493,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ToDoList/ToDoList-Prefix.pch";
 				INFOPLIST_FILE = "ToDoList/ToDoList-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -7,14 +7,17 @@
 //
 
 #import "MusicListViewController.h"
+#import <MediaPlayer/MediaPlayer.h>
 #import <AVFoundation/AVFoundation.h>
 #import "MusicPlayerViewController.h"
 #import "UIImage+ImageEffects.h"
 @interface MusicListViewController ()
 
 @property (nonatomic, strong) NSMutableArray *musicArray;
+@property (nonatomic, strong) NSMutableArray *movieArray;
 @property (nonatomic, strong) NSIndexPath *chosenIndexPath;
 @property (nonatomic, strong) AVAudioPlayer *audioPlayer;
+@property (nonatomic, strong) MPMoviePlayerViewController *mediaPlayerController;
 @property (nonatomic, strong) AVURLAsset *selectedURLAsset;
 
 @end
@@ -86,6 +89,8 @@
     self.title = @"Music List";
 
     self.musicArray = [NSMutableArray array];
+    self.movieArray = [NSMutableArray array];
+    
     for (NSString *filePath in [[NSFileManager defaultManager] enumeratorAtPath:[self documentsPath]])
     {
         if ([filePath.pathExtension isEqualToString:@"mp3"])
@@ -96,6 +101,13 @@
             [self.musicArray addObject:avURLAsset
              ];
             // [self.musicArray addObject:[[self documentsPath] stringByAppendingPathComponent:filePath]];
+        }
+        
+        if ([filePath.pathExtension isEqualToString:@"mp4"])
+        {
+            NSURL *fileURL = [NSURL fileURLWithPath:[[self documentsPath] stringByAppendingPathComponent:filePath]];
+            NSDictionary *movieMap = @{filePath: fileURL};
+            [self.movieArray addObject:movieMap];
         }
     }
     
@@ -120,12 +132,20 @@
 }
 
 #pragma mark - Table view data source
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 2;
+}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
+    if (section != 0) return self.movieArray.count;
+
     return self.musicArray.count;
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return @"本地资源";
+}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
@@ -134,6 +154,16 @@
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"Cell"];
     }
+    
+    if (indexPath.section != 0)
+    {
+        // 我是电影
+        NSDictionary *dict = self.movieArray[indexPath.row];
+        cell.textLabel.text = [dict.allKeys firstObject];
+        cell.detailTextLabel.text = @"我是电影";
+        return cell;
+    }
+    
     
     // Configure the cell...
     AVURLAsset *mp3Asset = self.musicArray[indexPath.row];
@@ -175,6 +205,14 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    if (indexPath.section != 0)
+    {
+        // 我是电影
+        NSDictionary *dict = self.movieArray[indexPath.row];
+        self.mediaPlayerController = [[MPMoviePlayerViewController alloc] initWithContentURL:[dict.allValues firstObject]];
+        [self presentMoviePlayerViewControllerAnimated:_mediaPlayerController];
+        return;
+    }
     
     AVURLAsset *mp3URLAsset = self.musicArray[indexPath.row];
     // code
