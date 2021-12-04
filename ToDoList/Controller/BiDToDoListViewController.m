@@ -97,6 +97,10 @@ static NSString *CellIdentifier = @"ListCell";
     return _toDoItems;
 }
 
+- (IBAction)moreButtonPressed:(id)sender
+{
+    
+}
 - (void)playButtonPressed:(id)sender
 {
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:@"您需要播放音乐吗?" delegate:self cancelButtonTitle:@"Help" otherButtonTitles:@"播放音乐", nil];
@@ -122,14 +126,16 @@ static NSString *CellIdentifier = @"ListCell";
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
     // self.navigationItem.rightBarButtonItems = @[playButton, self.addButton];
     
-
+    UIBarButtonItem *moreButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch
+                                                                                target:self
+                                                                                action:@selector(playButtonPressed:)];
     UIBarButtonItem *flexibleItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     UIBarButtonItem *playButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemPlay
                                                                                 target:self
                                                                                 action:@selector(playButtonPressed:)];
 
     
-    [self setToolbarItems:@[flexibleItem, playButton]];
+    [self setToolbarItems:@[moreButton, flexibleItem, playButton]];
     [self.navigationController setToolbarHidden:NO];
     // [self.navigationController setToolbarItems:@[flexibleItem, playButton]];
 
@@ -314,6 +320,20 @@ static NSString *CellIdentifier = @"ListCell";
 }
 - (void)longPressedCell:(UILongPressGestureRecognizer *)sender
 {
+    if ([UIDevice currentDevice].systemVersion.doubleValue < 7.0)
+    {
+        /// iOS 7之前的老系统兼容
+        // 更新该行的Item备注
+        BiDToDoItem *selectedItem = self.toDoItems[self.selectedIndexPath.row];
+        selectedItem = self.foldableView.item;
+        self.editorViewController = [[BiDEditorViewController alloc] init];
+        [self performSelector:@selector(segueToEditorView)
+                   withObject:nil
+                   afterDelay:0.5];
+        return;
+        
+    }
+    
     // 获得长按的那个Cell
     NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:[sender locationInView:self.tableView]];
     if(indexPath == nil) return;
@@ -325,20 +345,6 @@ static NSString *CellIdentifier = @"ListCell";
     // 手势处理代码, 长按打开
     if (sender.state == UIGestureRecognizerStateBegan)
     {
-        // NSLog(@"%@", NSStringFromCGPoint(selectedCell.frame.origin));
-        if ([UIDevice currentDevice].systemVersion.doubleValue < 7.0)
-        {
-            /// iOS 7之前的老系统兼容
-            // 更新该行的Item备注
-            BiDToDoItem *selectedItem = self.toDoItems[self.selectedIndexPath.row];
-            selectedItem = self.foldableView.item;
-            self.editorViewController = [[BiDEditorViewController alloc] init];
-            [self performSelector:@selector(segueToEditorView)
-                       withObject:nil
-                       afterDelay:0.5];
-            
-        }
-
         CGSize imageSize = CGSizeMake(self.view.bounds.size.width, point.y);
         
         // 截图代码

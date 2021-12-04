@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		222DF8B0275B7EF30036AED1 /* BiDAddToDoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8A0275B7EF30036AED1 /* BiDAddToDoItemViewController.m */; };
+		222DF8B1275B7EF30036AED1 /* BiDEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8A2275B7EF30036AED1 /* BiDEditorViewController.m */; };
+		222DF8B2275B7EF30036AED1 /* BiDToDoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8A4275B7EF30036AED1 /* BiDToDoListViewController.m */; };
+		222DF8B3275B7EF30036AED1 /* ContentCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8A6275B7EF30036AED1 /* ContentCellViewController.m */; };
+		222DF8B4275B7EF30036AED1 /* ContentCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 222DF8A7275B7EF30036AED1 /* ContentCellViewController.xib */; };
+		222DF8B5275B7EF30036AED1 /* FoldableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8A9275B7EF30036AED1 /* FoldableView.m */; };
+		222DF8B6275B7EF30036AED1 /* MusicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8AB275B7EF30036AED1 /* MusicListViewController.m */; };
+		222DF8B7275B7EF30036AED1 /* MusicPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8AD275B7EF30036AED1 /* MusicPlayerViewController.m */; };
+		222DF8B8275B7EF30036AED1 /* MusicPlayingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8AF275B7EF30036AED1 /* MusicPlayingView.m */; };
 		2277DE61275B571200FE30A0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2277DE60275B571200FE30A0 /* icon.png */; };
 		C505DA3B1BBD3639009C94A6 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = C505DA3A1BBD3639009C94A6 /* line.png */; };
-		C50604781B8F52A700A0F065 /* MusicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C50604771B8F52A700A0F065 /* MusicListViewController.m */; };
 		C5161EA51ACFCA76005E9CF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5161EA41ACFCA76005E9CF6 /* Foundation.framework */; };
 		C5161EA71ACFCA76005E9CF6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5161EA61ACFCA76005E9CF6 /* CoreGraphics.framework */; };
 		C5161EA91ACFCA76005E9CF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5161EA81ACFCA76005E9CF6 /* UIKit.framework */; };
@@ -23,18 +31,10 @@
 		C5161EC81ACFCA76005E9CF6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C5161EC61ACFCA76005E9CF6 /* InfoPlist.strings */; };
 		C5161ECA1ACFCA76005E9CF6 /* ToDoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5161EC91ACFCA76005E9CF6 /* ToDoListTests.m */; };
 		C5161ED41ACFCAA4005E9CF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5161ED31ACFCAA4005E9CF6 /* Main.storyboard */; };
-		C5161EE01ACFD302005E9CF6 /* BiDAddToDoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5161EDD1ACFD302005E9CF6 /* BiDAddToDoItemViewController.m */; };
-		C5161EE11ACFD302005E9CF6 /* BiDToDoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5161EDF1ACFD302005E9CF6 /* BiDToDoListViewController.m */; };
 		C5161EE41ACFD3C4005E9CF6 /* BiDToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C5161EE31ACFD3C4005E9CF6 /* BiDToDoItem.m */; };
-		C553ED431BA52B0A006DD23E /* ContentCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C553ED411BA52B0A006DD23E /* ContentCellViewController.m */; };
-		C553ED441BA52B0A006DD23E /* ContentCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C553ED421BA52B0A006DD23E /* ContentCellViewController.xib */; };
-		C55FD82B1BA45A5900D68486 /* FoldableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C55FD82A1BA45A5900D68486 /* FoldableView.m */; };
 		C55FD82D1BA4851500D68486 /* Cell Background.png in Resources */ = {isa = PBXBuildFile; fileRef = C55FD82C1BA4851500D68486 /* Cell Background.png */; };
 		C58847C11B8F4C8000966CA5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58847C01B8F4C8000966CA5 /* AVFoundation.framework */; };
 		C592FDB21BBCE8EE00796833 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = C592FDB01BBCE8EE00796833 /* UIImage+ImageEffects.m */; };
-		C5A66E0C1BBED2850027B817 /* MusicPlayingView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A66E0B1BBED2850027B817 /* MusicPlayingView.m */; };
-		C5C2E5161BC107F2003E8EF9 /* MusicPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C2E5151BC107F2003E8EF9 /* MusicPlayerViewController.m */; };
-		C5C7B4931BBE59BA0091FE8F /* BiDEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C7B4921BBE59BA0091FE8F /* BiDEditorViewController.m */; };
 		C5D181EF1BC1237300591BDE /* defaultArtistImage.png in Resources */ = {isa = PBXBuildFile; fileRef = C5D181EE1BC1237300591BDE /* defaultArtistImage.png */; };
 /* End PBXBuildFile section */
 
@@ -49,10 +49,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		222DF89F275B7EF30036AED1 /* BiDAddToDoItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiDAddToDoItemViewController.h; sourceTree = "<group>"; };
+		222DF8A0275B7EF30036AED1 /* BiDAddToDoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BiDAddToDoItemViewController.m; sourceTree = "<group>"; };
+		222DF8A1275B7EF30036AED1 /* BiDEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiDEditorViewController.h; sourceTree = "<group>"; };
+		222DF8A2275B7EF30036AED1 /* BiDEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BiDEditorViewController.m; sourceTree = "<group>"; };
+		222DF8A3275B7EF30036AED1 /* BiDToDoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiDToDoListViewController.h; sourceTree = "<group>"; };
+		222DF8A4275B7EF30036AED1 /* BiDToDoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BiDToDoListViewController.m; sourceTree = "<group>"; };
+		222DF8A5275B7EF30036AED1 /* ContentCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentCellViewController.h; sourceTree = "<group>"; };
+		222DF8A6275B7EF30036AED1 /* ContentCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentCellViewController.m; sourceTree = "<group>"; };
+		222DF8A7275B7EF30036AED1 /* ContentCellViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentCellViewController.xib; sourceTree = "<group>"; };
+		222DF8A8275B7EF30036AED1 /* FoldableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoldableView.h; sourceTree = "<group>"; };
+		222DF8A9275B7EF30036AED1 /* FoldableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoldableView.m; sourceTree = "<group>"; };
+		222DF8AA275B7EF30036AED1 /* MusicListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicListViewController.h; sourceTree = "<group>"; };
+		222DF8AB275B7EF30036AED1 /* MusicListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicListViewController.m; sourceTree = "<group>"; };
+		222DF8AC275B7EF30036AED1 /* MusicPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicPlayerViewController.h; sourceTree = "<group>"; };
+		222DF8AD275B7EF30036AED1 /* MusicPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicPlayerViewController.m; sourceTree = "<group>"; };
+		222DF8AE275B7EF30036AED1 /* MusicPlayingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicPlayingView.h; sourceTree = "<group>"; };
+		222DF8AF275B7EF30036AED1 /* MusicPlayingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicPlayingView.m; sourceTree = "<group>"; };
 		2277DE60275B571200FE30A0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		C505DA3A1BBD3639009C94A6 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
-		C50604761B8F52A700A0F065 /* MusicListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicListViewController.h; sourceTree = "<group>"; };
-		C50604771B8F52A700A0F065 /* MusicListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicListViewController.m; sourceTree = "<group>"; };
 		C5161EA11ACFCA76005E9CF6 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5161EA41ACFCA76005E9CF6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C5161EA61ACFCA76005E9CF6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -70,27 +85,12 @@
 		C5161EC71ACFCA76005E9CF6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C5161EC91ACFCA76005E9CF6 /* ToDoListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoListTests.m; sourceTree = "<group>"; };
 		C5161ED31ACFCAA4005E9CF6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		C5161EDC1ACFD302005E9CF6 /* BiDAddToDoItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiDAddToDoItemViewController.h; sourceTree = "<group>"; };
-		C5161EDD1ACFD302005E9CF6 /* BiDAddToDoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BiDAddToDoItemViewController.m; sourceTree = "<group>"; };
-		C5161EDE1ACFD302005E9CF6 /* BiDToDoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiDToDoListViewController.h; sourceTree = "<group>"; };
-		C5161EDF1ACFD302005E9CF6 /* BiDToDoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BiDToDoListViewController.m; sourceTree = "<group>"; };
 		C5161EE21ACFD3C4005E9CF6 /* BiDToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiDToDoItem.h; sourceTree = "<group>"; };
 		C5161EE31ACFD3C4005E9CF6 /* BiDToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BiDToDoItem.m; sourceTree = "<group>"; };
-		C553ED401BA52B0A006DD23E /* ContentCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentCellViewController.h; sourceTree = "<group>"; };
-		C553ED411BA52B0A006DD23E /* ContentCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentCellViewController.m; sourceTree = "<group>"; };
-		C553ED421BA52B0A006DD23E /* ContentCellViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentCellViewController.xib; sourceTree = "<group>"; };
-		C55FD8291BA45A5900D68486 /* FoldableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoldableView.h; sourceTree = "<group>"; };
-		C55FD82A1BA45A5900D68486 /* FoldableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoldableView.m; sourceTree = "<group>"; };
 		C55FD82C1BA4851500D68486 /* Cell Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cell Background.png"; sourceTree = "<group>"; };
 		C58847C01B8F4C8000966CA5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C592FDB01BBCE8EE00796833 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		C592FDB11BBCE8EE00796833 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
-		C5A66E0A1BBED2850027B817 /* MusicPlayingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicPlayingView.h; sourceTree = "<group>"; };
-		C5A66E0B1BBED2850027B817 /* MusicPlayingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicPlayingView.m; sourceTree = "<group>"; };
-		C5C2E5141BC107F2003E8EF9 /* MusicPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicPlayerViewController.h; sourceTree = "<group>"; };
-		C5C2E5151BC107F2003E8EF9 /* MusicPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicPlayerViewController.m; sourceTree = "<group>"; };
-		C5C7B4911BBE59BA0091FE8F /* BiDEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiDEditorViewController.h; sourceTree = "<group>"; };
-		C5C7B4921BBE59BA0091FE8F /* BiDEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BiDEditorViewController.m; sourceTree = "<group>"; };
 		C5D181EE1BC1237300591BDE /* defaultArtistImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultArtistImage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +119,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		222DF89E275B7EF30036AED1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				222DF89F275B7EF30036AED1 /* BiDAddToDoItemViewController.h */,
+				222DF8A0275B7EF30036AED1 /* BiDAddToDoItemViewController.m */,
+				222DF8A1275B7EF30036AED1 /* BiDEditorViewController.h */,
+				222DF8A2275B7EF30036AED1 /* BiDEditorViewController.m */,
+				222DF8A3275B7EF30036AED1 /* BiDToDoListViewController.h */,
+				222DF8A4275B7EF30036AED1 /* BiDToDoListViewController.m */,
+				222DF8A5275B7EF30036AED1 /* ContentCellViewController.h */,
+				222DF8A6275B7EF30036AED1 /* ContentCellViewController.m */,
+				222DF8A7275B7EF30036AED1 /* ContentCellViewController.xib */,
+				222DF8A8275B7EF30036AED1 /* FoldableView.h */,
+				222DF8A9275B7EF30036AED1 /* FoldableView.m */,
+				222DF8AA275B7EF30036AED1 /* MusicListViewController.h */,
+				222DF8AB275B7EF30036AED1 /* MusicListViewController.m */,
+				222DF8AC275B7EF30036AED1 /* MusicPlayerViewController.h */,
+				222DF8AD275B7EF30036AED1 /* MusicPlayerViewController.m */,
+				222DF8AE275B7EF30036AED1 /* MusicPlayingView.h */,
+				222DF8AF275B7EF30036AED1 /* MusicPlayingView.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		C5071E5D1BBD502B00DAA4E0 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,9 +189,9 @@
 				C5161EB31ACFCA76005E9CF6 /* BiDAppDelegate.h */,
 				C5161EB41ACFCA76005E9CF6 /* BiDAppDelegate.m */,
 				C5161EB61ACFCA76005E9CF6 /* Images.xcassets */,
+				222DF89E275B7EF30036AED1 /* Controller */,
 				C5161ED81ACFCCD0005E9CF6 /* Model */,
 				C5161ED51ACFCCA4005E9CF6 /* View */,
-				C5161EDB1ACFCCF8005E9CF6 /* Controller */,
 				C5071E5D1BBD502B00DAA4E0 /* Category */,
 				C5161EAB1ACFCA76005E9CF6 /* Supporting Files */,
 			);
@@ -222,30 +246,6 @@
 				C5161EE31ACFD3C4005E9CF6 /* BiDToDoItem.m */,
 			);
 			name = Model;
-			sourceTree = "<group>";
-		};
-		C5161EDB1ACFCCF8005E9CF6 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				C5161EDE1ACFD302005E9CF6 /* BiDToDoListViewController.h */,
-				C5161EDF1ACFD302005E9CF6 /* BiDToDoListViewController.m */,
-				C5161EDC1ACFD302005E9CF6 /* BiDAddToDoItemViewController.h */,
-				C5161EDD1ACFD302005E9CF6 /* BiDAddToDoItemViewController.m */,
-				C5C7B4911BBE59BA0091FE8F /* BiDEditorViewController.h */,
-				C5C7B4921BBE59BA0091FE8F /* BiDEditorViewController.m */,
-				C55FD8291BA45A5900D68486 /* FoldableView.h */,
-				C55FD82A1BA45A5900D68486 /* FoldableView.m */,
-				C553ED401BA52B0A006DD23E /* ContentCellViewController.h */,
-				C553ED411BA52B0A006DD23E /* ContentCellViewController.m */,
-				C553ED421BA52B0A006DD23E /* ContentCellViewController.xib */,
-				C50604761B8F52A700A0F065 /* MusicListViewController.h */,
-				C50604771B8F52A700A0F065 /* MusicListViewController.m */,
-				C5C2E5141BC107F2003E8EF9 /* MusicPlayerViewController.h */,
-				C5C2E5151BC107F2003E8EF9 /* MusicPlayerViewController.m */,
-				C5A66E0A1BBED2850027B817 /* MusicPlayingView.h */,
-				C5A66E0B1BBED2850027B817 /* MusicPlayingView.m */,
-			);
-			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,13 +324,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				222DF8B4275B7EF30036AED1 /* ContentCellViewController.xib in Resources */,
 				C5D181EF1BC1237300591BDE /* defaultArtistImage.png in Resources */,
 				C5161ED41ACFCAA4005E9CF6 /* Main.storyboard in Resources */,
 				C505DA3B1BBD3639009C94A6 /* line.png in Resources */,
 				C5161EAF1ACFCA76005E9CF6 /* InfoPlist.strings in Resources */,
 				2277DE61275B571200FE30A0 /* icon.png in Resources */,
 				C55FD82D1BA4851500D68486 /* Cell Background.png in Resources */,
-				C553ED441BA52B0A006DD23E /* ContentCellViewController.xib in Resources */,
 				C5161EB71ACFCA76005E9CF6 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,18 +350,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C553ED431BA52B0A006DD23E /* ContentCellViewController.m in Sources */,
+				222DF8B3275B7EF30036AED1 /* ContentCellViewController.m in Sources */,
 				C5161EB51ACFCA76005E9CF6 /* BiDAppDelegate.m in Sources */,
+				222DF8B1275B7EF30036AED1 /* BiDEditorViewController.m in Sources */,
+				222DF8B2275B7EF30036AED1 /* BiDToDoListViewController.m in Sources */,
+				222DF8B7275B7EF30036AED1 /* MusicPlayerViewController.m in Sources */,
+				222DF8B8275B7EF30036AED1 /* MusicPlayingView.m in Sources */,
 				C5161EB11ACFCA76005E9CF6 /* main.m in Sources */,
-				C55FD82B1BA45A5900D68486 /* FoldableView.m in Sources */,
-				C5A66E0C1BBED2850027B817 /* MusicPlayingView.m in Sources */,
-				C50604781B8F52A700A0F065 /* MusicListViewController.m in Sources */,
+				222DF8B5275B7EF30036AED1 /* FoldableView.m in Sources */,
+				222DF8B0275B7EF30036AED1 /* BiDAddToDoItemViewController.m in Sources */,
 				C592FDB21BBCE8EE00796833 /* UIImage+ImageEffects.m in Sources */,
-				C5161EE11ACFD302005E9CF6 /* BiDToDoListViewController.m in Sources */,
+				222DF8B6275B7EF30036AED1 /* MusicListViewController.m in Sources */,
 				C5161EE41ACFD3C4005E9CF6 /* BiDToDoItem.m in Sources */,
-				C5161EE01ACFD302005E9CF6 /* BiDAddToDoItemViewController.m in Sources */,
-				C5C7B4931BBE59BA0091FE8F /* BiDEditorViewController.m in Sources */,
-				C5C2E5161BC107F2003E8EF9 /* MusicPlayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
