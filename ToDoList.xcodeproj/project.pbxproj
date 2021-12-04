@@ -16,6 +16,7 @@
 		222DF8B6275B7EF30036AED1 /* MusicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8AB275B7EF30036AED1 /* MusicListViewController.m */; };
 		222DF8B7275B7EF30036AED1 /* MusicPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8AD275B7EF30036AED1 /* MusicPlayerViewController.m */; };
 		222DF8B8275B7EF30036AED1 /* MusicPlayingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8AF275B7EF30036AED1 /* MusicPlayingView.m */; };
+		222DF8BB275B7F720036AED1 /* BiDWebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8BA275B7F720036AED1 /* BiDWebBrowserViewController.m */; };
 		2277DE61275B571200FE30A0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2277DE60275B571200FE30A0 /* icon.png */; };
 		C505DA3B1BBD3639009C94A6 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = C505DA3A1BBD3639009C94A6 /* line.png */; };
 		C5161EA51ACFCA76005E9CF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5161EA41ACFCA76005E9CF6 /* Foundation.framework */; };
@@ -66,6 +67,8 @@
 		222DF8AD275B7EF30036AED1 /* MusicPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicPlayerViewController.m; sourceTree = "<group>"; };
 		222DF8AE275B7EF30036AED1 /* MusicPlayingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicPlayingView.h; sourceTree = "<group>"; };
 		222DF8AF275B7EF30036AED1 /* MusicPlayingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicPlayingView.m; sourceTree = "<group>"; };
+		222DF8B9275B7F720036AED1 /* BiDWebBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiDWebBrowserViewController.h; sourceTree = "<group>"; };
+		222DF8BA275B7F720036AED1 /* BiDWebBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BiDWebBrowserViewController.m; sourceTree = "<group>"; };
 		2277DE60275B571200FE30A0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		C505DA3A1BBD3639009C94A6 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
 		C5161EA11ACFCA76005E9CF6 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +142,8 @@
 				222DF8AD275B7EF30036AED1 /* MusicPlayerViewController.m */,
 				222DF8AE275B7EF30036AED1 /* MusicPlayingView.h */,
 				222DF8AF275B7EF30036AED1 /* MusicPlayingView.m */,
+				222DF8B9275B7F720036AED1 /* BiDWebBrowserViewController.h */,
+				222DF8BA275B7F720036AED1 /* BiDWebBrowserViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -355,6 +360,7 @@
 				222DF8B1275B7EF30036AED1 /* BiDEditorViewController.m in Sources */,
 				222DF8B2275B7EF30036AED1 /* BiDToDoListViewController.m in Sources */,
 				222DF8B7275B7EF30036AED1 /* MusicPlayerViewController.m in Sources */,
+				222DF8BB275B7F720036AED1 /* BiDWebBrowserViewController.m in Sources */,
 				222DF8B8275B7EF30036AED1 /* MusicPlayingView.m in Sources */,
 				C5161EB11ACFCA76005E9CF6 /* main.m in Sources */,
 				222DF8B5275B7EF30036AED1 /* FoldableView.m in Sources */,

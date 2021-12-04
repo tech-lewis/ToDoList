@@ -12,7 +12,7 @@
 #import "FoldableView.h"
 #import "BiDToDoItem.h"
 #import "UIImage+ImageEffects.h"
-
+#import "BiDWebBrowserViewController.h"
 @interface BiDToDoListViewController ()<FoldableDelegate, UIAlertViewDelegate>
 
 @property (nonatomic, strong) FoldableView *foldableView;
@@ -99,7 +99,10 @@ static NSString *CellIdentifier = @"ListCell";
 
 - (IBAction)moreButtonPressed:(id)sender
 {
-    
+    BiDWebBrowserViewController *webBrowserController = [[BiDWebBrowserViewController alloc] init];
+    [self presentViewController:webBrowserController animated:YES completion:^{
+        //
+    }];
 }
 - (void)playButtonPressed:(id)sender
 {
@@ -128,7 +131,7 @@ static NSString *CellIdentifier = @"ListCell";
     
     UIBarButtonItem *moreButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch
                                                                                 target:self
-                                                                                action:@selector(playButtonPressed:)];
+                                                                                action:@selector(moreButtonPressed:)];
     UIBarButtonItem *flexibleItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     UIBarButtonItem *playButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemPlay
                                                                                 target:self
