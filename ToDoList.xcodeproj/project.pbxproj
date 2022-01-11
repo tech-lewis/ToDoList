@@ -11,7 +11,6 @@
 		222DF8B1275B7EF30036AED1 /* BiDEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8A2275B7EF30036AED1 /* BiDEditorViewController.m */; };
 		222DF8B2275B7EF30036AED1 /* BiDToDoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8A4275B7EF30036AED1 /* BiDToDoListViewController.m */; };
 		222DF8B3275B7EF30036AED1 /* ContentCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8A6275B7EF30036AED1 /* ContentCellViewController.m */; };
-		222DF8B4275B7EF30036AED1 /* ContentCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 222DF8A7275B7EF30036AED1 /* ContentCellViewController.xib */; };
 		222DF8B5275B7EF30036AED1 /* FoldableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8A9275B7EF30036AED1 /* FoldableView.m */; };
 		222DF8B6275B7EF30036AED1 /* MusicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8AB275B7EF30036AED1 /* MusicListViewController.m */; };
 		222DF8B7275B7EF30036AED1 /* MusicPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8AD275B7EF30036AED1 /* MusicPlayerViewController.m */; };
@@ -32,13 +31,26 @@
 		C5161EC01ACFCA76005E9CF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5161EA81ACFCA76005E9CF6 /* UIKit.framework */; };
 		C5161EC81ACFCA76005E9CF6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C5161EC61ACFCA76005E9CF6 /* InfoPlist.strings */; };
 		C5161ECA1ACFCA76005E9CF6 /* ToDoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5161EC91ACFCA76005E9CF6 /* ToDoListTests.m */; };
-		C5161ED41ACFCAA4005E9CF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5161ED31ACFCAA4005E9CF6 /* Main.storyboard */; };
 		C5161EE41ACFD3C4005E9CF6 /* BiDToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C5161EE31ACFD3C4005E9CF6 /* BiDToDoItem.m */; };
 		C55FD82D1BA4851500D68486 /* Cell Background.png in Resources */ = {isa = PBXBuildFile; fileRef = C55FD82C1BA4851500D68486 /* Cell Background.png */; };
 		C58847C11B8F4C8000966CA5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58847C01B8F4C8000966CA5 /* AVFoundation.framework */; };
 		C592FDB21BBCE8EE00796833 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = C592FDB01BBCE8EE00796833 /* UIImage+ImageEffects.m */; };
 		C5D181EF1BC1237300591BDE /* defaultArtistImage.png in Resources */ = {isa = PBXBuildFile; fileRef = C5D181EE1BC1237300591BDE /* defaultArtistImage.png */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		22F451E7278D23BA003B0D4A /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
 		C5161EC11ACFCA76005E9CF6 /* PBXContainerItemProxy */ = {
@@ -268,6 +280,7 @@
 				C5161E9F1ACFCA76005E9CF6 /* Resources */,
 			);
 			buildRules = (
+				22F451E7278D23BA003B0D4A /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -304,6 +317,10 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = TechLewis;
 				TargetAttributes = {
+					C5161EA01ACFCA76005E9CF6 = {
+						DevelopmentTeam = YSYEV7MGT7;
+						ProvisioningStyle = Automatic;
+					};
 					C5161EBB1ACFCA76005E9CF6 = {
 						TestTargetID = C5161EA01ACFCA76005E9CF6;
 					};
@@ -314,6 +331,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = C5161E981ACFCA76005E9CF6;
@@ -332,10 +350,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				222DF8B4275B7EF30036AED1 /* ContentCellViewController.xib in Resources */,
 				C5D181EF1BC1237300591BDE /* defaultArtistImage.png in Resources */,
 				22DA6760275C714800EAD8E4 /* Default-568h@2x.png in Resources */,
-				C5161ED41ACFCAA4005E9CF6 /* Main.storyboard in Resources */,
 				C505DA3B1BBD3639009C94A6 /* line.png in Resources */,
 				C5161EAF1ACFCA76005E9CF6 /* InfoPlist.strings in Resources */,
 				2277DE61275B571200FE30A0 /* icon.png in Resources */,
@@ -417,6 +433,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv7,
+					armv7s,
+					arm64,
+				);
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -446,7 +467,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -455,6 +476,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv7,
+					armv7s,
+					arm64,
+				);
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -478,6 +504,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -487,12 +514,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-6";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = YSYEV7MGT7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ToDoList/ToDoList-Prefix.pch";
 				INFOPLIST_FILE = "ToDoList/ToDoList-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -501,12 +535,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-6";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = YSYEV7MGT7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ToDoList/ToDoList-Prefix.pch";
 				INFOPLIST_FILE = "ToDoList/ToDoList-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

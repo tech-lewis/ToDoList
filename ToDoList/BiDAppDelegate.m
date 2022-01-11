@@ -7,12 +7,17 @@
 //
 
 #import "BiDAppDelegate.h"
-
+#import "BiDToDoListViewController.h"
 @implementation BiDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    return YES;
+  self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+  UIViewController *controller = [[BiDToDoListViewController alloc] init];
+  controller.title = @"home";
+  self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:controller];
+  [self.window makeKeyAndVisible];
+  return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
