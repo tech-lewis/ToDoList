@@ -115,6 +115,30 @@
 		22F9FF40278ECB4B00FE1A00 /* GKNavigationBarViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 22F9FF30278ECB4B00FE1A00 /* GKNavigationBarViewController.bundle */; };
 		22F9FF41278ECB4B00FE1A00 /* GKNavigationBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FF31278ECB4B00FE1A00 /* GKNavigationBarViewController.m */; };
 		22F9FF42278ECB4B00FE1A00 /* GKNavigationBarConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FF34278ECB4B00FE1A00 /* GKNavigationBarConfigure.m */; };
+		22F9FF79278ECD8300FE1A00 /* BRResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FF46278ECD8200FE1A00 /* BRResultModel.m */; };
+		22F9FF7A278ECD8300FE1A00 /* BRStringPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FF49278ECD8200FE1A00 /* BRStringPickerView.m */; };
+		22F9FF7B278ECD8300FE1A00 /* NSDate+BRPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FF4D278ECD8200FE1A00 /* NSDate+BRPickerView.m */; };
+		22F9FF7C278ECD8300FE1A00 /* BRDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FF4E278ECD8200FE1A00 /* BRDatePickerView.m */; };
+		22F9FF7D278ECD8300FE1A00 /* BRPickerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 22F9FF53278ECD8200FE1A00 /* BRPickerView.bundle */; };
+		22F9FF7E278ECD8300FE1A00 /* BRPickerStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FF54278ECD8200FE1A00 /* BRPickerStyle.m */; };
+		22F9FF7F278ECD8300FE1A00 /* BRBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FF55278ECD8200FE1A00 /* BRBaseView.m */; };
+		22F9FF80278ECD8300FE1A00 /* NSBundle+BRPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FF56278ECD8200FE1A00 /* NSBundle+BRPickerView.m */; };
+		22F9FF81278ECD8300FE1A00 /* BRAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FF5A278ECD8200FE1A00 /* BRAddressModel.m */; };
+		22F9FF82278ECD8300FE1A00 /* BRAddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FF5D278ECD8200FE1A00 /* BRAddressPickerView.m */; };
+		22F9FF83278ECD8300FE1A00 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 22F9FF5E278ECD8200FE1A00 /* LICENSE */; };
+		22F9FF84278ECD8300FE1A00 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 22F9FF5F278ECD8200FE1A00 /* README.md */; };
+		22F9FF85278ECD8300FE1A00 /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FF65278ECD8300FE1A00 /* MJPropertyType.m */; };
+		22F9FF86278ECD8300FE1A00 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FF68278ECD8300FE1A00 /* NSObject+MJKeyValue.m */; };
+		22F9FF87278ECD8300FE1A00 /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FF69278ECD8300FE1A00 /* MJProperty.m */; };
+		22F9FF88278ECD8300FE1A00 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FF6B278ECD8300FE1A00 /* NSObject+MJCoding.m */; };
+		22F9FF89278ECD8300FE1A00 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FF6D278ECD8300FE1A00 /* MJExtensionConst.m */; };
+		22F9FF8A278ECD8300FE1A00 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FF6E278ECD8300FE1A00 /* NSObject+MJProperty.m */; };
+		22F9FF8B278ECD8300FE1A00 /* NSObject+MJClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FF70278ECD8300FE1A00 /* NSObject+MJClass.m */; };
+		22F9FF8C278ECD8300FE1A00 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FF71278ECD8300FE1A00 /* NSString+MJExtension.m */; };
+		22F9FF8D278ECD8300FE1A00 /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FF72278ECD8300FE1A00 /* MJPropertyKey.m */; };
+		22F9FF8E278ECD8300FE1A00 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FF76278ECD8300FE1A00 /* MJFoundation.m */; };
+		22F9FF8F278ECD8300FE1A00 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 22F9FF77278ECD8300FE1A00 /* LICENSE */; };
+		22F9FF90278ECD8300FE1A00 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 22F9FF78278ECD8300FE1A00 /* README.md */; };
 		C505DA3B1BBD3639009C94A6 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = C505DA3A1BBD3639009C94A6 /* line.png */; };
 		C5161EA51ACFCA76005E9CF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5161EA41ACFCA76005E9CF6 /* Foundation.framework */; };
 		C5161EA71ACFCA76005E9CF6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5161EA61ACFCA76005E9CF6 /* CoreGraphics.framework */; };
@@ -384,6 +408,52 @@
 		22F9FF32278ECB4B00FE1A00 /* GKCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKCommon.h; sourceTree = "<group>"; };
 		22F9FF33278ECB4B00FE1A00 /* GKNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKNavigationBar.h; sourceTree = "<group>"; };
 		22F9FF34278ECB4B00FE1A00 /* GKNavigationBarConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKNavigationBarConfigure.m; sourceTree = "<group>"; };
+		22F9FF46278ECD8200FE1A00 /* BRResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRResultModel.m; sourceTree = "<group>"; };
+		22F9FF47278ECD8200FE1A00 /* BRStringPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRStringPickerView.h; sourceTree = "<group>"; };
+		22F9FF48278ECD8200FE1A00 /* BRResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRResultModel.h; sourceTree = "<group>"; };
+		22F9FF49278ECD8200FE1A00 /* BRStringPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRStringPickerView.m; sourceTree = "<group>"; };
+		22F9FF4A278ECD8200FE1A00 /* BRPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPickerView.h; sourceTree = "<group>"; };
+		22F9FF4C278ECD8200FE1A00 /* BRDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRDatePickerView.h; sourceTree = "<group>"; };
+		22F9FF4D278ECD8200FE1A00 /* NSDate+BRPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+BRPickerView.m"; sourceTree = "<group>"; };
+		22F9FF4E278ECD8200FE1A00 /* BRDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDatePickerView.m; sourceTree = "<group>"; };
+		22F9FF4F278ECD8200FE1A00 /* NSDate+BRPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+BRPickerView.h"; sourceTree = "<group>"; };
+		22F9FF51278ECD8200FE1A00 /* NSBundle+BRPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+BRPickerView.h"; sourceTree = "<group>"; };
+		22F9FF52278ECD8200FE1A00 /* BRPickerViewMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPickerViewMacro.h; sourceTree = "<group>"; };
+		22F9FF53278ECD8200FE1A00 /* BRPickerView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BRPickerView.bundle; sourceTree = "<group>"; };
+		22F9FF54278ECD8200FE1A00 /* BRPickerStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRPickerStyle.m; sourceTree = "<group>"; };
+		22F9FF55278ECD8200FE1A00 /* BRBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBaseView.m; sourceTree = "<group>"; };
+		22F9FF56278ECD8200FE1A00 /* NSBundle+BRPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+BRPickerView.m"; sourceTree = "<group>"; };
+		22F9FF57278ECD8200FE1A00 /* BRBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBaseView.h; sourceTree = "<group>"; };
+		22F9FF58278ECD8200FE1A00 /* BRPickerStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPickerStyle.h; sourceTree = "<group>"; };
+		22F9FF5A278ECD8200FE1A00 /* BRAddressModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAddressModel.m; sourceTree = "<group>"; };
+		22F9FF5B278ECD8200FE1A00 /* BRAddressPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAddressPickerView.h; sourceTree = "<group>"; };
+		22F9FF5C278ECD8200FE1A00 /* BRAddressModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAddressModel.h; sourceTree = "<group>"; };
+		22F9FF5D278ECD8200FE1A00 /* BRAddressPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAddressPickerView.m; sourceTree = "<group>"; };
+		22F9FF5E278ECD8200FE1A00 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		22F9FF5F278ECD8200FE1A00 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		22F9FF62278ECD8300FE1A00 /* MJPropertyKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyKey.h; sourceTree = "<group>"; };
+		22F9FF63278ECD8300FE1A00 /* NSObject+MJClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJClass.h"; sourceTree = "<group>"; };
+		22F9FF64278ECD8300FE1A00 /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
+		22F9FF65278ECD8300FE1A00 /* MJPropertyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyType.m; sourceTree = "<group>"; };
+		22F9FF66278ECD8300FE1A00 /* NSObject+MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJProperty.h"; sourceTree = "<group>"; };
+		22F9FF67278ECD8300FE1A00 /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
+		22F9FF68278ECD8300FE1A00 /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		22F9FF69278ECD8300FE1A00 /* MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJProperty.m; sourceTree = "<group>"; };
+		22F9FF6A278ECD8300FE1A00 /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		22F9FF6B278ECD8300FE1A00 /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		22F9FF6C278ECD8300FE1A00 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		22F9FF6D278ECD8300FE1A00 /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
+		22F9FF6E278ECD8300FE1A00 /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
+		22F9FF6F278ECD8300FE1A00 /* MJPropertyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyType.h; sourceTree = "<group>"; };
+		22F9FF70278ECD8300FE1A00 /* NSObject+MJClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJClass.m"; sourceTree = "<group>"; };
+		22F9FF71278ECD8300FE1A00 /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
+		22F9FF72278ECD8300FE1A00 /* MJPropertyKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyKey.m; sourceTree = "<group>"; };
+		22F9FF73278ECD8300FE1A00 /* MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJProperty.h; sourceTree = "<group>"; };
+		22F9FF74278ECD8300FE1A00 /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		22F9FF75278ECD8300FE1A00 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		22F9FF76278ECD8300FE1A00 /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
+		22F9FF77278ECD8300FE1A00 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		22F9FF78278ECD8300FE1A00 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C505DA3A1BBD3639009C94A6 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
 		C5161EA11ACFCA76005E9CF6 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5161EA41ACFCA76005E9CF6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -478,6 +548,8 @@
 		22F9FDC4278E82D200FE1A00 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				22F9FF43278ECD8200FE1A00 /* BRPickerView */,
+				22F9FF60278ECD8300FE1A00 /* MJExtension */,
 				22F9FF15278ECB4B00FE1A00 /* GKNavigationBarViewController */,
 				22F9FE88278E92F500FE1A00 /* MJRefresh */,
 				22F9FE59278E909E00FE1A00 /* SDWebImage */,
@@ -880,6 +952,114 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		22F9FF43278ECD8200FE1A00 /* BRPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				22F9FF44278ECD8200FE1A00 /* BRPickerView */,
+				22F9FF5E278ECD8200FE1A00 /* LICENSE */,
+				22F9FF5F278ECD8200FE1A00 /* README.md */,
+			);
+			path = BRPickerView;
+			sourceTree = "<group>";
+		};
+		22F9FF44278ECD8200FE1A00 /* BRPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				22F9FF45278ECD8200FE1A00 /* StringPickerView */,
+				22F9FF4A278ECD8200FE1A00 /* BRPickerView.h */,
+				22F9FF4B278ECD8200FE1A00 /* DatePickerView */,
+				22F9FF50278ECD8200FE1A00 /* Base */,
+				22F9FF59278ECD8200FE1A00 /* AddressPickerView */,
+			);
+			path = BRPickerView;
+			sourceTree = "<group>";
+		};
+		22F9FF45278ECD8200FE1A00 /* StringPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				22F9FF46278ECD8200FE1A00 /* BRResultModel.m */,
+				22F9FF47278ECD8200FE1A00 /* BRStringPickerView.h */,
+				22F9FF48278ECD8200FE1A00 /* BRResultModel.h */,
+				22F9FF49278ECD8200FE1A00 /* BRStringPickerView.m */,
+			);
+			path = StringPickerView;
+			sourceTree = "<group>";
+		};
+		22F9FF4B278ECD8200FE1A00 /* DatePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				22F9FF4C278ECD8200FE1A00 /* BRDatePickerView.h */,
+				22F9FF4D278ECD8200FE1A00 /* NSDate+BRPickerView.m */,
+				22F9FF4E278ECD8200FE1A00 /* BRDatePickerView.m */,
+				22F9FF4F278ECD8200FE1A00 /* NSDate+BRPickerView.h */,
+			);
+			path = DatePickerView;
+			sourceTree = "<group>";
+		};
+		22F9FF50278ECD8200FE1A00 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				22F9FF51278ECD8200FE1A00 /* NSBundle+BRPickerView.h */,
+				22F9FF52278ECD8200FE1A00 /* BRPickerViewMacro.h */,
+				22F9FF53278ECD8200FE1A00 /* BRPickerView.bundle */,
+				22F9FF54278ECD8200FE1A00 /* BRPickerStyle.m */,
+				22F9FF55278ECD8200FE1A00 /* BRBaseView.m */,
+				22F9FF56278ECD8200FE1A00 /* NSBundle+BRPickerView.m */,
+				22F9FF57278ECD8200FE1A00 /* BRBaseView.h */,
+				22F9FF58278ECD8200FE1A00 /* BRPickerStyle.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		22F9FF59278ECD8200FE1A00 /* AddressPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				22F9FF5A278ECD8200FE1A00 /* BRAddressModel.m */,
+				22F9FF5B278ECD8200FE1A00 /* BRAddressPickerView.h */,
+				22F9FF5C278ECD8200FE1A00 /* BRAddressModel.h */,
+				22F9FF5D278ECD8200FE1A00 /* BRAddressPickerView.m */,
+			);
+			path = AddressPickerView;
+			sourceTree = "<group>";
+		};
+		22F9FF60278ECD8300FE1A00 /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				22F9FF61278ECD8300FE1A00 /* MJExtension */,
+				22F9FF77278ECD8300FE1A00 /* LICENSE */,
+				22F9FF78278ECD8300FE1A00 /* README.md */,
+			);
+			path = MJExtension;
+			sourceTree = "<group>";
+		};
+		22F9FF61278ECD8300FE1A00 /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				22F9FF62278ECD8300FE1A00 /* MJPropertyKey.h */,
+				22F9FF63278ECD8300FE1A00 /* NSObject+MJClass.h */,
+				22F9FF64278ECD8300FE1A00 /* NSString+MJExtension.h */,
+				22F9FF65278ECD8300FE1A00 /* MJPropertyType.m */,
+				22F9FF66278ECD8300FE1A00 /* NSObject+MJProperty.h */,
+				22F9FF67278ECD8300FE1A00 /* MJExtensionConst.h */,
+				22F9FF68278ECD8300FE1A00 /* NSObject+MJKeyValue.m */,
+				22F9FF69278ECD8300FE1A00 /* MJProperty.m */,
+				22F9FF6A278ECD8300FE1A00 /* MJFoundation.h */,
+				22F9FF6B278ECD8300FE1A00 /* NSObject+MJCoding.m */,
+				22F9FF6C278ECD8300FE1A00 /* MJExtension.h */,
+				22F9FF6D278ECD8300FE1A00 /* MJExtensionConst.m */,
+				22F9FF6E278ECD8300FE1A00 /* NSObject+MJProperty.m */,
+				22F9FF6F278ECD8300FE1A00 /* MJPropertyType.h */,
+				22F9FF70278ECD8300FE1A00 /* NSObject+MJClass.m */,
+				22F9FF71278ECD8300FE1A00 /* NSString+MJExtension.m */,
+				22F9FF72278ECD8300FE1A00 /* MJPropertyKey.m */,
+				22F9FF73278ECD8300FE1A00 /* MJProperty.h */,
+				22F9FF74278ECD8300FE1A00 /* NSObject+MJKeyValue.h */,
+				22F9FF75278ECD8300FE1A00 /* NSObject+MJCoding.h */,
+				22F9FF76278ECD8300FE1A00 /* MJFoundation.m */,
+			);
+			path = MJExtension;
+			sourceTree = "<group>";
+		};
 		C5071E5D1BBD502B00DAA4E0 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -1075,10 +1255,15 @@
 				22F9FE49278E8EFF00FE1A00 /* README.md in Resources */,
 				C505DA3B1BBD3639009C94A6 /* line.png in Resources */,
 				C5161EAF1ACFCA76005E9CF6 /* InfoPlist.strings in Resources */,
+				22F9FF7D278ECD8300FE1A00 /* BRPickerView.bundle in Resources */,
 				2277DE61275B571200FE30A0 /* icon.png in Resources */,
 				22F9FF0C278EC9CF00FE1A00 /* FrankPlaceHolder.bundle in Resources */,
 				C55FD82D1BA4851500D68486 /* Cell Background.png in Resources */,
+				22F9FF8F278ECD8300FE1A00 /* LICENSE in Resources */,
+				22F9FF90278ECD8300FE1A00 /* README.md in Resources */,
+				22F9FF83278ECD8300FE1A00 /* LICENSE in Resources */,
 				C5161EB71ACFCA76005E9CF6 /* Images.xcassets in Resources */,
+				22F9FF84278ECD8300FE1A00 /* README.md in Resources */,
 				22F9FF40278ECB4B00FE1A00 /* GKNavigationBarViewController.bundle in Resources */,
 				22F9FE48278E8EFF00FE1A00 /* LICENSE in Resources */,
 			);
@@ -1101,9 +1286,12 @@
 			files = (
 				22F9FF41278ECB4B00FE1A00 /* GKNavigationBarViewController.m in Sources */,
 				22F9FF0B278EC9CF00FE1A00 /* UIView+HUD.m in Sources */,
+				22F9FF89278ECD8300FE1A00 /* MJExtensionConst.m in Sources */,
 				22F9FEC7278E92F500FE1A00 /* MJRefreshStateHeader.m in Sources */,
 				22F9FF3A278ECB4B00FE1A00 /* UIBarButtonItem+GKCategory.m in Sources */,
+				22F9FF87278ECD8300FE1A00 /* MJProperty.m in Sources */,
 				22F9FE7D278E909E00FE1A00 /* UIImageView+HighlightedWebCache.m in Sources */,
+				22F9FF8A278ECD8300FE1A00 /* NSObject+MJProperty.m in Sources */,
 				22F9FE7C278E909E00FE1A00 /* SDWebImageDecoder.m in Sources */,
 				22F9FF03278EC9CF00FE1A00 /* CU_Const.m in Sources */,
 				22F9FEC3278E92F500FE1A00 /* MJRefreshAutoStateFooter.m in Sources */,
@@ -1111,8 +1299,10 @@
 				22F9FF36278ECB4B00FE1A00 /* GKDelegateHandler.m in Sources */,
 				22F9FE17278E836000FE1A00 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				222DF8B3275B7EF30036AED1 /* ContentCellViewController.m in Sources */,
+				22F9FF8E278ECD8300FE1A00 /* MJFoundation.m in Sources */,
 				22F9FF35278ECB4B00FE1A00 /* GKPushTransitionAnimation.m in Sources */,
 				22F9FEBE278E92F500FE1A00 /* NSBundle+MJRefresh.m in Sources */,
+				22F9FF8B278ECD8300FE1A00 /* NSObject+MJClass.m in Sources */,
 				22F9FF04278EC9CF00FE1A00 /* CU_LeftImgTextField.m in Sources */,
 				22F9FE82278E909E00FE1A00 /* SDWebImagePrefetcher.m in Sources */,
 				22F9FEBA278E92F500FE1A00 /* MJRefreshConst.m in Sources */,
@@ -1127,13 +1317,18 @@
 				22F9FE1C278E836000FE1A00 /* NSArray+MASAdditions.m in Sources */,
 				22F9FF06278EC9CF00FE1A00 /* CU_EdgeLabel.m in Sources */,
 				22F9FE52278E8EFF00FE1A00 /* AFImageDownloader.m in Sources */,
+				22F9FF79278ECD8300FE1A00 /* BRResultModel.m in Sources */,
+				22F9FF81278ECD8300FE1A00 /* BRAddressModel.m in Sources */,
 				22F9FEBB278E92F500FE1A00 /* MJRefreshConfig.m in Sources */,
 				22F9FEC5278E92F500FE1A00 /* MJRefreshAutoNormalFooter.m in Sources */,
 				22F9FF3B278ECB4B00FE1A00 /* UIScrollView+GKCategory.m in Sources */,
+				22F9FF8D278ECD8300FE1A00 /* MJPropertyKey.m in Sources */,
+				22F9FF7F278ECD8300FE1A00 /* BRBaseView.m in Sources */,
 				22F9FEC6278E92F500FE1A00 /* MJRefreshNormalHeader.m in Sources */,
 				22F9FEB9278E92F500FE1A00 /* UIScrollView+MJRefresh.m in Sources */,
 				22F9FED5278EC95F00FE1A00 /* APPNetworkCache.m in Sources */,
 				222DF8B1275B7EF30036AED1 /* BiDEditorViewController.m in Sources */,
+				22F9FF80278ECD8300FE1A00 /* NSBundle+BRPickerView.m in Sources */,
 				22F9FEC8278E92F500FE1A00 /* MJRefreshGifHeader.m in Sources */,
 				22F9FE87278E909E00FE1A00 /* UIButton+WebCache.m in Sources */,
 				22F9FE86278E909E00FE1A00 /* UIImageView+WebCache.m in Sources */,
@@ -1141,11 +1336,13 @@
 				22F9FF10278EC9CF00FE1A00 /* UITextView+CU_TextViewPlaceHolder.m in Sources */,
 				22F9FE4E278E8EFF00FE1A00 /* UIButton+AFNetworking.m in Sources */,
 				22F9FF42278ECB4B00FE1A00 /* GKNavigationBarConfigure.m in Sources */,
+				22F9FF8C278ECD8300FE1A00 /* NSString+MJExtension.m in Sources */,
 				22F9FECD278E92F500FE1A00 /* MJRefreshComponent.m in Sources */,
 				22F9FF14278EC9CF00FE1A00 /* CU_BaseModel.m in Sources */,
 				22F9FF0D278EC9CF00FE1A00 /* UIView+FrankPlaceHolderView.m in Sources */,
 				22F9FE20278E836000FE1A00 /* MASViewAttribute.m in Sources */,
 				22F9FF3D278ECB4B00FE1A00 /* UIImage+GKCategory.m in Sources */,
+				22F9FF82278ECD8300FE1A00 /* BRAddressPickerView.m in Sources */,
 				22F9FF37278ECB4B00FE1A00 /* GKPopTransitionAnimation.m in Sources */,
 				22F9FEC2278E92F500FE1A00 /* MJRefreshBackNormalFooter.m in Sources */,
 				22F9FE1A278E836000FE1A00 /* MASConstraintMaker.m in Sources */,
@@ -1153,6 +1350,7 @@
 				22F9FF07278EC9CF00FE1A00 /* CU_BaseViewController.m in Sources */,
 				22F9FECB278E92F500FE1A00 /* MJRefreshBackFooter.m in Sources */,
 				22F9FEC1278E92F500FE1A00 /* MJRefreshBackStateFooter.m in Sources */,
+				22F9FF7B278ECD8300FE1A00 /* NSDate+BRPickerView.m in Sources */,
 				222DF8B2275B7EF30036AED1 /* BiDToDoListViewController.m in Sources */,
 				222DF8B7275B7EF30036AED1 /* MusicPlayerViewController.m in Sources */,
 				22F9FEC0278E92F500FE1A00 /* MJRefreshBackGifFooter.m in Sources */,
@@ -1176,20 +1374,25 @@
 				222DF8B5275B7EF30036AED1 /* FoldableView.m in Sources */,
 				22F9FF13278EC9CF00FE1A00 /* CU_BaseParam.m in Sources */,
 				22F9FEC9278E92F500FE1A00 /* MJRefreshFooter.m in Sources */,
+				22F9FF7E278ECD8300FE1A00 /* BRPickerStyle.m in Sources */,
 				22F9FEBF278E92F500FE1A00 /* UIView+MJExtension.m in Sources */,
 				22F9FE84278E909E00FE1A00 /* SDWebImageDownloaderOperation.m in Sources */,
 				22F9FEC4278E92F500FE1A00 /* MJRefreshAutoGifFooter.m in Sources */,
 				22F9FE4F278E8EFF00FE1A00 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				222DF8B0275B7EF30036AED1 /* BiDAddToDoItemViewController.m in Sources */,
 				C592FDB21BBCE8EE00796833 /* UIImage+ImageEffects.m in Sources */,
+				22F9FF85278ECD8300FE1A00 /* MJPropertyType.m in Sources */,
 				22F9FE1D278E836000FE1A00 /* View+MASAdditions.m in Sources */,
 				222DF8B6275B7EF30036AED1 /* MusicListViewController.m in Sources */,
 				22F9FF38278ECB4B00FE1A00 /* GKBaseTransitionAnimation.m in Sources */,
+				22F9FF7A278ECD8300FE1A00 /* BRStringPickerView.m in Sources */,
 				22F9FE19278E836000FE1A00 /* MASCompositeConstraint.m in Sources */,
 				22F9FE18278E836000FE1A00 /* ViewController+MASAdditions.m in Sources */,
 				22F9FE79278E909E00FE1A00 /* UIImage+WebP.m in Sources */,
 				22F9FF12278EC9CF00FE1A00 /* CU_PublicWebViewJSBridge.m in Sources */,
+				22F9FF7C278ECD8300FE1A00 /* BRDatePickerView.m in Sources */,
 				22F9FF0F278EC9CF00FE1A00 /* UIButton+CU_CountDownBtn.m in Sources */,
+				22F9FF88278ECD8300FE1A00 /* NSObject+MJCoding.m in Sources */,
 				22F9FE55278E8EFF00FE1A00 /* AFURLSessionManager.m in Sources */,
 				22F9FE80278E909E00FE1A00 /* UIImage+MultiFormat.m in Sources */,
 				22F9FE83278E909E00FE1A00 /* SDImageCache.m in Sources */,
@@ -1201,6 +1404,7 @@
 				22F9FF3E278ECB4B00FE1A00 /* UIViewController+GKCategory.m in Sources */,
 				22F9FEBD278E92F500FE1A00 /* UIScrollView+MJExtension.m in Sources */,
 				22F9FF39278ECB4B00FE1A00 /* UINavigationController+GKCategory.m in Sources */,
+				22F9FF86278ECD8300FE1A00 /* NSObject+MJKeyValue.m in Sources */,
 				22F9FF11278EC9CF00FE1A00 /* NSString+CU_NSString.m in Sources */,
 				22F9FE1E278E836000FE1A00 /* MASConstraint.m in Sources */,
 				22F9FE54278E8EFF00FE1A00 /* AFHTTPSessionManager.m in Sources */,
