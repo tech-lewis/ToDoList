@@ -13,6 +13,8 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import "CU_Define.h"
+    #import "CU_Tools.h"
     #import "Masonry.h"
     #import "MJRefresh.h"
 #endif

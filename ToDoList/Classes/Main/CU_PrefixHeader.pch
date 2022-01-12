@@ -11,7 +11,6 @@
 
 #import "CU_Define.h"
 #import "CU_Tools.h"
-#import <Masonry/Masonry.h>
 #import <MJExtension/MJExtension.h>
 #import <MJRefresh/MJRefresh.h>
 #import "CU_Const.h"
