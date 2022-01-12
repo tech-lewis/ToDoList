@@ -757,11 +757,11 @@
 		22F9FCAF278E821300FE1A00 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				22F9FCB0278E821300FE1A00 /* IB_MineHeaderView.h */,
+				22F9FCB4278E821300FE1A00 /* IB_MineFooterView.h */,
 				22F9FCB1278E821300FE1A00 /* IB_MineFooterView.m */,
+				22F9FCB0278E821300FE1A00 /* IB_MineHeaderView.h */,
 				22F9FCB2278E821300FE1A00 /* IB_MineHeaderView.xib */,
 				22F9FCB3278E821300FE1A00 /* IB_MineHeaderView.m */,
-				22F9FCB4278E821300FE1A00 /* IB_MineFooterView.h */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -823,13 +823,13 @@
 		22F9FCC5278E821300FE1A00 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				22F9FCC6278E821300FE1A00 /* MainTabbarViewController.h */,
-				22F9FCC7278E821300FE1A00 /* Extension */,
 				22F9FD15278E821300FE1A00 /* MainNavigationViewController.h */,
+				22F9FD22278E821300FE1A00 /* MainNavigationViewController.m */,
+				22F9FCC6278E821300FE1A00 /* MainTabbarViewController.h */,
 				22F9FD16278E821300FE1A00 /* MainTabbarViewController.m */,
+				22F9FCC7278E821300FE1A00 /* Extension */,
 				22F9FD17278E821300FE1A00 /* Const */,
 				22F9FD1B278E821300FE1A00 /* Views */,
-				22F9FD22278E821300FE1A00 /* MainNavigationViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";

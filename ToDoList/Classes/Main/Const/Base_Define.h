@@ -69,7 +69,7 @@
 //蓝色 rgba(255, 31, 160, 1)
 #define kBlueColor kRGB_COLOR(40, 94, 245)
 
-#define kMainColor kRGB_COLOR(255, 31, 160)
+#define kMainColor kRGB_COLOR(0, 0, 0)
 
 // RGB颜色
 #define kRGB_COLOR(r,g,b)  [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:1.0]
