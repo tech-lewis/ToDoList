@@ -13,8 +13,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-  UIViewController *controller = [[BiDToDoListViewController alloc] init];
+  UIViewController *controller = [[UIViewController alloc] init];
   controller.title = @"home";
+  controller.view.backgroundColor = [UIColor grayColor];
   self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:controller];
   [self.window makeKeyAndVisible];
   return YES;
