@@ -9,7 +9,7 @@
 //vc
 #import "MainTabbarViewController.h"
 #import "MainNavigationViewController.h"
-
+#import "Base_Define.h"
 #import "IB_HomeViewController.h"
 #import "IM_TypeController.h"
 #import "IM_ShopCarController.h"

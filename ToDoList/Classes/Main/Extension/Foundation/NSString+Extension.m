@@ -7,6 +7,7 @@
 //
 
 #import "NSString+Extension.h"
+#import "Base_Define.h"
 #import <CommonCrypto/CommonDigest.h>
 
 @implementation NSString (Extension)
@@ -32,7 +33,7 @@
 - (BOOL)validateCarNo {
     NSString *carRegex = @"^[\u4e00-\u9fa5]{1}[a-zA-Z]{1}[a-zA-Z_0-9]{4}[a-zA-Z_0-9_\u4e00-\u9fa5]$";
     NSPredicate *carTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",carRegex];
-    DLog(@"carTest is %@",carTest);
+    // DLog(@"carTest is %@",carTest);
     return [carTest evaluateWithObject:self];
 }
 

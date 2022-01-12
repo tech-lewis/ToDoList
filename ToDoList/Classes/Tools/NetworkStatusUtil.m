@@ -7,6 +7,7 @@
 //
 
 #import "NetworkStatusUtil.h"
+#import "Base_Define.h"
 #import "AFNetworkReachabilityManager.h"
 
 @implementation NetworkStatusUtil

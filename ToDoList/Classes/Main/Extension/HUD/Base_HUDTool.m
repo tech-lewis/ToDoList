@@ -10,7 +10,8 @@
 #import "Base_HUDTool.h"
 #import "SVProgressHUD.h"
 #import "JGProgressHUD.h"
-
+#import "UIView+Extension.h"
+#import "Base_Define.h"
 @implementation Base_HUDTool
 
 +(void)showLoadingInWindowWithMessage:(NSString *)msg {

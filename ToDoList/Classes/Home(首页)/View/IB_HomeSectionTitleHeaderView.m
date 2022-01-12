@@ -7,6 +7,7 @@
 //
 
 #import "IB_HomeSectionTitleHeaderView.h"
+#import "Base_Define.h"
 #import "UILabel+Extension.h"
 @interface IB_HomeSectionTitleHeaderView()
 

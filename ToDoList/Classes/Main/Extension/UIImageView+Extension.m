@@ -7,6 +7,7 @@
 //
 
 #import "UIImageView+Extension.h"
+#import "Base_Define.h"
 #import "UIImageView+WebCache.h"
 // #import <SDWebImage/UIImageView+WebCache.h>
 

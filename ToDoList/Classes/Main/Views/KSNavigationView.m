@@ -7,7 +7,7 @@
 //
 
 #import "KSNavigationView.h"
-
+#import "Base_Define.h"
 
 @implementation KSNavigationButtonItem
 

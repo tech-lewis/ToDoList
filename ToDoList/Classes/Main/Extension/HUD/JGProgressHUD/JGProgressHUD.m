@@ -10,7 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "JGProgressHUDFadeAnimation.h"
 #import "JGProgressHUDIndeterminateIndicatorView.h"
-
+#import "Base_Define.h"
 #if !__has_feature(objc_arc)
 #error "JGProgressHUD requires ARC!"
 #endif

@@ -8,7 +8,8 @@
 
 #import "IB_MineHeaderView.h"
 #import "UIButton+EnlargeTouchArea.h"
-
+#import "UIView+Extension.h"
+#import "Base_Define.h"
 @interface IB_MineHeaderView()
 
 @property (weak, nonatomic) IBOutlet UIView *topContainView;

@@ -11,6 +11,7 @@
 #import <CoreTelephony/CTCarrier.h>
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import "NetworkStatusUtil.h"
+#import "Base_Define.h"
 //#import "PRO_AccountModel.h"
 #import "Base_HUDTool.h"
 NSString *const kBaseUrl = @"http://113.106.125.42:8084";

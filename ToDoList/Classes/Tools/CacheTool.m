@@ -9,7 +9,7 @@
 #import "CacheTool.h"
 #import <objc/runtime.h>
 #import "NSString+Extension.h"
-
+#import "Base_Define.h"
 
 @interface CacheTool ()
 

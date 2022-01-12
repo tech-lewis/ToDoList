@@ -9,6 +9,8 @@
 #import "IB_MineFooterView.h"
 #import "UIButton+EnlargeTouchArea.h"
 #import "UILabel+Extension.h"
+#import "UIView+Extension.h"
+#import "Base_Define.h"
 @interface IB_MineFooterView()
 
 @property (nonatomic,strong) UILabel *titleL;

@@ -8,7 +8,7 @@
 
 #import "IB_HomeBannerCell.h"
 #import "SDCycleScrollView.h"
-
+#import "Base_Define.h"
 @implementation IB_HomeBannerCell
 
 -(instancetype)initWithFrame:(CGRect)frame {

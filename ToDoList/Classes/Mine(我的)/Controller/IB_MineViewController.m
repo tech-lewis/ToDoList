@@ -9,7 +9,9 @@
 #import "IB_MineViewController.h"
 #import "IB_MineHeaderView.h"
 #import "IB_MineFooterView.h"
+#import "UIView+Extension.h"
 #import "Base_TableView.h"
+#import "Base_Define.h"
 @interface IB_MineViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) Base_TableView *tableView;

@@ -7,6 +7,7 @@
 //
 
 #import "UIButton+EnlargeTouchArea.h"
+#import "UIView+Extension.h"
 #import <objc/message.h>
 
 @implementation UIButton(EnlargeTouchArea)

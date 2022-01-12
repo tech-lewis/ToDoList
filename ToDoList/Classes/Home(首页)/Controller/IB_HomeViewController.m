@@ -14,7 +14,9 @@
 #import "IB_HomeKindCell.h"
 #import "IB_HomeBannerCell.h"
 #import "IB_HomeSectionTitleHeaderView.h"
-
+#import "UIView+Extension.h"
+#import "Base_TableView.h"
+#import "Base_Define.h"
 #import "IB_StatisModel.h"
 
 @interface IB_HomeViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>

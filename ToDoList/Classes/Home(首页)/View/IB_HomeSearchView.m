@@ -7,7 +7,7 @@
 //
 
 #import "IB_HomeSearchView.h"
-
+#import "Base_Define.h"
 @implementation IB_HomeSearchView
 
 

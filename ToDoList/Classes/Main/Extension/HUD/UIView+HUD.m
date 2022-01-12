@@ -7,7 +7,7 @@
 //
 
 #import "UIView+HUD.h"
-
+#import "Base_Define.h"
 #import "SVProgressHUD.h"
 #import "JGProgressHUD.h"
 

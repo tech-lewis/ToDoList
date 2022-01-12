@@ -8,7 +8,7 @@
 
 #import "Base_BaseViewController.h"
 #import "UIView+Extension.h"
-
+#import "Base_Define.h"
 @interface Base_BaseViewController()
 
 
