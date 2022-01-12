@@ -7,8 +7,6 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface MJRefreshConfig : NSObject
 
 /** 默认使用的语言版本, 默认为 nil. 将随系统的语言自动改变 */
@@ -19,7 +17,4 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)init NS_UNAVAILABLE;
 + (instancetype)new NS_UNAVAILABLE;
-
 @end
-
-NS_ASSUME_NONNULL_END

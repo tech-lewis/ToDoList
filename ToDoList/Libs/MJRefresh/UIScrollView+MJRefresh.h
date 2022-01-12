@@ -12,8 +12,6 @@
 
 @class MJRefreshHeader, MJRefreshFooter;
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface UIScrollView (MJRefresh)
 /** 下拉刷新控件 */
 @property (strong, nonatomic, nullable) MJRefreshHeader *mj_header;
@@ -26,5 +24,3 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSInteger)mj_totalDataCount;
 
 @end
-
-NS_ASSUME_NONNULL_END

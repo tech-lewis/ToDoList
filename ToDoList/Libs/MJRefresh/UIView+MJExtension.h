@@ -6,10 +6,7 @@
 //  Created by MJ Lee on 14-5-28.
 //  Copyright (c) 2014年 小码哥. All rights reserved.
 //
-
 #import <UIKit/UIKit.h>
-
-NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (MJExtension)
 @property (assign, nonatomic) CGFloat mj_x;
@@ -19,5 +16,3 @@ NS_ASSUME_NONNULL_BEGIN
 @property (assign, nonatomic) CGSize mj_size;
 @property (assign, nonatomic) CGPoint mj_origin;
 @end
-
-NS_ASSUME_NONNULL_END

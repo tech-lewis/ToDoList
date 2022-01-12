@@ -9,8 +9,6 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface UIScrollView (MJExtension)
 @property (readonly, nonatomic) UIEdgeInsets mj_inset;
 
@@ -26,4 +24,3 @@ NS_ASSUME_NONNULL_BEGIN
 @property (assign, nonatomic) CGFloat mj_contentH;
 @end
 
-NS_ASSUME_NONNULL_END
