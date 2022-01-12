@@ -7,7 +7,9 @@
 //
 
 #import "CU_MineController.h"
-
+#import "CU_ChangeLanguageTool.h"
+#import "CU_Define.h"
+#import "CU_Const.h"
 @interface CU_MineController ()
 
 @property (nonatomic,strong) UILabel *testLab ;

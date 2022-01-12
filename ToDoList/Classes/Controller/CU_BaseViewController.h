@@ -7,11 +7,7 @@
 //
 
 #import "GKNavigationBarViewController.h"
-
-NS_ASSUME_NONNULL_BEGIN
-
+// #import "GKNavigationBarViewController.h"
 @interface CU_BaseViewController : GKNavigationBarViewController
 
 @end
-
-NS_ASSUME_NONNULL_END

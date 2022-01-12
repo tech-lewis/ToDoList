@@ -65,8 +65,6 @@
 		22F9FE1E278E836000FE1A00 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FE13278E836000FE1A00 /* MASConstraint.m */; };
 		22F9FE1F278E836000FE1A00 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FE15278E836000FE1A00 /* MASViewConstraint.m */; };
 		22F9FE20278E836000FE1A00 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FE16278E836000FE1A00 /* MASViewAttribute.m */; };
-		22F9FE48278E8EFF00FE1A00 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 22F9FE22278E8EFF00FE1A00 /* LICENSE */; };
-		22F9FE49278E8EFF00FE1A00 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 22F9FE23278E8EFF00FE1A00 /* README.md */; };
 		22F9FE4A278E8EFF00FE1A00 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FE25278E8EFF00FE1A00 /* UIProgressView+AFNetworking.m */; };
 		22F9FE4B278E8EFF00FE1A00 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FE27278E8EFF00FE1A00 /* UIRefreshControl+AFNetworking.m */; };
 		22F9FE4C278E8EFF00FE1A00 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FE2A278E8EFF00FE1A00 /* AFNetworkActivityIndicatorManager.m */; };
@@ -321,8 +319,6 @@
 		22F9FE14278E836000FE1A00 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		22F9FE15278E836000FE1A00 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
 		22F9FE16278E836000FE1A00 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
-		22F9FE22278E8EFF00FE1A00 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		22F9FE23278E8EFF00FE1A00 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		22F9FE25278E8EFF00FE1A00 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
 		22F9FE26278E8EFF00FE1A00 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AFNetworking.h"; sourceTree = "<group>"; };
 		22F9FE27278E8EFF00FE1A00 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
@@ -797,8 +793,6 @@
 		22F9FE21278E8EFF00FE1A00 /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				22F9FE22278E8EFF00FE1A00 /* LICENSE */,
-				22F9FE23278E8EFF00FE1A00 /* README.md */,
 				22F9FE24278E8EFF00FE1A00 /* UIKit+AFNetworking */,
 				22F9FE39278E8EFF00FE1A00 /* AFNetworking */,
 			);
@@ -1648,7 +1642,6 @@
 				22626FEA278E77DA00FC0B35 /* Main.storyboard in Resources */,
 				C5D181EF1BC1237300591BDE /* defaultArtistImage.png in Resources */,
 				22F9FEBC278E92F500FE1A00 /* MJRefresh.bundle in Resources */,
-				22F9FE49278E8EFF00FE1A00 /* README.md in Resources */,
 				C505DA3B1BBD3639009C94A6 /* line.png in Resources */,
 				C5161EAF1ACFCA76005E9CF6 /* InfoPlist.strings in Resources */,
 				2277DE61275B571200FE30A0 /* icon.png in Resources */,
@@ -1657,7 +1650,6 @@
 				C55FD82D1BA4851500D68486 /* Cell Background.png in Resources */,
 				C5161EB71ACFCA76005E9CF6 /* Images.xcassets in Resources */,
 				22F9FF40278ECB4B00FE1A00 /* GKNavigationBarViewController.bundle in Resources */,
-				22F9FE48278E8EFF00FE1A00 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
