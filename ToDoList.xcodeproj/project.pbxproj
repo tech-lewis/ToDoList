@@ -51,6 +51,10 @@
 		22F90051278ED22E00FE1A00 /* JGProgressHUDPieIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F90045278ED22E00FE1A00 /* JGProgressHUDPieIndicatorView.m */; };
 		22F90052278ED22E00FE1A00 /* JGProgressHUDShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F90046278ED22E00FE1A00 /* JGProgressHUDShadow.m */; };
 		22F90056278ED42D00FE1A00 /* SWFrameButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F90055278ED42D00FE1A00 /* SWFrameButton.m */; };
+		22F90060278ED64700FE1A00 /* YYDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F90058278ED64700FE1A00 /* YYDiskCache.m */; };
+		22F90061278ED64700FE1A00 /* YYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9005A278ED64700FE1A00 /* YYCache.m */; };
+		22F90062278ED64700FE1A00 /* YYKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9005E278ED64700FE1A00 /* YYKVStorage.m */; };
+		22F90063278ED64700FE1A00 /* YYMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9005F278ED64700FE1A00 /* YYMemoryCache.m */; };
 		22F9FE17278E836000FE1A00 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FDFF278E836000FE1A00 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		22F9FE18278E836000FE1A00 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FE08278E836000FE1A00 /* ViewController+MASAdditions.m */; };
 		22F9FE19278E836000FE1A00 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FE0C278E836000FE1A00 /* MASCompositeConstraint.m */; };
@@ -284,6 +288,14 @@
 		22F90046278ED22E00FE1A00 /* JGProgressHUDShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGProgressHUDShadow.m; sourceTree = "<group>"; };
 		22F90054278ED42D00FE1A00 /* SWFrameButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWFrameButton.h; sourceTree = "<group>"; };
 		22F90055278ED42D00FE1A00 /* SWFrameButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWFrameButton.m; sourceTree = "<group>"; };
+		22F90058278ED64700FE1A00 /* YYDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYDiskCache.m; sourceTree = "<group>"; };
+		22F90059278ED64700FE1A00 /* YYKVStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKVStorage.h; sourceTree = "<group>"; };
+		22F9005A278ED64700FE1A00 /* YYCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCache.m; sourceTree = "<group>"; };
+		22F9005B278ED64700FE1A00 /* YYMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMemoryCache.h; sourceTree = "<group>"; };
+		22F9005C278ED64700FE1A00 /* YYDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYDiskCache.h; sourceTree = "<group>"; };
+		22F9005D278ED64700FE1A00 /* YYCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCache.h; sourceTree = "<group>"; };
+		22F9005E278ED64700FE1A00 /* YYKVStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYKVStorage.m; sourceTree = "<group>"; };
+		22F9005F278ED64700FE1A00 /* YYMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMemoryCache.m; sourceTree = "<group>"; };
 		22F9FDFE278E836000FE1A00 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		22F9FDFF278E836000FE1A00 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		22F9FE00278E836000FE1A00 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -704,6 +716,21 @@
 			path = SWFrameButton;
 			sourceTree = "<group>";
 		};
+		22F90057278ED64700FE1A00 /* YYCache */ = {
+			isa = PBXGroup;
+			children = (
+				22F90058278ED64700FE1A00 /* YYDiskCache.m */,
+				22F90059278ED64700FE1A00 /* YYKVStorage.h */,
+				22F9005A278ED64700FE1A00 /* YYCache.m */,
+				22F9005B278ED64700FE1A00 /* YYMemoryCache.h */,
+				22F9005C278ED64700FE1A00 /* YYDiskCache.h */,
+				22F9005D278ED64700FE1A00 /* YYCache.h */,
+				22F9005E278ED64700FE1A00 /* YYKVStorage.m */,
+				22F9005F278ED64700FE1A00 /* YYMemoryCache.m */,
+			);
+			path = YYCache;
+			sourceTree = "<group>";
+		};
 		22F9FC89278E821300FE1A00 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -721,6 +748,7 @@
 		22F9FDC4278E82D200FE1A00 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				22F90057278ED64700FE1A00 /* YYCache */,
 				22F90053278ED42D00FE1A00 /* SWFrameButton */,
 				22F9002C278ED22E00FE1A00 /* JGProgressHUD */,
 				22F9000C278ECF4400FE1A00 /* MJExtension */,
@@ -1655,7 +1683,9 @@
 				22F9FF3A278ECB4B00FE1A00 /* UIBarButtonItem+GKCategory.m in Sources */,
 				22F9FE7D278E909E00FE1A00 /* UIImageView+HighlightedWebCache.m in Sources */,
 				22F9FFD6278ECE0A00FE1A00 /* CU_MineView.m in Sources */,
+				22F90063278ED64700FE1A00 /* YYMemoryCache.m in Sources */,
 				22F90052278ED22E00FE1A00 /* JGProgressHUDShadow.m in Sources */,
+				22F90062278ED64700FE1A00 /* YYKVStorage.m in Sources */,
 				22F9FFCE278ECE0A00FE1A00 /* CU_GoodsCategoryController.m in Sources */,
 				22F9004F278ED22E00FE1A00 /* JGProgressHUDFadeAnimation.m in Sources */,
 				22F9FE7C278E909E00FE1A00 /* SDWebImageDecoder.m in Sources */,
@@ -1722,6 +1752,7 @@
 				22F90048278ED22E00FE1A00 /* JGProgressHUDErrorIndicatorView.m in Sources */,
 				22F9FFE8278ECE3B00FE1A00 /* CU_Tools.m in Sources */,
 				22F9FECB278E92F500FE1A00 /* MJRefreshBackFooter.m in Sources */,
+				22F90061278ED64700FE1A00 /* YYCache.m in Sources */,
 				22F9FEC1278E92F500FE1A00 /* MJRefreshBackStateFooter.m in Sources */,
 				222DF8B2275B7EF30036AED1 /* BiDToDoListViewController.m in Sources */,
 				22F90027278ECF4400FE1A00 /* NSObject+MJProperty.m in Sources */,
@@ -1747,6 +1778,7 @@
 				22F9FE50278E8EFF00FE1A00 /* UIWebView+AFNetworking.m in Sources */,
 				22F9FE57278E8EFF00FE1A00 /* AFNetworkReachabilityManager.m in Sources */,
 				22F9FF0A278EC9CF00FE1A00 /* UIViewController+HUD.m in Sources */,
+				22F90060278ED64700FE1A00 /* YYDiskCache.m in Sources */,
 				22F90006278ECF1C00FE1A00 /* BRResultModel.m in Sources */,
 				22F9FFD1278ECE0A00FE1A00 /* CU_HomeController.m in Sources */,
 				22F9FE1F278E836000FE1A00 /* MASViewConstraint.m in Sources */,

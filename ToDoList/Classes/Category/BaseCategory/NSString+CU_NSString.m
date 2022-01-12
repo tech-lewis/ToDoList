@@ -7,7 +7,7 @@
 //
 
 #import "NSString+CU_NSString.h"
-
+#import "NSString+MJExtension.h"
 @implementation NSString (CU_NSString)
 
 /**
