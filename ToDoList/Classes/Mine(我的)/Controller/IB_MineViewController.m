@@ -35,8 +35,8 @@
 -(void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     
-    self.headeView.size = CGSizeMake(kScreenWidth, 265);
-    self.tableView.tableHeaderView   = self.headeView;
+    self.footerView.size = CGSizeMake(kScreenWidth,kScreenWidth * 0.6);
+    self.tableView.tableFooterView = self.footerView;
 }
 
 #pragma mark - UITableView_DataSource

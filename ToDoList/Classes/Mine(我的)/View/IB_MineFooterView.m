@@ -8,10 +8,10 @@
 
 #import "IB_MineFooterView.h"
 #import "UIButton+EnlargeTouchArea.h"
-#import "UILabel+Extension.h"
-#import "UIView+Extension.h"
-#import "Base_Define.h"
+
+
 @interface IB_MineFooterView()
+
 
 @property (nonatomic,strong) UILabel *titleL;
 
@@ -39,14 +39,21 @@
     
     _lineView.frame = CGRectMake(0, 0, self.width, 10);
     
-    _titleL.frame = CGRectMake(15, 10, kScreenWidth - 30, 44);
+    _topView.frame = CGRectMake(0, 10, self.width, self.topView.showBranch ? 133 : 88);
+    _titleL.frame = CGRectMake(15, CGRectGetMaxY(_topView.frame)+1, kScreenWidth - 30, 44);
     CGFloat bottomY = CGRectGetMaxY(_titleL.frame);
     _bottomView.frame = CGRectMake(0, bottomY, kScreenWidth, self.height - bottomY);
     
-    CGFloat padding = 30;
-    CGFloat middPading = 15;
+    CGFloat padding = kScreenWidth <= 375 ? 15 : 20;
+    CGFloat middPading = kScreenWidth < 375 ? 8: 10;
+    
+    if (kScreenWidth < 375) {
+        padding = 20;
+    }
+    
     CGFloat btnW = (kScreenWidth - padding*2 - 3*padding)/4.0;
-    CGFloat btnH = (_bottomView.height - middPading-10)/2.0;
+    CGFloat btnH = (_bottomView.height - middPading-20)/2.0;
+    
     
     for (int i = 0; i < _bottomView.subviews.count; i++) {
         
@@ -61,9 +68,16 @@
 }
 
 
+-(void)setDelegate:(id<IB_MineFooterViewDelegate,IB_MineFooterListViewDelegate>)delegate {
+    _delegate = delegate;
+    self.topView.delegate = delegate;
+}
+
 -(void)buttonClick:(UIButton *)button {
     
-    NSLog(@"点击：@",button.titleLabel.text);
+    if ([self.delegate respondsToSelector:@selector(IB_MineFooterViewDidClickMenuBtn:)]) {
+        [self.delegate IB_MineFooterViewDidClickMenuBtn:button.titleLabel.text];
+    }
 }
 
 #pragma mark - setupUI
@@ -78,16 +92,20 @@
     
     _bottomView  = [[UIView alloc]init];
     
+    _topView = [[NSBundle mainBundle]loadNibNamed:@"IB_MineFooterListView" owner:nil options:nil].firstObject;
+    
+    [self addSubview:_topView];
     [self addSubview:_lineView];
     [self addSubview:_titleL];
     [self addSubview:_bottomView];
     
-    NSArray *titlesArray = @[@"店铺信息",@"使用帮助",@"设置",@"在线客服",@"余额管理",@"退货单"];
-    NSArray *imagesArray = @[@"u-home",@"u-help",@"u-set",@"u-fill",@"u-yue",@"u-tuih"];
+    
+    NSArray *titlesArray = @[kShopInfoKey,kHelpKey,kSettingKey,kPayKey,kBalanceKey,kBankKey,kRefundKey,kLogout];
+    NSArray *imagesArray = @[@"u-home",@"u-help",@"u-set",@"u_pay",@"u_yu",@"u_bank",@"u-tuih",@"u_lougout"];
     
     for (int i = 0; i < titlesArray.count; i++) {
         UIButton *button = [[UIButton alloc]init];
-        button.titleLabel.font = kFontX14;
+        button.titleLabel.font = kScreenWidth < 375 ? kFontM11 : kFontS13;
         button.tag = i;
         [button setTitle:titlesArray[i] forState:UIControlStateNormal];
         [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
