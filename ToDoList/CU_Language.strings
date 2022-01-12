@@ -1,0 +1,24 @@
+/* 
+  CU_Language.strings
+  ToDoList
+
+  Created by MarkLwis on 2022/1/12.
+  Copyright © 2022 TechLewis. All rights reserved.
+*/
+//首页
+"Home_Tab" = "首页";
+
+//分类
+"Category_Tab" = "分类";
+
+//商家
+"Shop_Tab" = "商家";
+
+//购物车
+"Cart_Tab" = "购物车";
+
+//个人中心
+"Mine_Tab" = "我的";
+"Mine_text" = "悄悄是别离的笙箫，沉默是今晚的康桥";
+"Mine_button" = "切换语言";
+
