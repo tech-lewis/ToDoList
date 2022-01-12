@@ -37,13 +37,10 @@ static NSString *const ReuseID_HomeSectionTitleHeaderView = @"IB_HomeSectionTitl
 @implementation IB_HomeViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-
-    [self setupUI];
-    
-    [self configeGroupData];
-    
-    [self requestHomeData];
+  [super viewDidLoad];
+  [self setupUI];
+  [self configeGroupData];
+  [self requestHomeData];
     
 }
 
@@ -84,7 +81,7 @@ static NSString *const ReuseID_HomeSectionTitleHeaderView = @"IB_HomeSectionTitl
     configerModel2.insets = UIEdgeInsetsMake(0, 10, 0, 10);
     configerModel2.headerHeight = 44;
     
-    self.configerGroups = @[configerModel,configerModel1,configerModel2];
+     self.configerGroups = @[configerModel,configerModel1,configerModel2];
     
 }
 
