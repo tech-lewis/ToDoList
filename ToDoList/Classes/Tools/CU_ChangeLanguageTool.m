@@ -38,7 +38,7 @@ static NSBundle *bundle = nil;
     
     //获取文件路径
     NSString *path = [[NSBundle mainBundle] pathForResource:currLanguage ofType:@"lproj"];
-    bundle = [NSBundle bundleWithPath:path];//生成bundle
+    bundle = [NSBundle mainBundle];//生成bundle
 }
 
 //获取当前语言
