@@ -7,7 +7,7 @@
 //
 
 #import "UIView+HUD.h"
-#import <JGProgressHUD/JGProgressHUD.h>
+#import "JGProgressHUD.h"
 #import <objc/runtime.h>
 
 #define BCHudTag 99999

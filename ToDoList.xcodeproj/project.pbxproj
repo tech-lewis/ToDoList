@@ -50,6 +50,7 @@
 		22F90050278ED22E00FE1A00 /* JGProgressHUDRingIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F90044278ED22E00FE1A00 /* JGProgressHUDRingIndicatorView.m */; };
 		22F90051278ED22E00FE1A00 /* JGProgressHUDPieIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F90045278ED22E00FE1A00 /* JGProgressHUDPieIndicatorView.m */; };
 		22F90052278ED22E00FE1A00 /* JGProgressHUDShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F90046278ED22E00FE1A00 /* JGProgressHUDShadow.m */; };
+		22F90056278ED42D00FE1A00 /* SWFrameButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F90055278ED42D00FE1A00 /* SWFrameButton.m */; };
 		22F9FE17278E836000FE1A00 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FDFF278E836000FE1A00 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		22F9FE18278E836000FE1A00 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FE08278E836000FE1A00 /* ViewController+MASAdditions.m */; };
 		22F9FE19278E836000FE1A00 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FE0C278E836000FE1A00 /* MASCompositeConstraint.m */; };
@@ -281,6 +282,8 @@
 		22F90044278ED22E00FE1A00 /* JGProgressHUDRingIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGProgressHUDRingIndicatorView.m; sourceTree = "<group>"; };
 		22F90045278ED22E00FE1A00 /* JGProgressHUDPieIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGProgressHUDPieIndicatorView.m; sourceTree = "<group>"; };
 		22F90046278ED22E00FE1A00 /* JGProgressHUDShadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGProgressHUDShadow.m; sourceTree = "<group>"; };
+		22F90054278ED42D00FE1A00 /* SWFrameButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWFrameButton.h; sourceTree = "<group>"; };
+		22F90055278ED42D00FE1A00 /* SWFrameButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWFrameButton.m; sourceTree = "<group>"; };
 		22F9FDFE278E836000FE1A00 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		22F9FDFF278E836000FE1A00 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		22F9FE00278E836000FE1A00 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -692,6 +695,15 @@
 			path = include;
 			sourceTree = "<group>";
 		};
+		22F90053278ED42D00FE1A00 /* SWFrameButton */ = {
+			isa = PBXGroup;
+			children = (
+				22F90054278ED42D00FE1A00 /* SWFrameButton.h */,
+				22F90055278ED42D00FE1A00 /* SWFrameButton.m */,
+			);
+			path = SWFrameButton;
+			sourceTree = "<group>";
+		};
 		22F9FC89278E821300FE1A00 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -709,6 +721,7 @@
 		22F9FDC4278E82D200FE1A00 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				22F90053278ED42D00FE1A00 /* SWFrameButton */,
 				22F9002C278ED22E00FE1A00 /* JGProgressHUD */,
 				22F9000C278ECF4400FE1A00 /* MJExtension */,
 				22F9FF43278ECD8200FE1A00 /* BRPickerView */,
@@ -1762,6 +1775,7 @@
 				22F90024278ECF4400FE1A00 /* MJProperty.m in Sources */,
 				22F90025278ECF4400FE1A00 /* NSObject+MJCoding.m in Sources */,
 				22F9FE1D278E836000FE1A00 /* View+MASAdditions.m in Sources */,
+				22F90056278ED42D00FE1A00 /* SWFrameButton.m in Sources */,
 				222DF8B6275B7EF30036AED1 /* MusicListViewController.m in Sources */,
 				22F9FFD0278ECE0A00FE1A00 /* CU_GoodsCategoryView.m in Sources */,
 				22F90050278ED22E00FE1A00 /* JGProgressHUDRingIndicatorView.m in Sources */,
