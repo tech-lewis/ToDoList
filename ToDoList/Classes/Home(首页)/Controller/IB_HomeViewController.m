@@ -53,9 +53,7 @@ static NSString *const ReuseID_HomeSectionTitleHeaderView = @"IB_HomeSectionTitl
     
     IB_HomeParam *param = [[IB_HomeParam alloc]init];
     
-    [NetworkTool requestHomeData:param completion:^(BOOL sucess, id obj, NSString *message) {
-        
-    }];
+    // [NetworkTool requestHomeData:param completion:^(BOOL sucess, id obj, NSString *message) {}];
 }
 
 #pragma mark - configerGroupData

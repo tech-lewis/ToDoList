@@ -7,7 +7,8 @@
 //
 
 #import "Base_TableView.h"
-
+#import "Base_Define.h"
+#import "MJRefresh.h"
 @implementation Base_TableView
 
 -(instancetype)initWithFrame:(CGRect)frame style:(UITableViewStyle)style {
