@@ -7,18 +7,14 @@
 //
 
 #import "BiDAppDelegate.h"
-#import "IB_HomeViewController.h"
-#import "IM_TypeController.h"
-#import "IM_ShopCarController.h"
-#import "IB_MineViewController.h"
-#import "MainTabbarViewController.h"
+#import "BiDToDoListViewController.h"
 @implementation BiDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-  UIViewController *controller = [[IB_MineViewController alloc] init];
-  // controller.title = @"home";
+  UIViewController *controller = [[UIViewController alloc] init];
+  controller.title = @"home";
   controller.view.backgroundColor = [UIColor grayColor];
   self.window.rootViewController = controller;
   return YES;

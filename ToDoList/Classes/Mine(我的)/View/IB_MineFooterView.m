@@ -6,9 +6,6 @@
 //  Copyright © 2019 imbaby.com. All rights reserved.
 //
 
-#import "IB_MineFooterView.h"
-#import "UIButton+EnlargeTouchArea.h"
-
 
 @interface IB_MineFooterView()
 
