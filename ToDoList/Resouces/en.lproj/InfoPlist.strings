@@ -1,0 +1,12 @@
+/* 
+  InfoPlist.strings
+  cu
+
+  Created by 钟小麦 on 2019/8/22.
+  Copyright © 2019 NZ. All rights reserved.
+*/
+
+
+CFBundleDisplayName="Cloud Union";//App名称
+
+//系统权限国际化

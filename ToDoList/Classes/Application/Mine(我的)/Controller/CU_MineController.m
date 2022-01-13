@@ -38,12 +38,16 @@
 #pragma mark - UI布局
 -(void) configUI{
     [self.view addSubview:self.testLab] ;
+    
     [self.testLab mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo(100.0);
+        make.leading.trailing.equalTo(self.view);
         make.center.equalTo(self.view) ;
     }] ;
     [self.view addSubview:self.testBtn] ;
     [self.testBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(self.view) ;
+
+        make.centerX.equalTo(self.view);
         make.top.equalTo(self.testLab.mas_bottom).offset(kAdaptedWidth(100)) ;
     }] ;
 
@@ -74,7 +78,7 @@
             label.textColor = [UIColor grayColor];//设置字体颜色
             label.font = [UIFont fontWithName:@"PingFangSC-Regular" size:16];//设置字体大小
             label.textAlignment = NSTextAlignmentLeft;///设置对齐方式
-            label.numberOfLines = 1; //行数
+            label.numberOfLines = 0; //行数
             
             label ;
         }) ;
