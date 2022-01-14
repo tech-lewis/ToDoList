@@ -28,7 +28,7 @@
     
     [self addChildVcIs:[[CU_HomeController alloc]init] WithTitle:@"" andImage:@"tab_home" andSelectImage:@"tab_home_s"];
     [self addChildVcIs:[[CU_GoodsCategoryController alloc]init] WithTitle:@"" andImage:@"tab_category" andSelectImage:@"tab_category_s"];
-    [self addChildVcIs:[[CU_SellerShopController alloc]init] WithTitle:@"" andImage:@"tab_shop" andSelectImage:@"tab_shop_s"];
+//    [self addChildVcIs:[[CU_SellerShopController alloc]init] WithTitle:@"" andImage:@"tab_shop" andSelectImage:@"tab_shop_s"];
     [self addChildVcIs:[[CU_ShoppingCartController alloc]init] WithTitle:@"" andImage:@"tab_cart" andSelectImage:@"tab_cart_s"];
     [self addChildVcIs:[[CU_MineController alloc]init] WithTitle:@"" andImage:@"tab_mine" andSelectImage:@"tab_mine_s"];
     

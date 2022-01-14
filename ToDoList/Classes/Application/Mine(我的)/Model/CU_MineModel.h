@@ -7,11 +7,7 @@
 //
 
 #import "CU_BaseModel.h"
-
-NS_ASSUME_NONNULL_BEGIN
-
 @interface CU_MineModel : CU_BaseModel
-
+@property (nonatomic,copy) NSString *leftImgName;
+@property (nonatomic,copy) NSString *title;
 @end
-
-NS_ASSUME_NONNULL_END

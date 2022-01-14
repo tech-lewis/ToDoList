@@ -1,8 +1,8 @@
 //
-//  CU_ShoppingCartView.h
+//  CU_MineSectionHeaderView.h
 //  cu
 //
-//  Created by 钟小麦 on 2019/8/21.
+//  Created by 钟小麦 on 2019/9/1.
 //  Copyright © 2019 NZ. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CU_ShoppingCartView : UIView
+@interface CU_MineSectionHeaderView : UITableViewHeaderFooterView
 
 @end
 
