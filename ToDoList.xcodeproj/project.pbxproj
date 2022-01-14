@@ -228,6 +228,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2218061127913AFA0048DD6E /* ToDoList-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToDoList-Bridging-Header.h"; sourceTree = "<group>"; };
 		222DF89F275B7EF30036AED1 /* BiDAddToDoItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiDAddToDoItemViewController.h; sourceTree = "<group>"; };
 		222DF8A0275B7EF30036AED1 /* BiDAddToDoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BiDAddToDoItemViewController.m; sourceTree = "<group>"; };
 		222DF8A1275B7EF30036AED1 /* BiDEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiDEditorViewController.h; sourceTree = "<group>"; };
@@ -643,6 +644,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2218061427913B1E0048DD6E /* Note(备忘录) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Note(备忘录)";
+			sourceTree = "<group>";
+		};
 		222DF89E275B7EF30036AED1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -1264,6 +1272,7 @@
 		22F9FF91278ECE0A00FE1A00 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				2218061427913B1E0048DD6E /* Note(备忘录) */,
 				22F9FF92278ECE0A00FE1A00 /* GoodsCategory(分类) */,
 				22F9FF9C278ECE0A00FE1A00 /* Home(首页) */,
 				22F9FFA6278ECE0A00FE1A00 /* Mine(我的) */,
@@ -1590,6 +1599,7 @@
 				C5071E5D1BBD502B00DAA4E0 /* Category */,
 				C5161EAB1ACFCA76005E9CF6 /* Supporting Files */,
 				22B4B26F27901904003BC1B4 /* Launch Screen.storyboard */,
+				2218061127913AFA0048DD6E /* ToDoList-Bridging-Header.h */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -1694,6 +1704,7 @@
 				TargetAttributes = {
 					C5161EA01ACFCA76005E9CF6 = {
 						DevelopmentTeam = YSYEV7MGT7;
+						LastSwiftMigration = 1310;
 						ProvisioningStyle = Automatic;
 					};
 					C5161EBB1ACFCA76005E9CF6 = {
@@ -2067,6 +2078,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
@@ -2077,9 +2089,13 @@
 				GCC_PREFIX_HEADER = "ToDoList/ToDoList-Prefix.pch";
 				INFOPLIST_FILE = "ToDoList/ToDoList-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.1.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ToDoList/ToDoList-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -2088,6 +2104,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -2097,9 +2114,12 @@
 				GCC_PREFIX_HEADER = "ToDoList/ToDoList-Prefix.pch";
 				INFOPLIST_FILE = "ToDoList/ToDoList-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.1.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ToDoList/ToDoList-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
