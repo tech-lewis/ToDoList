@@ -14,6 +14,13 @@
 		2218062327913BBA0048DD6E /* HomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2218061F27913BBA0048DD6E /* HomeDetailViewController.swift */; };
 		2218062427913BBA0048DD6E /* AddNewNoteEditorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2218062027913BBA0048DD6E /* AddNewNoteEditorController.swift */; };
 		2218062527913BBA0048DD6E /* AddNewNoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2218062127913BBA0048DD6E /* AddNewNoteController.swift */; };
+		2218063227913C5C0048DD6E /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2218062827913C5B0048DD6E /* FMDatabaseQueue.m */; };
+		2218063327913C5C0048DD6E /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2218062B27913C5B0048DD6E /* FMDatabaseAdditions.m */; };
+		2218063427913C5C0048DD6E /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2218062C27913C5B0048DD6E /* FMDatabase.m */; };
+		2218063527913C5C0048DD6E /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2218063027913C5B0048DD6E /* FMDatabasePool.m */; };
+		2218063627913C5C0048DD6E /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2218063127913C5B0048DD6E /* FMResultSet.m */; };
+		2218063827913CCA0048DD6E /* ComposeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2218063727913CCA0048DD6E /* ComposeTextView.swift */; };
+		2218063B27913FEB0048DD6E /* BiDSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2218063A27913FEB0048DD6E /* BiDSwiftViewController.swift */; };
 		222DF8B0275B7EF30036AED1 /* BiDAddToDoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8A0275B7EF30036AED1 /* BiDAddToDoItemViewController.m */; };
 		222DF8B1275B7EF30036AED1 /* BiDEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8A2275B7EF30036AED1 /* BiDEditorViewController.m */; };
 		222DF8B2275B7EF30036AED1 /* BiDToDoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8A4275B7EF30036AED1 /* BiDToDoListViewController.m */; };
@@ -245,6 +252,19 @@
 		2218061F27913BBA0048DD6E /* HomeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDetailViewController.swift; sourceTree = "<group>"; };
 		2218062027913BBA0048DD6E /* AddNewNoteEditorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewNoteEditorController.swift; sourceTree = "<group>"; };
 		2218062127913BBA0048DD6E /* AddNewNoteController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewNoteController.swift; sourceTree = "<group>"; };
+		2218062727913C5B0048DD6E /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		2218062827913C5B0048DD6E /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		2218062927913C5B0048DD6E /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		2218062A27913C5B0048DD6E /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		2218062B27913C5B0048DD6E /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		2218062C27913C5B0048DD6E /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		2218062D27913C5B0048DD6E /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		2218062E27913C5B0048DD6E /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		2218062F27913C5B0048DD6E /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		2218063027913C5B0048DD6E /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		2218063127913C5B0048DD6E /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		2218063727913CCA0048DD6E /* ComposeTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeTextView.swift; sourceTree = "<group>"; };
+		2218063A27913FEB0048DD6E /* BiDSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiDSwiftViewController.swift; sourceTree = "<group>"; };
 		222DF89F275B7EF30036AED1 /* BiDAddToDoItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiDAddToDoItemViewController.h; sourceTree = "<group>"; };
 		222DF8A0275B7EF30036AED1 /* BiDAddToDoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BiDAddToDoItemViewController.m; sourceTree = "<group>"; };
 		222DF8A1275B7EF30036AED1 /* BiDEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiDEditorViewController.h; sourceTree = "<group>"; };
@@ -668,6 +688,7 @@
 				2218061F27913BBA0048DD6E /* HomeDetailViewController.swift */,
 				2218061E27913BBA0048DD6E /* HomeTableViewController.swift */,
 				2218061C27913B9D0048DD6E /* NoteEditTextField.swift */,
+				2218063727913CCA0048DD6E /* ComposeTextView.swift */,
 				2218061527913B7F0048DD6E /* Models */,
 			);
 			path = "Note(备忘录)";
@@ -682,6 +703,24 @@
 				2218061827913B8B0048DD6E /* NoteListModel.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		2218062627913C5B0048DD6E /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				2218062727913C5B0048DD6E /* FMDatabase.h */,
+				2218062827913C5B0048DD6E /* FMDatabaseQueue.m */,
+				2218062927913C5B0048DD6E /* FMResultSet.h */,
+				2218062A27913C5B0048DD6E /* FMDatabasePool.h */,
+				2218062B27913C5B0048DD6E /* FMDatabaseAdditions.m */,
+				2218062C27913C5B0048DD6E /* FMDatabase.m */,
+				2218062D27913C5B0048DD6E /* FMDatabaseQueue.h */,
+				2218062E27913C5B0048DD6E /* FMDB.h */,
+				2218062F27913C5B0048DD6E /* FMDatabaseAdditions.h */,
+				2218063027913C5B0048DD6E /* FMDatabasePool.m */,
+				2218063127913C5B0048DD6E /* FMResultSet.m */,
+			);
+			path = fmdb;
 			sourceTree = "<group>";
 		};
 		222DF89E275B7EF30036AED1 /* Controller */ = {
@@ -877,6 +916,7 @@
 		22F9FDC4278E82D200FE1A00 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				2218062627913C5B0048DD6E /* fmdb */,
 				22B4B28627913514003BC1B4 /* BEMCheckBox */,
 				22F90057278ED64700FE1A00 /* YYCache */,
 				22F90053278ED42D00FE1A00 /* SWFrameButton */,
@@ -1633,6 +1673,7 @@
 				C5161EAB1ACFCA76005E9CF6 /* Supporting Files */,
 				22B4B26F27901904003BC1B4 /* Launch Screen.storyboard */,
 				2218061127913AFA0048DD6E /* ToDoList-Bridging-Header.h */,
+				2218063A27913FEB0048DD6E /* BiDSwiftViewController.swift */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -1846,6 +1887,7 @@
 				22F9FED4278EC95F00FE1A00 /* APPNetworkHelper.m in Sources */,
 				22F9002A278ECF4400FE1A00 /* MJPropertyKey.m in Sources */,
 				22F9FFE7278ECE3B00FE1A00 /* CU_CacheManager.m in Sources */,
+				2218063227913C5C0048DD6E /* FMDatabaseQueue.m in Sources */,
 				22F9FF0E278EC9CF00FE1A00 /* UIButton+CU_ImageTitleBtn.m in Sources */,
 				22F9FE1C278E836000FE1A00 /* NSArray+MASAdditions.m in Sources */,
 				22F9FF06278EC9CF00FE1A00 /* CU_EdgeLabel.m in Sources */,
@@ -1858,6 +1900,7 @@
 				22F9FEC6278E92F500FE1A00 /* MJRefreshNormalHeader.m in Sources */,
 				22F9FEB9278E92F500FE1A00 /* UIScrollView+MJRefresh.m in Sources */,
 				22F90009278ECF1C00FE1A00 /* BRAddressPickerView.m in Sources */,
+				2218063B27913FEB0048DD6E /* BiDSwiftViewController.swift in Sources */,
 				22F9FED5278EC95F00FE1A00 /* APPNetworkCache.m in Sources */,
 				22F90029278ECF4400FE1A00 /* NSString+MJExtension.m in Sources */,
 				22B4B27D279132DE003BC1B4 /* CU_MineHeaderView.m in Sources */,
@@ -1914,9 +1957,12 @@
 				22F90022278ECF4400FE1A00 /* MJPropertyType.m in Sources */,
 				22B4B29027913514003BC1B4 /* BEMPathManager.m in Sources */,
 				22F90028278ECF4400FE1A00 /* NSObject+MJClass.m in Sources */,
+				2218063327913C5C0048DD6E /* FMDatabaseAdditions.m in Sources */,
 				22F9FE50278E8EFF00FE1A00 /* UIWebView+AFNetworking.m in Sources */,
+				2218063827913CCA0048DD6E /* ComposeTextView.swift in Sources */,
 				22F9FE57278E8EFF00FE1A00 /* AFNetworkReachabilityManager.m in Sources */,
 				22F9FF0A278EC9CF00FE1A00 /* UIViewController+HUD.m in Sources */,
+				2218063627913C5C0048DD6E /* FMResultSet.m in Sources */,
 				22B4B28527913468003BC1B4 /* CU_ShoppingCartSectionHeaderView.m in Sources */,
 				22F90060278ED64700FE1A00 /* YYDiskCache.m in Sources */,
 				22F90006278ECF1C00FE1A00 /* BRResultModel.m in Sources */,
@@ -1934,6 +1980,7 @@
 				22F9FE58278E8EFF00FE1A00 /* AFSecurityPolicy.m in Sources */,
 				222DF8B5275B7EF30036AED1 /* FoldableView.m in Sources */,
 				22F9FF13278EC9CF00FE1A00 /* CU_BaseParam.m in Sources */,
+				2218063527913C5C0048DD6E /* FMDatabasePool.m in Sources */,
 				22F90005278ECF1C00FE1A00 /* NSBundle+BRPickerView.m in Sources */,
 				22F9FEC9278E92F500FE1A00 /* MJRefreshFooter.m in Sources */,
 				22F9FEBF278E92F500FE1A00 /* UIView+MJExtension.m in Sources */,
@@ -1954,6 +2001,7 @@
 				22F90050278ED22E00FE1A00 /* JGProgressHUDRingIndicatorView.m in Sources */,
 				22F9FF38278ECB4B00FE1A00 /* GKBaseTransitionAnimation.m in Sources */,
 				22B4B29227913514003BC1B4 /* BEMCheckBox.m in Sources */,
+				2218063427913C5C0048DD6E /* FMDatabase.m in Sources */,
 				22F9004C278ED22E00FE1A00 /* JGProgressHUDSuccessIndicatorView.m in Sources */,
 				22F9FFD3278ECE0A00FE1A00 /* CU_HomeView.m in Sources */,
 				22F9FE19278E836000FE1A00 /* MASCompositeConstraint.m in Sources */,
