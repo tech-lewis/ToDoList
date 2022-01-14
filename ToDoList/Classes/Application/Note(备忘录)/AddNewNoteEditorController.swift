@@ -74,7 +74,7 @@ class AddNewNoteEditorController: UIViewController {
         customTextView.delegate = self
         
         // 2.监听键盘变化
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(note:)), name: Notification.Name.UIKeyboardWillChangeFrame, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(note:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
     }
     
     deinit
@@ -88,12 +88,12 @@ class AddNewNoteEditorController: UIViewController {
     @objc private func keyboardWillChange(note: NSNotification)
     {
         // 获取键盘弹出和退出的时间
-        let durationTime = note.userInfo![UIKeyboardAnimationDurationUserInfoKey] as! Double
+        let durationTime = note.userInfo![UIResponder.keyboardAnimationDurationUserInfoKey] as! Double
         
         // 获取和底部的差距
         
         
-        let endFrame = (note.userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue;
+        let endFrame = (note.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue;
         var margin = view.frame.size.height - endFrame.origin.y
         //IPX -34
         if margin>0
@@ -118,7 +118,7 @@ class AddNewNoteEditorController: UIViewController {
         //toolBarBottomCons.constant = margin
         UIView.animate(withDuration: durationTime) {
         // 如果执行多次动画,则忽略上一次已经未完成的动画,直接进入下一次
-        UIView.setAnimationCurve(UIViewAnimationCurve(rawValue: 7)!)
+        UIView.setAnimationCurve(UIView.AnimationCurve(rawValue: 7)!)
             print(self.bottomToolbar.frame)
             self.view.layoutIfNeeded()
         }

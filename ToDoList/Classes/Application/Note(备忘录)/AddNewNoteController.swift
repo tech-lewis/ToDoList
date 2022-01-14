@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import ApplicationKit
+
 class AddNewNoteController: UIViewController {
 
     private var categoryValue = 6 //默认为其他
@@ -124,7 +124,7 @@ class AddNewNoteController: UIViewController {
             make?.width.equalTo()(300.0)
         }
         let titleBottomBorder2 = UIView()
-        titleBottomBorder2.backgroundColor = Color.textOfLight
+        titleBottomBorder2.backgroundColor = UIColor.gray
         subtitleTF.addSubview(titleBottomBorder2)
         titleBottomBorder2.mas_makeConstraints { make in
             make?.top.equalTo()(self.subtitleTF.mas_bottom)
@@ -162,7 +162,7 @@ class AddNewNoteController: UIViewController {
             make?.width.equalTo()(300.0)
         }
         let detailBottomBorder = UIView()
-        detailBottomBorder.backgroundColor = Color.textOfLight
+        detailBottomBorder.backgroundColor = UIColor.gray
         detailTextarea.addSubview(detailBottomBorder)
         detailBottomBorder.mas_makeConstraints { make in
             make?.top.equalTo()(self.detailTextarea.mas_bottom)

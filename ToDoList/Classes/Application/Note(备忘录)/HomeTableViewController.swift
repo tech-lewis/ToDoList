@@ -43,7 +43,7 @@ class HomeTableViewController: UITableViewController {
 //        UIGraphicsEndImageContext()
 //        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTestData))
-      NotificationCenter.default.addObserver(self, selector: #selector(addTestData), name: clickCenterButtonNotification, object: nil)
+//      NotificationCenter.default.addObserver(self, selector: #selector(addTestData), name: clickCenterButtonNotification, object: nil)
     }
   
   override func viewWillDisappear(_ animated: Bool) {
@@ -70,7 +70,7 @@ extension HomeTableViewController {
         let identifier = "homeDetailCell"
         var cell = tableView.dequeueReusableCell(withIdentifier: identifier)
         if cell == nil{
-            cell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier:  identifier)
+            cell = UITableViewCell(style: .subtitle, reuseIdentifier:  identifier)
         }
         // Configure the cell...
         //setup
