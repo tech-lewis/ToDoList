@@ -130,7 +130,7 @@ static AFHTTPSessionManager *_sessionManager;
     }else{
         switch (hostType) {
             case DefaultHost:
-                rightUrl = [NSString stringWithFormat:@"%@%@",kAppHost,URL] ;
+                // rightUrl = [NSString stringWithFormat:@"%@%@",kAppHost,URL] ;
                 break;
             default:
                 break;
@@ -175,7 +175,7 @@ static AFHTTPSessionManager *_sessionManager;
     }else{
         switch (hostType) {
             case DefaultHost:
-                rightUrl = [NSString stringWithFormat:@"%@%@",kAppHost,URL] ;
+                // rightUrl = [NSString stringWithFormat:@"%@%@",kAppHost,URL] ;
                 break;
             default:
                 break;
