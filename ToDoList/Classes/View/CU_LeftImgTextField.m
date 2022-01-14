@@ -7,7 +7,7 @@
 //
 
 #import "CU_LeftImgTextField.h"
-
+#import "CU_Define.h"
 @implementation CU_LeftImgTextField
 
 -(void)setSpace:(NSInteger)space{

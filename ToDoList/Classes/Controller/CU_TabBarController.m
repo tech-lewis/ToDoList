@@ -7,7 +7,9 @@
 //
 
 #import "CU_TabBarController.h"
+#import "UINavigationController+GKCategory.h"
 #import "CU_Const.h"
+#import "CU_Define.h"
 //#import "CU_HomeController.h"
 //#import "CU_GoodsCategoryController.h"
 //#import "CU_SellerShopController.h"

@@ -7,7 +7,7 @@
 //
 
 #import "CU_BaseViewController.h"
-
+#import "CU_Define.h"
 @interface CU_BaseViewController ()
 
 @end

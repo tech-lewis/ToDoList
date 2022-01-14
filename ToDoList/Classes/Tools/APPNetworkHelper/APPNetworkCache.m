@@ -8,8 +8,7 @@
 
 #import "APPNetworkCache.h"
 #import "YYCache.h"
-#import <YYDiskCache.h>
-
+#import "CU_Const.h"
 static NSString *const kAPPNetworkResponseCache = @"kAPPNetworkResponseCache";
 
 @implementation APPNetworkCache
