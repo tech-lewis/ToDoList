@@ -21,6 +21,7 @@
 		22626FEA278E77DA00FC0B35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5161ED31ACFCAA4005E9CF6 /* Main.storyboard */; };
 		2277DE61275B571200FE30A0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2277DE60275B571200FE30A0 /* icon.png */; };
 		22B4B27027901904003BC1B4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B4B26F27901904003BC1B4 /* Launch Screen.storyboard */; };
+		22B4B275279124D7003BC1B4 /* BiDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B4B273279124D7003BC1B4 /* BiDAppDelegate.m */; };
 		22F90002278ECF1C00FE1A00 /* BRPickerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 22F9FFEC278ECF1C00FE1A00 /* BRPickerView.bundle */; };
 		22F90003278ECF1C00FE1A00 /* BRPickerStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FFED278ECF1C00FE1A00 /* BRPickerStyle.m */; };
 		22F90004278ECF1C00FE1A00 /* BRBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FFEE278ECF1C00FE1A00 /* BRBaseView.m */; };
@@ -177,7 +178,6 @@
 		C5161EA71ACFCA76005E9CF6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5161EA61ACFCA76005E9CF6 /* CoreGraphics.framework */; };
 		C5161EA91ACFCA76005E9CF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5161EA81ACFCA76005E9CF6 /* UIKit.framework */; };
 		C5161EB11ACFCA76005E9CF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5161EB01ACFCA76005E9CF6 /* main.m */; };
-		C5161EB51ACFCA76005E9CF6 /* BiDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5161EB41ACFCA76005E9CF6 /* BiDAppDelegate.m */; };
 		C5161EB71ACFCA76005E9CF6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5161EB61ACFCA76005E9CF6 /* Images.xcassets */; };
 		C5161EBE1ACFCA76005E9CF6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5161EBD1ACFCA76005E9CF6 /* XCTest.framework */; };
 		C5161EBF1ACFCA76005E9CF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5161EA41ACFCA76005E9CF6 /* Foundation.framework */; };
@@ -241,6 +241,8 @@
 		2260872327900F3900A3BC30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CU_Language.strings; sourceTree = "<group>"; };
 		2277DE60275B571200FE30A0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		22B4B26F27901904003BC1B4 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		22B4B273279124D7003BC1B4 /* BiDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BiDAppDelegate.m; sourceTree = "<group>"; };
+		22B4B274279124D7003BC1B4 /* BiDAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiDAppDelegate.h; sourceTree = "<group>"; };
 		22F90000278ECF1C00FE1A00 /* BRDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDatePickerView.m; sourceTree = "<group>"; };
 		22F90001278ECF1C00FE1A00 /* NSDate+BRPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+BRPickerView.h"; sourceTree = "<group>"; };
 		22F9000D278ECF4400FE1A00 /* MJPropertyKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyKey.h; sourceTree = "<group>"; };
@@ -568,8 +570,6 @@
 		C5161EAC1ACFCA76005E9CF6 /* ToDoList-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ToDoList-Info.plist"; sourceTree = "<group>"; };
 		C5161EB01ACFCA76005E9CF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C5161EB21ACFCA76005E9CF6 /* ToDoList-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToDoList-Prefix.pch"; sourceTree = "<group>"; };
-		C5161EB31ACFCA76005E9CF6 /* BiDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BiDAppDelegate.h; sourceTree = "<group>"; };
-		C5161EB41ACFCA76005E9CF6 /* BiDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BiDAppDelegate.m; sourceTree = "<group>"; };
 		C5161EB61ACFCA76005E9CF6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C5161EBC1ACFCA76005E9CF6 /* ToDoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5161EBD1ACFCA76005E9CF6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -1021,6 +1021,8 @@
 		22F9FED6278EC9CF00FE1A00 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				22B4B274279124D7003BC1B4 /* BiDAppDelegate.h */,
+				22B4B273279124D7003BC1B4 /* BiDAppDelegate.m */,
 				22F9FED7278EC9CF00FE1A00 /* CU_PrefixHeader.pch */,
 				22F9FED8278EC9CF00FE1A00 /* CU_Const.m */,
 				22F9FED9278EC9CF00FE1A00 /* CU_Define.h */,
@@ -1505,8 +1507,6 @@
 				2260871D27900F3900A3BC30 /* Resouces */,
 				22F9FDC4278E82D200FE1A00 /* Libs */,
 				22F9FC89278E821300FE1A00 /* Classes */,
-				C5161EB31ACFCA76005E9CF6 /* BiDAppDelegate.h */,
-				C5161EB41ACFCA76005E9CF6 /* BiDAppDelegate.m */,
 				C5161EB61ACFCA76005E9CF6 /* Images.xcassets */,
 				222DF89E275B7EF30036AED1 /* Controller */,
 				C5161ED81ACFCCD0005E9CF6 /* Model */,
@@ -1684,6 +1684,7 @@
 				22F9FF41278ECB4B00FE1A00 /* GKNavigationBarViewController.m in Sources */,
 				22F9FF0B278EC9CF00FE1A00 /* UIView+HUD.m in Sources */,
 				22F9FFCF278ECE0A00FE1A00 /* CU_GoodsCategoryModel.m in Sources */,
+				22B4B275279124D7003BC1B4 /* BiDAppDelegate.m in Sources */,
 				22F9FEC7278E92F500FE1A00 /* MJRefreshStateHeader.m in Sources */,
 				22F9FF3A278ECB4B00FE1A00 /* UIBarButtonItem+GKCategory.m in Sources */,
 				22F9FE7D278E909E00FE1A00 /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -1713,7 +1714,6 @@
 				22F90004278ECF1C00FE1A00 /* BRBaseView.m in Sources */,
 				22F9FF08278EC9CF00FE1A00 /* CU_TabBarController.m in Sources */,
 				22F9FE7A278E909E00FE1A00 /* MKAnnotationView+WebCache.m in Sources */,
-				C5161EB51ACFCA76005E9CF6 /* BiDAppDelegate.m in Sources */,
 				22F9FFDD278ECE0A00FE1A00 /* CU_SellerShopController.m in Sources */,
 				22F9FED4278EC95F00FE1A00 /* APPNetworkHelper.m in Sources */,
 				22F9002A278ECF4400FE1A00 /* MJPropertyKey.m in Sources */,
@@ -1983,7 +1983,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = YSYEV7MGT7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ToDoList/ToDoList-Prefix.pch";
@@ -2003,7 +2003,7 @@
 				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = YSYEV7MGT7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ToDoList/ToDoList-Prefix.pch";

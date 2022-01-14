@@ -1008,7 +1008,7 @@
 "Mine_Realname_EnterPrise_Registration_Certificate_Placeholder" = "注册证书照片";
 "Mine_Realname_EnterPrise_Registration_Certificate_Empty_Tips" = "请上传注册证书照片";
 "Mine_Realname_EnterPrise_Appley_Continue_To_Add_Roles" = "是否继续补充角色？";
-
+"Mine_button" = "切换语言";
 "Mine_Realname_Apply_Review" = "您的申请正快马加鞭审核中";
 "Mine_Realname_Apply_Contact" = "联系电话:";
 "Mine_Realname_Apply_Audit_Passed" = "审核通过";

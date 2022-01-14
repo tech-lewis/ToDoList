@@ -1012,7 +1012,7 @@
 "Mine_Realname_EnterPrise_Registration_Certificate_Placeholder" = "Registration Certificate Photos";
 "Mine_Realname_EnterPrise_Registration_Certificate_Empty_Tips" = "Please upload a Registration Certificate Photos";
 "Mine_Realname_EnterPrise_Appley_Continue_To_Add_Roles" = "Do you continue to add roles?";
-
+"Mine_button" = "Change Language";
 "Mine_Realname_Apply_Review" = "Under Review...";
 "Mine_Realname_Apply_Contact" = "Contact number:";
 "Mine_Realname_Apply_Audit_Passed" = "The audit has been approved.";
