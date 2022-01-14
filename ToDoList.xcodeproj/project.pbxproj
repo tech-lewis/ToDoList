@@ -34,6 +34,7 @@
 		2260872527900F3900A3BC30 /* CU_Language.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2260872027900F3900A3BC30 /* CU_Language.strings */; };
 		22626FEA278E77DA00FC0B35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5161ED31ACFCAA4005E9CF6 /* Main.storyboard */; };
 		2277DE61275B571200FE30A0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2277DE60275B571200FE30A0 /* icon.png */; };
+		229A32F1279146D200CF59DE /* todolist.db in Resources */ = {isa = PBXBuildFile; fileRef = 229A32F0279146D200CF59DE /* todolist.db */; };
 		22B4B27027901904003BC1B4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B4B26F27901904003BC1B4 /* Launch Screen.storyboard */; };
 		22B4B275279124D7003BC1B4 /* BiDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B4B273279124D7003BC1B4 /* BiDAppDelegate.m */; };
 		22B4B27D279132DE003BC1B4 /* CU_MineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B4B27A279132DE003BC1B4 /* CU_MineHeaderView.m */; };
@@ -289,6 +290,7 @@
 		2260872227900F3900A3BC30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2260872327900F3900A3BC30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CU_Language.strings; sourceTree = "<group>"; };
 		2277DE60275B571200FE30A0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		229A32F0279146D200CF59DE /* todolist.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = todolist.db; sourceTree = "<group>"; };
 		22B4B26F27901904003BC1B4 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		22B4B273279124D7003BC1B4 /* BiDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BiDAppDelegate.m; sourceTree = "<group>"; };
 		22B4B274279124D7003BC1B4 /* BiDAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiDAppDelegate.h; sourceTree = "<group>"; };
@@ -752,6 +754,7 @@
 		2260871D27900F3900A3BC30 /* Resouces */ = {
 			isa = PBXGroup;
 			children = (
+				229A32F0279146D200CF59DE /* todolist.db */,
 				2260871E27900F3900A3BC30 /* InfoPlist.strings */,
 				2260872027900F3900A3BC30 /* CU_Language.strings */,
 			);
@@ -1826,6 +1829,7 @@
 				2260872527900F3900A3BC30 /* CU_Language.strings in Resources */,
 				22F9FF40278ECB4B00FE1A00 /* GKNavigationBarViewController.bundle in Resources */,
 				22B4B29F2791356F003BC1B4 /* btn_num_add@2x.png in Resources */,
+				229A32F1279146D200CF59DE /* todolist.db in Resources */,
 				22B4B29D2791356F003BC1B4 /* btn_num_minus@3x.png in Resources */,
 				22B4B29E2791356F003BC1B4 /* btn_num_minus@2x.png in Resources */,
 			);
