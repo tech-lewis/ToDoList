@@ -20,7 +20,6 @@
 		2218063527913C5C0048DD6E /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2218063027913C5B0048DD6E /* FMDatabasePool.m */; };
 		2218063627913C5C0048DD6E /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2218063127913C5B0048DD6E /* FMResultSet.m */; };
 		2218063827913CCA0048DD6E /* ComposeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2218063727913CCA0048DD6E /* ComposeTextView.swift */; };
-		2218063B27913FEB0048DD6E /* BiDSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2218063A27913FEB0048DD6E /* BiDSwiftViewController.swift */; };
 		222DF8B0275B7EF30036AED1 /* BiDAddToDoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8A0275B7EF30036AED1 /* BiDAddToDoItemViewController.m */; };
 		222DF8B1275B7EF30036AED1 /* BiDEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8A2275B7EF30036AED1 /* BiDEditorViewController.m */; };
 		222DF8B2275B7EF30036AED1 /* BiDToDoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8A4275B7EF30036AED1 /* BiDToDoListViewController.m */; };
@@ -265,7 +264,6 @@
 		2218063027913C5B0048DD6E /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
 		2218063127913C5B0048DD6E /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		2218063727913CCA0048DD6E /* ComposeTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeTextView.swift; sourceTree = "<group>"; };
-		2218063A27913FEB0048DD6E /* BiDSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiDSwiftViewController.swift; sourceTree = "<group>"; };
 		222DF89F275B7EF30036AED1 /* BiDAddToDoItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiDAddToDoItemViewController.h; sourceTree = "<group>"; };
 		222DF8A0275B7EF30036AED1 /* BiDAddToDoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BiDAddToDoItemViewController.m; sourceTree = "<group>"; };
 		222DF8A1275B7EF30036AED1 /* BiDEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiDEditorViewController.h; sourceTree = "<group>"; };
@@ -1674,9 +1672,7 @@
 				C5161ED51ACFCCA4005E9CF6 /* View */,
 				C5071E5D1BBD502B00DAA4E0 /* Category */,
 				C5161EAB1ACFCA76005E9CF6 /* Supporting Files */,
-				22B4B26F27901904003BC1B4 /* Launch Screen.storyboard */,
 				2218061127913AFA0048DD6E /* ToDoList-Bridging-Header.h */,
-				2218063A27913FEB0048DD6E /* BiDSwiftViewController.swift */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -1684,6 +1680,7 @@
 		C5161EAB1ACFCA76005E9CF6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				22B4B26F27901904003BC1B4 /* Launch Screen.storyboard */,
 				C55FD82C1BA4851500D68486 /* Cell Background.png */,
 				C505DA3A1BBD3639009C94A6 /* line.png */,
 				2277DE60275B571200FE30A0 /* icon.png */,
@@ -1904,7 +1901,6 @@
 				22F9FEC6278E92F500FE1A00 /* MJRefreshNormalHeader.m in Sources */,
 				22F9FEB9278E92F500FE1A00 /* UIScrollView+MJRefresh.m in Sources */,
 				22F90009278ECF1C00FE1A00 /* BRAddressPickerView.m in Sources */,
-				2218063B27913FEB0048DD6E /* BiDSwiftViewController.swift in Sources */,
 				22F9FED5278EC95F00FE1A00 /* APPNetworkCache.m in Sources */,
 				22F90029278ECF4400FE1A00 /* NSString+MJExtension.m in Sources */,
 				22B4B27D279132DE003BC1B4 /* CU_MineHeaderView.m in Sources */,
@@ -2175,7 +2171,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = YSYEV7MGT7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ToDoList/ToDoList-Prefix.pch";
@@ -2200,7 +2196,7 @@
 				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = YSYEV7MGT7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ToDoList/ToDoList-Prefix.pch";
