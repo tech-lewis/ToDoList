@@ -40,7 +40,7 @@ class HomeDetailViewController: UIViewController {
         detailTextarea.text = data.detail
     }
     func setupUI() {
-        
+        guard let statusHeight =  navigationController?.navigationBar.frame.size.height else {return}
         guard let backgroundImage = UIImage(named: "homeBG") else {return}
         view.backgroundColor = UIColor.init(patternImage: backgroundImage)
 
@@ -50,7 +50,7 @@ class HomeDetailViewController: UIViewController {
         titleLabel.font = UIFont.boldSystemFont(ofSize: 15)
         titleLabel.text = "文章标题"
         titleLabel.mas_makeConstraints { (make) in
-            make?.top.equalTo()(60.0)
+            make?.top.equalTo()(statusHeight+UIApplication.shared.statusBarFrame.height)
             make?.centerX.equalTo()(self.view)
             make?.height.equalTo()(30.0)
             make?.width.equalTo()(300.0)

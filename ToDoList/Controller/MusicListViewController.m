@@ -11,6 +11,9 @@
 #import <AVFoundation/AVFoundation.h>
 #import "MusicPlayerViewController.h"
 #import "UIImage+ImageEffects.h"
+#import "CU_ChangeLanguageTool.h"
+#import "CU_Define.h"
+#import "CU_Const.h"
 @interface MusicListViewController ()
 
 @property (nonatomic, strong) NSMutableArray *musicArray;
@@ -73,7 +76,22 @@
         
     });
 }
+
+
+//切换语言通知处理
+- (void)changeLanguage:(NSNotification *) notification{
+    self.title = kLocalLanguage(@"Music_VC_title") ;
+    [self.tableView reloadData];
+    // [self.testBtn setTitle:kLocalLanguage(@"Mine_button") forState:UIControlStateNormal];
+    // self.testLab.text = kLocalLanguage(@"Mine_text");
+}
 #pragma mark - Lifecycle
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -86,8 +104,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"Music List";
-
+    self.title = kLocalLanguage(@"Music_VC_title");
+    //注册切换语言通知
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeLanguage:) name:kChangeLanguageNotice object:nil];
     self.musicArray = [NSMutableArray array];
     self.movieArray = [NSMutableArray array];
     
@@ -144,8 +163,8 @@
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    if (section == 0) return @"本地音乐";
-    return @"本地资源";
+    if (section == 0) return kLocalLanguage(@"Music_VC_local_music");
+    return kLocalLanguage(@"Music_VC_local_media");
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {

@@ -48,6 +48,7 @@ class AddNewNoteController: UIViewController {
         guard let time = remindTime else {
             if #available(iOS 8.0, *) {
                 let alertView = UIAlertController(title: "未选择完成时间", message: "点击灰色按钮选择时间", preferredStyle: .alert)
+                alertView.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                 self.present(alertView, animated: true, completion: nil)
             } else {
                 // Fallback on earlier versions

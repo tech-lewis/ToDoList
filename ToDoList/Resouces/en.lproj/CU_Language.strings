@@ -1070,3 +1070,8 @@
 "System_Mall_China_Subject" = "The products are for China Domestic Only";
 "System_Mall_NZ_Subject" = "The products are for New Zealand Domestic Only";
 "System_Mall_AU_Subject" = "The products are for Australia Domestic Only";
+
+/// 音乐列表
+"Music_VC_title" = "Media";
+"Music_VC_local_music" = "Local Music";
+"Music_VC_local_media" = "Local Media";

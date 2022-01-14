@@ -13,6 +13,10 @@
 #import "CU_ShoppingCartController.h"
 #import "CU_MineController.h"
 #import "ToDoList-Swift.h"
+#import "MusicListViewController.h"
+#import "CU_ChangeLanguageTool.h"
+#import "CU_Define.h"
+#import "CU_Const.h"
 @interface CU_TabBarController ()<UITabBarControllerDelegate>
 
 @end
@@ -26,11 +30,11 @@
     [UITabBar appearance].translucent = NO ;
     self.delegate = self ;
     
-    [self addChildVcIs:[[HomeTableViewController alloc]init] WithTitle:@"" andImage:@"tab_home" andSelectImage:@"tab_home_s"];
-    [self addChildVcIs:[[CU_GoodsCategoryController alloc]init] WithTitle:@"" andImage:@"tab_category" andSelectImage:@"tab_category_s"];
+    [self addChildVcIs:[[HomeTableViewController alloc]init] WithTitle:@"Note" andImage:@"tab_home" andSelectImage:@"tab_home_s"];
+    [self addChildVcIs:[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateInitialViewController] WithTitle:@"ToDo" andImage:@"tab_category" andSelectImage:@"tab_category_s"];
 //    [self addChildVcIs:[[CU_SellerShopController alloc]init] WithTitle:@"" andImage:@"tab_shop" andSelectImage:@"tab_shop_s"];
-    [self addChildVcIs:[[CU_ShoppingCartController alloc]init] WithTitle:@"" andImage:@"tab_cart" andSelectImage:@"tab_cart_s"];
-    [self addChildVcIs:[[CU_MineController alloc]init] WithTitle:@"" andImage:@"tab_mine" andSelectImage:@"tab_mine_s"];
+    [self addChildVcIs:[[MusicListViewController alloc]init] WithTitle:kLocalLanguage(@"Music_VC_title") andImage:@"tab_cart" andSelectImage:@"tab_cart_s"];
+    [self addChildVcIs:[[CU_MineController alloc]init] WithTitle:@"Account" andImage:@"tab_mine" andSelectImage:@"tab_mine_s"];
     
 }
 
@@ -53,18 +57,18 @@
     
     //文字样式默认
     NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
-    attrs[NSFontAttributeName] = [UIFont systemFontOfSize:12];
+    attrs[NSFontAttributeName] = [UIFont systemFontOfSize:8];
     attrs[NSForegroundColorAttributeName] = [UIColor grayColor];
     
     //文字样式选中
     NSMutableDictionary *attrSelected = [NSMutableDictionary dictionary];
     attrSelected[NSFontAttributeName] = [UIFont systemFontOfSize:12];
-    attrSelected[NSForegroundColorAttributeName] = kRGB_SIXTEEN(0x333333);
+    attrSelected[NSForegroundColorAttributeName] = kRGB_SIXTEEN(0xff8000);
     
     UITabBarItem *item = [UITabBarItem appearance];
     [item setTitleTextAttributes:attrs forState:UIControlStateNormal];
     [item setTitleTextAttributes:attrSelected forState:UIControlStateSelected];
-    [item setTitlePositionAdjustment:UIOffsetMake(0, -2)];
+    [item setTitlePositionAdjustment:UIOffsetMake(0, 2)];
     
     //创建导航控制器
     UINavigationController *nav = [UINavigationController rootVC:vc translationScale:NO];

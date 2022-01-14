@@ -1066,3 +1066,8 @@
 "System_Mall_China_Subject" = "此卖场专供中国";
 "System_Mall_NZ_Subject" = "此卖场专供新西兰";
 "System_Mall_AU_Subject" = "此卖场专供澳大利亚";
+
+/// 音乐列表
+"Music_VC_title" = "Media";
+"Music_VC_local_music" = "本地音乐";
+"Music_VC_local_media" = "本地资源";
