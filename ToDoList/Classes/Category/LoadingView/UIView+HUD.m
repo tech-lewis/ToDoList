@@ -8,7 +8,7 @@
 
 #import "UIView+HUD.h"
 #import <objc/runtime.h>
-
+#import "CU_Const.h"
 #define BCHudTag 99999
 @interface UIView ()
 @end
