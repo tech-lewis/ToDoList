@@ -7,7 +7,6 @@
 //
 
 #import "UIViewController+HUD.h"
-#import <JGProgressHUD/JGProgressHUD.h>
 #import "UIView+HUD.h"
 
 @implementation UIViewController (HUD)
