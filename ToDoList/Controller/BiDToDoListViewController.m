@@ -138,8 +138,8 @@ static NSString *CellIdentifier = @"ListCell";
                                                                                 action:@selector(playButtonPressed:)];
 
     
-    [self setToolbarItems:@[moreButton, flexibleItem, playButton]];
-    [self.navigationController setToolbarHidden:NO];
+    // [self setToolbarItems:@[moreButton, flexibleItem, playButton]];
+    // [self.navigationController setToolbarHidden:NO];
     // [self.navigationController setToolbarItems:@[flexibleItem, playButton]];
 
     
