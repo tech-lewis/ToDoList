@@ -27,6 +27,15 @@
 		22B4B27F279132DE003BC1B4 /* CU_MineSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B4B27C279132DE003BC1B4 /* CU_MineSectionHeaderView.m */; };
 		22B4B28427913468003BC1B4 /* CU_ShoppingCartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B4B28127913468003BC1B4 /* CU_ShoppingCartCell.m */; };
 		22B4B28527913468003BC1B4 /* CU_ShoppingCartSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B4B28327913468003BC1B4 /* CU_ShoppingCartSectionHeaderView.m */; };
+		22B4B28F27913514003BC1B4 /* BEMAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B4B28827913514003BC1B4 /* BEMAnimationManager.m */; };
+		22B4B29027913514003BC1B4 /* BEMPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B4B28927913514003BC1B4 /* BEMPathManager.m */; };
+		22B4B29127913514003BC1B4 /* BEMCheckBoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B4B28A27913514003BC1B4 /* BEMCheckBoxGroup.m */; };
+		22B4B29227913514003BC1B4 /* BEMCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B4B28C27913514003BC1B4 /* BEMCheckBox.m */; };
+		22B4B29B2791356F003BC1B4 /* NumberCalculate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B4B2952791356F003BC1B4 /* NumberCalculate.m */; };
+		22B4B29C2791356F003BC1B4 /* btn_num_add@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B4B2972791356F003BC1B4 /* btn_num_add@3x.png */; };
+		22B4B29D2791356F003BC1B4 /* btn_num_minus@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B4B2982791356F003BC1B4 /* btn_num_minus@3x.png */; };
+		22B4B29E2791356F003BC1B4 /* btn_num_minus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B4B2992791356F003BC1B4 /* btn_num_minus@2x.png */; };
+		22B4B29F2791356F003BC1B4 /* btn_num_add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B4B29A2791356F003BC1B4 /* btn_num_add@2x.png */; };
 		22F90002278ECF1C00FE1A00 /* BRPickerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 22F9FFEC278ECF1C00FE1A00 /* BRPickerView.bundle */; };
 		22F90003278ECF1C00FE1A00 /* BRPickerStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FFED278ECF1C00FE1A00 /* BRPickerStyle.m */; };
 		22F90004278ECF1C00FE1A00 /* BRBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FFEE278ECF1C00FE1A00 /* BRBaseView.m */; };
@@ -256,6 +265,20 @@
 		22B4B28127913468003BC1B4 /* CU_ShoppingCartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CU_ShoppingCartCell.m; sourceTree = "<group>"; };
 		22B4B28227913468003BC1B4 /* CU_ShoppingCartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CU_ShoppingCartCell.h; sourceTree = "<group>"; };
 		22B4B28327913468003BC1B4 /* CU_ShoppingCartSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CU_ShoppingCartSectionHeaderView.m; sourceTree = "<group>"; };
+		22B4B28727913514003BC1B4 /* BEMCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCheckBox.h; sourceTree = "<group>"; };
+		22B4B28827913514003BC1B4 /* BEMAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMAnimationManager.m; sourceTree = "<group>"; };
+		22B4B28927913514003BC1B4 /* BEMPathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMPathManager.m; sourceTree = "<group>"; };
+		22B4B28A27913514003BC1B4 /* BEMCheckBoxGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCheckBoxGroup.m; sourceTree = "<group>"; };
+		22B4B28B27913514003BC1B4 /* BEMAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMAnimationManager.h; sourceTree = "<group>"; };
+		22B4B28C27913514003BC1B4 /* BEMCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCheckBox.m; sourceTree = "<group>"; };
+		22B4B28D27913514003BC1B4 /* BEMPathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMPathManager.h; sourceTree = "<group>"; };
+		22B4B28E27913514003BC1B4 /* BEMCheckBoxGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCheckBoxGroup.h; sourceTree = "<group>"; };
+		22B4B2942791356F003BC1B4 /* NumberCalculate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberCalculate.h; sourceTree = "<group>"; };
+		22B4B2952791356F003BC1B4 /* NumberCalculate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberCalculate.m; sourceTree = "<group>"; };
+		22B4B2972791356F003BC1B4 /* btn_num_add@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_num_add@3x.png"; sourceTree = "<group>"; };
+		22B4B2982791356F003BC1B4 /* btn_num_minus@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_num_minus@3x.png"; sourceTree = "<group>"; };
+		22B4B2992791356F003BC1B4 /* btn_num_minus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_num_minus@2x.png"; sourceTree = "<group>"; };
+		22B4B29A2791356F003BC1B4 /* btn_num_add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_num_add@2x.png"; sourceTree = "<group>"; };
 		22F90000278ECF1C00FE1A00 /* BRDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDatePickerView.m; sourceTree = "<group>"; };
 		22F90001278ECF1C00FE1A00 /* NSDate+BRPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+BRPickerView.h"; sourceTree = "<group>"; };
 		22F9000D278ECF4400FE1A00 /* MJPropertyKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyKey.h; sourceTree = "<group>"; };
@@ -668,6 +691,42 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		22B4B28627913514003BC1B4 /* BEMCheckBox */ = {
+			isa = PBXGroup;
+			children = (
+				22B4B28727913514003BC1B4 /* BEMCheckBox.h */,
+				22B4B28827913514003BC1B4 /* BEMAnimationManager.m */,
+				22B4B28927913514003BC1B4 /* BEMPathManager.m */,
+				22B4B28A27913514003BC1B4 /* BEMCheckBoxGroup.m */,
+				22B4B28B27913514003BC1B4 /* BEMAnimationManager.h */,
+				22B4B28C27913514003BC1B4 /* BEMCheckBox.m */,
+				22B4B28D27913514003BC1B4 /* BEMPathManager.h */,
+				22B4B28E27913514003BC1B4 /* BEMCheckBoxGroup.h */,
+			);
+			path = BEMCheckBox;
+			sourceTree = "<group>";
+		};
+		22B4B2932791356F003BC1B4 /* NumberCalculate */ = {
+			isa = PBXGroup;
+			children = (
+				22B4B2942791356F003BC1B4 /* NumberCalculate.h */,
+				22B4B2952791356F003BC1B4 /* NumberCalculate.m */,
+				22B4B2962791356F003BC1B4 /* resource */,
+			);
+			path = NumberCalculate;
+			sourceTree = "<group>";
+		};
+		22B4B2962791356F003BC1B4 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				22B4B2972791356F003BC1B4 /* btn_num_add@3x.png */,
+				22B4B2982791356F003BC1B4 /* btn_num_minus@3x.png */,
+				22B4B2992791356F003BC1B4 /* btn_num_minus@2x.png */,
+				22B4B29A2791356F003BC1B4 /* btn_num_add@2x.png */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
 		22F9000C278ECF4400FE1A00 /* MJExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -777,6 +836,7 @@
 		22F9FDC4278E82D200FE1A00 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				22B4B28627913514003BC1B4 /* BEMCheckBox */,
 				22F90057278ED64700FE1A00 /* YYCache */,
 				22F90053278ED42D00FE1A00 /* SWFrameButton */,
 				22F9002C278ED22E00FE1A00 /* JGProgressHUD */,
@@ -1018,6 +1078,7 @@
 		22F9FECE278EC95F00FE1A00 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				22B4B2932791356F003BC1B4 /* NumberCalculate */,
 				22F9FFE3278ECE3B00FE1A00 /* CU_CacheManager.h */,
 				22F9FFE1278ECE3B00FE1A00 /* CU_CacheManager.m */,
 				22F9FFE5278ECE3B00FE1A00 /* CU_ChangeLanguageTool.h */,
@@ -1666,6 +1727,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22626FEA278E77DA00FC0B35 /* Main.storyboard in Resources */,
+				22B4B29C2791356F003BC1B4 /* btn_num_add@3x.png in Resources */,
 				C5D181EF1BC1237300591BDE /* defaultArtistImage.png in Resources */,
 				22F9FEBC278E92F500FE1A00 /* MJRefresh.bundle in Resources */,
 				22B4B27027901904003BC1B4 /* Launch Screen.storyboard in Resources */,
@@ -1678,6 +1740,9 @@
 				C5161EB71ACFCA76005E9CF6 /* Images.xcassets in Resources */,
 				2260872527900F3900A3BC30 /* CU_Language.strings in Resources */,
 				22F9FF40278ECB4B00FE1A00 /* GKNavigationBarViewController.bundle in Resources */,
+				22B4B29F2791356F003BC1B4 /* btn_num_add@2x.png in Resources */,
+				22B4B29D2791356F003BC1B4 /* btn_num_minus@3x.png in Resources */,
+				22B4B29E2791356F003BC1B4 /* btn_num_minus@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1699,6 +1764,7 @@
 				22F9FF41278ECB4B00FE1A00 /* GKNavigationBarViewController.m in Sources */,
 				22F9FF0B278EC9CF00FE1A00 /* UIView+HUD.m in Sources */,
 				22F9FFCF278ECE0A00FE1A00 /* CU_GoodsCategoryModel.m in Sources */,
+				22B4B29B2791356F003BC1B4 /* NumberCalculate.m in Sources */,
 				22B4B275279124D7003BC1B4 /* BiDAppDelegate.m in Sources */,
 				22F9FEC7278E92F500FE1A00 /* MJRefreshStateHeader.m in Sources */,
 				22F9FF3A278ECB4B00FE1A00 /* UIBarButtonItem+GKCategory.m in Sources */,
@@ -1779,6 +1845,7 @@
 				222DF8B2275B7EF30036AED1 /* BiDToDoListViewController.m in Sources */,
 				22F90027278ECF4400FE1A00 /* NSObject+MJProperty.m in Sources */,
 				222DF8B7275B7EF30036AED1 /* MusicPlayerViewController.m in Sources */,
+				22B4B28F27913514003BC1B4 /* BEMAnimationManager.m in Sources */,
 				22F9FFDE278ECE0A00FE1A00 /* CU_SellerShopModel.m in Sources */,
 				22F9FEC0278E92F500FE1A00 /* MJRefreshBackGifFooter.m in Sources */,
 				22F9FE7B278E909E00FE1A00 /* SDWebImageManager.m in Sources */,
@@ -1792,9 +1859,11 @@
 				22F9002B278ECF4400FE1A00 /* MJFoundation.m in Sources */,
 				22F90023278ECF4400FE1A00 /* NSObject+MJKeyValue.m in Sources */,
 				222DF8B8275B7EF30036AED1 /* MusicPlayingView.m in Sources */,
+				22B4B29127913514003BC1B4 /* BEMCheckBoxGroup.m in Sources */,
 				22F90051278ED22E00FE1A00 /* JGProgressHUDPieIndicatorView.m in Sources */,
 				22F9FE4A278E8EFF00FE1A00 /* UIProgressView+AFNetworking.m in Sources */,
 				22F90022278ECF4400FE1A00 /* MJPropertyType.m in Sources */,
+				22B4B29027913514003BC1B4 /* BEMPathManager.m in Sources */,
 				22F90028278ECF4400FE1A00 /* NSObject+MJClass.m in Sources */,
 				22F9FE50278E8EFF00FE1A00 /* UIWebView+AFNetworking.m in Sources */,
 				22F9FE57278E8EFF00FE1A00 /* AFNetworkReachabilityManager.m in Sources */,
@@ -1833,6 +1902,7 @@
 				22F9FFD0278ECE0A00FE1A00 /* CU_GoodsCategoryView.m in Sources */,
 				22F90050278ED22E00FE1A00 /* JGProgressHUDRingIndicatorView.m in Sources */,
 				22F9FF38278ECB4B00FE1A00 /* GKBaseTransitionAnimation.m in Sources */,
+				22B4B29227913514003BC1B4 /* BEMCheckBox.m in Sources */,
 				22F9004C278ED22E00FE1A00 /* JGProgressHUDSuccessIndicatorView.m in Sources */,
 				22F9FFD3278ECE0A00FE1A00 /* CU_HomeView.m in Sources */,
 				22F9FE19278E836000FE1A00 /* MASCompositeConstraint.m in Sources */,

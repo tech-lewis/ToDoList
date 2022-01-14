@@ -126,7 +126,7 @@
         _imgView = ({
             UIImageView *imgView = [[UIImageView alloc]initWithFrame:CGRectZero];
             //添加图片
-            imgView.image = [UIImage imageNamed:@"testImage"];
+            imgView.image = [UIImage imageNamed:@"imgt02"];
 
             imgView ;
         }) ;
@@ -138,7 +138,7 @@
         _titleLab = ({
             UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];//初始化控件
             //常用属性
-            label.text = @"iPad Pro 11’ 512GB/WLAN Portab-le tablet p1209";//内容显示
+            label.text = @"Mi 11’ 512GB/WLAN Portab-le tablet p1209";//内容显示
             label.textColor = kRGB_COLOR(42,42,44);//设置字体颜色
             label.font = [UIFont fontWithName:@"HelveticaNeueLTStd-Roman" size:kAdaptedWidth(12)];//设置字体大小
             label.textAlignment = NSTextAlignmentLeft;///设置对齐方式
@@ -186,7 +186,7 @@
         _dollarPriceLab = ({
             UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];//初始化控件
             //常用属性
-            label.text = @"NZ$ 66.00 / ";//内容显示
+//            label.text = @"NZ$ 66.00 / ";//内容显示
             label.textColor = kRGB_COLOR(42,42,44);//设置字体颜色
             label.font = [UIFont fontWithName:@"HelveticaNeueLTStd-Bd" size:kAdaptedWidth(15)];//设置字体大小
             label.textAlignment = NSTextAlignmentLeft;///设置对齐方式

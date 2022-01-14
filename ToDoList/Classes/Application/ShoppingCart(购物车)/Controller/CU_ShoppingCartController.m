@@ -9,7 +9,9 @@
 #import "CU_ShoppingCartController.h"
 #import "CU_ShoppingCartCell.h"
 #import "CU_ShoppingCartSectionHeaderView.h"
-
+#import "CU_ChangeLanguageTool.h"
+#import "CU_Define.h"
+#import "CU_Const.h"
 @interface CU_ShoppingCartController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic,strong) UITableView *tableView ;
