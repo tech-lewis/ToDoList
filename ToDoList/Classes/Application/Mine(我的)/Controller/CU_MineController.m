@@ -32,26 +32,34 @@
 - (void)changeLanguage:(NSNotification *) notification{
     self.gk_navTitle = kLocalLanguage(@"Mine_Tab") ;
     [self.testBtn setTitle:kLocalLanguage(@"Mine_button") forState:UIControlStateNormal];
-    self.testLab.text = kLocalLanguage(@"Mine_text");
+     self.testLab.text = kLocalLanguage(@"Mine_text");
+    self.testLab.text = @"Version 1.1.1";
 }
 
 #pragma mark - UI布局
 -(void) configUI{
+
+    UIImageView *imageView = [[UIImageView  alloc] initWithImage:[UIImage imageNamed:@"icon.png"]];
+    [self.view addSubview:imageView];
+    [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.view);
+    }];
+
     [self.view addSubview:self.testLab] ;
-    
+
     [self.testLab mas_makeConstraints:^(MASConstraintMaker *make) {
         make.height.mas_equalTo(100.0);
+        make.top.equalTo(imageView.mas_bottom);
         make.leading.trailing.equalTo(self.view);
-        make.center.equalTo(self.view) ;
     }] ;
     [self.view addSubview:self.testBtn] ;
     [self.testBtn mas_makeConstraints:^(MASConstraintMaker *make) {
 
         make.centerX.equalTo(self.view);
-        make.top.equalTo(self.testLab.mas_bottom).offset(kAdaptedWidth(100)) ;
+        make.top.equalTo(imageView.mas_bottom).offset(kAdaptedWidth(100)) ;
     }] ;
 
-    self.testLab.text = kLocalLanguage(@"Mine_text") ;
+    self.testLab.text = @"Version 1.1.1";
     [self.testBtn setTitle:kLocalLanguage(@"Mine_button") forState:UIControlStateNormal] ;
 }
 
@@ -74,10 +82,10 @@
         _testLab = ({
             UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];//初始化控件
             //常用属性
-            label.text = @"hello world";//内容显示
+            label.text = @"Version 1.1.1";
             label.textColor = [UIColor grayColor];//设置字体颜色
             label.font = [UIFont fontWithName:@"PingFangSC-Regular" size:16];//设置字体大小
-            label.textAlignment = NSTextAlignmentLeft;///设置对齐方式
+            label.textAlignment = NSTextAlignmentCenter;///设置对齐方式
             label.numberOfLines = 0; //行数
             
             label ;

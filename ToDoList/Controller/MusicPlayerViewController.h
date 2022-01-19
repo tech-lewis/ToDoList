@@ -7,14 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <AVFoundation/AVFoundation.h>
+//#import <AVFoundation/AVFoundation.h>
 
 @interface MusicPlayerViewController : UIViewController
-
-@property (nonatomic, strong) AVURLAsset *mp3URLAsset;
-@property (nonatomic, strong) UIImage *artworkImage;
-@property (nonatomic, strong) NSString *musicName;
-@property (nonatomic, strong) AVAudioPlayer *player;
-@property (nonatomic, strong) UIImageView *backgroundImageView;
+//
+//@property (nonatomic, strong) AVURLAsset *mp3URLAsset;
+//@property (nonatomic, strong) UIImage *artworkImage;
+//@property (nonatomic, strong) NSString *musicName;
+//@property (nonatomic, strong) AVAudioPlayer *player;
+//@property (nonatomic, strong) UIImageView *backgroundImageView;
 
 @end

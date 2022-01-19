@@ -20,19 +20,22 @@
 		2218063527913C5C0048DD6E /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2218063027913C5B0048DD6E /* FMDatabasePool.m */; };
 		2218063627913C5C0048DD6E /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2218063127913C5B0048DD6E /* FMResultSet.m */; };
 		2218063827913CCA0048DD6E /* ComposeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2218063727913CCA0048DD6E /* ComposeTextView.swift */; };
+		22257B382796844100D86B5F /* test.mov in Resources */ = {isa = PBXBuildFile; fileRef = 22257B372796844100D86B5F /* test.mov */; };
 		222DF8B0275B7EF30036AED1 /* BiDAddToDoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8A0275B7EF30036AED1 /* BiDAddToDoItemViewController.m */; };
 		222DF8B1275B7EF30036AED1 /* BiDEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8A2275B7EF30036AED1 /* BiDEditorViewController.m */; };
 		222DF8B2275B7EF30036AED1 /* BiDToDoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8A4275B7EF30036AED1 /* BiDToDoListViewController.m */; };
 		222DF8B3275B7EF30036AED1 /* ContentCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8A6275B7EF30036AED1 /* ContentCellViewController.m */; };
 		222DF8B5275B7EF30036AED1 /* FoldableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8A9275B7EF30036AED1 /* FoldableView.m */; };
 		222DF8B6275B7EF30036AED1 /* MusicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8AB275B7EF30036AED1 /* MusicListViewController.m */; };
-		222DF8B7275B7EF30036AED1 /* MusicPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8AD275B7EF30036AED1 /* MusicPlayerViewController.m */; };
 		222DF8B8275B7EF30036AED1 /* MusicPlayingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8AF275B7EF30036AED1 /* MusicPlayingView.m */; };
 		222DF8BB275B7F720036AED1 /* BiDWebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8BA275B7F720036AED1 /* BiDWebBrowserViewController.m */; };
 		2260872427900F3900A3BC30 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2260871E27900F3900A3BC30 /* InfoPlist.strings */; };
 		2260872527900F3900A3BC30 /* CU_Language.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2260872027900F3900A3BC30 /* CU_Language.strings */; };
 		22626FEA278E77DA00FC0B35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5161ED31ACFCAA4005E9CF6 /* Main.storyboard */; };
 		2277DE61275B571200FE30A0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2277DE60275B571200FE30A0 /* icon.png */; };
+		2293799C27951B3C00A60A30 /* TLFilesBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2293799927951B3C00A60A30 /* TLFilesBrowserViewController.swift */; };
+		2293799D27951B3C00A60A30 /* MarkdownPreviewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2293799A27951B3C00A60A30 /* MarkdownPreviewerViewController.swift */; };
+		2293799E27951B3C00A60A30 /* SquareTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2293799B27951B3C00A60A30 /* SquareTableViewController.swift */; };
 		229A32F1279146D200CF59DE /* todolist.db in Resources */ = {isa = PBXBuildFile; fileRef = 229A32F0279146D200CF59DE /* todolist.db */; };
 		22B4B27027901904003BC1B4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B4B26F27901904003BC1B4 /* Launch Screen.storyboard */; };
 		22B4B275279124D7003BC1B4 /* BiDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B4B273279124D7003BC1B4 /* BiDAppDelegate.m */; };
@@ -264,6 +267,7 @@
 		2218063027913C5B0048DD6E /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
 		2218063127913C5B0048DD6E /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		2218063727913CCA0048DD6E /* ComposeTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeTextView.swift; sourceTree = "<group>"; };
+		22257B372796844100D86B5F /* test.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = test.mov; path = ../../../../../Documents/test.mov; sourceTree = "<group>"; };
 		222DF89F275B7EF30036AED1 /* BiDAddToDoItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiDAddToDoItemViewController.h; sourceTree = "<group>"; };
 		222DF8A0275B7EF30036AED1 /* BiDAddToDoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BiDAddToDoItemViewController.m; sourceTree = "<group>"; };
 		222DF8A1275B7EF30036AED1 /* BiDEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiDEditorViewController.h; sourceTree = "<group>"; };
@@ -288,6 +292,9 @@
 		2260872227900F3900A3BC30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2260872327900F3900A3BC30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CU_Language.strings; sourceTree = "<group>"; };
 		2277DE60275B571200FE30A0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		2293799927951B3C00A60A30 /* TLFilesBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLFilesBrowserViewController.swift; sourceTree = "<group>"; };
+		2293799A27951B3C00A60A30 /* MarkdownPreviewerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkdownPreviewerViewController.swift; sourceTree = "<group>"; };
+		2293799B27951B3C00A60A30 /* SquareTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareTableViewController.swift; sourceTree = "<group>"; };
 		229A32F0279146D200CF59DE /* todolist.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = todolist.db; sourceTree = "<group>"; };
 		22B4B26F27901904003BC1B4 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		22B4B273279124D7003BC1B4 /* BiDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BiDAppDelegate.m; sourceTree = "<group>"; };
@@ -752,11 +759,22 @@
 		2260871D27900F3900A3BC30 /* Resouces */ = {
 			isa = PBXGroup;
 			children = (
+				22257B372796844100D86B5F /* test.mov */,
 				229A32F0279146D200CF59DE /* todolist.db */,
 				2260871E27900F3900A3BC30 /* InfoPlist.strings */,
 				2260872027900F3900A3BC30 /* CU_Language.strings */,
 			);
 			path = Resouces;
+			sourceTree = "<group>";
+		};
+		2293799827951B3C00A60A30 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				2293799927951B3C00A60A30 /* TLFilesBrowserViewController.swift */,
+				2293799A27951B3C00A60A30 /* MarkdownPreviewerViewController.swift */,
+				2293799B27951B3C00A60A30 /* SquareTableViewController.swift */,
+			);
+			path = Media;
 			sourceTree = "<group>";
 		};
 		22B4B276279132DE003BC1B4 /* View */ = {
@@ -1346,6 +1364,7 @@
 		22F9FF91278ECE0A00FE1A00 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				2293799827951B3C00A60A30 /* Media */,
 				2218061427913B1E0048DD6E /* Note(备忘录) */,
 				22F9FF92278ECE0A00FE1A00 /* GoodsCategory(分类) */,
 				22F9FF9C278ECE0A00FE1A00 /* Home(首页) */,
@@ -1828,6 +1847,7 @@
 				22B4B29F2791356F003BC1B4 /* btn_num_add@2x.png in Resources */,
 				229A32F1279146D200CF59DE /* todolist.db in Resources */,
 				22B4B29D2791356F003BC1B4 /* btn_num_minus@3x.png in Resources */,
+				22257B382796844100D86B5F /* test.mov in Resources */,
 				22B4B29E2791356F003BC1B4 /* btn_num_minus@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1886,6 +1906,7 @@
 				22F9FE7A278E909E00FE1A00 /* MKAnnotationView+WebCache.m in Sources */,
 				22F9FFDD278ECE0A00FE1A00 /* CU_SellerShopController.m in Sources */,
 				22F9FED4278EC95F00FE1A00 /* APPNetworkHelper.m in Sources */,
+				2293799C27951B3C00A60A30 /* TLFilesBrowserViewController.swift in Sources */,
 				22F9002A278ECF4400FE1A00 /* MJPropertyKey.m in Sources */,
 				22F9FFE7278ECE3B00FE1A00 /* CU_CacheManager.m in Sources */,
 				2218063227913C5C0048DD6E /* FMDatabaseQueue.m in Sources */,
@@ -1934,7 +1955,6 @@
 				22F9FEC1278E92F500FE1A00 /* MJRefreshBackStateFooter.m in Sources */,
 				222DF8B2275B7EF30036AED1 /* BiDToDoListViewController.m in Sources */,
 				22F90027278ECF4400FE1A00 /* NSObject+MJProperty.m in Sources */,
-				222DF8B7275B7EF30036AED1 /* MusicPlayerViewController.m in Sources */,
 				22B4B28F27913514003BC1B4 /* BEMAnimationManager.m in Sources */,
 				22F9FFDE278ECE0A00FE1A00 /* CU_SellerShopModel.m in Sources */,
 				22F9FEC0278E92F500FE1A00 /* MJRefreshBackGifFooter.m in Sources */,
@@ -1944,6 +1964,7 @@
 				22F90008278ECF1C00FE1A00 /* BRAddressModel.m in Sources */,
 				22F9FE53278E8EFF00FE1A00 /* AFURLResponseSerialization.m in Sources */,
 				22F9004E278ED22E00FE1A00 /* JGProgressHUD.m in Sources */,
+				2293799D27951B3C00A60A30 /* MarkdownPreviewerViewController.swift in Sources */,
 				22F90007278ECF1C00FE1A00 /* BRStringPickerView.m in Sources */,
 				22F9FECC278E92F500FE1A00 /* MJRefreshAutoFooter.m in Sources */,
 				22F9002B278ECF4400FE1A00 /* MJFoundation.m in Sources */,
@@ -1975,6 +1996,7 @@
 				22F9FE7F278E909E00FE1A00 /* UIImage+GIF.m in Sources */,
 				22F9FE4D278E8EFF00FE1A00 /* UIImageView+AFNetworking.m in Sources */,
 				22F9FFD5278ECE0A00FE1A00 /* CU_MineModel.m in Sources */,
+				2293799E27951B3C00A60A30 /* SquareTableViewController.swift in Sources */,
 				2218062327913BBA0048DD6E /* HomeDetailViewController.swift in Sources */,
 				2218062427913BBA0048DD6E /* AddNewNoteEditorController.swift in Sources */,
 				22F9FE58278E8EFF00FE1A00 /* AFSecurityPolicy.m in Sources */,
@@ -2171,7 +2193,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = YSYEV7MGT7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ToDoList/ToDoList-Prefix.pch";
@@ -2196,7 +2218,7 @@
 				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = YSYEV7MGT7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ToDoList/ToDoList-Prefix.pch";

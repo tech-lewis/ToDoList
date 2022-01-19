@@ -13,18 +13,49 @@
 #import "CU_ShoppingCartController.h"
 #import "CU_MineController.h"
 #import "ToDoList-Swift.h"
-#import "MusicListViewController.h"
 #import "CU_ChangeLanguageTool.h"
 #import "CU_Define.h"
 #import "CU_Const.h"
-@interface CU_TabBarController ()<UITabBarControllerDelegate>
-
+#import <MediaPlayer/MediaPlayer.h>
+@interface CU_TabBarController ()<UITabBarControllerDelegate, UIAlertViewDelegate>
+@property (nonatomic, strong) MPMoviePlayerViewController *mediaPlayerController;
 @end
 
 @implementation CU_TabBarController
+- (NSString *)dataPath
+{
+    // 获取应用程序沙盒的documents路径
+    NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+    NSString *plistPath1 = paths[0];
+    // 合成指定plist文件的全路径
+    NSString *filename=[plistPath1 stringByAppendingPathComponent:@"todolist.plist"];
+    
+    return filename;
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSURL *movURL = [[NSBundle mainBundle] URLForResource:@"test" withExtension:@"mov"];
+    NSLog(@"%@", movURL);
+    self.mediaPlayerController = [[MPMoviePlayerViewController alloc] initWithContentURL:movURL];
+    if ([self.mediaPlayerController respondsToSelector:@selector(setAllowsAirPlay:)]) {
+        [self.mediaPlayerController performSelector:@selector(setAllowsAirPlay:) withObject:@(YES)];
+    }
+    [self presentMoviePlayerViewControllerAnimated:_mediaPlayerController];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    BOOL isExistOldPlist = [[NSFileManager defaultManager] fileExistsAtPath:[self dataPath]];
+    // NSLog(@"沙盒中是否存在todolist.plist文件 ？ %d", isExistOldPlist);     // 0不存在该文件
+    if (!isExistOldPlist)
+    {
+        // 只在从老版本升级到1.0.5版本时调用启动时调用过一次
+        // 新用户 播放教程
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:@"New users?" delegate:self cancelButtonTitle:@"Play"otherButtonTitles:nil, nil];
+        [alertView show];
+    }
+    
     // barTintColor
     [UITabBar appearance].barTintColor = [UIColor whiteColor];
     [UITabBar appearance].translucent = NO ;
@@ -33,7 +64,7 @@
     [self addChildVcIs:[[HomeTableViewController alloc]init] WithTitle:@"Note" andImage:@"tab_home" andSelectImage:@"tab_home_s"];
     [self addChildVcIs:[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateInitialViewController] WithTitle:@"ToDo" andImage:@"tab_category" andSelectImage:@"tab_category_s"];
 //    [self addChildVcIs:[[CU_SellerShopController alloc]init] WithTitle:@"" andImage:@"tab_shop" andSelectImage:@"tab_shop_s"];
-    [self addChildVcIs:[[MusicListViewController alloc]init] WithTitle:kLocalLanguage(@"Music_VC_title") andImage:@"tab_cart" andSelectImage:@"tab_cart_s"];
+    [self addChildVcIs:[[SquareTableViewController alloc]init] WithTitle:kLocalLanguage(@"Music_VC_title") andImage:@"tab_cart" andSelectImage:@"tab_cart_s"];
     [self addChildVcIs:[[CU_MineController alloc]init] WithTitle:@"Account" andImage:@"tab_mine" andSelectImage:@"tab_mine_s"];
     
 }
