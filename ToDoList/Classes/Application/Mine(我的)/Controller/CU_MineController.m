@@ -20,20 +20,21 @@
 @implementation CU_MineController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    self.gk_navTitle = kLocalLanguage(@"Mine_Tab") ;
-  
-    //UI布局
-    [self configUI] ;
-    //注册切换语言通知
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeLanguage:) name:kChangeLanguageNotice object:nil];
+  [super viewDidLoad];
+  self.gk_navTitle = kLocalLanguage(@"Mine_Tab") ;
+  // NSLog(@"%@", [CU_ChangeLanguageTool userLanguage]);
+  //UI布局
+  [self configUI] ;
+  //注册切换语言通知
+  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeLanguage:) name:kChangeLanguageNotice object:nil];
 }
 
 //切换语言通知处理
 - (void)changeLanguage:(NSNotification *) notification{
-    self.gk_navTitle = kLocalLanguage(@"Mine_Tab") ;
-    [self.testBtn setTitle:kLocalLanguage(@"Mine_button") forState:UIControlStateNormal];
-    self.testLab.text = kLocalLanguage(@"Mine_text");
+  
+  self.gk_navTitle = kLocalLanguage(@"Mine_Tab") ;
+  [self.testBtn setTitle:kLocalLanguage(@"Mine_button") forState:UIControlStateNormal];
+  self.testLab.text = kLocalLanguage(@"Mine_text");
 }
 
 #pragma mark - UI布局
