@@ -14,7 +14,27 @@ static NSBundle *bundle = nil;
 @implementation CU_ChangeLanguageTool
 
 + ( NSBundle * )bundle{
+  if (bundle == nil) {
+    NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
     
+    NSString *currLanguage = [def valueForKey:kLocalLanguageKey];
+    
+    if(!currLanguage){
+        NSArray *preferredLanguages = [NSLocale preferredLanguages];
+        currLanguage = preferredLanguages[0];
+        if ([currLanguage hasPrefix:@"en"]) {
+            currLanguage = @"en";
+        }else if ([currLanguage hasPrefix:@"zh"]) {
+            currLanguage = @"zh-Hans";
+        }else currLanguage = @"en";
+        [def setValue:currLanguage forKey:kLocalLanguageKey];
+        [def synchronize];
+    }
+    
+    //获取文件路径
+    NSString *path = [[NSBundle mainBundle] pathForResource:currLanguage ofType:@"lproj"];
+    return [NSBundle bundleWithPath:path];//生成bundle
+  }
     return bundle;
 }
 
