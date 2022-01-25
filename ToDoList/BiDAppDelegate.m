@@ -7,15 +7,14 @@
 //
 
 #import "BiDAppDelegate.h"
+#import "CU_TabBarController.h"
 #import "BiDToDoListViewController.h"
 @implementation BiDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-  UIViewController *controller = [[UIViewController alloc] init];
-  controller.title = @"home";
-  controller.view.backgroundColor = [UIColor grayColor];
+  UIViewController *controller = [[CU_TabBarController alloc] init];
   self.window.rootViewController = controller;
   return YES;
 }
