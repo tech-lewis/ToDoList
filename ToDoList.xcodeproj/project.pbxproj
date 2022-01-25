@@ -68,7 +68,6 @@
 		22E39A15279FE5AC004D960B /* CU_BaseParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E399C1279FE5AC004D960B /* CU_BaseParam.m */; };
 		22E39A16279FE5AC004D960B /* CU_BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E399C2279FE5AC004D960B /* CU_BaseModel.m */; };
 		22E39A17279FE5AC004D960B /* CU_LeftImgTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E399C7279FE5AC004D960B /* CU_LeftImgTextField.m */; };
-		22E39A18279FE5AC004D960B /* Ouc_WKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E399C8279FE5AC004D960B /* Ouc_WKWebView.m */; };
 		22E39A19279FE5AC004D960B /* CU_EdgeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E399C9279FE5AC004D960B /* CU_EdgeLabel.m */; };
 		22E39A1A279FE5AC004D960B /* CU_GoodsCategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E399CD279FE5AC004D960B /* CU_GoodsCategoryController.m */; };
 		22E39A1B279FE5AC004D960B /* CU_GoodsCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E399D1279FE5AC004D960B /* CU_GoodsCategoryModel.m */; };
@@ -316,11 +315,9 @@
 		22E399C0279FE5AC004D960B /* CU_PublicWebViewJSBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CU_PublicWebViewJSBridge.h; sourceTree = "<group>"; };
 		22E399C1279FE5AC004D960B /* CU_BaseParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CU_BaseParam.m; sourceTree = "<group>"; };
 		22E399C2279FE5AC004D960B /* CU_BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CU_BaseModel.m; sourceTree = "<group>"; };
-		22E399C4279FE5AC004D960B /* Ouc_WKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ouc_WKWebView.h; sourceTree = "<group>"; };
 		22E399C5279FE5AC004D960B /* CU_LeftImgTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CU_LeftImgTextField.h; sourceTree = "<group>"; };
 		22E399C6279FE5AC004D960B /* CU_EdgeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CU_EdgeLabel.h; sourceTree = "<group>"; };
 		22E399C7279FE5AC004D960B /* CU_LeftImgTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CU_LeftImgTextField.m; sourceTree = "<group>"; };
-		22E399C8279FE5AC004D960B /* Ouc_WKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ouc_WKWebView.m; sourceTree = "<group>"; };
 		22E399C9279FE5AC004D960B /* CU_EdgeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CU_EdgeLabel.m; sourceTree = "<group>"; };
 		22E399CD279FE5AC004D960B /* CU_GoodsCategoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CU_GoodsCategoryController.m; sourceTree = "<group>"; };
 		22E399CE279FE5AC004D960B /* CU_GoodsCategoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CU_GoodsCategoryController.h; sourceTree = "<group>"; };
@@ -780,11 +777,9 @@
 			children = (
 				22E39A2C279FE5F0004D960B /* Base_TableView.h */,
 				22E39A2D279FE5F0004D960B /* Base_TableView.m */,
-				22E399C4279FE5AC004D960B /* Ouc_WKWebView.h */,
 				22E399C5279FE5AC004D960B /* CU_LeftImgTextField.h */,
 				22E399C6279FE5AC004D960B /* CU_EdgeLabel.h */,
 				22E399C7279FE5AC004D960B /* CU_LeftImgTextField.m */,
-				22E399C8279FE5AC004D960B /* Ouc_WKWebView.m */,
 				22E399C9279FE5AC004D960B /* CU_EdgeLabel.m */,
 			);
 			path = View;
@@ -1480,7 +1475,6 @@
 				22E39A1B279FE5AC004D960B /* CU_GoodsCategoryModel.m in Sources */,
 				22F9FECD278E92F500FE1A00 /* MJRefreshComponent.m in Sources */,
 				22F9FE20278E836000FE1A00 /* MASViewAttribute.m in Sources */,
-				22E39A18279FE5AC004D960B /* Ouc_WKWebView.m in Sources */,
 				22F9FEC2278E92F500FE1A00 /* MJRefreshBackNormalFooter.m in Sources */,
 				22F9FE1A278E836000FE1A00 /* MASConstraintMaker.m in Sources */,
 				22F9FECB278E92F500FE1A00 /* MJRefreshBackFooter.m in Sources */,
