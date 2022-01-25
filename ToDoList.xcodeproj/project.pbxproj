@@ -90,6 +90,10 @@
 		22EECC8C279FEBDB00C13B4A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EECC8E279FEBDB00C13B4A /* Launch Screen.storyboard */; };
 		22EECC92279FEE2F00C13B4A /* AllCountry.json in Resources */ = {isa = PBXBuildFile; fileRef = 22EECC91279FEE2F00C13B4A /* AllCountry.json */; };
 		22EECC95279FEE4800C13B4A /* CU_Language.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22EECC97279FEE4800C13B4A /* CU_Language.strings */; };
+		22EECC9B279FFF2900C13B4A /* BiDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EECC9A279FFF2800C13B4A /* BiDAppDelegate.m */; };
+		22EECC9F279FFF6300C13B4A /* defaultArtistImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 22EECC9C279FFF6200C13B4A /* defaultArtistImage.png */; };
+		22EECCA0279FFF6300C13B4A /* Cell Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 22EECC9D279FFF6300C13B4A /* Cell Background.png */; };
+		22EECCA1279FFF6300C13B4A /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 22EECC9E279FFF6300C13B4A /* line.png */; };
 		22F9FE17278E836000FE1A00 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FDFF278E836000FE1A00 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		22F9FE18278E836000FE1A00 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FE08278E836000FE1A00 /* ViewController+MASAdditions.m */; };
 		22F9FE19278E836000FE1A00 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FE0C278E836000FE1A00 /* MASCompositeConstraint.m */; };
@@ -153,13 +157,11 @@
 		22F9FECB278E92F500FE1A00 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FEB3278E92F500FE1A00 /* MJRefreshBackFooter.m */; };
 		22F9FECC278E92F500FE1A00 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FEB4278E92F500FE1A00 /* MJRefreshAutoFooter.m */; };
 		22F9FECD278E92F500FE1A00 /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FEB6278E92F500FE1A00 /* MJRefreshComponent.m */; };
-		C505DA3B1BBD3639009C94A6 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = C505DA3A1BBD3639009C94A6 /* line.png */; };
 		C5161EA51ACFCA76005E9CF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5161EA41ACFCA76005E9CF6 /* Foundation.framework */; };
 		C5161EA71ACFCA76005E9CF6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5161EA61ACFCA76005E9CF6 /* CoreGraphics.framework */; };
 		C5161EA91ACFCA76005E9CF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5161EA81ACFCA76005E9CF6 /* UIKit.framework */; };
 		C5161EAF1ACFCA76005E9CF6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C5161EAD1ACFCA76005E9CF6 /* InfoPlist.strings */; };
 		C5161EB11ACFCA76005E9CF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5161EB01ACFCA76005E9CF6 /* main.m */; };
-		C5161EB51ACFCA76005E9CF6 /* BiDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5161EB41ACFCA76005E9CF6 /* BiDAppDelegate.m */; };
 		C5161EB71ACFCA76005E9CF6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5161EB61ACFCA76005E9CF6 /* Images.xcassets */; };
 		C5161EBE1ACFCA76005E9CF6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5161EBD1ACFCA76005E9CF6 /* XCTest.framework */; };
 		C5161EBF1ACFCA76005E9CF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5161EA41ACFCA76005E9CF6 /* Foundation.framework */; };
@@ -167,10 +169,8 @@
 		C5161EC81ACFCA76005E9CF6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C5161EC61ACFCA76005E9CF6 /* InfoPlist.strings */; };
 		C5161ECA1ACFCA76005E9CF6 /* ToDoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5161EC91ACFCA76005E9CF6 /* ToDoListTests.m */; };
 		C5161EE41ACFD3C4005E9CF6 /* BiDToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C5161EE31ACFD3C4005E9CF6 /* BiDToDoItem.m */; };
-		C55FD82D1BA4851500D68486 /* Cell Background.png in Resources */ = {isa = PBXBuildFile; fileRef = C55FD82C1BA4851500D68486 /* Cell Background.png */; };
 		C58847C11B8F4C8000966CA5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58847C01B8F4C8000966CA5 /* AVFoundation.framework */; };
 		C592FDB21BBCE8EE00796833 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = C592FDB01BBCE8EE00796833 /* UIImage+ImageEffects.m */; };
-		C5D181EF1BC1237300591BDE /* defaultArtistImage.png in Resources */ = {isa = PBXBuildFile; fileRef = C5D181EE1BC1237300591BDE /* defaultArtistImage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -365,6 +365,11 @@
 		22EECC91279FEE2F00C13B4A /* AllCountry.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AllCountry.json; sourceTree = "<group>"; };
 		22EECC96279FEE4800C13B4A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/CU_Language.strings"; sourceTree = "<group>"; };
 		22EECC98279FEE4B00C13B4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CU_Language.strings; sourceTree = "<group>"; };
+		22EECC99279FFF2800C13B4A /* BiDAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiDAppDelegate.h; sourceTree = "<group>"; };
+		22EECC9A279FFF2800C13B4A /* BiDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BiDAppDelegate.m; sourceTree = "<group>"; };
+		22EECC9C279FFF6200C13B4A /* defaultArtistImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultArtistImage.png; sourceTree = "<group>"; };
+		22EECC9D279FFF6300C13B4A /* Cell Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cell Background.png"; sourceTree = "<group>"; };
+		22EECC9E279FFF6300C13B4A /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
 		22F9FDFE278E836000FE1A00 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		22F9FDFF278E836000FE1A00 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		22F9FE00278E836000FE1A00 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -499,7 +504,6 @@
 		22F9FEB6278E92F500FE1A00 /* MJRefreshComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshComponent.m; sourceTree = "<group>"; };
 		22F9FEB7278E92F500FE1A00 /* MJRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooter.h; sourceTree = "<group>"; };
 		22F9FEB8278E92F500FE1A00 /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
-		C505DA3A1BBD3639009C94A6 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
 		C5161EA11ACFCA76005E9CF6 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5161EA41ACFCA76005E9CF6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C5161EA61ACFCA76005E9CF6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -508,8 +512,6 @@
 		C5161EAE1ACFCA76005E9CF6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C5161EB01ACFCA76005E9CF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C5161EB21ACFCA76005E9CF6 /* ToDoList-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToDoList-Prefix.pch"; sourceTree = "<group>"; };
-		C5161EB31ACFCA76005E9CF6 /* BiDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BiDAppDelegate.h; sourceTree = "<group>"; };
-		C5161EB41ACFCA76005E9CF6 /* BiDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BiDAppDelegate.m; sourceTree = "<group>"; };
 		C5161EB61ACFCA76005E9CF6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C5161EBC1ACFCA76005E9CF6 /* ToDoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5161EBD1ACFCA76005E9CF6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -519,11 +521,9 @@
 		C5161ED31ACFCAA4005E9CF6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C5161EE21ACFD3C4005E9CF6 /* BiDToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiDToDoItem.h; sourceTree = "<group>"; };
 		C5161EE31ACFD3C4005E9CF6 /* BiDToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BiDToDoItem.m; sourceTree = "<group>"; };
-		C55FD82C1BA4851500D68486 /* Cell Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cell Background.png"; sourceTree = "<group>"; };
 		C58847C01B8F4C8000966CA5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C592FDB01BBCE8EE00796833 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		C592FDB11BBCE8EE00796833 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
-		C5D181EE1BC1237300591BDE /* defaultArtistImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultArtistImage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -673,6 +673,8 @@
 		22E39991279FE5AC004D960B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				22EECC99279FFF2800C13B4A /* BiDAppDelegate.h */,
+				22EECC9A279FFF2800C13B4A /* BiDAppDelegate.m */,
 				22E399CA279FE5AC004D960B /* Application */,
 				22E39992279FE5AC004D960B /* Tools */,
 				22E3999E279FE5AC004D960B /* Category */,
@@ -687,10 +689,10 @@
 		22E39992279FE5AC004D960B /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				22E39996279FE5AC004D960B /* APPNetworkHelper */,
 				22E39993279FE5AC004D960B /* CU_ChangeLanguageTool.h */,
 				22E39994279FE5AC004D960B /* CU_Tools.m */,
 				22E39995279FE5AC004D960B /* CU_CacheManager.h */,
-				22E39996279FE5AC004D960B /* APPNetworkHelper */,
 				22E3999B279FE5AC004D960B /* CU_Tools.h */,
 				22E3999C279FE5AC004D960B /* CU_ChangeLanguageTool.m */,
 				22E3999D279FE5AC004D960B /* CU_CacheManager.m */,
@@ -974,6 +976,9 @@
 		22EECC90279FEE2F00C13B4A /* Resouces */ = {
 			isa = PBXGroup;
 			children = (
+				22EECC9D279FFF6300C13B4A /* Cell Background.png */,
+				22EECC9C279FFF6200C13B4A /* defaultArtistImage.png */,
+				22EECC9E279FFF6300C13B4A /* line.png */,
 				22EECC91279FEE2F00C13B4A /* AllCountry.json */,
 				22EECC97279FEE4800C13B4A /* CU_Language.strings */,
 			);
@@ -1266,8 +1271,6 @@
 				22EECC90279FEE2F00C13B4A /* Resouces */,
 				22E39991279FE5AC004D960B /* Classes */,
 				22F9FDC4278E82D200FE1A00 /* Libs */,
-				C5161EB31ACFCA76005E9CF6 /* BiDAppDelegate.h */,
-				C5161EB41ACFCA76005E9CF6 /* BiDAppDelegate.m */,
 				22EECC8E279FEBDB00C13B4A /* Launch Screen.storyboard */,
 				C5161EB61ACFCA76005E9CF6 /* Images.xcassets */,
 				222DF89E275B7EF30036AED1 /* Controller */,
@@ -1282,10 +1285,7 @@
 		C5161EAB1ACFCA76005E9CF6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C55FD82C1BA4851500D68486 /* Cell Background.png */,
-				C505DA3A1BBD3639009C94A6 /* line.png */,
 				2277DE60275B571200FE30A0 /* icon.png */,
-				C5D181EE1BC1237300591BDE /* defaultArtistImage.png */,
 				C5161EAC1ACFCA76005E9CF6 /* ToDoList-Info.plist */,
 				C5161EAD1ACFCA76005E9CF6 /* InfoPlist.strings */,
 				C5161EB01ACFCA76005E9CF6 /* main.m */,
@@ -1413,16 +1413,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				22626FEA278E77DA00FC0B35 /* Main.storyboard in Resources */,
-				C5D181EF1BC1237300591BDE /* defaultArtistImage.png in Resources */,
+				22EECCA1279FFF6300C13B4A /* line.png in Resources */,
 				22F9FEBC278E92F500FE1A00 /* MJRefresh.bundle in Resources */,
 				22F9FE49278E8EFF00FE1A00 /* README.md in Resources */,
-				C505DA3B1BBD3639009C94A6 /* line.png in Resources */,
 				22530C032791694D00C25072 /* GKNavigationBarViewController.bundle in Resources */,
+				22EECCA0279FFF6300C13B4A /* Cell Background.png in Resources */,
 				22EECC92279FEE2F00C13B4A /* AllCountry.json in Resources */,
 				22EECC8C279FEBDB00C13B4A /* Launch Screen.storyboard in Resources */,
 				C5161EAF1ACFCA76005E9CF6 /* InfoPlist.strings in Resources */,
 				2277DE61275B571200FE30A0 /* icon.png in Resources */,
-				C55FD82D1BA4851500D68486 /* Cell Background.png in Resources */,
+				22EECC9F279FFF6300C13B4A /* defaultArtistImage.png in Resources */,
 				C5161EB71ACFCA76005E9CF6 /* Images.xcassets in Resources */,
 				22EECC95279FEE4800C13B4A /* CU_Language.strings in Resources */,
 				22F9FE48278E8EFF00FE1A00 /* LICENSE in Resources */,
@@ -1472,7 +1472,6 @@
 				22E39A04279FE5AC004D960B /* APPNetworkCache.m in Sources */,
 				22F9FE7A278E909E00FE1A00 /* MKAnnotationView+WebCache.m in Sources */,
 				22E39A23279FE5AC004D960B /* CU_HomeModel.m in Sources */,
-				C5161EB51ACFCA76005E9CF6 /* BiDAppDelegate.m in Sources */,
 				22F9FE1C278E836000FE1A00 /* NSArray+MASAdditions.m in Sources */,
 				22E39A28279FE5AC004D960B /* CU_LoginController.m in Sources */,
 				22F9FE52278E8EFF00FE1A00 /* AFImageDownloader.m in Sources */,
@@ -1580,6 +1579,7 @@
 				22F9FE51278E8EFF00FE1A00 /* AFAutoPurgingImageCache.m in Sources */,
 				22F9FE4C278E8EFF00FE1A00 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				22530BF82791694D00C25072 /* GKPushTransitionAnimation.m in Sources */,
+				22EECC9B279FFF2900C13B4A /* BiDAppDelegate.m in Sources */,
 				22F9FE1B278E836000FE1A00 /* MASLayoutConstraint.m in Sources */,
 				22F9FEBD278E92F500FE1A00 /* UIScrollView+MJExtension.m in Sources */,
 				22E39A25279FE5AC004D960B /* CU_MineController.m in Sources */,

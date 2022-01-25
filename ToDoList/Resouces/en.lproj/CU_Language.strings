@@ -7,6 +7,7 @@
 */
 
 //公共
+"Mine_text" = "版本号 1.1";
 "App_CONTINUE" = "下一步" ;
 "App_DETERMINE" = "确 定";
 "App_Confirm" = "确定";

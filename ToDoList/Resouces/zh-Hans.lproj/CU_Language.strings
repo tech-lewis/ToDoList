@@ -6,7 +6,7 @@
   Copyright © 2022 TechLewis. All rights reserved.
 */
 //公共
-"Mine_text" = "English";
+"Mine_text" = "Version 1.1";
 "App_CONTINUE" = "Next" ;
 "App_DETERMINE" = "Confirm";
 "App_Confirm" = "Confirm";
