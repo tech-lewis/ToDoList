@@ -7,7 +7,7 @@
 //
 
 #import "UIButton+CU_CountDownBtn.h"
-
+#import "CU_Define.h"
 @implementation UIButton (CU_CountDownBtn)
 
 /**

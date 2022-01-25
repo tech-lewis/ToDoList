@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 -(NSString *) deleteSpace ;
 
 
+
++ (NSString *)emptyStr:(NSString *)str;
 /**
  手机号正则表达式
  

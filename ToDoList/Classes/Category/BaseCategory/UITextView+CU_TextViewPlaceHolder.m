@@ -7,7 +7,7 @@
 //
 
 #import "UITextView+CU_TextViewPlaceHolder.h"
-
+#import "NSString+CU_NSString.h"
 @interface UITextView ()
 
 @property (nonatomic, assign) BOOL addNoti;

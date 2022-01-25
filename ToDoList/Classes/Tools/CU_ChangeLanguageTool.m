@@ -7,7 +7,8 @@
 //
 
 #import "CU_ChangeLanguageTool.h"
-
+#import "CU_Define.h"
+#import "CU_Const.h"
 static NSBundle *bundle = nil;
 
 @implementation CU_ChangeLanguageTool

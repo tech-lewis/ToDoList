@@ -9,6 +9,16 @@
 #import "NSString+CU_NSString.h"
 @implementation NSString (CU_NSString)
 
+
+
++ (NSString *)emptyStr:(NSString *)str {
+    
+    if(([str isKindOfClass:[NSNull class]]) || ([str isEqual:[NSNull null]]) || (str == nil) || (!str)) {
+        
+        str = @"";
+    }
+    return str;
+}
 /**
  删除字符串里的空格
  
@@ -91,14 +101,14 @@
     NSArray *results = [regex matchesInString:self options:0 range:NSMakeRange(0, self.length)];
     return results.count > 0;
 }
-
-+ (NSString *)emptyStr:(NSString *)str {
-    
-    if(([str isKindOfClass:[NSNull class]]) || ([str isEqual:[NSNull null]]) || (str == nil) || (!str)) {
-        
-        str = @"";
-    }
-    return str;
-}
+//
+//+ (NSString *)emptyStr:(NSString *)str {
+//    
+//    if(([str isKindOfClass:[NSNull class]]) || ([str isEqual:[NSNull null]]) || (str == nil) || (!str)) {
+//        
+//        str = @"";
+//    }
+//    return str;
+//}
 
 @end
