@@ -39,18 +39,27 @@
 
 #pragma mark - UI布局
 -(void) configUI{
-    [self.view addSubview:self.testLab] ;
-    [self.testLab mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.equalTo(self.view) ;
-    }] ;
-    [self.view addSubview:self.testBtn] ;
-    [self.testBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(self.view) ;
-        make.top.equalTo(self.testLab.mas_bottom).offset(kAdaptedWidth(100)) ;
-    }] ;
+  UIImageView *iconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icon.png"]];
+  [self.view addSubview:iconView];
+  [iconView mas_makeConstraints:^(MASConstraintMaker *make) {
+    make.center.equalTo(self.view);
+    make.width.mas_equalTo(50);
+    make.height.mas_equalTo(50);
+  }];
+  
+  [self.view addSubview:self.testLab];
+  [self.testLab mas_makeConstraints:^(MASConstraintMaker *make) {
+    make.centerX.equalTo(self.view);
+    make.top.equalTo(iconView.mas_bottom).offset(kAdaptedWidth(10)) ;
+  }] ;
+  [self.view addSubview:self.testBtn];
+  [self.testBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+    make.centerX.equalTo(self.view);
+    make.top.equalTo(self.testLab.mas_bottom).offset(kAdaptedWidth(100)) ;
+  }] ;
 
-    self.testLab.text = kLocalLanguage(@"Mine_text") ;
-    [self.testBtn setTitle:kLocalLanguage(@"Mine_button") forState:UIControlStateNormal] ;
+  self.testLab.text = kLocalLanguage(@"Mine_text") ;
+  [self.testBtn setTitle:kLocalLanguage(@"Mine_button") forState:UIControlStateNormal];
 }
 
 #pragma mark - 点击事件
