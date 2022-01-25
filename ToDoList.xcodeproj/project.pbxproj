@@ -88,6 +88,8 @@
 		22E39A2B279FE5AC004D960B /* CU_Const.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E399FF279FE5AC004D960B /* CU_Const.m */; };
 		22E39A2E279FE5F0004D960B /* Base_TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E39A2D279FE5F0004D960B /* Base_TableView.m */; };
 		22EECC8C279FEBDB00C13B4A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EECC8E279FEBDB00C13B4A /* Launch Screen.storyboard */; };
+		22EECC92279FEE2F00C13B4A /* AllCountry.json in Resources */ = {isa = PBXBuildFile; fileRef = 22EECC91279FEE2F00C13B4A /* AllCountry.json */; };
+		22EECC95279FEE4800C13B4A /* CU_Language.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22EECC97279FEE4800C13B4A /* CU_Language.strings */; };
 		22F9FE17278E836000FE1A00 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FDFF278E836000FE1A00 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		22F9FE18278E836000FE1A00 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FE08278E836000FE1A00 /* ViewController+MASAdditions.m */; };
 		22F9FE19278E836000FE1A00 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FE0C278E836000FE1A00 /* MASCompositeConstraint.m */; };
@@ -360,6 +362,9 @@
 		22E39A2D279FE5F0004D960B /* Base_TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base_TableView.m; sourceTree = "<group>"; };
 		22EECC8D279FEBDB00C13B4A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		22EECC8F279FEBF600C13B4A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = "en.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		22EECC91279FEE2F00C13B4A /* AllCountry.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AllCountry.json; sourceTree = "<group>"; };
+		22EECC96279FEE4800C13B4A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/CU_Language.strings"; sourceTree = "<group>"; };
+		22EECC98279FEE4B00C13B4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CU_Language.strings; sourceTree = "<group>"; };
 		22F9FDFE278E836000FE1A00 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		22F9FDFF278E836000FE1A00 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		22F9FE00278E836000FE1A00 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -966,6 +971,15 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		22EECC90279FEE2F00C13B4A /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+				22EECC91279FEE2F00C13B4A /* AllCountry.json */,
+				22EECC97279FEE4800C13B4A /* CU_Language.strings */,
+			);
+			path = Resouces;
+			sourceTree = "<group>";
+		};
 		22F9FDC4278E82D200FE1A00 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
@@ -1249,6 +1263,7 @@
 		C5161EAA1ACFCA76005E9CF6 /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				22EECC90279FEE2F00C13B4A /* Resouces */,
 				22E39991279FE5AC004D960B /* Classes */,
 				22F9FDC4278E82D200FE1A00 /* Libs */,
 				C5161EB31ACFCA76005E9CF6 /* BiDAppDelegate.h */,
@@ -1403,11 +1418,13 @@
 				22F9FE49278E8EFF00FE1A00 /* README.md in Resources */,
 				C505DA3B1BBD3639009C94A6 /* line.png in Resources */,
 				22530C032791694D00C25072 /* GKNavigationBarViewController.bundle in Resources */,
+				22EECC92279FEE2F00C13B4A /* AllCountry.json in Resources */,
 				22EECC8C279FEBDB00C13B4A /* Launch Screen.storyboard in Resources */,
 				C5161EAF1ACFCA76005E9CF6 /* InfoPlist.strings in Resources */,
 				2277DE61275B571200FE30A0 /* icon.png in Resources */,
 				C55FD82D1BA4851500D68486 /* Cell Background.png in Resources */,
 				C5161EB71ACFCA76005E9CF6 /* Images.xcassets in Resources */,
+				22EECC95279FEE4800C13B4A /* CU_Language.strings in Resources */,
 				22F9FE48278E8EFF00FE1A00 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1597,6 +1614,15 @@
 				22EECC8F279FEBF600C13B4A /* en */,
 			);
 			name = "Launch Screen.storyboard";
+			sourceTree = "<group>";
+		};
+		22EECC97279FEE4800C13B4A /* CU_Language.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22EECC96279FEE4800C13B4A /* zh-Hans */,
+				22EECC98279FEE4B00C13B4A /* en */,
+			);
+			name = CU_Language.strings;
 			sourceTree = "<group>";
 		};
 		C5161EAD1ACFCA76005E9CF6 /* InfoPlist.strings */ = {
