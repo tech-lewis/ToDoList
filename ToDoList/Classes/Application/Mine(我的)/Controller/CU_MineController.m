@@ -22,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.gk_navTitle = kLocalLanguage(@"Mine_Tab") ;
+  
     //UI布局
     [self configUI] ;
     //注册切换语言通知
