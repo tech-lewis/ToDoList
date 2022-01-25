@@ -76,9 +76,6 @@
 		22E39A1F279FE5AC004D960B /* CU_TypeLeftTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E399D9279FE5AC004D960B /* CU_TypeLeftTableViewCell.m */; };
 		22E39A20279FE5AC004D960B /* CU_TypeRigthContainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E399DB279FE5AC004D960B /* CU_TypeRigthContainView.m */; };
 		22E39A21279FE5AC004D960B /* CU_TypeRightSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E399DD279FE5AC004D960B /* CU_TypeRightSectionHeaderView.m */; };
-		22E39A22279FE5AC004D960B /* CU_HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E399E2279FE5AC004D960B /* CU_HomeController.m */; };
-		22E39A23279FE5AC004D960B /* CU_HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E399E4279FE5AC004D960B /* CU_HomeModel.m */; };
-		22E39A24279FE5AC004D960B /* CU_HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E399E7279FE5AC004D960B /* CU_HomeView.m */; };
 		22E39A25279FE5AC004D960B /* CU_MineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E399EC279FE5AC004D960B /* CU_MineController.m */; };
 		22E39A26279FE5AC004D960B /* CU_MineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E399EF279FE5AC004D960B /* CU_MineModel.m */; };
 		22E39A27279FE5AC004D960B /* CU_MineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E399F2279FE5AC004D960B /* CU_MineView.m */; };
@@ -94,6 +91,17 @@
 		22EECC9F279FFF6300C13B4A /* defaultArtistImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 22EECC9C279FFF6200C13B4A /* defaultArtistImage.png */; };
 		22EECCA0279FFF6300C13B4A /* Cell Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 22EECC9D279FFF6300C13B4A /* Cell Background.png */; };
 		22EECCA1279FFF6300C13B4A /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 22EECC9E279FFF6300C13B4A /* line.png */; };
+		22EECCDE27A0094000C13B4A /* CU_HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EECCC827A0094000C13B4A /* CU_HomeController.m */; };
+		22EECCDF27A0094000C13B4A /* TYMeterTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EECCCA27A0094000C13B4A /* TYMeterTable.m */; };
+		22EECCE027A0094000C13B4A /* CU_HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EECCCB27A0094000C13B4A /* CU_HomeModel.m */; };
+		22EECCE127A0094000C13B4A /* TYLevelPairs.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EECCCD27A0094000C13B4A /* TYLevelPairs.m */; };
+		22EECCE227A0094000C13B4A /* TYMemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EECCD127A0094000C13B4A /* TYMemo.m */; };
+		22EECCE327A0094100C13B4A /* TYVoiceMemoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EECCD327A0094000C13B4A /* TYVoiceMemoCell.m */; };
+		22EECCE427A0094100C13B4A /* TYVoiceMemoHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EECCD427A0094000C13B4A /* TYVoiceMemoHeaderView.m */; };
+		22EECCE527A0094100C13B4A /* CU_HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EECCD627A0094000C13B4A /* CU_HomeView.m */; };
+		22EECCE627A0094100C13B4A /* TYLevelsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EECCD727A0094000C13B4A /* TYLevelsView.m */; };
+		22EECCE727A0094100C13B4A /* TYRecorderTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EECCDD27A0094000C13B4A /* TYRecorderTool.m */; };
+		22EECCEA27A00E9800C13B4A /* CU_NavitationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EECCE927A00E9700C13B4A /* CU_NavitationViewController.m */; };
 		22F9FE17278E836000FE1A00 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FDFF278E836000FE1A00 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		22F9FE18278E836000FE1A00 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FE08278E836000FE1A00 /* ViewController+MASAdditions.m */; };
 		22F9FE19278E836000FE1A00 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FE0C278E836000FE1A00 /* MASCompositeConstraint.m */; };
@@ -336,12 +344,6 @@
 		22E399DC279FE5AC004D960B /* CU_GoodsCategoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CU_GoodsCategoryView.h; sourceTree = "<group>"; };
 		22E399DD279FE5AC004D960B /* CU_TypeRightSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CU_TypeRightSectionHeaderView.m; sourceTree = "<group>"; };
 		22E399DE279FE5AC004D960B /* CU_TypeLeftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CU_TypeLeftView.h; sourceTree = "<group>"; };
-		22E399E1279FE5AC004D960B /* CU_HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CU_HomeController.h; sourceTree = "<group>"; };
-		22E399E2279FE5AC004D960B /* CU_HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CU_HomeController.m; sourceTree = "<group>"; };
-		22E399E4279FE5AC004D960B /* CU_HomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CU_HomeModel.m; sourceTree = "<group>"; };
-		22E399E5279FE5AC004D960B /* CU_HomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CU_HomeModel.h; sourceTree = "<group>"; };
-		22E399E7279FE5AC004D960B /* CU_HomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CU_HomeView.m; sourceTree = "<group>"; };
-		22E399E8279FE5AC004D960B /* CU_HomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CU_HomeView.h; sourceTree = "<group>"; };
 		22E399EB279FE5AC004D960B /* CU_MineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CU_MineController.h; sourceTree = "<group>"; };
 		22E399EC279FE5AC004D960B /* CU_MineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CU_MineController.m; sourceTree = "<group>"; };
 		22E399EE279FE5AC004D960B /* CU_MineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CU_MineModel.h; sourceTree = "<group>"; };
@@ -370,6 +372,28 @@
 		22EECC9C279FFF6200C13B4A /* defaultArtistImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultArtistImage.png; sourceTree = "<group>"; };
 		22EECC9D279FFF6300C13B4A /* Cell Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cell Background.png"; sourceTree = "<group>"; };
 		22EECC9E279FFF6300C13B4A /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
+		22EECCC727A0094000C13B4A /* CU_HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CU_HomeController.h; sourceTree = "<group>"; };
+		22EECCC827A0094000C13B4A /* CU_HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CU_HomeController.m; sourceTree = "<group>"; };
+		22EECCCA27A0094000C13B4A /* TYMeterTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYMeterTable.m; sourceTree = "<group>"; };
+		22EECCCB27A0094000C13B4A /* CU_HomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CU_HomeModel.m; sourceTree = "<group>"; };
+		22EECCCC27A0094000C13B4A /* TYMemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYMemo.h; sourceTree = "<group>"; };
+		22EECCCD27A0094000C13B4A /* TYLevelPairs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYLevelPairs.m; sourceTree = "<group>"; };
+		22EECCCE27A0094000C13B4A /* TYMeterTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYMeterTable.h; sourceTree = "<group>"; };
+		22EECCCF27A0094000C13B4A /* CU_HomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CU_HomeModel.h; sourceTree = "<group>"; };
+		22EECCD027A0094000C13B4A /* TYLevelPairs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYLevelPairs.h; sourceTree = "<group>"; };
+		22EECCD127A0094000C13B4A /* TYMemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYMemo.m; sourceTree = "<group>"; };
+		22EECCD327A0094000C13B4A /* TYVoiceMemoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYVoiceMemoCell.m; sourceTree = "<group>"; };
+		22EECCD427A0094000C13B4A /* TYVoiceMemoHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYVoiceMemoHeaderView.m; sourceTree = "<group>"; };
+		22EECCD527A0094000C13B4A /* TYLevelsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYLevelsView.h; sourceTree = "<group>"; };
+		22EECCD627A0094000C13B4A /* CU_HomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CU_HomeView.m; sourceTree = "<group>"; };
+		22EECCD727A0094000C13B4A /* TYLevelsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYLevelsView.m; sourceTree = "<group>"; };
+		22EECCD827A0094000C13B4A /* TYVoiceMemoHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYVoiceMemoHeaderView.h; sourceTree = "<group>"; };
+		22EECCD927A0094000C13B4A /* TYVoiceMemoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYVoiceMemoCell.h; sourceTree = "<group>"; };
+		22EECCDA27A0094000C13B4A /* CU_HomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CU_HomeView.h; sourceTree = "<group>"; };
+		22EECCDC27A0094000C13B4A /* TYRecorderTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYRecorderTool.h; sourceTree = "<group>"; };
+		22EECCDD27A0094000C13B4A /* TYRecorderTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYRecorderTool.m; sourceTree = "<group>"; };
+		22EECCE827A00E9700C13B4A /* CU_NavitationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CU_NavitationViewController.h; sourceTree = "<group>"; };
+		22EECCE927A00E9700C13B4A /* CU_NavitationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CU_NavitationViewController.m; sourceTree = "<group>"; };
 		22F9FDFE278E836000FE1A00 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		22F9FDFF278E836000FE1A00 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		22F9FE00278E836000FE1A00 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -673,9 +697,9 @@
 		22E39991279FE5AC004D960B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				22E399CA279FE5AC004D960B /* Application */,
 				22EECC99279FFF2800C13B4A /* BiDAppDelegate.h */,
 				22EECC9A279FFF2800C13B4A /* BiDAppDelegate.m */,
-				22E399CA279FE5AC004D960B /* Application */,
 				22E39992279FE5AC004D960B /* Tools */,
 				22E3999E279FE5AC004D960B /* Category */,
 				22E399B7279FE5AC004D960B /* Controller */,
@@ -796,8 +820,8 @@
 		22E399CA279FE5AC004D960B /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				22EECCC527A0094000C13B4A /* Home(首页) */,
 				22E399CB279FE5AC004D960B /* GoodsCategory(分类) */,
-				22E399DF279FE5AC004D960B /* Home(首页) */,
 				22E399E9279FE5AC004D960B /* Mine(我的) */,
 				22E399F3279FE5AC004D960B /* Login(注册登录) */,
 			);
@@ -847,43 +871,6 @@
 				22E399DC279FE5AC004D960B /* CU_GoodsCategoryView.h */,
 				22E399DD279FE5AC004D960B /* CU_TypeRightSectionHeaderView.m */,
 				22E399DE279FE5AC004D960B /* CU_TypeLeftView.h */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		22E399DF279FE5AC004D960B /* Home(首页) */ = {
-			isa = PBXGroup;
-			children = (
-				22E399E0279FE5AC004D960B /* Controller */,
-				22E399E3279FE5AC004D960B /* Model */,
-				22E399E6279FE5AC004D960B /* View */,
-			);
-			path = "Home(首页)";
-			sourceTree = "<group>";
-		};
-		22E399E0279FE5AC004D960B /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				22E399E1279FE5AC004D960B /* CU_HomeController.h */,
-				22E399E2279FE5AC004D960B /* CU_HomeController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		22E399E3279FE5AC004D960B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				22E399E4279FE5AC004D960B /* CU_HomeModel.m */,
-				22E399E5279FE5AC004D960B /* CU_HomeModel.h */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		22E399E6279FE5AC004D960B /* View */ = {
-			isa = PBXGroup;
-			children = (
-				22E399E7279FE5AC004D960B /* CU_HomeView.m */,
-				22E399E8279FE5AC004D960B /* CU_HomeView.h */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -969,6 +956,8 @@
 				22E399FF279FE5AC004D960B /* CU_Const.m */,
 				22E39A00279FE5AC004D960B /* CU_Define.h */,
 				22E39A01279FE5AC004D960B /* CU_Const.h */,
+				22EECCE827A00E9700C13B4A /* CU_NavitationViewController.h */,
+				22EECCE927A00E9700C13B4A /* CU_NavitationViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -983,6 +972,65 @@
 				22EECC97279FEE4800C13B4A /* CU_Language.strings */,
 			);
 			path = Resouces;
+			sourceTree = "<group>";
+		};
+		22EECCC527A0094000C13B4A /* Home(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				22EECCC627A0094000C13B4A /* Controller */,
+				22EECCC927A0094000C13B4A /* Model */,
+				22EECCD227A0094000C13B4A /* View */,
+				22EECCDB27A0094000C13B4A /* Tool */,
+			);
+			path = "Home(首页)";
+			sourceTree = "<group>";
+		};
+		22EECCC627A0094000C13B4A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				22EECCC727A0094000C13B4A /* CU_HomeController.h */,
+				22EECCC827A0094000C13B4A /* CU_HomeController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22EECCC927A0094000C13B4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22EECCCA27A0094000C13B4A /* TYMeterTable.m */,
+				22EECCCB27A0094000C13B4A /* CU_HomeModel.m */,
+				22EECCCC27A0094000C13B4A /* TYMemo.h */,
+				22EECCCD27A0094000C13B4A /* TYLevelPairs.m */,
+				22EECCCE27A0094000C13B4A /* TYMeterTable.h */,
+				22EECCCF27A0094000C13B4A /* CU_HomeModel.h */,
+				22EECCD027A0094000C13B4A /* TYLevelPairs.h */,
+				22EECCD127A0094000C13B4A /* TYMemo.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		22EECCD227A0094000C13B4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22EECCD327A0094000C13B4A /* TYVoiceMemoCell.m */,
+				22EECCD427A0094000C13B4A /* TYVoiceMemoHeaderView.m */,
+				22EECCD527A0094000C13B4A /* TYLevelsView.h */,
+				22EECCD627A0094000C13B4A /* CU_HomeView.m */,
+				22EECCD727A0094000C13B4A /* TYLevelsView.m */,
+				22EECCD827A0094000C13B4A /* TYVoiceMemoHeaderView.h */,
+				22EECCD927A0094000C13B4A /* TYVoiceMemoCell.h */,
+				22EECCDA27A0094000C13B4A /* CU_HomeView.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		22EECCDB27A0094000C13B4A /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				22EECCDC27A0094000C13B4A /* TYRecorderTool.h */,
+				22EECCDD27A0094000C13B4A /* TYRecorderTool.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		22F9FDC4278E82D200FE1A00 /* Libs */ = {
@@ -1447,12 +1495,15 @@
 				22E39A27279FE5AC004D960B /* CU_MineView.m in Sources */,
 				22530C012791694D00C25072 /* UIViewController+GKCategory.m in Sources */,
 				22F9FEC7278E92F500FE1A00 /* MJRefreshStateHeader.m in Sources */,
+				22EECCEA27A00E9800C13B4A /* CU_NavitationViewController.m in Sources */,
 				22F9FE7D278E909E00FE1A00 /* UIImageView+HighlightedWebCache.m in Sources */,
 				22F9FE7C278E909E00FE1A00 /* SDWebImageDecoder.m in Sources */,
 				22F9FEC3278E92F500FE1A00 /* MJRefreshAutoStateFooter.m in Sources */,
 				2217FE71279FE00B00FCDA6F /* NSObject+MJKeyValue.m in Sources */,
+				22EECCDF27A0094000C13B4A /* TYMeterTable.m in Sources */,
 				22E39A0A279FE5AC004D960B /* UIButton+CU_CountDownBtn.m in Sources */,
 				22F9FECA278E92F500FE1A00 /* MJRefreshHeader.m in Sources */,
+				22EECCE627A0094100C13B4A /* TYLevelsView.m in Sources */,
 				2217FE72279FE00B00FCDA6F /* MJIvar.m in Sources */,
 				22F9FE17278E836000FE1A00 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				222DF8B3275B7EF30036AED1 /* ContentCellViewController.m in Sources */,
@@ -1471,7 +1522,6 @@
 				22530BFB2791694D00C25072 /* GKBaseTransitionAnimation.m in Sources */,
 				22E39A04279FE5AC004D960B /* APPNetworkCache.m in Sources */,
 				22F9FE7A278E909E00FE1A00 /* MKAnnotationView+WebCache.m in Sources */,
-				22E39A23279FE5AC004D960B /* CU_HomeModel.m in Sources */,
 				22F9FE1C278E836000FE1A00 /* NSArray+MASAdditions.m in Sources */,
 				22E39A28279FE5AC004D960B /* CU_LoginController.m in Sources */,
 				22F9FE52278E8EFF00FE1A00 /* AFImageDownloader.m in Sources */,
@@ -1481,6 +1531,7 @@
 				22F9FEB9278E92F500FE1A00 /* UIScrollView+MJRefresh.m in Sources */,
 				22E39A02279FE5AC004D960B /* CU_Tools.m in Sources */,
 				222DF8B1275B7EF30036AED1 /* BiDEditorViewController.m in Sources */,
+				22EECCE527A0094100C13B4A /* CU_HomeView.m in Sources */,
 				22F9FEC8278E92F500FE1A00 /* MJRefreshGifHeader.m in Sources */,
 				22F9FE87278E909E00FE1A00 /* UIButton+WebCache.m in Sources */,
 				22F9FE86278E909E00FE1A00 /* UIImageView+WebCache.m in Sources */,
@@ -1488,6 +1539,7 @@
 				22F9FE56278E8EFF00FE1A00 /* AFURLRequestSerialization.m in Sources */,
 				22F9FE4E278E8EFF00FE1A00 /* UIButton+AFNetworking.m in Sources */,
 				22E39A21279FE5AC004D960B /* CU_TypeRightSectionHeaderView.m in Sources */,
+				22EECCE427A0094100C13B4A /* TYVoiceMemoHeaderView.m in Sources */,
 				22530BFF2791694D00C25072 /* UINavigationItem+GKCategory.m in Sources */,
 				2217FE74279FE00B00FCDA6F /* MJTypeEncoding.m in Sources */,
 				22E39A1B279FE5AC004D960B /* CU_GoodsCategoryModel.m in Sources */,
@@ -1503,11 +1555,13 @@
 				22E39A2E279FE5F0004D960B /* Base_TableView.m in Sources */,
 				22E39A1C279FE5AC004D960B /* CU_TypeRightCell.m in Sources */,
 				22F9FEC0278E92F500FE1A00 /* MJRefreshBackGifFooter.m in Sources */,
+				22EECCE127A0094000C13B4A /* TYLevelPairs.m in Sources */,
 				22F9FE7B278E909E00FE1A00 /* SDWebImageManager.m in Sources */,
 				22530BFE2791694D00C25072 /* UIScrollView+GKCategory.m in Sources */,
 				22E39A17279FE5AC004D960B /* CU_LeftImgTextField.m in Sources */,
 				222DF8BB275B7F720036AED1 /* BiDWebBrowserViewController.m in Sources */,
 				22E39A05279FE5AC004D960B /* CU_ChangeLanguageTool.m in Sources */,
+				22EECCE027A0094000C13B4A /* CU_HomeModel.m in Sources */,
 				22F9FE53278E8EFF00FE1A00 /* AFURLResponseSerialization.m in Sources */,
 				22530BFD2791694D00C25072 /* UIBarButtonItem+GKCategory.m in Sources */,
 				22E39A15279FE5AC004D960B /* CU_BaseParam.m in Sources */,
@@ -1528,19 +1582,19 @@
 				22E39A19279FE5AC004D960B /* CU_EdgeLabel.m in Sources */,
 				22F9FE7F278E909E00FE1A00 /* UIImage+GIF.m in Sources */,
 				22F9FE4D278E8EFF00FE1A00 /* UIImageView+AFNetworking.m in Sources */,
-				22E39A24279FE5AC004D960B /* CU_HomeView.m in Sources */,
 				22F9FE58278E8EFF00FE1A00 /* AFSecurityPolicy.m in Sources */,
 				22E39A03279FE5AC004D960B /* APPNetworkHelper.m in Sources */,
 				22E39A1F279FE5AC004D960B /* CU_TypeLeftTableViewCell.m in Sources */,
 				222DF8B5275B7EF30036AED1 /* FoldableView.m in Sources */,
 				2217FE77279FE00B00FCDA6F /* MJArgument.m in Sources */,
+				22EECCDE27A0094000C13B4A /* CU_HomeController.m in Sources */,
 				22530C2127916B8C00C25072 /* YYCache.m in Sources */,
+				22EECCE727A0094100C13B4A /* TYRecorderTool.m in Sources */,
 				22E39A0F279FE5AC004D960B /* NSString+Extension.m in Sources */,
 				22F9FEC9278E92F500FE1A00 /* MJRefreshFooter.m in Sources */,
 				22F9FEBF278E92F500FE1A00 /* UIView+MJExtension.m in Sources */,
 				22F9FE84278E909E00FE1A00 /* SDWebImageDownloaderOperation.m in Sources */,
 				22E39A2A279FE5AC004D960B /* CU_LoginView.m in Sources */,
-				22E39A22279FE5AC004D960B /* CU_HomeController.m in Sources */,
 				2217FE73279FE00B00FCDA6F /* MJType.m in Sources */,
 				22E39A07279FE5AC004D960B /* UIViewController+HUD.m in Sources */,
 				22530C022791694D00C25072 /* GKNavigationBar.m in Sources */,
@@ -1565,6 +1619,7 @@
 				22E39A1E279FE5AC004D960B /* CU_TypeLeftView.m in Sources */,
 				22E39A16279FE5AC004D960B /* CU_BaseModel.m in Sources */,
 				22F9FE19278E836000FE1A00 /* MASCompositeConstraint.m in Sources */,
+				22EECCE227A0094000C13B4A /* TYMemo.m in Sources */,
 				22530BF92791694D00C25072 /* GKDelegateHandler.m in Sources */,
 				22F9FE18278E836000FE1A00 /* ViewController+MASAdditions.m in Sources */,
 				22F9FE79278E909E00FE1A00 /* UIImage+WebP.m in Sources */,
@@ -1583,6 +1638,7 @@
 				22F9FE1B278E836000FE1A00 /* MASLayoutConstraint.m in Sources */,
 				22F9FEBD278E92F500FE1A00 /* UIScrollView+MJExtension.m in Sources */,
 				22E39A25279FE5AC004D960B /* CU_MineController.m in Sources */,
+				22EECCE327A0094100C13B4A /* TYVoiceMemoCell.m in Sources */,
 				22F9FE1E278E836000FE1A00 /* MASConstraint.m in Sources */,
 				22F9FE54278E8EFF00FE1A00 /* AFHTTPSessionManager.m in Sources */,
 			);
