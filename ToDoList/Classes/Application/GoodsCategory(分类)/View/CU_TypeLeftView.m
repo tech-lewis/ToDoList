@@ -9,7 +9,7 @@
 #import "CU_TypeLeftView.h"
 #import "CU_TypeLeftTableViewCell.h"
 #import "CU_GoodsCategoryModel.h"
-
+#import "Base_TableView.h"
 @interface CU_TypeLeftView()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) Base_TableView *tableView;

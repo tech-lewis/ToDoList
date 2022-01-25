@@ -7,7 +7,8 @@
 //
 
 #import "CU_GoodsCategoryController.h"
-
+#import "CU_ChangeLanguageTool.h"
+#import "CU_Define.h"
 #import "CU_TypeLeftView.h"
 #import "CU_TypeRigthContainView.h"
 

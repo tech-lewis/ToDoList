@@ -11,8 +11,9 @@
 #import "CU_TypeRightCell.h"
 #import "CU_TypeRightSectionHeaderView.h"
 #import "CU_GoodsCategoryModel.h"
-
-
+#import "UIView+Extension.h"
+#import "CU_Const.h"
+#import "CU_Define.h"
 @interface CU_TypeRigthContainView()<UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property (nonatomic,strong) UICollectionView *collectionView;

@@ -8,6 +8,8 @@
 
 #import "CU_TypeLeftTableViewCell.h"
 #import "CU_GoodsCategoryModel.h"
+#import "UILabel+Extension.h"
+#import "CU_Define.h"
 
 @interface CU_TypeLeftTableViewCell()
 
