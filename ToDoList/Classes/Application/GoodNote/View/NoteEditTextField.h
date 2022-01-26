@@ -1,5 +1,5 @@
 //
-//  NoteListViewController.h
+//  NoteEditTextField.h
 //  ToDoList
 //
 //  Created by MarkLewis on 2022/1/26.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NoteListViewController : UITableViewController
+@interface NoteEditTextField : UITextField
 
 @end
 
