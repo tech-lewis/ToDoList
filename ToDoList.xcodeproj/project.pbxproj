@@ -152,7 +152,6 @@
 		22F9FECC278E92F500FE1A00 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FEB4278E92F500FE1A00 /* MJRefreshAutoFooter.m */; };
 		22F9FECD278E92F500FE1A00 /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F9FEB6278E92F500FE1A00 /* MJRefreshComponent.m */; };
 		4D70CE1327A196150049B5E5 /* NoteCacheTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D70CE1227A196150049B5E5 /* NoteCacheTools.m */; };
-		4D70CE1627A1962A0049B5E5 /* NoteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D70CE1527A1962A0049B5E5 /* NoteListViewController.m */; };
 		4D70CE2C27A196A40049B5E5 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D70CE1927A196A40049B5E5 /* FMDatabaseQueue.m */; };
 		4D70CE2D27A196A40049B5E5 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D70CE1C27A196A40049B5E5 /* FMDatabaseAdditions.m */; };
 		4D70CE2E27A196A40049B5E5 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D70CE1D27A196A40049B5E5 /* FMDatabase.m */; };
@@ -164,6 +163,9 @@
 		4D70CE3427A196A40049B5E5 /* BEMCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D70CE2927A196A40049B5E5 /* BEMCheckBox.m */; };
 		4D70CE3727A196D00049B5E5 /* NoteListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D70CE3527A196D00049B5E5 /* NoteListModel.m */; };
 		4D70CE3927A1970A0049B5E5 /* todolist.db in Resources */ = {isa = PBXBuildFile; fileRef = 4D70CE3827A1970A0049B5E5 /* todolist.db */; };
+		4D70CE3C27A198ED0049B5E5 /* NoteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D70CE3B27A198ED0049B5E5 /* NoteListViewController.m */; };
+		4D70CE3F27A19C4D0049B5E5 /* AddNewNoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D70CE3E27A19C4D0049B5E5 /* AddNewNoteController.m */; };
+		4D70CE4227A19D5C0049B5E5 /* NoteEditTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D70CE4127A19D5C0049B5E5 /* NoteEditTextField.m */; };
 		C5161EA51ACFCA76005E9CF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5161EA41ACFCA76005E9CF6 /* Foundation.framework */; };
 		C5161EA71ACFCA76005E9CF6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5161EA61ACFCA76005E9CF6 /* CoreGraphics.framework */; };
 		C5161EA91ACFCA76005E9CF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5161EA81ACFCA76005E9CF6 /* UIKit.framework */; };
@@ -500,8 +502,6 @@
 		22F9FEB8278E92F500FE1A00 /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
 		4D70CE1127A196150049B5E5 /* NoteCacheTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteCacheTools.h; sourceTree = "<group>"; };
 		4D70CE1227A196150049B5E5 /* NoteCacheTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteCacheTools.m; sourceTree = "<group>"; };
-		4D70CE1427A1962A0049B5E5 /* NoteListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteListViewController.h; sourceTree = "<group>"; };
-		4D70CE1527A1962A0049B5E5 /* NoteListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteListViewController.m; sourceTree = "<group>"; };
 		4D70CE1827A196A40049B5E5 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		4D70CE1927A196A40049B5E5 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
 		4D70CE1A27A196A40049B5E5 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
@@ -524,6 +524,12 @@
 		4D70CE3527A196D00049B5E5 /* NoteListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteListModel.m; sourceTree = "<group>"; };
 		4D70CE3627A196D00049B5E5 /* NoteListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteListModel.h; sourceTree = "<group>"; };
 		4D70CE3827A1970A0049B5E5 /* todolist.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = todolist.db; sourceTree = "<group>"; };
+		4D70CE3A27A198ED0049B5E5 /* NoteListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteListViewController.h; sourceTree = "<group>"; };
+		4D70CE3B27A198ED0049B5E5 /* NoteListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteListViewController.m; sourceTree = "<group>"; };
+		4D70CE3D27A19C4D0049B5E5 /* AddNewNoteController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddNewNoteController.h; sourceTree = "<group>"; };
+		4D70CE3E27A19C4D0049B5E5 /* AddNewNoteController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddNewNoteController.m; sourceTree = "<group>"; };
+		4D70CE4027A19D5C0049B5E5 /* NoteEditTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteEditTextField.h; sourceTree = "<group>"; };
+		4D70CE4127A19D5C0049B5E5 /* NoteEditTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteEditTextField.m; sourceTree = "<group>"; };
 		C5161EA11ACFCA76005E9CF6 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5161EA41ACFCA76005E9CF6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C5161EA61ACFCA76005E9CF6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -1223,8 +1229,8 @@
 		4D70CE0C27A195460049B5E5 /* GoodNote */ = {
 			isa = PBXGroup;
 			children = (
-				4D70CE1027A196150049B5E5 /* Tools */,
 				4D70CE0D27A195460049B5E5 /* Controller */,
+				4D70CE1027A196150049B5E5 /* Tools */,
 				4D70CE0E27A195460049B5E5 /* Model */,
 				4D70CE0F27A195460049B5E5 /* View */,
 			);
@@ -1234,8 +1240,10 @@
 		4D70CE0D27A195460049B5E5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4D70CE1427A1962A0049B5E5 /* NoteListViewController.h */,
-				4D70CE1527A1962A0049B5E5 /* NoteListViewController.m */,
+				4D70CE3A27A198ED0049B5E5 /* NoteListViewController.h */,
+				4D70CE3B27A198ED0049B5E5 /* NoteListViewController.m */,
+				4D70CE3D27A19C4D0049B5E5 /* AddNewNoteController.h */,
+				4D70CE3E27A19C4D0049B5E5 /* AddNewNoteController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1252,6 +1260,8 @@
 		4D70CE0F27A195460049B5E5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4D70CE4027A19D5C0049B5E5 /* NoteEditTextField.h */,
+				4D70CE4127A19D5C0049B5E5 /* NoteEditTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1574,7 +1584,6 @@
 				22F9FECB278E92F500FE1A00 /* MJRefreshBackFooter.m in Sources */,
 				22F9FEC1278E92F500FE1A00 /* MJRefreshBackStateFooter.m in Sources */,
 				22E39A08279FE5AC004D960B /* UIView+HUD.m in Sources */,
-				4D70CE1627A1962A0049B5E5 /* NoteListViewController.m in Sources */,
 				222DF8B2275B7EF30036AED1 /* BiDToDoListViewController.m in Sources */,
 				222DF8B7275B7EF30036AED1 /* MusicPlayerViewController.m in Sources */,
 				22E39A2E279FE5F0004D960B /* Base_TableView.m in Sources */,
@@ -1589,6 +1598,8 @@
 				22EECCE027A0094000C13B4A /* CU_HomeModel.m in Sources */,
 				22F9FE53278E8EFF00FE1A00 /* AFURLResponseSerialization.m in Sources */,
 				22E39A15279FE5AC004D960B /* CU_BaseParam.m in Sources */,
+				4D70CE3C27A198ED0049B5E5 /* NoteListViewController.m in Sources */,
+				4D70CE4227A19D5C0049B5E5 /* NoteEditTextField.m in Sources */,
 				22F9FECC278E92F500FE1A00 /* MJRefreshAutoFooter.m in Sources */,
 				222DF8B8275B7EF30036AED1 /* MusicPlayingView.m in Sources */,
 				22F9FE4A278E8EFF00FE1A00 /* UIProgressView+AFNetworking.m in Sources */,
@@ -1604,6 +1615,7 @@
 				22F9FE4B278E8EFF00FE1A00 /* UIRefreshControl+AFNetworking.m in Sources */,
 				C5161EB11ACFCA76005E9CF6 /* main.m in Sources */,
 				22E39A13279FE5AC004D960B /* CU_TabBarController.m in Sources */,
+				4D70CE3F27A19C4D0049B5E5 /* AddNewNoteController.m in Sources */,
 				22E39A19279FE5AC004D960B /* CU_EdgeLabel.m in Sources */,
 				22F9FE7F278E909E00FE1A00 /* UIImage+GIF.m in Sources */,
 				22F9FE4D278E8EFF00FE1A00 /* UIImageView+AFNetworking.m in Sources */,

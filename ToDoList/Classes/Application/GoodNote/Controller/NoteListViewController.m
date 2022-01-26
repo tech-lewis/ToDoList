@@ -7,87 +7,71 @@
 //
 
 #import "NoteListViewController.h"
-
+#import "AddNewNoteController.h"
+#import "NoteCacheTools.h"
+#import "CU_NavitationViewController.h"
+#import "NoteListModel.h"
 @interface NoteListViewController ()
-
+@property (nonatomic, strong) NSMutableArray *listDatas;
 @end
 
 @implementation NoteListViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+- (void)viewDidLoad
+{
+  [super viewDidLoad];
+  self.navigationItem.title = @"SQLite Note";
+  self.navigationItem.leftBarButtonItem  = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(clickAddHandler)];
+}
+#pragma mark - ib Action
+- (void)clickAddHandler
+{
+  AddNewNoteController *controller = [[AddNewNoteController alloc] initWithBlock:^(NoteListModel *data) {
+    // 完成编辑 刷新列表
+    self.listDatas = nil;
+    [self.tableView reloadData];
+  }];
+  CU_NavitationViewController *nav = [[CU_NavitationViewController alloc] initWithRootViewController:controller];
+  
+  [self presentViewController:nav animated:true completion:NULL];
+  
+}
+
+#pragma mark - instance var
+- (NSMutableArray *)listDatas
+{
+  if (_listDatas == nil)
+  {
+    _listDatas = [NSMutableArray array];
+    for(NoteListModel *item in [NoteCacheTools findAllNotes]) {
+      [_listDatas addObject:item];
+    }
+  }
+  return _listDatas;
 }
 
 #pragma mark - Table view data source
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+  return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+  return self.listDatas.count;
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+  NSString *identifier = @"NoteListCell";
+  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+  if (cell == nil)
+  {
+    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier];
+  }
+  
+  // set data
+  NoteListModel *data = self.listDatas[indexPath.row];
+  cell.textLabel.text = data.title;
+  cell.detailTextLabel.text = [NSString stringWithFormat:@"创建时间: %@", data.createTime];
+  return cell;
 }
-*/
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

@@ -7,11 +7,10 @@
 //
 
 #import "CU_BaseViewController.h"
-
-NS_ASSUME_NONNULL_BEGIN
-
+@class NoteListModel;
+typedef void(^AddNoteFinishBlock)(NoteListModel *data);
 @interface AddNewNoteController : CU_BaseViewController
+@property (nonatomic, copy) AddNoteFinishBlock completeBlock;
 
+- (instancetype)initWithBlock:(AddNoteFinishBlock)block;
 @end
-
-NS_ASSUME_NONNULL_END
