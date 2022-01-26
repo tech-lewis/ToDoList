@@ -25,20 +25,6 @@
 		222DF8B7275B7EF30036AED1 /* MusicPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8AD275B7EF30036AED1 /* MusicPlayerViewController.m */; };
 		222DF8B8275B7EF30036AED1 /* MusicPlayingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8AF275B7EF30036AED1 /* MusicPlayingView.m */; };
 		222DF8BB275B7F720036AED1 /* BiDWebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8BA275B7F720036AED1 /* BiDWebBrowserViewController.m */; };
-		22530BF82791694D00C25072 /* GKPushTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 22530BDA2791694D00C25072 /* GKPushTransitionAnimation.m */; };
-		22530BF92791694D00C25072 /* GKDelegateHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 22530BDB2791694D00C25072 /* GKDelegateHandler.m */; };
-		22530BFA2791694D00C25072 /* GKPopTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 22530BDC2791694D00C25072 /* GKPopTransitionAnimation.m */; };
-		22530BFB2791694D00C25072 /* GKBaseTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 22530BDD2791694D00C25072 /* GKBaseTransitionAnimation.m */; };
-		22530BFC2791694D00C25072 /* UINavigationController+GKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 22530BE42791694D00C25072 /* UINavigationController+GKCategory.m */; };
-		22530BFD2791694D00C25072 /* UIBarButtonItem+GKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 22530BE62791694D00C25072 /* UIBarButtonItem+GKCategory.m */; };
-		22530BFE2791694D00C25072 /* UIScrollView+GKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 22530BE82791694D00C25072 /* UIScrollView+GKCategory.m */; };
-		22530BFF2791694D00C25072 /* UINavigationItem+GKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 22530BEA2791694D00C25072 /* UINavigationItem+GKCategory.m */; };
-		22530C002791694D00C25072 /* UIImage+GKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 22530BEC2791694D00C25072 /* UIImage+GKCategory.m */; };
-		22530C012791694D00C25072 /* UIViewController+GKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 22530BEF2791694D00C25072 /* UIViewController+GKCategory.m */; };
-		22530C022791694D00C25072 /* GKNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 22530BF22791694D00C25072 /* GKNavigationBar.m */; };
-		22530C032791694D00C25072 /* GKNavigationBarViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 22530BF32791694D00C25072 /* GKNavigationBarViewController.bundle */; };
-		22530C042791694D00C25072 /* GKNavigationBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22530BF42791694D00C25072 /* GKNavigationBarViewController.m */; };
-		22530C052791694D00C25072 /* GKNavigationBarConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 22530BF72791694D00C25072 /* GKNavigationBarConfigure.m */; };
 		22530C2027916B8C00C25072 /* YYMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 22530C1927916B8C00C25072 /* YYMemoryCache.m */; };
 		22530C2127916B8C00C25072 /* YYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 22530C1A27916B8C00C25072 /* YYCache.m */; };
 		22530C2227916B8C00C25072 /* YYKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 22530C1B27916B8C00C25072 /* YYKVStorage.m */; };
@@ -257,35 +243,6 @@
 		222DF8AF275B7EF30036AED1 /* MusicPlayingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicPlayingView.m; sourceTree = "<group>"; };
 		222DF8B9275B7F720036AED1 /* BiDWebBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiDWebBrowserViewController.h; sourceTree = "<group>"; };
 		222DF8BA275B7F720036AED1 /* BiDWebBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BiDWebBrowserViewController.m; sourceTree = "<group>"; };
-		22530BDA2791694D00C25072 /* GKPushTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKPushTransitionAnimation.m; sourceTree = "<group>"; };
-		22530BDB2791694D00C25072 /* GKDelegateHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKDelegateHandler.m; sourceTree = "<group>"; };
-		22530BDC2791694D00C25072 /* GKPopTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKPopTransitionAnimation.m; sourceTree = "<group>"; };
-		22530BDD2791694D00C25072 /* GKBaseTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKBaseTransitionAnimation.m; sourceTree = "<group>"; };
-		22530BDE2791694D00C25072 /* GKPushTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKPushTransitionAnimation.h; sourceTree = "<group>"; };
-		22530BDF2791694D00C25072 /* GKDelegateHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKDelegateHandler.h; sourceTree = "<group>"; };
-		22530BE02791694D00C25072 /* GKPopTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKPopTransitionAnimation.h; sourceTree = "<group>"; };
-		22530BE12791694D00C25072 /* GKBaseTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKBaseTransitionAnimation.h; sourceTree = "<group>"; };
-		22530BE32791694D00C25072 /* UIImage+GKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GKCategory.h"; sourceTree = "<group>"; };
-		22530BE42791694D00C25072 /* UINavigationController+GKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+GKCategory.m"; sourceTree = "<group>"; };
-		22530BE52791694D00C25072 /* UINavigationItem+GKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+GKCategory.h"; sourceTree = "<group>"; };
-		22530BE62791694D00C25072 /* UIBarButtonItem+GKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+GKCategory.m"; sourceTree = "<group>"; };
-		22530BE72791694D00C25072 /* UIViewController+GKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GKCategory.h"; sourceTree = "<group>"; };
-		22530BE82791694D00C25072 /* UIScrollView+GKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+GKCategory.m"; sourceTree = "<group>"; };
-		22530BE92791694D00C25072 /* GKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKCategory.h; sourceTree = "<group>"; };
-		22530BEA2791694D00C25072 /* UINavigationItem+GKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+GKCategory.m"; sourceTree = "<group>"; };
-		22530BEB2791694D00C25072 /* UINavigationController+GKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+GKCategory.h"; sourceTree = "<group>"; };
-		22530BEC2791694D00C25072 /* UIImage+GKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GKCategory.m"; sourceTree = "<group>"; };
-		22530BED2791694D00C25072 /* UIBarButtonItem+GKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+GKCategory.h"; sourceTree = "<group>"; };
-		22530BEE2791694D00C25072 /* UIScrollView+GKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+GKCategory.h"; sourceTree = "<group>"; };
-		22530BEF2791694D00C25072 /* UIViewController+GKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GKCategory.m"; sourceTree = "<group>"; };
-		22530BF02791694D00C25072 /* GKNavigationBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKNavigationBarViewController.h; sourceTree = "<group>"; };
-		22530BF12791694D00C25072 /* GKNavigationBarConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKNavigationBarConfigure.h; sourceTree = "<group>"; };
-		22530BF22791694D00C25072 /* GKNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKNavigationBar.m; sourceTree = "<group>"; };
-		22530BF32791694D00C25072 /* GKNavigationBarViewController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GKNavigationBarViewController.bundle; sourceTree = "<group>"; };
-		22530BF42791694D00C25072 /* GKNavigationBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKNavigationBarViewController.m; sourceTree = "<group>"; };
-		22530BF52791694D00C25072 /* GKCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKCommon.h; sourceTree = "<group>"; };
-		22530BF62791694D00C25072 /* GKNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKNavigationBar.h; sourceTree = "<group>"; };
-		22530BF72791694D00C25072 /* GKNavigationBarConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKNavigationBarConfigure.m; sourceTree = "<group>"; };
 		22530C1827916B8C00C25072 /* YYKVStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKVStorage.h; sourceTree = "<group>"; };
 		22530C1927916B8C00C25072 /* YYMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMemoryCache.m; sourceTree = "<group>"; };
 		22530C1A27916B8C00C25072 /* YYCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCache.m; sourceTree = "<group>"; };
@@ -666,58 +623,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		22530BD82791694D00C25072 /* GKNavigationBarViewController */ = {
-			isa = PBXGroup;
-			children = (
-				22530BD92791694D00C25072 /* TransitionAnimation */,
-				22530BE22791694D00C25072 /* Category */,
-				22530BF02791694D00C25072 /* GKNavigationBarViewController.h */,
-				22530BF12791694D00C25072 /* GKNavigationBarConfigure.h */,
-				22530BF22791694D00C25072 /* GKNavigationBar.m */,
-				22530BF32791694D00C25072 /* GKNavigationBarViewController.bundle */,
-				22530BF42791694D00C25072 /* GKNavigationBarViewController.m */,
-				22530BF52791694D00C25072 /* GKCommon.h */,
-				22530BF62791694D00C25072 /* GKNavigationBar.h */,
-				22530BF72791694D00C25072 /* GKNavigationBarConfigure.m */,
-			);
-			path = GKNavigationBarViewController;
-			sourceTree = "<group>";
-		};
-		22530BD92791694D00C25072 /* TransitionAnimation */ = {
-			isa = PBXGroup;
-			children = (
-				22530BDA2791694D00C25072 /* GKPushTransitionAnimation.m */,
-				22530BDB2791694D00C25072 /* GKDelegateHandler.m */,
-				22530BDC2791694D00C25072 /* GKPopTransitionAnimation.m */,
-				22530BDD2791694D00C25072 /* GKBaseTransitionAnimation.m */,
-				22530BDE2791694D00C25072 /* GKPushTransitionAnimation.h */,
-				22530BDF2791694D00C25072 /* GKDelegateHandler.h */,
-				22530BE02791694D00C25072 /* GKPopTransitionAnimation.h */,
-				22530BE12791694D00C25072 /* GKBaseTransitionAnimation.h */,
-			);
-			path = TransitionAnimation;
-			sourceTree = "<group>";
-		};
-		22530BE22791694D00C25072 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				22530BE32791694D00C25072 /* UIImage+GKCategory.h */,
-				22530BE42791694D00C25072 /* UINavigationController+GKCategory.m */,
-				22530BE52791694D00C25072 /* UINavigationItem+GKCategory.h */,
-				22530BE62791694D00C25072 /* UIBarButtonItem+GKCategory.m */,
-				22530BE72791694D00C25072 /* UIViewController+GKCategory.h */,
-				22530BE82791694D00C25072 /* UIScrollView+GKCategory.m */,
-				22530BE92791694D00C25072 /* GKCategory.h */,
-				22530BEA2791694D00C25072 /* UINavigationItem+GKCategory.m */,
-				22530BEB2791694D00C25072 /* UINavigationController+GKCategory.h */,
-				22530BEC2791694D00C25072 /* UIImage+GKCategory.m */,
-				22530BED2791694D00C25072 /* UIBarButtonItem+GKCategory.h */,
-				22530BEE2791694D00C25072 /* UIScrollView+GKCategory.h */,
-				22530BEF2791694D00C25072 /* UIViewController+GKCategory.m */,
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
 		22530C0627916AE900C25072 /* YYCache */ = {
 			isa = PBXGroup;
 			children = (
@@ -1081,7 +986,6 @@
 				4D70CE2327A196A40049B5E5 /* BEMCheckBox */,
 				2217FE5C279FE00B00FCDA6F /* MJExtensionKit */,
 				22530C0627916AE900C25072 /* YYCache */,
-				22530BD82791694D00C25072 /* GKNavigationBarViewController */,
 				22F9FE88278E92F500FE1A00 /* MJRefresh */,
 				22F9FE59278E909E00FE1A00 /* SDWebImage */,
 				22F9FE21278E8EFF00FE1A00 /* AFNetworking */,
@@ -1585,7 +1489,6 @@
 				22EECCA1279FFF6300C13B4A /* line.png in Resources */,
 				22F9FEBC278E92F500FE1A00 /* MJRefresh.bundle in Resources */,
 				22F9FE49278E8EFF00FE1A00 /* README.md in Resources */,
-				22530C032791694D00C25072 /* GKNavigationBarViewController.bundle in Resources */,
 				22EECCA0279FFF6300C13B4A /* Cell Background.png in Resources */,
 				22EECC92279FEE2F00C13B4A /* AllCountry.json in Resources */,
 				22EECC8C279FEBDB00C13B4A /* Launch Screen.storyboard in Resources */,
@@ -1614,7 +1517,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				22E39A27279FE5AC004D960B /* CU_MineView.m in Sources */,
-				22530C012791694D00C25072 /* UIViewController+GKCategory.m in Sources */,
 				22F9FEC7278E92F500FE1A00 /* MJRefreshStateHeader.m in Sources */,
 				22EECCEA27A00E9800C13B4A /* CU_NavitationViewController.m in Sources */,
 				4D70CE3127A196A40049B5E5 /* BEMAnimationManager.m in Sources */,
@@ -1641,10 +1543,8 @@
 				22F9FE85278E909E00FE1A00 /* NSData+ImageContentType.m in Sources */,
 				22E39A26279FE5AC004D960B /* CU_MineModel.m in Sources */,
 				22F9FE7E278E909E00FE1A00 /* SDWebImageDownloader.m in Sources */,
-				22530BFC2791694D00C25072 /* UINavigationController+GKCategory.m in Sources */,
 				4D70CE3227A196A40049B5E5 /* BEMPathManager.m in Sources */,
 				22530C2227916B8C00C25072 /* YYKVStorage.m in Sources */,
-				22530BFB2791694D00C25072 /* GKBaseTransitionAnimation.m in Sources */,
 				22E39A04279FE5AC004D960B /* APPNetworkCache.m in Sources */,
 				22F9FE7A278E909E00FE1A00 /* MKAnnotationView+WebCache.m in Sources */,
 				4D70CE2E27A196A40049B5E5 /* FMDatabase.m in Sources */,
@@ -1661,12 +1561,10 @@
 				22F9FEC8278E92F500FE1A00 /* MJRefreshGifHeader.m in Sources */,
 				22F9FE87278E909E00FE1A00 /* UIButton+WebCache.m in Sources */,
 				22F9FE86278E909E00FE1A00 /* UIImageView+WebCache.m in Sources */,
-				22530BFA2791694D00C25072 /* GKPopTransitionAnimation.m in Sources */,
 				22F9FE56278E8EFF00FE1A00 /* AFURLRequestSerialization.m in Sources */,
 				22F9FE4E278E8EFF00FE1A00 /* UIButton+AFNetworking.m in Sources */,
 				22E39A21279FE5AC004D960B /* CU_TypeRightSectionHeaderView.m in Sources */,
 				22EECCE427A0094100C13B4A /* TYVoiceMemoHeaderView.m in Sources */,
-				22530BFF2791694D00C25072 /* UINavigationItem+GKCategory.m in Sources */,
 				2217FE74279FE00B00FCDA6F /* MJTypeEncoding.m in Sources */,
 				22E39A1B279FE5AC004D960B /* CU_GoodsCategoryModel.m in Sources */,
 				22F9FECD278E92F500FE1A00 /* MJRefreshComponent.m in Sources */,
@@ -1685,13 +1583,11 @@
 				4D70CE3327A196A40049B5E5 /* BEMCheckBoxGroup.m in Sources */,
 				22EECCE127A0094000C13B4A /* TYLevelPairs.m in Sources */,
 				22F9FE7B278E909E00FE1A00 /* SDWebImageManager.m in Sources */,
-				22530BFE2791694D00C25072 /* UIScrollView+GKCategory.m in Sources */,
 				22E39A17279FE5AC004D960B /* CU_LeftImgTextField.m in Sources */,
 				222DF8BB275B7F720036AED1 /* BiDWebBrowserViewController.m in Sources */,
 				22E39A05279FE5AC004D960B /* CU_ChangeLanguageTool.m in Sources */,
 				22EECCE027A0094000C13B4A /* CU_HomeModel.m in Sources */,
 				22F9FE53278E8EFF00FE1A00 /* AFURLResponseSerialization.m in Sources */,
-				22530BFD2791694D00C25072 /* UIBarButtonItem+GKCategory.m in Sources */,
 				22E39A15279FE5AC004D960B /* CU_BaseParam.m in Sources */,
 				22F9FECC278E92F500FE1A00 /* MJRefreshAutoFooter.m in Sources */,
 				222DF8B8275B7EF30036AED1 /* MusicPlayingView.m in Sources */,
@@ -1728,9 +1624,7 @@
 				2217FE73279FE00B00FCDA6F /* MJType.m in Sources */,
 				4D70CE2F27A196A40049B5E5 /* FMDatabasePool.m in Sources */,
 				22E39A07279FE5AC004D960B /* UIViewController+HUD.m in Sources */,
-				22530C022791694D00C25072 /* GKNavigationBar.m in Sources */,
 				22E39A0D279FE5AC004D960B /* NSString+CU_NSString.m in Sources */,
-				22530C042791694D00C25072 /* GKNavigationBarViewController.m in Sources */,
 				22E39A0B279FE5AC004D960B /* UITextView+CU_TextViewPlaceHolder.m in Sources */,
 				22F9FEC4278E92F500FE1A00 /* MJRefreshAutoGifFooter.m in Sources */,
 				22E39A1A279FE5AC004D960B /* CU_GoodsCategoryController.m in Sources */,
@@ -1739,7 +1633,6 @@
 				22E39A2B279FE5AC004D960B /* CU_Const.m in Sources */,
 				2217FE78279FE00B00FCDA6F /* NSObject+MJMember.m in Sources */,
 				222DF8B0275B7EF30036AED1 /* BiDAddToDoItemViewController.m in Sources */,
-				22530C002791694D00C25072 /* UIImage+GKCategory.m in Sources */,
 				22E39A12279FE5AC004D960B /* CU_BaseViewController.m in Sources */,
 				2217FE70279FE00B00FCDA6F /* MJMember.m in Sources */,
 				22E39A1D279FE5AC004D960B /* CU_GoodsCategoryView.m in Sources */,
@@ -1751,11 +1644,9 @@
 				22E39A16279FE5AC004D960B /* CU_BaseModel.m in Sources */,
 				22F9FE19278E836000FE1A00 /* MASCompositeConstraint.m in Sources */,
 				22EECCE227A0094000C13B4A /* TYMemo.m in Sources */,
-				22530BF92791694D00C25072 /* GKDelegateHandler.m in Sources */,
 				22F9FE18278E836000FE1A00 /* ViewController+MASAdditions.m in Sources */,
 				22F9FE79278E909E00FE1A00 /* UIImage+WebP.m in Sources */,
 				22E39A06279FE5AC004D960B /* CU_CacheManager.m in Sources */,
-				22530C052791694D00C25072 /* GKNavigationBarConfigure.m in Sources */,
 				22F9FE55278E8EFF00FE1A00 /* AFURLSessionManager.m in Sources */,
 				22E39A0C279FE5AC004D960B /* UILabel+Extension.m in Sources */,
 				22F9FE80278E909E00FE1A00 /* UIImage+MultiFormat.m in Sources */,
@@ -1765,7 +1656,6 @@
 				22F9FE81278E909E00FE1A00 /* SDWebImageCompat.m in Sources */,
 				22F9FE51278E8EFF00FE1A00 /* AFAutoPurgingImageCache.m in Sources */,
 				22F9FE4C278E8EFF00FE1A00 /* AFNetworkActivityIndicatorManager.m in Sources */,
-				22530BF82791694D00C25072 /* GKPushTransitionAnimation.m in Sources */,
 				4D70CE1327A196150049B5E5 /* NoteCacheTools.m in Sources */,
 				22EECC9B279FFF2900C13B4A /* BiDAppDelegate.m in Sources */,
 				22F9FE1B278E836000FE1A00 /* MASLayoutConstraint.m in Sources */,
