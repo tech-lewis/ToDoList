@@ -9,6 +9,7 @@
 #import "CU_GoodsCategoryController.h"
 #import "CU_ChangeLanguageTool.h"
 #import "CU_Define.h"
+#import "CU_Const.h"
 #import "CU_TypeLeftView.h"
 #import "CU_TypeRigthContainView.h"
 
@@ -23,12 +24,11 @@
 @implementation CU_GoodsCategoryController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    self.gk_navTitle = kLocalLanguage(@"Category_Tab") ;
-    //注册切换语言通知
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeLanguage:) name:kChangeLanguageNotice object:nil];
-    
-    [self setupUI];
+  [super viewDidLoad];
+  self.navigationItem.title = kLocalLanguage(@"Category_Tab") ;
+  //注册切换语言通知
+  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeLanguage:) name:kChangeLanguageNotice object:nil];
+  [self setupUI];
 }
 
 ////切换语言通知处理
@@ -92,10 +92,7 @@
 #pragma mark - seutpUI
 
 -(void)setupUI {
-    
-
-    self.gk_navLineHidden = NO;
-    
+    // self.gk_navLineHidden = NO;
     _leftContainView = [[CU_TypeLeftView alloc]init];
     _leftContainView.delegate = self;
     //    _leftContainView.hidden = YES;
@@ -110,7 +107,7 @@
     
     [_leftContainView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.view);
-        make.top.equalTo(self.gk_navigationBar.mas_bottom);;
+        make.top.equalTo(self.navigationController.navigationBar.mas_bottom);;
         make.bottom.equalTo(self.mas_bottomLayoutGuideTop);
         make.width.mas_equalTo(@(kAdaptedWidth(80)));
     }];

@@ -21,7 +21,7 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  self.gk_navTitle = kLocalLanguage(@"Mine_Tab") ;
+  self.navigationItem.title = kLocalLanguage(@"Mine_Tab") ;
   // NSLog(@"%@", [CU_ChangeLanguageTool userLanguage]);
   //UI布局
   [self configUI] ;
@@ -32,7 +32,7 @@
 //切换语言通知处理
 - (void)changeLanguage:(NSNotification *) notification{
   
-  self.gk_navTitle = kLocalLanguage(@"Mine_Tab") ;
+  self.navigationItem.title = kLocalLanguage(@"Mine_Tab") ;
   [self.testBtn setTitle:kLocalLanguage(@"Mine_button") forState:UIControlStateNormal];
   self.testLab.text = kLocalLanguage(@"Mine_text");
 }

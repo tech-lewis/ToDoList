@@ -17,8 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = kBACKGROUND_COLOR ;
-    self.gk_navShadowColor = [UIColor clearColor] ;
-    self.gk_navItemLeftSpace = 0.0f ;
+    // self.gk_navShadowColor = [UIColor clearColor] ;
+    // self.gk_navItemLeftSpace = 0.0f ;
 }
 
 //移除通知

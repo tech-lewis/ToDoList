@@ -33,8 +33,8 @@ static NSString * const cellID = @"CellID";
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  self.gk_navigationBar.barStyle = UIBarStyleBlack;
-  self.gk_navTitle = kLocalLanguage(@"Home_Tab") ;
+  // self.gk_navigationBar.barStyle = UIBarStyleBlack;
+  self.navigationItem.title = kLocalLanguage(@"Home_Tab") ;
   [self setupUI];
   
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(TYNotification_SaveVoiceSuccess:) name:@"TYNotification_SaveVoiceSuccess" object:nil];
@@ -44,7 +44,7 @@ static NSString * const cellID = @"CellID";
 
 //切换语言通知处理
 - (void)changeLanguage:(NSNotification *) notification{
-  self.gk_navTitle = kLocalLanguage(@"Home_Tab") ;
+  self.navigationItem.title = kLocalLanguage(@"Home_Tab") ;
 }
 
 

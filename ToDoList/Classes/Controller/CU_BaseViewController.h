@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CU_BaseViewController : GKNavigationBarViewController
+@interface CU_BaseViewController : UIViewController
 
 @end
 
