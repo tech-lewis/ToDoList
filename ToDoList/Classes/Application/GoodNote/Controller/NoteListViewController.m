@@ -28,6 +28,7 @@
 {
   AddNewNoteController *controller = [[AddNewNoteController alloc] initWithBlock:^(NoteListModel *data) {
     // 完成编辑 刷新列表
+    [NoteCacheTools addStatus:data];
     self.listDatas = nil;
     [self.tableView reloadData];
   }];
