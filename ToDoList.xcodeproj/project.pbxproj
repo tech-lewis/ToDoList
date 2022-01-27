@@ -34,6 +34,10 @@
 		22B0F10027A26172001248CE /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B0F0FF27A26172001248CE /* API.m */; };
 		22B0F10327A2618F001248CE /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B0F10227A2618F001248CE /* Project.m */; };
 		22B0F10727A263BB001248CE /* NavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B0F10627A263BB001248CE /* NavigationView.m */; };
+		22B0F10A27A27481001248CE /* 18514798-61a5-499e-a0a6-1b6f34c9e685.wav in Resources */ = {isa = PBXBuildFile; fileRef = 22B0F10927A27481001248CE /* 18514798-61a5-499e-a0a6-1b6f34c9e685.wav */; };
+		22B0F11427A27519001248CE /* PJLReadObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B0F10F27A27519001248CE /* PJLReadObject.m */; };
+		22B0F11527A27519001248CE /* PJLRecognitionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B0F11127A27519001248CE /* PJLRecognitionObject.m */; };
+		22B0F11827A2756B001248CE /* VoiceRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B0F11727A2756B001248CE /* VoiceRecordViewController.m */; };
 		22E39A02279FE5AC004D960B /* CU_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E39994279FE5AC004D960B /* CU_Tools.m */; };
 		22E39A03279FE5AC004D960B /* APPNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E39999279FE5AC004D960B /* APPNetworkHelper.m */; };
 		22E39A04279FE5AC004D960B /* APPNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E3999A279FE5AC004D960B /* APPNetworkCache.m */; };
@@ -263,6 +267,14 @@
 		22B0F10227A2618F001248CE /* Project.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
 		22B0F10527A263BB001248CE /* NavigationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationView.h; sourceTree = "<group>"; };
 		22B0F10627A263BB001248CE /* NavigationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationView.m; sourceTree = "<group>"; };
+		22B0F10927A27481001248CE /* 18514798-61a5-499e-a0a6-1b6f34c9e685.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "18514798-61a5-499e-a0a6-1b6f34c9e685.wav"; sourceTree = "<group>"; };
+		22B0F10F27A27519001248CE /* PJLReadObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJLReadObject.m; sourceTree = "<group>"; };
+		22B0F11027A27519001248CE /* PJLRecognitionObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJLRecognitionObject.h; sourceTree = "<group>"; };
+		22B0F11127A27519001248CE /* PJLRecognitionObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJLRecognitionObject.m; sourceTree = "<group>"; };
+		22B0F11227A27519001248CE /* PJLReadObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJLReadObject.h; sourceTree = "<group>"; };
+		22B0F11327A27519001248CE /* PJLVoice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJLVoice.h; sourceTree = "<group>"; };
+		22B0F11627A2756B001248CE /* VoiceRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoiceRecordViewController.h; sourceTree = "<group>"; };
+		22B0F11727A2756B001248CE /* VoiceRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoiceRecordViewController.m; sourceTree = "<group>"; };
 		22E39993279FE5AC004D960B /* CU_ChangeLanguageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CU_ChangeLanguageTool.h; sourceTree = "<group>"; };
 		22E39994279FE5AC004D960B /* CU_Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CU_Tools.m; sourceTree = "<group>"; };
 		22E39995279FE5AC004D960B /* CU_CacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CU_CacheManager.h; sourceTree = "<group>"; };
@@ -683,6 +695,52 @@
 			path = NavigationView;
 			sourceTree = "<group>";
 		};
+		22B0F10827A27481001248CE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				22B0F10927A27481001248CE /* 18514798-61a5-499e-a0a6-1b6f34c9e685.wav */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		22B0F10B27A274D9001248CE /* VoiceDictation */ = {
+			isa = PBXGroup;
+			children = (
+				22B0F10C27A27502001248CE /* Controller */,
+				22B0F10E27A27502001248CE /* Model */,
+				22B0F10D27A27502001248CE /* View */,
+			);
+			path = VoiceDictation;
+			sourceTree = "<group>";
+		};
+		22B0F10C27A27502001248CE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				22B0F11627A2756B001248CE /* VoiceRecordViewController.h */,
+				22B0F11727A2756B001248CE /* VoiceRecordViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		22B0F10D27A27502001248CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		22B0F10E27A27502001248CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22B0F11227A27519001248CE /* PJLReadObject.h */,
+				22B0F10F27A27519001248CE /* PJLReadObject.m */,
+				22B0F11027A27519001248CE /* PJLRecognitionObject.h */,
+				22B0F11127A27519001248CE /* PJLRecognitionObject.m */,
+				22B0F11327A27519001248CE /* PJLVoice.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		22E39991279FE5AC004D960B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -809,6 +867,7 @@
 		22E399CA279FE5AC004D960B /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				22B0F10B27A274D9001248CE /* VoiceDictation */,
 				4D70CE0C27A195460049B5E5 /* GoodNote */,
 				22EECCC527A0094000C13B4A /* Home(首页) */,
 				22E399CB279FE5AC004D960B /* GoodsCategory(分类) */,
@@ -955,6 +1014,7 @@
 		22EECC90279FEE2F00C13B4A /* Resouces */ = {
 			isa = PBXGroup;
 			children = (
+				22B0F10827A27481001248CE /* Sources */,
 				4D70CE3827A1970A0049B5E5 /* todolist.db */,
 				22EECC9D279FFF6300C13B4A /* Cell Background.png */,
 				22EECC9C279FFF6200C13B4A /* defaultArtistImage.png */,
@@ -1534,6 +1594,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D70CE3927A1970A0049B5E5 /* todolist.db in Resources */,
+				22B0F10A27A27481001248CE /* 18514798-61a5-499e-a0a6-1b6f34c9e685.wav in Resources */,
 				22626FEA278E77DA00FC0B35 /* Main.storyboard in Resources */,
 				22EECCA1279FFF6300C13B4A /* line.png in Resources */,
 				22F9FEBC278E92F500FE1A00 /* MJRefresh.bundle in Resources */,
@@ -1596,6 +1657,7 @@
 				22530C2227916B8C00C25072 /* YYKVStorage.m in Sources */,
 				22E39A04279FE5AC004D960B /* APPNetworkCache.m in Sources */,
 				22F9FE7A278E909E00FE1A00 /* MKAnnotationView+WebCache.m in Sources */,
+				22B0F11427A27519001248CE /* PJLReadObject.m in Sources */,
 				4D70CE2E27A196A40049B5E5 /* FMDatabase.m in Sources */,
 				22F9FE1C278E836000FE1A00 /* NSArray+MASAdditions.m in Sources */,
 				22E39A28279FE5AC004D960B /* CU_LoginController.m in Sources */,
@@ -1658,6 +1720,7 @@
 				4D70CE3F27A19C4D0049B5E5 /* AddNewNoteController.m in Sources */,
 				22E39A19279FE5AC004D960B /* CU_EdgeLabel.m in Sources */,
 				22F9FE7F278E909E00FE1A00 /* UIImage+GIF.m in Sources */,
+				22B0F11827A2756B001248CE /* VoiceRecordViewController.m in Sources */,
 				22F9FE4D278E8EFF00FE1A00 /* UIImageView+AFNetworking.m in Sources */,
 				22F9FE58278E8EFF00FE1A00 /* AFSecurityPolicy.m in Sources */,
 				22E39A03279FE5AC004D960B /* APPNetworkHelper.m in Sources */,
@@ -1688,6 +1751,7 @@
 				2217FE78279FE00B00FCDA6F /* NSObject+MJMember.m in Sources */,
 				222DF8B0275B7EF30036AED1 /* BiDAddToDoItemViewController.m in Sources */,
 				22E39A12279FE5AC004D960B /* CU_BaseViewController.m in Sources */,
+				22B0F11527A27519001248CE /* PJLRecognitionObject.m in Sources */,
 				2217FE70279FE00B00FCDA6F /* MJMember.m in Sources */,
 				22E39A1D279FE5AC004D960B /* CU_GoodsCategoryView.m in Sources */,
 				22E39A10279FE5AC004D960B /* NSDateFormatter+Category.m in Sources */,
