@@ -38,6 +38,7 @@
 		22B0F11427A27519001248CE /* PJLReadObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B0F10F27A27519001248CE /* PJLReadObject.m */; };
 		22B0F11527A27519001248CE /* PJLRecognitionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B0F11127A27519001248CE /* PJLRecognitionObject.m */; };
 		22B0F11827A2756B001248CE /* VoiceRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B0F11727A2756B001248CE /* VoiceRecordViewController.m */; };
+		22B0F16927A290E9001248CE /* VoiceRecognizeResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B0F16827A290E9001248CE /* VoiceRecognizeResultViewController.m */; };
 		22E39A02279FE5AC004D960B /* CU_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E39994279FE5AC004D960B /* CU_Tools.m */; };
 		22E39A03279FE5AC004D960B /* APPNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E39999279FE5AC004D960B /* APPNetworkHelper.m */; };
 		22E39A04279FE5AC004D960B /* APPNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E3999A279FE5AC004D960B /* APPNetworkCache.m */; };
@@ -275,6 +276,8 @@
 		22B0F11327A27519001248CE /* PJLVoice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJLVoice.h; sourceTree = "<group>"; };
 		22B0F11627A2756B001248CE /* VoiceRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoiceRecordViewController.h; sourceTree = "<group>"; };
 		22B0F11727A2756B001248CE /* VoiceRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoiceRecordViewController.m; sourceTree = "<group>"; };
+		22B0F16727A290E9001248CE /* VoiceRecognizeResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoiceRecognizeResultViewController.h; sourceTree = "<group>"; };
+		22B0F16827A290E9001248CE /* VoiceRecognizeResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoiceRecognizeResultViewController.m; sourceTree = "<group>"; };
 		22E39993279FE5AC004D960B /* CU_ChangeLanguageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CU_ChangeLanguageTool.h; sourceTree = "<group>"; };
 		22E39994279FE5AC004D960B /* CU_Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CU_Tools.m; sourceTree = "<group>"; };
 		22E39995279FE5AC004D960B /* CU_CacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CU_CacheManager.h; sourceTree = "<group>"; };
@@ -718,6 +721,8 @@
 			children = (
 				22B0F11627A2756B001248CE /* VoiceRecordViewController.h */,
 				22B0F11727A2756B001248CE /* VoiceRecordViewController.m */,
+				22B0F16727A290E9001248CE /* VoiceRecognizeResultViewController.h */,
+				22B0F16827A290E9001248CE /* VoiceRecognizeResultViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1669,6 +1674,7 @@
 				22E39A02279FE5AC004D960B /* CU_Tools.m in Sources */,
 				222DF8B1275B7EF30036AED1 /* BiDEditorViewController.m in Sources */,
 				22EECCE527A0094100C13B4A /* CU_HomeView.m in Sources */,
+				22B0F16927A290E9001248CE /* VoiceRecognizeResultViewController.m in Sources */,
 				22F9FEC8278E92F500FE1A00 /* MJRefreshGifHeader.m in Sources */,
 				22F9FE87278E909E00FE1A00 /* UIButton+WebCache.m in Sources */,
 				22F9FE86278E909E00FE1A00 /* UIImageView+WebCache.m in Sources */,
@@ -1931,7 +1937,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ToDoList/ToDoList-Prefix.pch";
@@ -1953,7 +1959,7 @@
 				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ToDoList/ToDoList-Prefix.pch";

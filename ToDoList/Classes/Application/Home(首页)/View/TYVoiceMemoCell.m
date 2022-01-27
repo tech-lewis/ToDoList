@@ -40,7 +40,7 @@
     
     self.cellTitileLabel.text = [NSString stringWithFormat:@"%@",memo.name];
   NSLog(@"%@", [memo url].absoluteString);
-    self.cellTimeLabel.text = [NSString stringWithFormat:@"%f", [self audioDurationFromURL:[memo url].absoluteString]];
+    self.cellTimeLabel.text = [NSString stringWithFormat:@"%.2f", [self audioDurationFromURL:[memo url].absoluteString]];
     
 }
 
@@ -77,23 +77,19 @@
     } else {
         [button setSelected:NO];
         [button setImage:[UIImage imageNamed:@"cell-play"] forState:UIControlStateSelected];
-        
-        
-        
     }
 }
 
 - (void)deleteBtnClick:(UIButton *)button {
-    
 }
 
 #pragma mark - UI
 - (void)setupUI {
-  self.backgroundColor = [UIColor blackColor];
-  self.cellTitileLabel.frame = CGRectMake(20, 15, 100, 30);
+  self.backgroundColor = [UIColor whiteColor];
+  self.cellTitileLabel.frame = CGRectMake(20, 15, 300, 30);
   [self addSubview:self.cellTitileLabel];
   
-  self.cellTimeLabel.frame = CGRectMake(TYSCREEN_WIDTH - 12 - 100, 15, 100, 30);
+  self.cellTimeLabel.frame = CGRectMake(TYSCREEN_WIDTH - 50, 15, 100, 30);
   [self addSubview:self.cellTimeLabel];
   
   self.playBtn.frame = CGRectMake(20, 60 + 5, 20, 20);
@@ -137,7 +133,7 @@
 - (UIButton *)deleteBtn {
     if (nil == _deleteBtn) {
         _deleteBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_deleteBtn setImage:[UIImage imageNamed:@"delete"] forState:UIControlStateNormal];
+        [_deleteBtn setImage:[UIImage imageNamed:@"cell-pause1"] forState:UIControlStateNormal];
         [_deleteBtn addTarget:self action:@selector(deleteBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _deleteBtn;

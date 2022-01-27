@@ -44,6 +44,8 @@ static NSString * const cellID = @"recordCell";
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(TYNotification_SaveVoiceSuccess:) name:@"TYNotification_SaveVoiceSuccess" object:nil];
   //注册切换语言通知
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeLanguage:) name:kChangeLanguageNotice object:nil];
+  
+  /// 加载数据
 }
 
 //切换语言通知处理
@@ -58,7 +60,7 @@ static NSString * const cellID = @"recordCell";
 }
 - (void)startRecording
 {
-  UIAlertView *alerView = [[UIAlertView alloc] initWithTitle:@"Start Speaking" message:@"Recording..." delegate:self cancelButtonTitle:@"Finish" otherButtonTitles:nil, nil];
+  UIAlertView *alerView = [[UIAlertView alloc] initWithTitle:@"Start Talking" message:@"Recording..." delegate:self cancelButtonTitle:@"Finish" otherButtonTitles:nil, nil];
   [alerView show];
   [[TYRecorderTool shareInstance] record];
 }
@@ -101,10 +103,30 @@ static NSString * const cellID = @"recordCell";
 }
 
 - (NSMutableArray *)memoInstanceMutArray {
-    if (nil == _memoInstanceMutArray) {
-        _memoInstanceMutArray = [NSMutableArray array];
+  if (nil == _memoInstanceMutArray) {
+    _memoInstanceMutArray = [NSMutableArray array];
+    for (NSString *filePath in [[NSFileManager defaultManager] enumeratorAtPath:[self documentsPath]])
+    {
+      if ([filePath.pathExtension isEqualToString:@"caf"])
+      {
+        NSURL *fileURL = [NSURL fileURLWithPath:[[self documentsPath] stringByAppendingPathComponent:filePath]];
+        TYMemo *meno = [TYMemo memoWithTitle:filePath url:fileURL];
+        [_memoInstanceMutArray addObject:meno];
+      }
     }
-    return _memoInstanceMutArray;
+  }
+  return _memoInstanceMutArray;
+}
+
+- (NSString *)documentsPath
+{
+    // 获取应用程序沙盒的documents路径
+    NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+    NSString *documentsPath = paths[0];
+    // 合成指定plist文件的全路径
+    // NSString *filename=[plistPath1 stringByAppendingPathComponent:@"Music"];
+    
+    return documentsPath;
 }
 #pragma mark - <UITableViewDataSource, UITableViewDelegate>
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -114,7 +136,7 @@ static NSString * const cellID = @"recordCell";
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     NSMutableArray *nameArra = self.voiceNameMutArray;
     // NSLog(@"%@",nameArra);
-    return nameArra.count;
+    return self.memoInstanceMutArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -138,17 +160,31 @@ static NSString * const cellID = @"recordCell";
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    TYMemo *memo = self.memoInstanceMutArray[indexPath.row];
-    // 播放
-    [[TYRecorderTool shareInstance] playbackMemo:memo];
-    
-    self.isOpen = !self.isOpen;
-    self.lastSelectedIndexPath_Row = indexPath.row;
-    
-    [tableView beginUpdates];
-    [tableView endUpdates];
-    
+  TYMemo *memo = self.memoInstanceMutArray[indexPath.row];
+  // 播放
+  [[TYRecorderTool shareInstance] playbackMemo:memo];
+  self.isOpen = !self.isOpen;
+  self.lastSelectedIndexPath_Row = indexPath.row;
+  
+  [tableView beginUpdates];
+  [tableView endUpdates];
+  
+  if ([UIDevice currentDevice].systemVersion.doubleValue <= 10.0)
+  {
+    /// 使用 8.0之前的
+    UIAlertView *alerView = [[UIAlertView alloc] initWithTitle:@"I'm sorry" message:@"Do not support previous iOS 10 device..." delegate:nil cancelButtonTitle:@"Fine" otherButtonTitles:nil, nil];
+    [alerView show];
+    return;
+  }
+  UIAlertController *alertView = [UIAlertController alertControllerWithTitle:@"Do you want voice to text？" message:@"Recognizing..." preferredStyle:UIAlertControllerStyleAlert];
+  [alertView addAction:[UIAlertAction actionWithTitle:@"Start recognize" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    __weak typeof(self) __weakSelf = self;
+    PJLRecognitionObject *rec = [[PJLRecognitionObject alloc] init];
+    [rec recognizeLocalAudioFile:memo.url.absoluteString withRecordBlock:^(NSString *recordStr) {
+      /// 语音识别成功
+      
+    } whithLocaleIdentifier:nil];
+  }]];
 }
 
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
