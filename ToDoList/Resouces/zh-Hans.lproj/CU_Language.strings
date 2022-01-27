@@ -86,7 +86,7 @@
 "Login_Again_Msg" = "请重新登录！";
 
 //首页
-"Home_Tab" = "首页";
+"Home_Tab" = "voice";
 "Home_Search" = "搜索商品/商家";
 "Home_Goods_List" = "商品列表";
 
