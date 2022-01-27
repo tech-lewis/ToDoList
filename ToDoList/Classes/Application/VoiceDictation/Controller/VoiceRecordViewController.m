@@ -112,14 +112,14 @@ static NSString * const cellID = @"recordCell";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSMutableArray *nameArra = self.headerView.voiceNameMutArray;
-    NSLog(@"%@",nameArra);
+    NSMutableArray *nameArra = self.voiceNameMutArray;
+    // NSLog(@"%@",nameArra);
     return nameArra.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TYVoiceMemoCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
-    cell.memo = self.headerView.memoInstanceMutArray[indexPath.row];
+    cell.memo = self.memoInstanceMutArray[indexPath.row];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.clipsToBounds = YES;
     return cell;
@@ -127,10 +127,6 @@ static NSString * const cellID = @"recordCell";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return self.isOpen ? 100 : 60;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 300;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
@@ -143,9 +139,9 @@ static NSString * const cellID = @"recordCell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-//    TYMemo *memo = self.headerView.memoInstanceMutArray[indexPath.row];
-//    // 播放
-//    [[TYRecorderTool shareInstance] playbackMemo:memo];
+    TYMemo *memo = self.memoInstanceMutArray[indexPath.row];
+    // 播放
+    [[TYRecorderTool shareInstance] playbackMemo:memo];
     
     self.isOpen = !self.isOpen;
     self.lastSelectedIndexPath_Row = indexPath.row;
