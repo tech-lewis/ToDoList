@@ -126,7 +126,7 @@ static NSString *CellIdentifier = @"ListCell";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+//    self.navigationItem.leftBarButtonItem = self.editButtonItem;
     // self.navigationItem.rightBarButtonItems = @[playButton, self.addButton];
     
     UIBarButtonItem *moreButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch
@@ -138,10 +138,9 @@ static NSString *CellIdentifier = @"ListCell";
                                                                                 action:@selector(playButtonPressed:)];
 
     
-    [self setToolbarItems:@[moreButton, flexibleItem, playButton]];
-    [self.navigationController setToolbarHidden:NO];
-    // [self.navigationController setToolbarItems:@[flexibleItem, playButton]];
-
+  // [self setToolbarItems:@[moreButton, flexibleItem, playButton]];
+  // [self.navigationController setToolbarItems:@[flexibleItem, playButton]];
+  [self.navigationController setToolbarHidden:NO];
     
     // 获取Documents路径
     NSString *filename = [self dataPath];

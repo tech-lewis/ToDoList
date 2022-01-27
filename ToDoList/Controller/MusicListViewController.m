@@ -86,8 +86,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"Music List";
-
+    self.navigationItem.title = @"Music List";
     self.musicArray = [NSMutableArray array];
     self.movieArray = [NSMutableArray array];
     

@@ -1,0 +1,1074 @@
+/* 
+  CU_Language.strings
+  ToDoList
+
+  Created by MarkLwis on 2022/1/25.
+  Copyright © 2022 TechLewis. All rights reserved.
+*/
+
+//公共
+"Mine_text" = "Version 1.1";
+"Mine_button" = "Change Chinese";
+"App_CONTINUE" = "Next" ;
+"App_DETERMINE" = "Confirm";
+"App_Confirm" = "Confirm";
+"App_CANCEL" = "Cancel";
+"App_SURE" = "Confirm";
+"App_Next" = "Next";
+"App_YES" = "Yes";
+"App_NO" = "No";
+"App_NeedFillInfo" = "Fill in the required information";
+"App_Logout" = "Logout";
+"App_Success" = "Success";
+"App_Failure" = "Failure";
+"App_Determine" = "Confirm";
+"App_Cancel" = "Cancel";
+"App_Delete" = "Delete";
+"App_CancelPay" = "Unpaid";
+"App_Submission" = "Submit";
+"App_Version" = "Current Version: V";
+"App_NOContent" = "Temporarily Unavailable";
+"App_Reset" = "Reset";
+"App_RegisterSuccess" = "Registration Success";
+"App_upgradenow" = "Upgrade Now";
+"App_Nexttime" = "Remind me later";
+"App_Upgradehints" = "Upgrade Notification";
+"App_NoData" = "No Data currently";
+"App_InstallWeChat" = "Please install WeChat first";
+"App_SystemError" = "System Error";
+"App_Copy_Success" = "Copy Success";
+"App_Open_Camera_Permissions" = "Allow Camera Permissions in Settings";
+"App_Invite_Friends" = "Invite friends";
+"App_Invite_Friends_Tips" = "Enjoy the Moment";
+"App_Loading" = "Loading...";
+
+//登录
+"Login_login" = "Login";
+"Login_Signupnow" = "User Registration";
+"Login_Signinnow" = "Log In";
+"Login_ForgotPassword" = "Forgot Password";
+"Login_Username" = "Enter your Username";
+"Login_Phone" = "Enter your Mobile Number";
+"Login_NickName" = "Enter your Username (2-16 numbers/letters)";
+"Login_Password" = "Enter your Password";
+"Login_PasswordTip" = "Enter your Password (6-18 numbers/letters/symbols)";
+"Login_NewPasswordTip" = "Enter your New Password (6-18 numbers/letters/symbols)";
+"Login_InvitationCode" = "Please enter the Username of the Referrer";
+"Login_OtherLogins" = "Log In With";
+"Login_BindEmail" = "Verify Email Address";
+"Login_Email" = "Enter your Email";
+"Login_Referrer" = "Please enter the Username of the Referrer";
+"Login_AgressTip" = "Agree & Continue";
+"Login_Agress" = "《Cloud Union User Agreement》";
+"Login_ConfirmPassword" = "New Password Again";
+"Login_ConfirmNewPassword" = "New Password Again";
+"Login_Forgotpassword" = "Forgot Password";
+"Login_SetLoginpassword" = "Set Login Password";
+"Login_BindEmailContent" = "You have successfully logged in with a third-party login service, to ensure the safety of your account, please verify your email address.";
+"Login_VerificationCode" = "Enter Verification Code";
+"Login_VerificationContent" = "Verification Code has been sent to your mobile number / email";
+"Login_Byaccount" = "Log In by Username";
+"Login_Byphone" = "Log In by Mobile Number";
+"Login_ByEmail" = "Log In by Email";
+"Login_ByOtherWay" = "Other Login";
+"Login_SelectLogin" = "Select Login Method";
+"Register_Byphone" = "Register by Mobile Number";
+"Register_ByEmail" = "Register by Email";
+"Register_SelectRegister" = "Select Registration Method";
+"FPsw_Byphone" = "Recover Mobile Number";
+"FPsw_ByEmail" = "Recover Email Address";
+"Register_SelectFind" = "Select Recovery Method";
+"Register_Resend" = "Resend";
+"Register_SelectAreaCode" = "Select Area Code";
+"Register_Not_Agree_Agreement" = "User Agreement not yet agreed";
+"Login_Success_msg" = "Login Success";
+"Login_Fail_System_msg" = "System error, login unsuccessful";
+"Login_RestPassword_Success" = "Password has been successfully reset, please log in.";
+"Login_Again_Msg" = "Please log in again";
+
+//首页
+"Home_Tab" = "Home";
+"Home_Search" = "Search Items/Merchants";
+"Home_Goods_List" = "Item List";
+
+"Home_SearchHistory" = "Search History";
+"Home_SearchCancle" = "Cancel";
+"Home_SearchClearHistory_msg" = "Your search history will be cleared (Confirm / Cancel)";
+
+"Home_MenuScan" = "Scan";
+"Home_Scan_QR_Code" = "Scan QR Code";
+"Home_MenuPay" = "Payment Code";
+"Home_MyCode" = "My QR Code";
+"Home_MenuSwitch" = "Switch Versions";
+
+"Home_NewsTitle" = "News";
+"Home_CouponsCenterTitle" = "Vouchers Centre";
+"Home_CouponsCenter_Collected" = "Coupons collected";
+"Home_CouponsCenterCardBag" = "Card Bag";
+"Home_NewsSubmit" = "Submit Review";
+"Home_NewsCommentTips" = "The Comment will be visible to the public once it has been reviewed and approved by the platform.";
+"Home_NewsRead" = "Read";
+"Home_NewsDetailTitle" = "Details";
+"Home_NewsDetailCommentEmpty" = "No comments yet";
+"Home_NewsEnter" = "Enter";
+
+"Home_ViewAll" = "More";
+"Home_Recommend" = "Recommendations";
+"Home_NearShopes" = "Top Merchants";
+"Home_BaseProduce" = "Basic Skincare";
+
+"Home_NewsDetailComment" = "Top Comment";
+"Home_NewsDetailCommentTitle" = "Have your say";
+"Home_NewsDetailCommentTipsTitle" = "Review Information";
+
+"Home_NewsSystemNotificationTitle" = "System Notification";
+"Home_NewsPersonalNotificationTitle" = "Personal Message";
+"Home_NewsPersonalNotificationDetailTitle" = "Details";
+"Home_NewsNoticeTitle" = "Notice";
+"Home_NewsMsgSeeDetail" = "See Detail";
+"Home_NewsInComeTitle" = "Revenue Assistant";
+"Home_NewsInCome_Source" = "Source";
+"Home_NewsInCome_Consumption_Reward" = "Consumption reward";
+"Home_NewsInCome_Member_Gift" = "Member gift";
+
+"Home_CouponsCenterReceive" = "Receive Now";
+"Home_CouponsCenterDidReceive" = "Received";
+"Home_SearchKey" = "Enter search content";
+"Home_SearchKey2" = "Search Item";
+"Home_GoodsDetailSoldOut" = "Sold Out";
+"Home_GoodsDetailPutOff" = "No longer available";
+
+//商品详情
+"Home_GoodsDetailTitle" = "Item Details";
+"Home_GoodsDetailAddCart" = "Add to Cart";
+"Home_GoodsDetailBuyNow" = "Buy Now";
+"Home_GoodsDetailSkuSelectTitle" = "Select Size / Quantity";
+"Home_GoodsDetailComments" = "Item Reviews";
+"Home_GoodsDetailAllComments" = "All Comments";
+"Home_GoodsDetailParams" = "Item Style";
+"Home_GoodsDetailBusiness" = "About the Merchant";
+"Home_GoodsDetailGoodsInfo" = "Item Information";
+"Home_GoodsDetailPoint" = "Points";
+"Home_GoodsDetailStock" = "Available Stock";
+"Home_GoodsDetailMore" = "More details";
+"Home_GoodsDetailCoupon" = "Full";
+"Home_GoodsDetailShopTitle" = "About the Merchant";
+"Home_GoodsDetailTopCommodity" = "Item";
+"Home_GoodsDetailTopEvaluate" = "Reviews";
+"Home_GoodsDetailTopParamer" = "Parameters";
+"Home_GoodsDetailTopBusiness" = "Merchant";
+"Home_GoodsDetailDetail" = "Details";
+"Home_GoodsCouponUser" = "Use Now";
+"Home_SKU_Store_empty" = "Inventory shortage";
+
+"Home_Red_Envelope_Open" = "Open";
+"Home_Red_Envelope_Success" = "Success~";
+
+"Share_Facebook" = "Facebook";
+"Share_WetChat" = "WeChat";
+"Share_WetChat_Timeline" = "Timeline";
+"Share_Link" = "Copy link";
+"Share_Download" = "Download image";
+
+//二维码收款
+"PaymentCode_Code" = "Payment Code";
+"PaymentCode_Code_Dynamic" = "Dynamic Payment QR Code";
+"PaymentCode_Code_Fixed" = "Fixed Payment QR Code";
+"SendCode_Title" = "Gifting Code";
+"SendCode_Normal_User_Tips" = "Normal users cannot send points";
+"PaymentCode_Amount" = "Payment Amount";
+"PaymentCode_GiftIntegral" = "Gift Points Rate";
+"PaymentCode_TradingPoint" = "Get Trading Points";
+"PaymentCode_Submit" = "Confirm";
+"PaymentCode_ScanCode" = "My Payment Code";
+"SendCode_GiftPoint" = "Gift Points Amount";
+"SendCode_PassswordTips" = "Enter your Payment Password";
+"SendCode_Sure" = "Confirm";
+"PickupCode_Title" = "Pick-Up Code";
+"PaymentCode_Industry_Title" = "Inudstry";
+"PaymentCode_Remark_Title" = "Remarks";
+"PaymentCode_Manager" = "Payment Code Management";
+"Save_To_Phone" = "Save to Photos";
+"PaymentCode_Setting_Amount" = "Set Amount";
+"PaymentCode_Pay_Amount" = "Payment Amount";
+"PaymentCode_receive_GP" = "Get Gift Points";
+"PaymentCode_SURE_Pay" = "Confirm Payment";
+"PaymentCode_Back-Home" = "Return to Home";
+"Paymentcode_Collected_Success" = "Payment Received";
+"View-Nearby-Businesses" = "View nearby Merchant";
+"PaymentCode_Manager_remark" = "Remarks";
+"PaymentCode_Manager_GiftIntegral" = "Points Rate";
+"PaymentCode_Valid" = "Valid";
+"PaymentCode_Invalid" = "Invalid";
+"PaymentCode_add" = "Add Payment Code";
+"PaymentCode_setting" = "Payment Code Settings";
+"PaymentCode_Back" = "Back";
+"PaymentCode_GiftPoint" = "Gift Points";
+"PaymentCode_GiftPoint_Recipient" = "Gift Points Recipient";
+"PaymentCode_Input_Pay_Amount" = "Enter Payment Amount";
+"PaymentCode_Pay_To" = "Pay to";
+"PaymentCode_Record_PPayment" = "Send Payment to";
+"PaymentCode_Record_Collection" = "Receive Payment from";
+"PaymentCode_Record_SendPoints" = "Send Points to";
+"PaymentCode_Record_ReceivePoints" = "Receive Points from";
+"PaymentCode_Record_Type_PPayment" = "Send Payment";
+"PaymentCode_Record_Type_Collection" = "Receive Payment";
+"PaymentCode_Record_Type_SendPoints" = "Send Points";
+"PaymentCode_Record_Type_ReceivePoints" = "Receive Points";
+"PaymentCode_Code_Transaction_Records" = "Transaction Records";
+"PaymentCode_Code_Receive_Amount_Tips" = "Sales Account + $";
+
+//收款码管理
+"PaymentCode_Manager_Know" = "Understood";
+"PaymentCode_Manager_max" = "Maximum of 10 Payment Codes can be created";
+"PaymentCode_Manager_Current_Effective" = "Currently Valid ";
+"PaymentCode_Manager_Lapse" = "Invalid";
+"PaymentCode_Manager_Delete_Msg" = "Payment Code will be deleted";
+"PaymentCode_Manager_Max_Exceed" = "Maximum of 4 Payment Codes may be Active at once. To continue, please set one or more currently active Payment Codes as 'Invalid'.";
+"PaymentCode_Manager_Effective_msg" = "Payment Code will be set as Valid";
+"PaymentCode_Manager_Lapse_msg" = "Payment Code will be set as Invalid";
+
+
+"PaymentCode_Industry_Placeholder" = "Select Industry";
+"PaymentCode_Payment_Amount_Placeholder" = "Enter Payment Amount";
+"PaymentCode_Rate_Customise_Placeholder" = "Customise";
+"PaymentCode_Remark_Placeholder" = "Enter Remarks";
+"PaymentCode_Transaction_Amount_Title" = "Transaction Amount";
+"PaymentCode_Transaction_Amount_Placeholder" = "Enter Transaction Amount";
+"PaymentCode_Set_TP_Amount_Placeholder" = "Set Trading Points Amount";
+"PaymentCode_TP_Balance" = "Balance";
+"PaymentCode_Points_Multiplier_Placeholder" = "Enter Points Rate";
+"PaymentCode_Points_Multiplier_Prompt" = "Select Gift Points Multiplier";
+"PaymentCode_Gift_Points_Recipient_Placeholder" = "Select Gift Points Recipient";
+"PaymentCode_Points_Multiplier_Prompt" = "Select Points Rate ";
+
+//扫码付款
+"PaymentCode_Scan_Pay_wait" = "Waiting for scan...";
+"PaymentCode_Scan_Pay_ing" = "Paying...";
+"PaymentCode_Scan_Pay_Cancel" = "Cancel payment...";
+"PaymentCode_Scan_Pay_Success" = "Payment Successful";
+
+//订单确认
+"Home_GoodsConfirmTitle"  = "Order Confirmation";
+"Home_GoodsOrderConfirm"  = "Pay Now";
+"Home_GoodsOrderCoupon" = "Voucher Code";
+"Home_GoodsOrderRemark" = "Remarks";
+"Home_GoodsOrderRemarkPlaceholder" = "Optional; Follow the Merchant";
+"Home_GoodsOrderDistribution" = "Delivery Method";
+"Home_GoodsOrderCount" = "Total Quantity";
+"Home_GoodsOrderFreight" = "Shipping Cost";
+"Home_GoodsOrderOffer" = "Promotions";
+"Home_GoodsOrderGiftPoint" = "Get Gift Points";
+"Home_GoodsOrderTotalAmount" = "Subtotal";
+"Home_GoodsOrderCouponsPopTitle" = "Voucher Code";
+"Home_GoodsOrderCouponsBeUse" = "Valid Voucher";
+"Home_GoodsOrderCouponsUnUse" = "Invalid Voucher";
+"Home_GoodsOrderSelectAddress" = "Select Shipping Address";
+"Home_GoodsOrderPoint" = "Points";
+"Home_GoodsOrderDistribution" = "Shipping Method";
+"Home_GoodsOrderSelfMention" = "Pick-Up";
+"Home_GoodsOrderDelivery" = "Delivery";
+
+//分类
+"Category_Tab" = "Categories";
+
+//商品列表
+"Goods_ListTitleAll" = "All";
+"Goods_ListTitleNew" = "New";
+"Goods_ListTitlePrice" = "Price";
+"Goods_ListTitleSalesVolume" = "Sales Volume";
+"Goods_ListTitleScreen" = "Filter";
+
+"Goods_ListFilterScreen" = "Filter";
+"Goods_ListFilterPriceTitle" = "Price Range";
+"Goods_ListFilterPriceMin" = "Lowest Price";
+"Goods_ListFilterPriceMax" = "Highest Price";
+"Goods_ListFilterReset" = "Reset";
+"Goods_ListFilterDetemine" = "Confirm";
+"Goods_Sales" = "Sales";
+
+//商家
+"Shop_Tab" = "Merchants";
+"Shop_Location" = "Location";
+"Shop_FilterDistance" = "Closest to me";
+"Shop_FilterSales" = "Popularity";
+"Shop_FilterEvaluate" = "Promotions";
+"Shop_FilterFilter" = "Filter";
+"Shop_FilterCancel" = "Reset Filter";
+"Shop_FilterSubmit" = "Apply Filter";
+"Shop_SkuQuantity" = "Quantity";
+"Shop_SaleCount" = "Monthly Sales";
+"Shop_DetailInformation" = "Merchant Information";
+"Shop_DetailMenu" = "All Items";
+"Shop_DetailCollect" = "Save";
+"Shop_DetailCollectCancel" = "Cancel";
+"Shop_LocationListTitle" = "Current Location";
+"Shop_SearchTips" = "Search Merchant";
+
+//购物车
+"Cart_Tab" = "Cart";
+"Cart_NoGoods" = "Your Shopping Cart is currently empty";
+"Cart_LOGINNOW" = "Log In Now";
+"Cart_logintocheck" = "Log In to view Shopping Cart";
+"Cart_Coupon" = "Vouchers";
+"Cart_CanReceiveCoupons" = "Can earn Vouchers";
+"Cart_UseNow" = "Earn Now";
+"Cart_Delete" = "Delete";
+"Cart_Edit" = "Edit";
+"Cart_SelectAll" = "Select All";
+"Cart_Complete" = "Complete";
+"Cart_Overstock" = "Out of Stock";
+"Cart_Deletetheselected" = "The selected items will be deleted";
+"Cart_Expiredcommoditie" = "Invalid Item";
+"Cart_RemoveAll" = "Remove All";
+"Cart_InvalidImgView" = "invalid_en";
+"Cart_expiredgoods" = "The Invalid Items will be removed";
+"Cart_selecttheitemtodelete" = "Select the Items to be removed";
+"Cart_Settlement" = "Checkout";
+
+//个人中心
+"Mine_Tab" = "My Account";
+
+"Mine_Home_BusinessAccount" = "Sales";
+"Mine_Home_CloudUnionAccount" = "Kiwi Points Dollar";
+"Mine_Home_CloudUnionAccount_NZ" = "KPD";
+"Mine_Home_CloudUnionAccount_AU" = "OzPD";
+
+"Mine_Switch_Language" = "切换到中文";
+"Mine_Logout" = "Log Out";
+"Mine_Myservice" = "My Services";
+"Mine_MyCoupon" = "Vouchers";
+"Mine_MyReceivingAddress" = "Shipping Address";
+"Mine_MyRecommender" = "My Referrer";
+"Mine_MyRecommenderModify" = "Edit";
+"Mine_MyRecommenderModifyTitle" = "Edit Referrer";
+"Mine_MyCreditCard" = "My Credit Cards";
+"Mine_MyGoodFriend" = "My Referrees";
+"Mine_HandoutRedEnvelopes" = "Send Red Envelopes";
+"Mine_MyCollection" = "My Favourites";
+"Mine_CertifiedBusiness" = "Open a Store";
+"Mine_RealnameAuthentication" = "Authentication ";
+"Mine_MyMethodofSettlement" = "Redemption Methods";
+"Mine_ContactCustomerService" = "Customer Service";
+"Mine_FriendshipLinks" = "Links";
+"Mine_UpgradeDiamonds" = "Become a Diamond Member";
+"Mine_UpgradeDiamonds_Agreement_Agree" = "I agree to the above agreement";
+"Mine_Setting" = "Settings";
+"Mine_Message" = "Notifications";
+"Mine_Message_Read_All" = "Read all";
+"Mine_Message_Read_All_Tips" = "Set all tidings are readed?";
+"Mine_Message_Chat_Top" = "STICKY";
+"Mine_Message_Chat_Cancel_Top" = "STICKY";
+"Mine_Message_Chat_Delete" = "DELETE";
+"Mine_LoginRegister" = "Log In / Register";
+"Mine_MyOrder" = "My Orders";
+"Mine_WaitingforPayment" = "Payment Pending";
+"Mine_WaitingforDelivery" = "Pending Dispatch";
+"Mine_WaitingfortheGoods" = "Pending Delivery";
+"Mine_WaitingforEvaluation" = "Review";
+"Mine_Refund/AfterSale" = "Refund / After-Sale";
+"Mine_PointsAccount" = "Points Account";
+"Mine_FundsAccount" = "Funds Account";
+"Mine_GiftPoint" = "Gift Points";
+"Mine_KiwiPoint" = "Kiwi Points";
+"Mine_KiwiPoint_AU" = "Oz Points";
+"Mine_TradingPoint" = "Trading Points";
+"Mine_CloudPoint" = "Cloud Points";
+"Mine_PrepaymentAccount" = "Redeem";
+"Mine_BusinessAccount" = "Sales Account";
+"Mine_CloudUnionAccount" = "Kiwi Point Dollar Account";
+"Mine_VIEWALL" = "View All";
+"Mine_Today'sExchangeRate" = "Conversion Rate";
+"Mine_ShareTips" = "Scan to share";
+"Mine_EditSucss" = "Edit Success";
+"Mine_EditSucssBack" = "Back";
+
+"Mine_SwitchLanguage" = "Switch Language";
+"Mine_PersonalData" = "Personal Information";
+"Mine_AccountsandSecurity" = "Account & Safety";
+"Mine_ClearCache" = "Clear Cache";
+"Mine_Aboutus" = "About Us";
+"Mine_Source_Material" = "App source material";
+"Mine_Language" = "Chinese";
+"Mine_UserName" = "Edit Username";
+
+"Mine_HeadPortrait" = "Portrait Photo";
+"Mine_UserName" = "Username";
+"Mine_Region" = "Regioin";
+"Mine_MobileNumber" = "Mobile Number";
+"Mine_Email" = "Email";
+"Mine_ReferralCode" = "Referral Code";
+"Mine_PersonDataTip" = "Share Referral Code";
+
+"Mine_LoginPassword" = "Login Password";
+"Mine_SecurityPassword" = "Payment Password";
+"Mine_ModifyLoginPassword" = "Change Login Password";
+"Mine_ModifyPaymentPassword" = "Change Payment Password";
+"Mine_OriginalPassword" = "Previous Password";
+"Mine_ConfirmPassword" = "New Password Again";
+"Mine_VerifyPassword" = "Verify Previous Payment Passode";
+"Mine_VerifyPasswordTip" = "Enter Payment Password to verify identity";
+"Mine_Forgetornotsetpassword" = "Forgot or have not set a Payment Password";
+"Mine_ChangePayPassword" = "Change Password";
+"Mine_ChangePayPasswordTip" = "Please set a Payment Password to verify identity";
+"Mine_ChangePayPasswordSure" = "New Password Again";
+"Mine_ChangePayPasswordComplete" = "Change Success";
+"Mine_TwoPswNotSame" = "Passwords do not match";
+"Mine_PayPswError" = "Verify Payment Password error, retry";
+"Mine_ChangePayPasswordRetry" = "Retry";
+"Mine_ChangePayPasswordForgot" = "Forgot Pasword";
+"Mine_GiveUpChange" = "Cancel changing password";
+"Mine_Giveup" = "Cancel";
+"Mine_ChangePayPasswordContinue" = "Continue";
+"Mine_Identityinformation" = "Verify your identification information";
+"Mine_Certificatenumber" = "Last four digits of your identification document";
+"Mine_CAPTCHA" = "Enter Verification Code";
+"Mine_SettingPaymentPassword" = "Set Payment Password";
+"Mine_ForgetPaymentPassword" = "Forgot Payment Password";
+
+"Mine_ModifyPassword_Old_Emtpy" = "Enter Previous Password";
+"Mine_ModifyPassword_New_Emtpy" = "Enter New Password";
+"Mine_ModifyPassword_Check_Emtpy" = "New Password Again";
+"Mine_ModifyPassword_Check_Fail" = "Passwords do not match";
+
+"Mine_Defaultaddress" = "Default Address";
+"Mine_Editaddress" = "Edit Address";
+"Mine_Removeaddress" = "Remove Address";
+"Mine_addAddress" = "Add Address";
+"Mine_addAddress2" = "Add Delivery Address";
+"Mine_AddAddress" = "Add Address";
+"Mine_EditAddress" = "Edit Address";
+"Mine_AddressNewZealand" = "New Zealand";
+"Mine_AddressAustralia" = "Australia";
+"Mine_AddressChina" = "China";
+"Mine_AddressOtherAreas" = "Other Regions";
+"Mine_AddressConsignee" = "Name of Recipient";
+"Mine_AddressPhoneno" = "Mobile Number";
+"Mine_AddressUnit/flatno" = "Flat number";
+"Mine_AddressStreetno" = "Street number";
+"Mine_AddressStreetname" = "Street Name";
+"Mine_AddressSuburb" = "Suburb";
+"Mine_AddressTown/city" = "City";
+"Mine_AddressPostcode" = "Post Code";
+"Mine_AddressAddress" = "Select Current Address";
+"Mine_AddressDetailedAddress" = "Enter Detailed Address";
+"Mine_Remarksrequired" = "Note: *this is a required field";
+"Mine_Address_Empty" = "Select Address";
+
+"Mine_MyOrderTotalQuantity" = "Total Quantity";
+"Mine_MyOrderOffer" = "Promotions";
+"Mine_MyOrderFreight" = "Shipping Cost";
+"Mine_MyOrderGiftPoint" = "Total Points Earned";
+"Mine_MyOrderTotalAmount" = "Total";
+
+"Mine_MyOrderAllOrders" = "All";
+"Mine_MyOrderNotShipped" = "Pending Dispatch";
+"Mine_MyOrderUnpaid" = "Payment Pending";
+"Mine_MyOrderUnreceived" = "Pending Delivery";
+"Mine_MyOrderNotEvaluated" = "Review Pending";
+"Mine_MyOrderNotPickUp" = "Pending Pick-Up";
+
+"Mine_SomeonetoTake" = "Pick-Up On Behalf";
+"Mine_CONFIRMPICKUP" = "Confirm Pick-Up";
+"Mine_TrusteeInformation" = "Information of Consignee";
+"Mine_ContactDetails" = "Contact Details";
+"Mine_pleaseenterusername" = "Enter Consignee Username";
+"Mine_pleaseenteruserphone" = "Enter Consignee Mobile Number";
+"Mine_pleaseenteruseremail" = "Enter Consignee Email";
+"Mine_Pleaseenterthesecuritycode" = "Enter Payment Password";
+"Mine_RefundAll" = "Refund All";
+"Mine_RefundRefunding" = "Refund in Progress";
+"Mine_RefundSuccess" = "Refund Success";
+"Mine_RefundFailure" = "Refund Failed";
+"Mine_RefundType" = "Refund Type";
+"Mine_RefundAmount" = "Refund Amount";
+"Mine_AfterSalesDetails" = "After-Sale Details";
+"Mine_RefundInformation" = "Refund Information";
+"Mine_RefundApplicationTime" = "Application Time";
+"Mine_RefundProcessingMethod" = "Processing Method";
+"Mine_RefundRefundAmount" = "Refund Amount";
+"Mine_RefundReasonforRefund" = "Reason for Refund";
+"Mine_RefundProcessingMethodTip" = "Refund (not yet dispatched)";
+"Mine_NegotiationRecord" = "Negotiation Record";
+"Mine_SubmitApplication" = "Submit Application";
+"Mine_MerchantReview" = "Merchant Review";
+"Mine_MerchantRefund" = "Merchant Refund";
+"Mine_RefundCompleted" = "Refund Completed";
+"Mine_ReturnProduct" = "Returm Item";
+"Mine_FillLogisticsInformation" = "Enter Shipping Information";
+"Mine_FreightVoucher" = "Proof of Shipping";
+"Mine_SUBINT" = "Submit";
+"Mine_LogisticsCompany" = "Shipping Company";
+"Mine_ShipmentNumber" = "Shipment Number";
+"Mine_Freight" = "Shipping Cost";
+"Mine_LogisticsCompanyTip" = "Enter Shipping Company";
+"Mine_ShipmentNumberTip" = "Enter Shipment Number";
+"Mine_FreightTip" = "Enter Shipping Cost";
+"Mine_Details" = "Order Details";
+"Mine_Totalquantity" = "Total Quantity";
+"Mine_Freight" = "Shipping Cost";
+"Mine_Offer" = "Total Points Earned";
+"Mine_Giftpoint" = "Gift points";
+"Mine_Totalamount" = "Total";
+"Mine_OrderDetailCopy" = "Copy";
+"Mine_Remarks" = "Remarks";
+"Mine_Number" = "Order Number";
+"Mine_Committime" = "Time of Order Submission";
+"Mine_Paymenttime" = "Time of Payment";
+"Mine_Paymentway" = "Payment Methody";
+"Mine_Deliverytime" = "Time of Dispatch";
+"Mine_ReceivingTime" = "Time of Delivery";
+"Mine_Dealingtime" = "Time of Order Acceptance";
+"Mine_CancelTime" = "Time of Order Cancellation";
+"Mine_Trustee" = "Consignee";
+"Mine_Cardholder" = "Cardholder";
+"Mine_CardNumber" = "Card Number";
+"Mine_ExpiryDate" = "Expiry Date";
+"Mine_CardholderTip" = "Cardholder Name";
+"Mine_CardNumberTip" = "Credit Card Number";
+"Mine_ExpiryDateTip" = "Select Expiry Date";
+
+"Mine_KiwiPoint_Exchange_Action" = "Convert to KPD";
+"Mine_KiwiPoint_Exchange_Action_AU" = "Convert to OzPD";
+
+"Mine_PointsAvailableIntegral" = "Available Points";
+"Mine_PointsExchangeRate" = "Conversion Rate：";
+"Mine_PointsCloudUnionAccount" = "Instant Reward";
+"Mine_PointsCloudUnionAccount_KP" = "Convert to KPD";
+"Mine_PointsIntegralDetails" = "Points Details";
+"Mine_PointsFilter" = "Filter";
+"Mine_PointsTransactionType" = "Transaction Type";
+"Mine_PointsPleaseChoose" = "Please Select";
+"Mine_PointsTransactionHour" = "Time of Transaction";
+"Mine_PointsStartingTime" = "Start Time";
+"Mine_PointsEndTime" = "End Time";
+"Mine_PointsExchangeCloudUnionAccount" = "Get Kiwi Point Dollar";
+"Mine_PointsExchangeQuantity" = "Gift Points Exchange Amount";
+"Mine_PointsGetCloudUnionAccount" = "Get Kiwi Point Dollar";
+"Mine_PointsCloudUnionAccountAmount" = "Enter Gift Points Amount";
+"Mine_PointsExchange" = "Exchange";
+"Mine_PointsExchange_Confirm_Tips" = "Are you sure to exchange?";
+"Mine_KPointsExchangeQuantity" = "Kiwi Points Exchange Amount";
+"Mine_KPointsCloudUnionAccountAmount" = "Enter Kiwi Points Amount";
+"Mine_KPoints_HandlingFee_Formatter_NZ" = "%@%% deduction to Kiwi Points";
+"Mine_KPoints_HandlingFee_Formatter_AU" = "%@%% deduction to Oz Points";
+"Mine_KPointsTOPUP" = "Top-Up";
+"Mine_KPointsSENDPOINT" = "Send Points";
+"Mine_TradingPointRecharge" = "Top-Up Trading Points";
+"Mine_KPointsRechargeAmount" = "Top-Up Amount";
+"Mine_KPointsAvailabletradingpoint" = "Potential Kiwi Points Earned";
+"Mine_TPointsAvailabletradingpoint" = "Get Trading Points";
+"Mine_KPointsGiftMultiplier" = "Gift Points Rate";
+"Mine_KPointsEstimatedsaleableamount" = "Sale Amount Estimate ";
+"Mine_KPointsInvoice" = "Confirm Issue of Invoice";
+"Mine_KPointsEnterAmount" = "Enter Amount";
+"Mine_KPointsEnterRate" = "Enter Rate";
+"Mine_Whethertoissueaninvoice" = "Confirm Issue of Invoice:";
+/*-----------*/
+"Mine_PrepaymentAccount" = "Prepayment";
+"Mine_Currentavailability" = "Currently Available: ";
+"Mine_CloudUnionAccount" = "Kiwi Point Dollar Account";
+"Mine_Banktransfer" = "Bank Transfer";
+"Mine_CreditCard" = "Credit Card";
+"Mine_Wechat" = "WeChat Pay";
+"Mine_Alipay" = "AliPay";
+"Mine_Polipay" = "POLi Payment";
+"Mine_PayPal" = "PayPal";
+"Mine_PayPsw" = "Payment Password";
+"Mine_EnterPayPsw" = "Enter Payment Password";
+"Mine_RechargeSuc" = "Top-Up Success";
+"Mine_UploadVouchers" = "Upload Proof of Transaction";
+"Mine_Bankaccount" = "Bank Account";
+"Mine_BankaccountTip" = "Enter Bank Account Number";
+"Mine_Transactionvouchers" = "Upload Proof of Transaction (maximum of 1 photo)";
+"Mine_TransactionvouchersTip" = "Proof of Transaction";
+"Mine_UploadVouchersTip" = "Please first upload the Proof of Transaction";
+"Mine_SUBINTAUDIT" = "Review Transaction";
+"Mine_RechargeState" = "Reviewing";
+"Mine_Rechargeamount" = "Top-Up Amount";
+"Mine_InProgress" = "Freeze Points";
+"Mine_REDEEM" = "Redeem";
+"Mine_TOPUP" = "Top-Up";
+"Mine_PrepaymentAccountRecharge" = "Top-Up Prepayment Account";
+"Mine_Prepaymentaccount" = "Account Settlement";
+"Mine_Settlementamount" = "Redeem Amount";
+"Mine_SettlementMethod" = "Redeem Method: ";
+"Mine_AccountSettlement" = "Redeem";
+"Mine_Currentbalance" = "Currently Balance：";
+"Mine_Chooseall" = "Select All";
+"Mine_QuestionFeedback" = "Questions & Feedback";
+"Mine_EmailOrPhone" = "Enter your Email or Mobile Number";
+"Mine_FeedbackTip" = "Please provide your enquiry or feedback, we endeavour to get back to you as soon as possible.";
+"Mine_FeedbackImgTip" = "Upload attachment, maximum of 4 photos";
+"Mine_CHECKOUT" = "Upgrade Now";
+"Mine_Pleasebindasettlementaccount" = "Set default Redeem Account";
+"Mine_IMMEDIATEBINGING" = "Select Now";
+"Mine_typeofsettlementmethod" = "Select Redeem Method";
+"Mine_NewZealandBankAccounts" = "New Zealand Bank Account";
+"Mine_BankofChinaAccount" = "Chinese Bank Account";
+"Mine_NewZealandAccount" = "Set default New Zealand Bank Account";
+"Mine_ChineseBanks" = "Set default Chinese Bank Account";
+"Mine_AustraliaBankAccounts" = "Australia Bank Account";
+"Mine_AustraliaAccount" = "Set default Australia Bank Account";
+"Mine_BankAccount" = "Bank Account";
+"Mine_enterbankaccount" = "Enter Bank Account Number";
+"Mine_Opener" = "Account Holder";
+"Mine_Tel" = "Mobile Number";
+"Mine_bank" = "Name of Bank";
+"Mine_Cardnumber" = "Card Number";
+"Mine_Region" = "Region";
+"Mine_Branch" = "Branch";
+"Mine_OpenerTip" = "Name of Account Holder";
+"Mine_TelTip" = "Registered Mobile Number with Bank";
+"Mine_bankTip" = "Enter Name of Bank";
+"Mine_CardnumberTip" = "Card Number";
+"Mine_RegionTip" = "Select Province";
+"Mine_BranchTip" = "Branch Name";
+"Mine_replacement" = "Please contact Customer Service if amendment is required";
+"Mine_SelectPayType" = "Select Payment Method";
+"Mine_PA_Settlement_RalName_Tips" = "Not Verified users can not settlement,\nmake a real-name authent";
+
+"Mine_OrdinaryMembership" = "Ordinary Member";
+"Mine_DiamondMembers" = "Diamond Member";
+"Mine_Business" = "Merchant";
+"Mine_Signedin" = "Checked-In";
+"Mine_points" = "Gift Points";
+"Mine_Signin" = "Check-In";
+
+"Mine_Paymentamount" = "Payment Amount";
+"Mine_Rewardpoints" = "Gift Points：";
+"Mine_Payment" = "Payment Method";
+"Mine_Someonetopay" = "Payment on Behalf";
+"Mine_Agress" = "User Agreement";
+
+
+"Order_Unpaid" = "Pending Payment";
+"Order_Notshipped" = "Pending Dispatch";
+"Order_Unreceived" = "Pending Delivery";
+"Order_Notevaluated" = "Review Pending";
+"Order_Complete" = "Transaction Complete";
+"Order_NotPickup" = "Pending Pick-Up";
+"Order_Cancle" = "Cancel Transaction";
+"Order_PayStatus" = "Payment Status";
+"Order_CHECKORDER" = "Check Order";
+"Order_CHECKORDERBACK" = "Back";
+"Order_CHECKORDERCompleted" = "Payment Success";
+"Order_CHECKORDERUnCompleted" = "Payment Pending";
+"Order_NoOrderList" = "No Current Order";
+"Order_Confirm_Tips" = "Note: the Points will be automatically transferred to your account after confirmation of delivery";
+
+"Order_PAYNOW" = "Pay Now";
+"Order_AFTERSALE" = "After-Sale Service";
+"Order_RECEIPT" = "Confirm Delivery";
+"Order_EVALUATE" = "Enter Review ";
+"Order_BUYAGAIN" = "Buy Again";
+"Order_Pickup" = "Pick-Up Now";
+"Order_BYOTHERS" = "Pick-Up On Behalf";
+
+"AfterSale_AfterSale" = "After-Sale Service";
+"AfterSale_OnlyRefund" = "Refund";
+"AfterSale_ReturnRefund" = "Return & Refund";
+"AfterSale_OnlyRefundTip" = "Not yet delivered, request Merchant for Refund";
+"AfterSale_ReturnRefundTip" = "Quality Issue, request Merchant for Refund";
+
+"AfterSale_Status" = "Delivery Status";
+"AfterSale_Amount" = "Refund Amount";
+"AfterSale_Reason" = "Reason for Refund";
+"AfterSale_Remarks" = "Remarks";
+"AfterSale_Quantity" = "Refund Quantity";
+"AfterSale_Unshipped" = "Pending Dispatch ";
+"AfterSale_UnReceive" = "Pending Delivery";
+"AfterSale_Pleasechoose" = "Select Reason for Refund";
+"AfterSale_Pleasefillin" = "Please fill";
+"AfterSale_PleaseSelectReason" = "Select Reason for Refund";
+
+"AfterSale_Dislikeitremake" = "Dislike the item";
+"AfterSale_Wrongdecideremake" = "Incorrect selection";
+"AfterSale_Wrongaddressremake" = "Incorrect delivery address";
+"AfterSale_Dontwantit" = "Change of mind";
+"AfterSale_Notshipped" = "Awaiting dispatch";
+"AfterSale_Otherreason" = "Other reason";
+"AfterSale_MaxImgNum" = "Upload Evidence (maximum of 3 photos)";
+"AfterSale_SureReceived" = "Can you confirm the item has been received?";
+"AfterSale_OrderNumber" = "Order Number: ";
+"AfterSale_Application" = "Pending Approval";
+"AfterSale_approved" = "approved";
+"AfterSale_notapproved" = "Rejected";
+"AfterSale_buyerSendback" = "Pending confirmation of Return by Customer";
+"AfterSale_sellerReceivinggoods" = "Pending confirmation of Receiving the returned item by Merchant ";
+"AfterSale_sellersignedforgoods" = "Confirmation of Receiving the returned item by Merchant";
+"AfterSale_Success" = "refund Success";
+"AfterSale_Failure" = "Refund Failed";
+"AfterSale_Refund" = "Refund";
+"AfterSale_ReturnRefund" = "Return & Refund";
+"AfterSale_Pleasewaitforreview" = "Review in Progress";
+"Mine_RefundTime" = "Refund Time";
+
+"OrderDetail_Cancle" = "Cancel Order";
+"OrderDetail_LOGISTICS" = "Shipping Details ";
+"OrderDetail_Pendingpayment" = "Pending Payment";
+"OrderDetail_Readyforshipment" = "Pending Dispatch ";
+"OrderDetail_Tobereceived" = "Pending Delivery";
+"OrderDetail_Tobeevaluated" = "Pending Review";
+"OrderDetail_DealDone" = "Transaction Complete";
+"OrderDetail_DealCancel" = "Cancel Transaction";
+"OrderDetail_NotPickup" = "Pending Pick-Up";
+                       
+"OrderDetail_Timeleft" = "Time Remaining：";
+"OrderDetail_Yourpackageisready" = "Your Package is Ready";
+"OrderDetail_Yourpackageisintransit" = "Your Package is in Transit";
+"OrderDetail_Evaluatethegoodsyoureceived" = "Review the items received";
+"OrderDetail_Thankyouforthistransaction" = "Thank you for your purchase";
+"OrderDetail_Pleasegoshoppingagain" = "Continue Shopping";
+"OrderDetail_AddToCartSuc" = "Successfully added to cart";
+
+"SomeOneTake_RedEnvelopes" = "Red Envelope";
+"SomeOneTake_Amount" = "Gift Amount";
+"SomeOneTake_textTip" = "Enter Gift Amount";
+"SomeOneTake_tpValueTip" = "Prepayment Account Balance: ";
+
+"Evaluation_Evaluation" = "Review Item";
+"Evaluation_ChoosingStars" = "Select Rating";
+"Evaluation_Pleasefillintheevaluation" = "Enter comment on item";
+"Evaluation_RELEASE" = "Publish Review";
+
+"Upgrade_Upgradeissubjecttoafee" = "Ugrade Fee Required";
+"Recharge_Feetobepaid" = "Fee to be Paid";
+
+"GPType_RegistrationAward" = "Rewards Registration";
+"GPType_ShoppingAwards" = "Shopping Rewards";
+"GPType_UpgradeAward" = "Upgrade to Diamond Member";
+"GPType_Signin" = "Check-In Reward";
+"GPType_Receiveredpackets" = "Receive Red Envelope";
+"GPType_Rewardforfriendsorder" = "Rewards for a Friend's Purchase";
+"GPType_Buddyorder" = "Rewards for a Friend's Sale";
+"GPType_Friendupgradereward" = "Rewards for a Friend's Diamond Member upgrade";
+"GPType_TPrecharge" = "Top-Up Trading Points";
+"GPType_ConvertingtoKP" = "Gift Points Convert to Kiwi Points";
+"GPType_Giveoutredpackets" = "Gift Red Envelopes";
+"GPType_ConvertingtoCA" = "Convert to Kiwi Point Dollar";
+"GPType_Scancodereceived" = "Scan for Rewards";
+"GPType_Friendregistrationreward" = "Rewards for a Friends Registration";
+"GPType_DistributionbyFriend" = "Gift Points from Friends";
+"GPType_Platformadjustment" = "Platfrom Adjustments";
+
+
+"KPType_GPconversion" = "Gift Points Convert to Kiwi Points";
+"KPType_Receiveredpackets" = "Receive Red Envelopes";
+"KPType_ConvertingtoCA" = "Convert to Kiwi Point Dollar ";
+"KPType_Giveoutredpackets" = "Gift Red Envelopes";
+"KPType_Platformadjustment" = "Platform Adjustments";
+
+"TPType_PArecharge" = "Top-Up Prepayment Account";
+"TPType_CArecharge" = "Top-Up Kiwi Point Dollar Account";
+"TPType_BArecharge" = "Top-Up Sales Account";
+"TPType_Bankcardpayment" = "Bank Transfer";
+"TPType_Polipaypayment" = "POLi Payment";
+"TPType_PayPalpayment" = "PayPal";
+"TPType_CreditCardspayment" = "Credit Card";
+"TPType_Wechatpayment" = "WeChat Pay";
+"TPType_Alipaypayment" = "AliPay";
+"TPType_Salesofgoods" = "Sale of Goods";
+"TPType_Distributionofpoints" = "Gift Points / Offline Payment";
+"TPType_Upgradepresentation" = "Rewards from Upgrade";
+"TPType_Platformadjustment" = "Platform Adjustments";
+"TPType_Collectioncodefreeze" = "Freeze Payment Code";
+"TPType_Collectioncodeinvalidreturn" = "Invalid Payment Code";
+"TPType_Deliverydeduction" = "Points Deduction";
+
+"CPType_KPexchangebonus" = "Convert Kiwi Points to Kiwi Point Dollar, Charge 10% Kiwi Point Dollar ";
+"CPType_Receiveredpackets" = "Receive Red Envelopes";
+"CPType_CPOnlinepayment" = "Online Payment with Cloud Points";
+"CPType_CP+PAOnlinepayment" = "Online Payment with Cloud Points + Prepayment Account";
+"CPType_CP+CAOnlinepayment" = "Online Payment with Cloud Points + Kiwi Point Dollar";
+"CPType_CP+cashOnlinepayment" = "Online Payment with Cloud Points + Other Payments ";
+"CPType_Platformadjustment" = "Platform Adjustments";
+
+"PAType_Bankcardpayment" = "Bank Transfer";
+"PAType_Cashrecharge" = "Cash Top-Up";
+"PAType_Receiveredpackets" = "Receive Red Envelopes";
+"PAType_RechargeTP" = "Top-Up Trading Points";
+"PAType_CP+PAOnlinepayment" = "Online Payment with Cloud Points + Prepayment Account";
+"PAType_PAOnlinepayment" = "Online Payment with Prepayment Account";
+"PAType_PAOfflinepaymen" = "Offline Payment with Prepayment Account";
+"PAType_Settlement" = "Redeem";
+"PAType_Giveoutredpackets" = "Gift Red Envelopes";
+"PAType_Platformadjustment" = "Platform Adjustments";
+"PAType_Aftersalerefund" = "After-Sale Refund";
+"PAType_RealName_Pay" = "Real-name certification fee";
+
+"BAType_Salesofgoods" = "Sales of Goods";
+"BAType_RechargeTP" = "Top-Up Trading Points";
+"BAType_Settlement" = "Redeem";
+"BAType_Upgradepayment" = "Payment for Upgrade";
+"BAType_Platformadjustment" = "Platform Adjustments";
+"BAType_PaymentCode" = "Payment from Payment Code";
+
+"CAType_RechargeTP" = "Top-Up Trading Points";
+"CAType_CP+CAOnlinepayment" = "Online Payment with Cloud Points + Kiwi Point Dollar";
+"CAType_CAOnlinepayment" = "Online Payment with Kiwi Point Dollar";
+"CAType_CAOfflinepayment" = "Offline Payment with Kiwi Point Dollar";
+"CAType_Settlement" = "Redeem";
+"CAType_KPconvertibility" = "Convert to Kiwi Point Dollar";
+"CAType_Friendupgradereward" = "Rewards for a Friend's Diamond Member upgrade";
+"CAType_GPconvertibility" = "Gift Points Convert to Kiwi Points";
+"CAType_Aftersalerefund" = "After-Sale Refund";
+"CAType_Platformadjustment" = "Platform Adjustments";
+"CAType_RealName_Pay" = "Real-name certification fee";
+
+"TPSendPoint_SendoutCode" = "Sending Points";
+"TPSendPoint_GiftQuantity" = "Amount of Trading Points to send";
+"TPSendPoint_Fillinthenumberofgifts" = "Enter Amount of Trading Points to send";
+"TPSendPoint_TradingPointAccountbalance" = "Get Trading Points:";
+"TPSendPoint_RedEnvelopeType" = "Sending  Method";
+"TPSendPoint_PhoneNumber" = "Mobile Number";
+"TPSendPoint_UserName" = "Username";
+"TPSendPoint_Email" = "Email";
+"TPSendPoint_Fillintheusername" = "Enter Recipient's Username";
+"TPSendPoint_Fillinthephone" = "Enter Recipient's Mobile Number";
+"TPSendPoint_Fillintheemail" = "Enter Recipient's Email";
+"TPSendPoint_SecurityPassword" = "Send Points";
+"TPSendPoint_EnterSecurityPassword" = "Enter Payment Password";
+
+"TP_ServiceCharge" = "Service Charge：";
+"TP_TradingPoint" = "Trading Points：";
+"PA_Canbesettledatmost" = "Daily Redeem Limit";
+"PA_PrepaymentAccount" = "Prepayment Account：";
+
+"CustomerService_time" = "Customer Service Hours: Monday to Friday; 9am-12pm, 2pm-6pm";
+"DeleteAddress_Tip" = "Confirm removal of this Shipping Address";
+"Order_Cancel" = "Cancel Order";
+"Order_CancelTip" = "Confirm cancellation of this Order";
+
+
+//我的推荐人
+"Mine_MyRecommandEditTitle" = "My Referrer";
+"Mine_MyRecommandHeadPortrait" = "Portrait Photo";
+"Mine_MyRecommandUserId" = "Username";
+"Mine_MyRecommandNewRecommender" = "New Referrer";
+"Mine_MyRecommandUserName" = "Username";
+"Mine_MyRecommandUserNamePlaceholder" = "Enter Username";
+"Mine_MyRecommandSubmission" = "Submit";
+"Mine_MyRecommandSubmissionTips" = "Your Referrer may only be amended once, would you like to continue?";
+
+"Mine_CollectMerchantTel" = "Mobile Number";
+"Mine_CollectMerchantAddress" = "Address";
+"Mine_CollectCancel" = "Cancel \n Collect";
+
+"Mine_CollectCommodity" = "Item";
+"Mine_CollectBusiness" = "Merchant";
+
+"Mine_AboutUs" = "About Us";
+"Mine_AboutCloudUnion" = "About Cloud Union";
+"Mine_Termsofservice" = "Service Terms & Conditions";
+"Mine_CheckVersion" = "Check for updates";
+"Mine_CheckVersion_UpdateNow" = "Update";
+"Mine_CheckVersion_Tips" = "your APP is up to date";
+"Mine_PayNumberTip" = "Payment Number";
+"Order_AFTERSALESmall" = "After-Sale Service";
+"Order_Distributionlogistics" = "Shipping & Logistics：";
+"Order_Logisticsnumber" = "Shipping Number：";
+"Order_EvaGoddsTiop" = "Provide a Review for an Item";
+"Order_EvaGoddsTiop1" = "Enter Review";
+"Order_EvaGoddsTiop2" = "Upload Photo";
+"Order_TPNotEnough" = "Insufficient Trading Points";
+"Order_Giveaway" = "Successfully Sent Points";
+"Order_VIEWACCOUNTS" = "View Account";
+"Order_Pleaseenterthecorrectamount" = "Enter the Correct Amount";
+"Order_AccountDescription" = "Account Description";
+"Order_SendPointCompleted" = "Successfully Sent Points";
+"Order_Balanceisnotenough" = "Insufficient Balance";
+
+"Order_RefundType" = "Refund Type: ";
+"Order_ReasonforRefund" = "Reason of Refund: ";
+"Order_RefundAmount" = "Refund Amount: ";
+"Order_Remarks" = "Remarks: ";
+
+"Order_AuditResult" = "Result of Review: ";
+"Order_ReviewComments" = "Feedback of Review: ";
+
+"Order_ReturnContact" = "Contact Person for Returns: ";
+"Order_ContactNumber" = "Contact Number: ";
+"Order_ReturnAddress" = "Return Address: ";
+
+"Order_Pleasecheckinyouremail" = "Please Check in Your Mailbox";
+"Order_Yourpaymentamountcannotbeless" = "Payment amount must be no fewer than $1";
+"Order_Pleaseenterthecorrectpassword" = "Enter correct Password";
+"Order_Theemailformatisincorrect" = "Incorrect Email format, please re-enter";
+"Order_Accountnumbercannotbeempty" = "Account Number must not be empty";
+"Order_Pleaseinputthecorrectmobilenumber" = "Enter correct Mobile Number";
+"Order_Pleasecheckagreeagreement" = "Please check Agreement";
+"Order_feedback" = "Feedback";
+"Order_Upgradesuccess" = "Upgrade Success";
+"Order_Rechargeaudit" = "Review Top-Up";
+"Order_Upgradeaudit" = "Review Upgrade";
+"Order_Settlementaudit" = "Review Redeem";
+"Order_Tobeaudited" = "Pending Review";
+"Order_Auditpass" = "Review Approved";
+"Order_Auditfailed" = "Review Not Approved";
+"Order_Transferamount" = "Transfer Amount";
+"Order_oldpassword" = "Enter your Password (6-18 numbers/letters/symbols)";
+"Order_newpassword" = "Enter your New Password (6-18 numbers/letters/symbols)";
+"Order_PHOTOGRAPH" = "Photograph";
+"Order_ALBUM" = "Select from Album";
+"Order_Uploadup" = "Maximum Upload";
+"Order_pictures" = " Photos";
+"Order_Underreview" = "Under Review...";
+"Order_PrepaymentAccount1" = "Get Trading Points";
+"Order_PrepaymentAccount2" = "Get Prepayment Points ";
+"Order_handlingFee" = "Handling Charge";
+
+// 发红包
+"Mine_Red_Envelopes_Release_Type" = "Integral Type";
+"Mine_Red_Envelopes_Type" = "Red Envelope Type";
+"Mine_Red_Envelopes_Type_Lucky" = "Luck Red Envelope";
+"Mine_Red_Envelopes_Type_Ordinary" = "ordinary Red Envelope";
+"Mine_Red_Envelopes_Total_Amount" = "The Total Payment";
+"Mine_Red_Envelopes_Single_Amount" = "Single Amount";
+"Mine_Red_Envelopes_Recipient" = "Recipient";
+"Mine_Red_Envelopes_Total_Amount_Placeholder" = "Fill in the total Payment";
+"Mine_Red_Envelopes_Single_Amount_Placeholder" = "Fill in a single amount";
+"Mine_Red_Envelopes_Number" = "Number Of Red Packets";
+"Mine_Red_Envelopes_Number_Placeholder" = "Fill in the number";
+"Mine_Red_Envelopes_Submit" = "HAND OUT RED ENVELOPES";
+"Mine_Red_Envelopes_Submit_Success" = "Has been sent";
+"Mine_Red_Envelopes_Record" = "Record";
+"Mine_Red_Envelopes_Record_Title" = "Red packet Record";
+"Mine_Red_Envelopes_Issue_Record" = "Issue Records";
+"Mine_Red_Envelopes_Collection_Record" = "Collection Records";
+"Mine_Red_Envelopes_Issue_Record_number" = "Number of red packets";
+"Mine_Red_Envelopes_User_Does_Not_Exist" = "User does not exist";
+
+// 活动中心
+"Home_Activity_Main_Title" = "Activity Center";
+"Home_Activity_Status_Ing_Title" = "Processing";
+"Home_Activity_State_End_Title" = "Has ended";
+"Home_Activity_Detail_Title" = "Activity details";
+"Home_Activity_Notice_Title" = "Activity Notice";
+"Home_Activity_Involved_Now" = "GET INVOLVED NOW";
+"Home_Activity_Involved_End" = "ACTIVITY ENDS";
+"Home_Activity_Involved_Success_Tips" = "Participation success";
+"Home_Activity_Involved_Fees_Title" = "Participation fees";
+"Home_Activity_Involved_Number_Title" = "Quantity";
+"Home_Activity_Order" = "Active Order";
+"Home_Activity_Order_Buy_Number" = "Purchases";
+"Home_Activity_Order_Total_Amount" = "Total Amount";
+"Home_Activity_Order_Serial_Numbert" = "Serial number";
+
+//实名认证
+"Mine_Realname_Personal_Choose_Placeholder" = "Please choose";
+"Mine_Realname_Personal" = "Personal user";
+"Mine_Realname_Enterprise" = "Enterprise users";
+"Mine_Realname_Enterprise_Company" = "Certified Business";
+"Mine_Realname_Success_Tips" = "You have been certified successfully.";
+"Mine_Realname_Personal_Name" = "Name";
+"Mine_Realname_Personal_Name_Placeholder" = "Please enter your name";
+"Mine_Realname_Personal_Birth" = "Date of birth";
+"Mine_Realname_Personal_Certificate_NO" = "CAAC Certificate No";
+"Mine_Realname_Personal_Certificate_EndDate" = "Document expiration time";
+"Mine_Realname_Enterprise_Name" = "Corporate name";
+"Mine_Realname_Enterprise_Certificate_NO" = "CAAC Certificate No";
+"Mine_Realname_Enterprise_Tax_ID" = "Duty paragraph";
+"Mine_Realname_Enterprise_Tax_ID_Placeholder" = "Please enter tax ID";
+"Mine_Realname_Apply_Certificate_Type" = "Document type";
+"Mine_Realname_Apply_Certificate_Type_Passport" = "Passport";
+"Mine_Realname_Apply_Certificate_Type_Driving_License" = "Driving License";
+"Mine_Realname_Apply_Certificate_Type_Chinese_ID" = "Chinese Resident Identity Card";
+"Mine_Realname_Apply_Certificate_NO" = "Document number";
+"Mine_Realname_Apply_Certificate_NO_Placeholder" = "Please enter your passport or driver's license number.";
+"Mine_Realname_Apply_Certificate_End_Date" = "Document expiration time";
+"Mine_Realname_Apply_Certificate_Address" = "address";
+"Mine_Realname_Apply_Certificate_Address_Placeholder" = "Please enter your address.";
+"Mine_Realname_Apply_Certificate_Photo" = "Document photo";
+"Mine_Realname_Apply_Certificate_Photo_Empty_Tips" = "Please upload a Document photo";
+"Mine_Realname_Apply_Certificate_Hand_Held_Photo" = "Hand-held ID photo";
+"Mine_Realname_Apply_Certificate_Hand_Held_Photo_Empty_Tips" = "Please upload a Hand-held ID photo";
+"Mine_Realname_Apply_Certificate_Personal_Photo" = "Personal photos";
+"Mine_Realname_Apply_Certificate_Personal_Photo_Empty_Tips" = "Please upload a Personal photos";
+"Mine_Realname_Apply_Certificate_Address_Prove_Photo" = "Address proof photo";
+"Mine_Realname_Apply_Certificate_Address_Prove_Photo_Empty_Tips" = "Please upload a Address proof photo";
+"Mine_Realname_Apply_Certificate_Front_Placeholder" = "Front of Certificate";
+"Mine_Realname_Apply_IdCard_Front_Placeholder" = "Front of Certificate(National Emblem)";
+"Mine_Realname_Apply_Certificate_Front_Empty_Tips" = "Please upload the Front of Certificate";
+"Mine_Realname_Apply_Certificate_Back_Placeholder" = "The opposite side of the document";
+"Mine_Realname_Apply_IdCard_Back_Placeholder" = "The opposite side of the document(Portrait)";
+"Mine_Realname_Apply_Certificate_Back_Empty_Tips" = "Please upload the opposite side of the document";
+"Mine_Realname_Apply_Certificate_Hand_Held_Placeholder" = "Hand-held ID photo";
+"Mine_Realname_Apply_Personal_Front_Placeholder" = "Positive";
+"Mine_Realname_Apply_Personal_Front_Empty_Tips" = "Please upload a personal front photo";
+"Mine_Realname_Apply_Personal_Side_Placeholder" = "Side";
+"Mine_Realname_Apply_Personal_Side_Empty_Tips" = "Please upload a personal profile";
+"Mine_Realname_Apply_Address_Prove_Placeholder" = "Address Certificate Photo";
+"Mine_Realname_Apply_Personal_Handling_Fee_Tips" = "Payment of handling fee for real-name certification";
+"Mine_Realname_Apply_Personal_Submit_Success" = "Successful Submission";
+"Mine_Realname_Apply_Personal_Submit_Success_Tips" = "The platform will process and give you feedback  within 3 to 7 working days.";
+
+"Mine_Realname_EnterPrise_CEO_Empty_Tips" = "Please enter CEO certification information";
+"Mine_Realname_EnterPrise_Company_Empty_Tips" = "Please enter company certification information";
+"Mine_Realname_EnterPrise_Roles_Tips" = "Note: CEO must be authenticated by real name. Shareholders whose shares are more than or equal to 25% also need to be authenticated by real name, up to four.";
+"Mine_Realname_EnterPrise_Shareholder" = "Shareholder";
+"Mine_Realname_EnterPrise_Information" = "Company Information";
+"Mine_Realname_EnterPrise_Name" = "Corporate name";
+"Mine_Realname_EnterPrise_Name_Placeholder" = "Please enter the name of the company.";
+"Mine_Realname_EnterPrise_Registration_Certificate" = "Certificate of registration";
+"Mine_Realname_EnterPrise_Registration_Certificate_Placeholder" = "Registration Certificate Photos";
+"Mine_Realname_EnterPrise_Registration_Certificate_Empty_Tips" = "Please upload a Registration Certificate Photos";
+"Mine_Realname_EnterPrise_Appley_Continue_To_Add_Roles" = "Do you continue to add roles?";
+
+"Mine_Realname_Apply_Review" = "Under Review...";
+"Mine_Realname_Apply_Contact" = "Contact number:";
+"Mine_Realname_Apply_Audit_Passed" = "The audit has been approved.";
+"Mine_Realname_Apply_Audit_Failed" = "Audit failed";
+"Mine_Realname_Apply_Resubmit" = "RESUBMIT";
+
+"Mine_Realname_Apply_LicenseNumber_NZ" = "NZBN";
+"Mine_Realname_Apply_LicenseNumber_NZ_Placeholder" = "Please enter your NZBN.";
+"Mine_Realname_Apply_LicenseNumber_AU" = "ACN";
+"Mine_Realname_Apply_LicenseNumber_AU_Placeholder" = "Please enter your ACN.";
+"Mine_Realname_Enterprise_Tax_ID_NZ" = "ird number";
+"Mine_Realname_Enterprise_Tax_ID_NZ_Placeholder" = "Please enter ird number";
+"Mine_Realname_Enterprise_Tax_ID_AU" = "ABN";
+"Mine_Realname_Enterprise_Tax_ID_AU_Placeholder" = "Please enter ABN";
+
+"Third_Pay_Handling_Fee" = "Handling fee：";
+
+"Business_Chat_Title" = "Business news";
+"Business_Chat_Product_Open" = "Details";
+"Business_Chat_Product_Close" = "put away";
+"Business_Chat_Product_Send" = "SEND";
+
+/// 开店
+"Open_Shop_Apply_UnRealName_Message" = "You haven't authenticated your real name yet.\nPlease complete the real-name authentication first.";
+"Open_Shop_Apply_Nav_Title" = "Set up Shop";
+"Open_Shop_Apply_ShopName" = "Shop Name";
+"Open_Shop_Apply_ShopName_placeholder" = "Please enter the Shop name";
+"Open_Shop_Apply_Area" = "Country";
+"Open_Shop_Apply_Area_placeholder" = "Please Choose";
+"Open_Shop_Apply_Industry" = "Industry";
+"Open_Shop_Apply_Industry_placeholder" = "Please Choose(multiple choices)";
+"Open_Shop_Apply_Industry_Empty_Tips" = "Please Choose your industry";
+"Open_Shop_Apply_ManagementType" = "Business Types";
+"Open_Shop_Apply_ManagementType_online" = "Online mall";
+"Open_Shop_Apply_ManagementType_offline" = "Offline";
+"Open_Shop_Apply_Photo" = "Merchant logo/icon";
+"Open_Shop_Apply_Photo_Tips" = "Please upload Merchant logo/icon";
+"Open_Shop_Apply_ContactName" = "Contact Name";
+"Open_Shop_Apply_ContactName_placeholder" = "Enter the name";
+"Open_Shop_Apply_ContactMobile" = "Phone Number";
+"Open_Shop_Apply_ContactMobile_placeholder" = "Enter contact phone";
+"Open_Shop_Apply_ContactEmail" = "Contact Email";
+"Open_Shop_Apply_ContactEmail_placeholder" = "Enter contact email";
+"Open_Shop_Apply_ServiceContact" = "Customer Service Contact";
+"Open_Shop_Apply_ServiceContact_placeholder" = "Fill in customer service contact";
+"Open_Shop_Apply_Address" = "Address";
+"Open_Shop_Apply_Address_placeholder" = "select the address";
+"Open_Shop_Apply_DetailAddress" = "Detailed Address";
+"Open_Shop_Apply_DetailAddress_placeholder" = "Please enter the shop address";
+
+/// 卖场分区
+"System_Mall_China" = "CN MALL";
+"System_Mall_NZ" = "NZ MALL";
+"System_Mall_AU" = "AU MALL";
+"System_Mall_China_Subject" = "The products are for China Domestic Only";
+"System_Mall_NZ_Subject" = "The products are for New Zealand Domestic Only";
+"System_Mall_AU_Subject" = "The products are for Australia Domestic Only";
