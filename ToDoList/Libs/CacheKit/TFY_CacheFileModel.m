@@ -7,7 +7,6 @@
 //
 
 #import "TFY_CacheFileModel.h"
-
 @implementation TFY_CacheFileModel
 
 @end
