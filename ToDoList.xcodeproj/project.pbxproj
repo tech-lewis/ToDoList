@@ -16,20 +16,10 @@
 		2217FE76279FE00B00FCDA6F /* MJMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 2217FE68279FE00B00FCDA6F /* MJMethod.m */; };
 		2217FE77279FE00B00FCDA6F /* MJArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2217FE69279FE00B00FCDA6F /* MJArgument.m */; };
 		2217FE78279FE00B00FCDA6F /* NSObject+MJMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 2217FE6F279FE00B00FCDA6F /* NSObject+MJMember.m */; };
-		222DF8B0275B7EF30036AED1 /* BiDAddToDoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8A0275B7EF30036AED1 /* BiDAddToDoItemViewController.m */; };
-		222DF8B1275B7EF30036AED1 /* BiDEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8A2275B7EF30036AED1 /* BiDEditorViewController.m */; };
-		222DF8B2275B7EF30036AED1 /* BiDToDoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8A4275B7EF30036AED1 /* BiDToDoListViewController.m */; };
-		222DF8B3275B7EF30036AED1 /* ContentCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8A6275B7EF30036AED1 /* ContentCellViewController.m */; };
-		222DF8B5275B7EF30036AED1 /* FoldableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8A9275B7EF30036AED1 /* FoldableView.m */; };
-		222DF8B6275B7EF30036AED1 /* MusicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8AB275B7EF30036AED1 /* MusicListViewController.m */; };
-		222DF8B7275B7EF30036AED1 /* MusicPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8AD275B7EF30036AED1 /* MusicPlayerViewController.m */; };
-		222DF8B8275B7EF30036AED1 /* MusicPlayingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8AF275B7EF30036AED1 /* MusicPlayingView.m */; };
-		222DF8BB275B7F720036AED1 /* BiDWebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222DF8BA275B7F720036AED1 /* BiDWebBrowserViewController.m */; };
 		22530C2027916B8C00C25072 /* YYMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 22530C1927916B8C00C25072 /* YYMemoryCache.m */; };
 		22530C2127916B8C00C25072 /* YYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 22530C1A27916B8C00C25072 /* YYCache.m */; };
 		22530C2227916B8C00C25072 /* YYKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 22530C1B27916B8C00C25072 /* YYKVStorage.m */; };
 		22530C2327916B8C00C25072 /* YYDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 22530C1C27916B8C00C25072 /* YYDiskCache.m */; };
-		22626FEA278E77DA00FC0B35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5161ED31ACFCAA4005E9CF6 /* Main.storyboard */; };
 		2277DE61275B571200FE30A0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2277DE60275B571200FE30A0 /* icon.png */; };
 		22B0F10027A26172001248CE /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B0F0FF27A26172001248CE /* API.m */; };
 		22B0F10327A2618F001248CE /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B0F10227A2618F001248CE /* Project.m */; };
@@ -174,6 +164,18 @@
 		4D70CE3C27A198ED0049B5E5 /* NoteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D70CE3B27A198ED0049B5E5 /* NoteListViewController.m */; };
 		4D70CE3F27A19C4D0049B5E5 /* AddNewNoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D70CE3E27A19C4D0049B5E5 /* AddNewNoteController.m */; };
 		4D70CE4227A19D5C0049B5E5 /* NoteEditTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D70CE4127A19D5C0049B5E5 /* NoteEditTextField.m */; };
+		4D70CE5627A503BF0049B5E5 /* MjExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D70CE5527A503BF0049B5E5 /* MjExplorerViewController.m */; };
+		4D70CE6627A505500049B5E5 /* TFY_CacheFileImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D70CE5827A505500049B5E5 /* TFY_CacheFileImage.m */; };
+		4D70CE6727A505500049B5E5 /* TFY_CacheFileCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D70CE5A27A505500049B5E5 /* TFY_CacheFileCollection.m */; };
+		4D70CE6827A505500049B5E5 /* TFY_CacheFileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D70CE5B27A505500049B5E5 /* TFY_CacheFileCell.m */; };
+		4D70CE6927A505500049B5E5 /* TFY_CacheFileCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D70CE5C27A505500049B5E5 /* TFY_CacheFileCollectionCell.m */; };
+		4D70CE6A27A505500049B5E5 /* TFY_CacheFileTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D70CE5E27A505500049B5E5 /* TFY_CacheFileTable.m */; };
+		4D70CE6B27A505500049B5E5 /* TFY_CacheFileRead.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D70CE5F27A505500049B5E5 /* TFY_CacheFileRead.m */; };
+		4D70CE6C27A505500049B5E5 /* TFY_CacheFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D70CE6527A505500049B5E5 /* TFY_CacheFileViewController.m */; };
+		4D70CE6F27A505A00049B5E5 /* TFY_CacheFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D70CE6D27A505A00049B5E5 /* TFY_CacheFileManager.m */; };
+		4D70CE7227A506600049B5E5 /* TFY_CacheFileAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D70CE7127A506600049B5E5 /* TFY_CacheFileAudio.m */; };
+		4D70CE7527A507340049B5E5 /* TFY_CacheFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D70CE7427A507340049B5E5 /* TFY_CacheFileModel.m */; };
+		4D70CE7827A507900049B5E5 /* TFY_CacheFileUilt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D70CE7727A507900049B5E5 /* TFY_CacheFileUilt.m */; };
 		C5161EA51ACFCA76005E9CF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5161EA41ACFCA76005E9CF6 /* Foundation.framework */; };
 		C5161EA71ACFCA76005E9CF6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5161EA61ACFCA76005E9CF6 /* CoreGraphics.framework */; };
 		C5161EA91ACFCA76005E9CF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5161EA81ACFCA76005E9CF6 /* UIKit.framework */; };
@@ -185,9 +187,7 @@
 		C5161EC01ACFCA76005E9CF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5161EA81ACFCA76005E9CF6 /* UIKit.framework */; };
 		C5161EC81ACFCA76005E9CF6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C5161EC61ACFCA76005E9CF6 /* InfoPlist.strings */; };
 		C5161ECA1ACFCA76005E9CF6 /* ToDoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5161EC91ACFCA76005E9CF6 /* ToDoListTests.m */; };
-		C5161EE41ACFD3C4005E9CF6 /* BiDToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C5161EE31ACFD3C4005E9CF6 /* BiDToDoItem.m */; };
 		C58847C11B8F4C8000966CA5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58847C01B8F4C8000966CA5 /* AVFoundation.framework */; };
-		C592FDB21BBCE8EE00796833 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = C592FDB01BBCE8EE00796833 /* UIImage+ImageEffects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -234,25 +234,6 @@
 		2217FE6D279FE00B00FCDA6F /* MJTypeEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJTypeEncoding.h; sourceTree = "<group>"; };
 		2217FE6E279FE00B00FCDA6F /* MJType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJType.h; sourceTree = "<group>"; };
 		2217FE6F279FE00B00FCDA6F /* NSObject+MJMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJMember.m"; sourceTree = "<group>"; };
-		222DF89F275B7EF30036AED1 /* BiDAddToDoItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiDAddToDoItemViewController.h; sourceTree = "<group>"; };
-		222DF8A0275B7EF30036AED1 /* BiDAddToDoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BiDAddToDoItemViewController.m; sourceTree = "<group>"; };
-		222DF8A1275B7EF30036AED1 /* BiDEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiDEditorViewController.h; sourceTree = "<group>"; };
-		222DF8A2275B7EF30036AED1 /* BiDEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BiDEditorViewController.m; sourceTree = "<group>"; };
-		222DF8A3275B7EF30036AED1 /* BiDToDoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiDToDoListViewController.h; sourceTree = "<group>"; };
-		222DF8A4275B7EF30036AED1 /* BiDToDoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BiDToDoListViewController.m; sourceTree = "<group>"; };
-		222DF8A5275B7EF30036AED1 /* ContentCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentCellViewController.h; sourceTree = "<group>"; };
-		222DF8A6275B7EF30036AED1 /* ContentCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentCellViewController.m; sourceTree = "<group>"; };
-		222DF8A7275B7EF30036AED1 /* ContentCellViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentCellViewController.xib; sourceTree = "<group>"; };
-		222DF8A8275B7EF30036AED1 /* FoldableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoldableView.h; sourceTree = "<group>"; };
-		222DF8A9275B7EF30036AED1 /* FoldableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoldableView.m; sourceTree = "<group>"; };
-		222DF8AA275B7EF30036AED1 /* MusicListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicListViewController.h; sourceTree = "<group>"; };
-		222DF8AB275B7EF30036AED1 /* MusicListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicListViewController.m; sourceTree = "<group>"; };
-		222DF8AC275B7EF30036AED1 /* MusicPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicPlayerViewController.h; sourceTree = "<group>"; };
-		222DF8AD275B7EF30036AED1 /* MusicPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicPlayerViewController.m; sourceTree = "<group>"; };
-		222DF8AE275B7EF30036AED1 /* MusicPlayingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicPlayingView.h; sourceTree = "<group>"; };
-		222DF8AF275B7EF30036AED1 /* MusicPlayingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicPlayingView.m; sourceTree = "<group>"; };
-		222DF8B9275B7F720036AED1 /* BiDWebBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiDWebBrowserViewController.h; sourceTree = "<group>"; };
-		222DF8BA275B7F720036AED1 /* BiDWebBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BiDWebBrowserViewController.m; sourceTree = "<group>"; };
 		22530C1827916B8C00C25072 /* YYKVStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKVStorage.h; sourceTree = "<group>"; };
 		22530C1927916B8C00C25072 /* YYMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMemoryCache.m; sourceTree = "<group>"; };
 		22530C1A27916B8C00C25072 /* YYCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCache.m; sourceTree = "<group>"; };
@@ -554,6 +535,30 @@
 		4D70CE3E27A19C4D0049B5E5 /* AddNewNoteController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddNewNoteController.m; sourceTree = "<group>"; };
 		4D70CE4027A19D5C0049B5E5 /* NoteEditTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteEditTextField.h; sourceTree = "<group>"; };
 		4D70CE4127A19D5C0049B5E5 /* NoteEditTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteEditTextField.m; sourceTree = "<group>"; };
+		4D70CE5427A503BF0049B5E5 /* MjExplorerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MjExplorerViewController.h; sourceTree = "<group>"; };
+		4D70CE5527A503BF0049B5E5 /* MjExplorerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MjExplorerViewController.m; sourceTree = "<group>"; };
+		4D70CE5827A505500049B5E5 /* TFY_CacheFileImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFY_CacheFileImage.m; sourceTree = "<group>"; };
+		4D70CE5927A505500049B5E5 /* TFY_CacheFileRead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFY_CacheFileRead.h; sourceTree = "<group>"; };
+		4D70CE5A27A505500049B5E5 /* TFY_CacheFileCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFY_CacheFileCollection.m; sourceTree = "<group>"; };
+		4D70CE5B27A505500049B5E5 /* TFY_CacheFileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFY_CacheFileCell.m; sourceTree = "<group>"; };
+		4D70CE5C27A505500049B5E5 /* TFY_CacheFileCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFY_CacheFileCollectionCell.m; sourceTree = "<group>"; };
+		4D70CE5D27A505500049B5E5 /* TFY_CacheFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFY_CacheFileViewController.h; sourceTree = "<group>"; };
+		4D70CE5E27A505500049B5E5 /* TFY_CacheFileTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFY_CacheFileTable.m; sourceTree = "<group>"; };
+		4D70CE5F27A505500049B5E5 /* TFY_CacheFileRead.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFY_CacheFileRead.m; sourceTree = "<group>"; };
+		4D70CE6027A505500049B5E5 /* TFY_CacheFileImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFY_CacheFileImage.h; sourceTree = "<group>"; };
+		4D70CE6127A505500049B5E5 /* TFY_CacheFileCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFY_CacheFileCollectionCell.h; sourceTree = "<group>"; };
+		4D70CE6227A505500049B5E5 /* TFY_CacheFileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFY_CacheFileCell.h; sourceTree = "<group>"; };
+		4D70CE6327A505500049B5E5 /* TFY_CacheFileCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFY_CacheFileCollection.h; sourceTree = "<group>"; };
+		4D70CE6427A505500049B5E5 /* TFY_CacheFileTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFY_CacheFileTable.h; sourceTree = "<group>"; };
+		4D70CE6527A505500049B5E5 /* TFY_CacheFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFY_CacheFileViewController.m; sourceTree = "<group>"; };
+		4D70CE6D27A505A00049B5E5 /* TFY_CacheFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFY_CacheFileManager.m; sourceTree = "<group>"; };
+		4D70CE6E27A505A00049B5E5 /* TFY_CacheFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFY_CacheFileManager.h; sourceTree = "<group>"; };
+		4D70CE7027A506600049B5E5 /* TFY_CacheFileAudio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFY_CacheFileAudio.h; sourceTree = "<group>"; };
+		4D70CE7127A506600049B5E5 /* TFY_CacheFileAudio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFY_CacheFileAudio.m; sourceTree = "<group>"; };
+		4D70CE7327A507340049B5E5 /* TFY_CacheFileModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFY_CacheFileModel.h; sourceTree = "<group>"; };
+		4D70CE7427A507340049B5E5 /* TFY_CacheFileModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFY_CacheFileModel.m; sourceTree = "<group>"; };
+		4D70CE7627A507900049B5E5 /* TFY_CacheFileUilt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFY_CacheFileUilt.h; sourceTree = "<group>"; };
+		4D70CE7727A507900049B5E5 /* TFY_CacheFileUilt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFY_CacheFileUilt.m; sourceTree = "<group>"; };
 		C5161EA11ACFCA76005E9CF6 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5161EA41ACFCA76005E9CF6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C5161EA61ACFCA76005E9CF6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -569,11 +574,7 @@
 		C5161EC71ACFCA76005E9CF6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C5161EC91ACFCA76005E9CF6 /* ToDoListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoListTests.m; sourceTree = "<group>"; };
 		C5161ED31ACFCAA4005E9CF6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		C5161EE21ACFD3C4005E9CF6 /* BiDToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiDToDoItem.h; sourceTree = "<group>"; };
-		C5161EE31ACFD3C4005E9CF6 /* BiDToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BiDToDoItem.m; sourceTree = "<group>"; };
 		C58847C01B8F4C8000966CA5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		C592FDB01BBCE8EE00796833 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
-		C592FDB11BBCE8EE00796833 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -604,6 +605,7 @@
 		2217FE5C279FE00B00FCDA6F /* MJExtensionKit */ = {
 			isa = PBXGroup;
 			children = (
+				4D70CE5727A505500049B5E5 /* CacheKit */,
 				22B0F10427A263AF001248CE /* NavigationView */,
 				22B0F0FD27A26158001248CE /* API */,
 				22B0F0FC27A26158001248CE /* Project */,
@@ -628,32 +630,6 @@
 				2217FE6F279FE00B00FCDA6F /* NSObject+MJMember.m */,
 			);
 			path = MJExtensionKit;
-			sourceTree = "<group>";
-		};
-		222DF89E275B7EF30036AED1 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				222DF89F275B7EF30036AED1 /* BiDAddToDoItemViewController.h */,
-				222DF8A0275B7EF30036AED1 /* BiDAddToDoItemViewController.m */,
-				222DF8A1275B7EF30036AED1 /* BiDEditorViewController.h */,
-				222DF8A2275B7EF30036AED1 /* BiDEditorViewController.m */,
-				222DF8A3275B7EF30036AED1 /* BiDToDoListViewController.h */,
-				222DF8A4275B7EF30036AED1 /* BiDToDoListViewController.m */,
-				222DF8A5275B7EF30036AED1 /* ContentCellViewController.h */,
-				222DF8A6275B7EF30036AED1 /* ContentCellViewController.m */,
-				222DF8A7275B7EF30036AED1 /* ContentCellViewController.xib */,
-				222DF8A8275B7EF30036AED1 /* FoldableView.h */,
-				222DF8A9275B7EF30036AED1 /* FoldableView.m */,
-				222DF8AA275B7EF30036AED1 /* MusicListViewController.h */,
-				222DF8AB275B7EF30036AED1 /* MusicListViewController.m */,
-				222DF8AC275B7EF30036AED1 /* MusicPlayerViewController.h */,
-				222DF8AD275B7EF30036AED1 /* MusicPlayerViewController.m */,
-				222DF8AE275B7EF30036AED1 /* MusicPlayingView.h */,
-				222DF8AF275B7EF30036AED1 /* MusicPlayingView.m */,
-				222DF8B9275B7F720036AED1 /* BiDWebBrowserViewController.h */,
-				222DF8BA275B7F720036AED1 /* BiDWebBrowserViewController.m */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		22530C0627916AE900C25072 /* YYCache */ = {
@@ -872,6 +848,7 @@
 		22E399CA279FE5AC004D960B /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				4D70CE4C27A5034A0049B5E5 /* Explorer */,
 				22B0F10B27A274D9001248CE /* VoiceDictation */,
 				4D70CE0C27A195460049B5E5 /* GoodNote */,
 				22EECCC527A0094000C13B4A /* Home(首页) */,
@@ -1412,14 +1389,76 @@
 			path = BEMCheckBox;
 			sourceTree = "<group>";
 		};
-		C5071E5D1BBD502B00DAA4E0 /* Category */ = {
+		4D70CE4C27A5034A0049B5E5 /* Explorer */ = {
 			isa = PBXGroup;
 			children = (
-				C592FDB11BBCE8EE00796833 /* UIImage+ImageEffects.h */,
-				C592FDB01BBCE8EE00796833 /* UIImage+ImageEffects.m */,
+				4D70CE4D27A5034A0049B5E5 /* Tools */,
+				4D70CE4E27A5034A0049B5E5 /* Controller */,
+				4D70CE4F27A5034A0049B5E5 /* Model */,
+				4D70CE5027A5034A0049B5E5 /* Views */,
 			);
-			name = Category;
+			path = Explorer;
 			sourceTree = "<group>";
+		};
+		4D70CE4D27A5034A0049B5E5 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		4D70CE4E27A5034A0049B5E5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4D70CE5427A503BF0049B5E5 /* MjExplorerViewController.h */,
+				4D70CE5527A503BF0049B5E5 /* MjExplorerViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4D70CE4F27A5034A0049B5E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4D70CE5027A5034A0049B5E5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4D70CE5727A505500049B5E5 /* CacheKit */ = {
+			isa = PBXGroup;
+			children = (
+				4D70CE6E27A505A00049B5E5 /* TFY_CacheFileManager.h */,
+				4D70CE6D27A505A00049B5E5 /* TFY_CacheFileManager.m */,
+				4D70CE5827A505500049B5E5 /* TFY_CacheFileImage.m */,
+				4D70CE5927A505500049B5E5 /* TFY_CacheFileRead.h */,
+				4D70CE5A27A505500049B5E5 /* TFY_CacheFileCollection.m */,
+				4D70CE5B27A505500049B5E5 /* TFY_CacheFileCell.m */,
+				4D70CE5C27A505500049B5E5 /* TFY_CacheFileCollectionCell.m */,
+				4D70CE5D27A505500049B5E5 /* TFY_CacheFileViewController.h */,
+				4D70CE5E27A505500049B5E5 /* TFY_CacheFileTable.m */,
+				4D70CE5F27A505500049B5E5 /* TFY_CacheFileRead.m */,
+				4D70CE6027A505500049B5E5 /* TFY_CacheFileImage.h */,
+				4D70CE6127A505500049B5E5 /* TFY_CacheFileCollectionCell.h */,
+				4D70CE6227A505500049B5E5 /* TFY_CacheFileCell.h */,
+				4D70CE6327A505500049B5E5 /* TFY_CacheFileCollection.h */,
+				4D70CE6427A505500049B5E5 /* TFY_CacheFileTable.h */,
+				4D70CE6527A505500049B5E5 /* TFY_CacheFileViewController.m */,
+				4D70CE7027A506600049B5E5 /* TFY_CacheFileAudio.h */,
+				4D70CE7127A506600049B5E5 /* TFY_CacheFileAudio.m */,
+				4D70CE7327A507340049B5E5 /* TFY_CacheFileModel.h */,
+				4D70CE7427A507340049B5E5 /* TFY_CacheFileModel.m */,
+				4D70CE7627A507900049B5E5 /* TFY_CacheFileUilt.h */,
+				4D70CE7727A507900049B5E5 /* TFY_CacheFileUilt.m */,
+			);
+			name = CacheKit;
+			path = ToDoList/Libs/CacheKit;
+			sourceTree = SOURCE_ROOT;
 		};
 		C5161E981ACFCA76005E9CF6 = {
 			isa = PBXGroup;
@@ -1455,15 +1494,12 @@
 		C5161EAA1ACFCA76005E9CF6 /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
-				22EECC90279FEE2F00C13B4A /* Resouces */,
 				22E39991279FE5AC004D960B /* Classes */,
-				22F9FDC4278E82D200FE1A00 /* Libs */,
 				22EECC8E279FEBDB00C13B4A /* Launch Screen.storyboard */,
 				C5161EB61ACFCA76005E9CF6 /* Images.xcassets */,
-				222DF89E275B7EF30036AED1 /* Controller */,
-				C5161ED81ACFCCD0005E9CF6 /* Model */,
+				22F9FDC4278E82D200FE1A00 /* Libs */,
 				C5161ED51ACFCCA4005E9CF6 /* View */,
-				C5071E5D1BBD502B00DAA4E0 /* Category */,
+				22EECC90279FEE2F00C13B4A /* Resouces */,
 				C5161EAB1ACFCA76005E9CF6 /* Supporting Files */,
 			);
 			path = ToDoList;
@@ -1505,15 +1541,6 @@
 				C5161ED31ACFCAA4005E9CF6 /* Main.storyboard */,
 			);
 			name = View;
-			sourceTree = "<group>";
-		};
-		C5161ED81ACFCCD0005E9CF6 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				C5161EE21ACFD3C4005E9CF6 /* BiDToDoItem.h */,
-				C5161EE31ACFD3C4005E9CF6 /* BiDToDoItem.m */,
-			);
-			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1600,7 +1627,6 @@
 			files = (
 				4D70CE3927A1970A0049B5E5 /* todolist.db in Resources */,
 				22B0F10A27A27481001248CE /* 18514798-61a5-499e-a0a6-1b6f34c9e685.wav in Resources */,
-				22626FEA278E77DA00FC0B35 /* Main.storyboard in Resources */,
 				22EECCA1279FFF6300C13B4A /* line.png in Resources */,
 				22F9FEBC278E92F500FE1A00 /* MJRefresh.bundle in Resources */,
 				22F9FE49278E8EFF00FE1A00 /* README.md in Resources */,
@@ -1641,13 +1667,14 @@
 				22F9FEC3278E92F500FE1A00 /* MJRefreshAutoStateFooter.m in Sources */,
 				2217FE71279FE00B00FCDA6F /* NSObject+MJKeyValue.m in Sources */,
 				22EECCDF27A0094000C13B4A /* TYMeterTable.m in Sources */,
+				4D70CE6B27A505500049B5E5 /* TFY_CacheFileRead.m in Sources */,
+				4D70CE6827A505500049B5E5 /* TFY_CacheFileCell.m in Sources */,
 				4D70CE2C27A196A40049B5E5 /* FMDatabaseQueue.m in Sources */,
 				22E39A0A279FE5AC004D960B /* UIButton+CU_CountDownBtn.m in Sources */,
 				22F9FECA278E92F500FE1A00 /* MJRefreshHeader.m in Sources */,
 				22EECCE627A0094100C13B4A /* TYLevelsView.m in Sources */,
 				2217FE72279FE00B00FCDA6F /* MJIvar.m in Sources */,
 				22F9FE17278E836000FE1A00 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				222DF8B3275B7EF30036AED1 /* ContentCellViewController.m in Sources */,
 				22F9FEBE278E92F500FE1A00 /* NSBundle+MJRefresh.m in Sources */,
 				22530C2327916B8C00C25072 /* YYDiskCache.m in Sources */,
 				22F9FE82278E909E00FE1A00 /* SDWebImagePrefetcher.m in Sources */,
@@ -1664,7 +1691,9 @@
 				22F9FE7A278E909E00FE1A00 /* MKAnnotationView+WebCache.m in Sources */,
 				22B0F11427A27519001248CE /* PJLReadObject.m in Sources */,
 				4D70CE2E27A196A40049B5E5 /* FMDatabase.m in Sources */,
+				4D70CE5627A503BF0049B5E5 /* MjExplorerViewController.m in Sources */,
 				22F9FE1C278E836000FE1A00 /* NSArray+MASAdditions.m in Sources */,
+				4D70CE7827A507900049B5E5 /* TFY_CacheFileUilt.m in Sources */,
 				22E39A28279FE5AC004D960B /* CU_LoginController.m in Sources */,
 				22F9FE52278E8EFF00FE1A00 /* AFImageDownloader.m in Sources */,
 				22F9FEBB278E92F500FE1A00 /* MJRefreshConfig.m in Sources */,
@@ -1672,9 +1701,11 @@
 				22F9FEC6278E92F500FE1A00 /* MJRefreshNormalHeader.m in Sources */,
 				22F9FEB9278E92F500FE1A00 /* UIScrollView+MJRefresh.m in Sources */,
 				22E39A02279FE5AC004D960B /* CU_Tools.m in Sources */,
-				222DF8B1275B7EF30036AED1 /* BiDEditorViewController.m in Sources */,
 				22EECCE527A0094100C13B4A /* CU_HomeView.m in Sources */,
 				22B0F16927A290E9001248CE /* VoiceRecognizeResultViewController.m in Sources */,
+				4D70CE6C27A505500049B5E5 /* TFY_CacheFileViewController.m in Sources */,
+				4D70CE6927A505500049B5E5 /* TFY_CacheFileCollectionCell.m in Sources */,
+				4D70CE6F27A505A00049B5E5 /* TFY_CacheFileManager.m in Sources */,
 				22F9FEC8278E92F500FE1A00 /* MJRefreshGifHeader.m in Sources */,
 				22F9FE87278E909E00FE1A00 /* UIButton+WebCache.m in Sources */,
 				22F9FE86278E909E00FE1A00 /* UIImageView+WebCache.m in Sources */,
@@ -1691,9 +1722,7 @@
 				22F9FECB278E92F500FE1A00 /* MJRefreshBackFooter.m in Sources */,
 				22F9FEC1278E92F500FE1A00 /* MJRefreshBackStateFooter.m in Sources */,
 				22E39A08279FE5AC004D960B /* UIView+HUD.m in Sources */,
-				222DF8B2275B7EF30036AED1 /* BiDToDoListViewController.m in Sources */,
 				22B0F10327A2618F001248CE /* Project.m in Sources */,
-				222DF8B7275B7EF30036AED1 /* MusicPlayerViewController.m in Sources */,
 				22E39A2E279FE5F0004D960B /* Base_TableView.m in Sources */,
 				22E39A1C279FE5AC004D960B /* CU_TypeRightCell.m in Sources */,
 				22F9FEC0278E92F500FE1A00 /* MJRefreshBackGifFooter.m in Sources */,
@@ -1701,7 +1730,6 @@
 				22EECCE127A0094000C13B4A /* TYLevelPairs.m in Sources */,
 				22F9FE7B278E909E00FE1A00 /* SDWebImageManager.m in Sources */,
 				22E39A17279FE5AC004D960B /* CU_LeftImgTextField.m in Sources */,
-				222DF8BB275B7F720036AED1 /* BiDWebBrowserViewController.m in Sources */,
 				22E39A05279FE5AC004D960B /* CU_ChangeLanguageTool.m in Sources */,
 				22EECCE027A0094000C13B4A /* CU_HomeModel.m in Sources */,
 				22F9FE53278E8EFF00FE1A00 /* AFURLResponseSerialization.m in Sources */,
@@ -1709,7 +1737,6 @@
 				4D70CE3C27A198ED0049B5E5 /* NoteListViewController.m in Sources */,
 				4D70CE4227A19D5C0049B5E5 /* NoteEditTextField.m in Sources */,
 				22F9FECC278E92F500FE1A00 /* MJRefreshAutoFooter.m in Sources */,
-				222DF8B8275B7EF30036AED1 /* MusicPlayingView.m in Sources */,
 				22F9FE4A278E8EFF00FE1A00 /* UIProgressView+AFNetworking.m in Sources */,
 				22F9FE50278E8EFF00FE1A00 /* UIWebView+AFNetworking.m in Sources */,
 				22E39A20279FE5AC004D960B /* CU_TypeRigthContainView.m in Sources */,
@@ -1723,6 +1750,7 @@
 				22F9FE4B278E8EFF00FE1A00 /* UIRefreshControl+AFNetworking.m in Sources */,
 				C5161EB11ACFCA76005E9CF6 /* main.m in Sources */,
 				22E39A13279FE5AC004D960B /* CU_TabBarController.m in Sources */,
+				4D70CE6727A505500049B5E5 /* TFY_CacheFileCollection.m in Sources */,
 				4D70CE3F27A19C4D0049B5E5 /* AddNewNoteController.m in Sources */,
 				22E39A19279FE5AC004D960B /* CU_EdgeLabel.m in Sources */,
 				22F9FE7F278E909E00FE1A00 /* UIImage+GIF.m in Sources */,
@@ -1733,7 +1761,6 @@
 				22B0F10727A263BB001248CE /* NavigationView.m in Sources */,
 				4D70CE3427A196A40049B5E5 /* BEMCheckBox.m in Sources */,
 				22E39A1F279FE5AC004D960B /* CU_TypeLeftTableViewCell.m in Sources */,
-				222DF8B5275B7EF30036AED1 /* FoldableView.m in Sources */,
 				2217FE77279FE00B00FCDA6F /* MJArgument.m in Sources */,
 				22EECCDE27A0094000C13B4A /* CU_HomeController.m in Sources */,
 				22530C2127916B8C00C25072 /* YYCache.m in Sources */,
@@ -1755,28 +1782,28 @@
 				22F9FE4F278E8EFF00FE1A00 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				22E39A2B279FE5AC004D960B /* CU_Const.m in Sources */,
 				2217FE78279FE00B00FCDA6F /* NSObject+MJMember.m in Sources */,
-				222DF8B0275B7EF30036AED1 /* BiDAddToDoItemViewController.m in Sources */,
 				22E39A12279FE5AC004D960B /* CU_BaseViewController.m in Sources */,
 				22B0F11527A27519001248CE /* PJLRecognitionObject.m in Sources */,
 				2217FE70279FE00B00FCDA6F /* MJMember.m in Sources */,
 				22E39A1D279FE5AC004D960B /* CU_GoodsCategoryView.m in Sources */,
 				22E39A10279FE5AC004D960B /* NSDateFormatter+Category.m in Sources */,
-				C592FDB21BBCE8EE00796833 /* UIImage+ImageEffects.m in Sources */,
 				22F9FE1D278E836000FE1A00 /* View+MASAdditions.m in Sources */,
-				222DF8B6275B7EF30036AED1 /* MusicListViewController.m in Sources */,
 				22E39A1E279FE5AC004D960B /* CU_TypeLeftView.m in Sources */,
 				22E39A16279FE5AC004D960B /* CU_BaseModel.m in Sources */,
 				22F9FE19278E836000FE1A00 /* MASCompositeConstraint.m in Sources */,
+				4D70CE7527A507340049B5E5 /* TFY_CacheFileModel.m in Sources */,
 				22EECCE227A0094000C13B4A /* TYMemo.m in Sources */,
 				22F9FE18278E836000FE1A00 /* ViewController+MASAdditions.m in Sources */,
 				22F9FE79278E909E00FE1A00 /* UIImage+WebP.m in Sources */,
+				4D70CE6A27A505500049B5E5 /* TFY_CacheFileTable.m in Sources */,
 				22E39A06279FE5AC004D960B /* CU_CacheManager.m in Sources */,
 				22F9FE55278E8EFF00FE1A00 /* AFURLSessionManager.m in Sources */,
+				4D70CE7227A506600049B5E5 /* TFY_CacheFileAudio.m in Sources */,
 				22E39A0C279FE5AC004D960B /* UILabel+Extension.m in Sources */,
 				22F9FE80278E909E00FE1A00 /* UIImage+MultiFormat.m in Sources */,
 				22F9FE83278E909E00FE1A00 /* SDImageCache.m in Sources */,
-				C5161EE41ACFD3C4005E9CF6 /* BiDToDoItem.m in Sources */,
 				4D70CE2D27A196A40049B5E5 /* FMDatabaseAdditions.m in Sources */,
+				4D70CE6627A505500049B5E5 /* TFY_CacheFileImage.m in Sources */,
 				22F9FE81278E909E00FE1A00 /* SDWebImageCompat.m in Sources */,
 				22F9FE51278E8EFF00FE1A00 /* AFAutoPurgingImageCache.m in Sources */,
 				22F9FE4C278E8EFF00FE1A00 /* AFNetworkActivityIndicatorManager.m in Sources */,
