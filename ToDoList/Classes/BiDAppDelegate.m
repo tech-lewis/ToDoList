@@ -8,14 +8,14 @@
 
 #import "BiDAppDelegate.h"
 #import "CU_TabBarController.h"
-#import "BiDToDoListViewController.h"
 @implementation BiDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   UIViewController *controller = [[CU_TabBarController alloc] init];
-  self.window.rootViewController = controller;
+  [self.window setRootViewController:controller];
+  [self.window makeKeyAndVisible];
   return YES;
 }
 
