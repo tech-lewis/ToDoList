@@ -9,14 +9,16 @@
 #import "CU_TabBarController.h"
 #import "CU_Const.h"
 #import "CU_Define.h"
-#import "NoteListViewController.h"
+#import "CU_NavitationViewController.h"
 #import "VoiceRecordViewController.h"
-#import "CU_HomeController.h"
+#import "NoteListViewController.h"
+#import "MjExplorerViewController.h"
 #import "CU_MineController.h"
 //#import "CU_GoodsCategoryController.h"
 //#import "CU_SellerShopController.h"
 //#import "CU_ShoppingCartController.h"
-#import "CU_NavitationViewController.h"
+
+
 @interface CU_TabBarController ()<UITabBarControllerDelegate>
 
 @end
@@ -30,12 +32,12 @@
   self.delegate = self ;
   // barTintColor
   
-  UINavigationController *todoNav = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateInitialViewController];
-  [self addChildVcIs:todoNav.viewControllers.firstObject WithTitle:@"" andImage:@"tab_home" andSelectImage:@"tab_home_s"];
+  // UINavigationController *todoNav = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateInitialViewController];
+  [self addChildVcIs:[[VoiceRecordViewController alloc]init] WithTitle:@"" andImage:@"tabbar_home" andSelectImage:@"tabbar_home_selected"];
   // [self addChildVcIs:[[UITableViewController alloc]init] WithTitle:@"" andImage:@"tab_shop" andSelectImage:@"tab_shop_s"];
-  [self addChildVcIs:[[NoteListViewController alloc]init] WithTitle:@"" andImage:@"tab_category" andSelectImage:@"tab_category_s"];
-  [self addChildVcIs:[[VoiceRecordViewController alloc]init] WithTitle:@"" andImage:@"tab_cart" andSelectImage:@"tab_cart_s"];
-  [self addChildVcIs:[[CU_MineController alloc]init] WithTitle:@"" andImage:@"tab_mine" andSelectImage:@"tab_mine_s"];
+  [self addChildVcIs:[[NoteListViewController alloc]init] WithTitle:@"" andImage:@"tabbar_message_center" andSelectImage:@"tabbar_message_center_selected"];
+  [self addChildVcIs:[[MjExplorerViewController alloc]init] WithTitle:@"" andImage:@"tabbar_discover" andSelectImage:@"tabbar_discover_selected"];
+  [self addChildVcIs:[[CU_MineController alloc]init] WithTitle:@"" andImage:@"tabbar_profile" andSelectImage:@"tabbar_profile_selected"];
   
 }
 
@@ -76,6 +78,7 @@
     
     return nav;
 }
+
 -(void)creatChildVcIs:(UIViewController *)vc WithTitle:(NSString *)title andImage:(NSString *)image andSelectImage:(NSString *)selectImage andNav:(UINavigationController *)nv
 {
     vc.title = title;
