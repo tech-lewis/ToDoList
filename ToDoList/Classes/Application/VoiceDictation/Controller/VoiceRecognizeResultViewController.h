@@ -7,11 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
-NS_ASSUME_NONNULL_BEGIN
-
 @interface VoiceRecognizeResultViewController : UIViewController
-
+@property (nonatomic, strong) NSString *recogText; // 识别出来的文本内容；
 @end
-
-NS_ASSUME_NONNULL_END

@@ -49,7 +49,7 @@
 - (NSMutableArray *)cacheAudioArrayUsing
 {
     if (_cacheAudioArrayUsing == nil) {
-        _cacheAudioArrayUsing = [[NSMutableArray alloc] initWithObjects:@".wav", @".aif", @".au", @".mp3", @".ram", @".wma", @".mmf", @".amr", @".aac", @".flac", @".midi", @".mp3", @".oog", @".cd", @".asf", @".rm", @".real", @".ape", @".vqf", nil];
+        _cacheAudioArrayUsing = [[NSMutableArray alloc] initWithObjects:@".wav", @".aif", @".au", @".mp3", @".ram", @".wma", @".mmf", @".amr", @".aac", @".flac", @".midi", @".mp3", @".oog", @".cd", @".asf", @".rm", @".real", @".ape", @".caf", @".mkv", @".vqf", nil];
     }
     return _cacheAudioArrayUsing;
 }
@@ -65,7 +65,7 @@
 - (NSMutableArray *)cacheDocumentArrayUsing
 {
     if (_cacheDocumentArrayUsing == nil) {
-        _cacheDocumentArrayUsing = [[NSMutableArray alloc] initWithObjects:@".txt", @".sh", @".doc", @".docx", @".xls", @".xlsx", @".pdf", @".hlp", @".wps", @".rtf", @".html", @".htm", @".iso", @".rar", @".zip", @".exe", @".mdf", @".ppt", @".pptx", @".apk", nil];
+        _cacheDocumentArrayUsing = [[NSMutableArray alloc] initWithObjects:@".txt", @".sh", @".doc", @".docx", @".xls", @".xlsx", @".pdf", @".hlp", @".wps", @".rtf", @".html", @".htm", @".iso", @".rar", @".zip", @".exe", @".mdf", @".ppt", @".pptx", @".apk", @".db", nil];
     }
     return _cacheDocumentArrayUsing;
 }

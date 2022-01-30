@@ -9,7 +9,7 @@
 #import "VoiceRecognizeResultViewController.h"
 
 @interface VoiceRecognizeResultViewController ()
-
+@property (nonatomic, strong) UITextView * detailTextarea;
 @end
 
 @implementation VoiceRecognizeResultViewController
@@ -18,12 +18,20 @@
   [super viewDidLoad];
   // Do any additional setup after loading the view.
   self.view.backgroundColor = [UIColor grayColor];
-  
-  UITextView *tv = [[UITextView alloc] init];
-  [self.view addSubview:tv];
+  self.navigationItem.title = @"✅";
+  self.detailTextarea = [[UITextView alloc] init];
+  self.detailTextarea.text = self.recogText;
+  [self.view addSubview:self.detailTextarea];
+  [self.detailTextarea mas_makeConstraints:^(MASConstraintMaker *make) {
+    make.edges.equalTo(self.view);
+  }];
   
 }
 
+- (void)setRecogText:(NSString *)recogText
+{
+  self.detailTextarea.text = recogText;
+}
 /*
 #pragma mark - Navigation
 

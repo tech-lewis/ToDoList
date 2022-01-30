@@ -16,6 +16,7 @@
 #import "CU_Define.h"
 #import "CU_Const.h"
 #import "TYMemo.h"
+#import "VoiceRecognizeResultViewController.h"
 #define TYSCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
 #define TYSCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 
@@ -30,7 +31,7 @@ static NSString * const cellID = @"recordCell";
 @property (nonatomic, assign) BOOL isOpen;
 @property (nonatomic, strong) TYVoiceMemoCell *lastSelectedCell;
 @property (nonatomic, assign) NSInteger lastSelectedIndexPath_Row;
-
+@property (nonatomic, strong) UILongPressGestureRecognizer *lpGesture;
 @end
 
 @implementation VoiceRecordViewController
@@ -45,7 +46,9 @@ static NSString * const cellID = @"recordCell";
   //注册切换语言通知
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeLanguage:) name:kChangeLanguageNotice object:nil];
   
-  /// 加载数据
+  // add long press gesture
+  self.lpGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressedCell:)];
+  [self.tableView addGestureRecognizer:self.lpGesture];
 }
 
 //切换语言通知处理
@@ -128,13 +131,15 @@ static NSString * const cellID = @"recordCell";
     
     return documentsPath;
 }
+
+
 #pragma mark - <UITableViewDataSource, UITableViewDelegate>
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSMutableArray *nameArra = self.voiceNameMutArray;
+    // NSMutableArray *nameArra = self.voiceNameMutArray;
     // NSLog(@"%@",nameArra);
     return self.memoInstanceMutArray.count;
 }
@@ -168,29 +173,51 @@ static NSString * const cellID = @"recordCell";
   
   [tableView beginUpdates];
   [tableView endUpdates];
-  
-  if ([UIDevice currentDevice].systemVersion.doubleValue <= 10.0)
-  {
-    /// 使用 8.0之前的
-    UIAlertView *alerView = [[UIAlertView alloc] initWithTitle:@"I'm sorry" message:@"Do not support previous iOS 10 device..." delegate:nil cancelButtonTitle:@"Fine" otherButtonTitles:nil, nil];
-    [alerView show];
-    return;
-  }
-  UIAlertController *alertView = [UIAlertController alertControllerWithTitle:@"Do you want voice to text？" message:@"Recognizing..." preferredStyle:UIAlertControllerStyleAlert];
-  [alertView addAction:[UIAlertAction actionWithTitle:@"Start recognize" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-    __weak typeof(self) __weakSelf = self;
-    PJLRecognitionObject *rec = [[PJLRecognitionObject alloc] init];
-    [rec recognizeLocalAudioFile:memo.url.absoluteString withRecordBlock:^(NSString *recordStr) {
-      /// 语音识别成功
-      
-    } whithLocaleIdentifier:nil];
-  }]];
 }
 
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
     
 }
 
+- (void)longPressedCell:(UILongPressGestureRecognizer *)sender
+{
+  // 获得长按的那个Cell
+  NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:[sender locationInView:self.tableView]];
+  if(indexPath == nil) return;
+  // UITableViewCell *selectedCell = (UITableViewCell *)[self.tableView cellForRowAtIndexPath:indexPath];
+  // CGPoint point = [sender locationInView:self.navigationController.view];
+  
+  
+  // 手势处理代码, 长按打开
+  if (sender.state == UIGestureRecognizerStateBegan)
+  {
+    if ([UIDevice currentDevice].systemVersion.doubleValue <= 10.0)
+    {
+      /// 使用 8.0之前的
+      UIAlertView *alerView = [[UIAlertView alloc] initWithTitle:@"I'm sorry" message:@"Do not support previous iOS 10 device..." delegate:nil cancelButtonTitle:@"Fine" otherButtonTitles:nil, nil];
+      [alerView show];
+      return;
+    }
+    UIAlertController *alertView = [UIAlertController alertControllerWithTitle:@"Do you want voice to text？" message:@"Recognizing..." preferredStyle:UIAlertControllerStyleAlert];
+    [alertView addAction:[UIAlertAction actionWithTitle:@"Start recognize" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+      PJLRecognitionObject *rec = [[PJLRecognitionObject alloc] init];
+      TYMemo *memo = self.memoInstanceMutArray[indexPath.row];
+      VoiceRecognizeResultViewController *resultController = [[VoiceRecognizeResultViewController alloc] init];
+      [rec recognizeLocalAudioFile:memo.url.absoluteString withRecordBlock:^(NSString *recordStr) {
+        /// 语音识别成功
+        
+        resultController.recogText = recordStr;
+        static dispatch_once_t onceToken;
+        dispatch_once(&onceToken, ^{
+          [self.navigationController pushViewController:resultController animated:true];
+        });
+        
+      } whithLocaleIdentifier:nil];
+    }]];
+    [alertView addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:NULL]];
+    [self presentViewController:alertView animated:true completion:NULL];
+  }
+}
 #pragma mark - UI
 - (void)setupUI {
     self.view.backgroundColor = [UIColor whiteColor];
