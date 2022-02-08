@@ -20,6 +20,7 @@
   self.view.backgroundColor = [UIColor grayColor];
   self.navigationItem.title = @"✅识别成功";
   self.detailTextarea = [[VoiceRecognizeTextView alloc] init];
+  self.detailTextarea.autocorrectionType = UITextAutocorrectionTypeNo;
   self.detailTextarea.text = self.recogText;
   [self.view addSubview:self.detailTextarea];
   [self.detailTextarea mas_makeConstraints:^(MASConstraintMaker *make) {

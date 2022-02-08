@@ -24,6 +24,7 @@ static NSString * const cellID = @"recordCell";
 
 @interface VoiceRecordViewController ()<UITableViewDataSource, UIAlertViewDelegate, UITableViewDelegate>
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) UIRefreshControl *refreshControl;
 @property (nonatomic, strong) TYVoiceMemoHeaderView *headerView;
 @property (nonatomic, strong) NSMutableArray *voiceUrlMutArray;
 @property (nonatomic, strong) NSMutableArray *voiceNameMutArray;
@@ -31,7 +32,6 @@ static NSString * const cellID = @"recordCell";
 @property (nonatomic, assign) BOOL isOpen;
 @property (nonatomic, strong) TYVoiceMemoCell *lastSelectedCell;
 @property (nonatomic, assign) NSInteger lastSelectedIndexPath_Row;
-@property (nonatomic, strong) UIRefreshControl *refreshControl;
 @property (nonatomic, strong) UILongPressGestureRecognizer *lpGesture;
 @end
 
@@ -68,8 +68,6 @@ static NSString * const cellID = @"recordCell";
   double delayInSeconds = 0.35;
      dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
      dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-       UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"I‘m Sorry" message:@"应用不支持iOS 7.0以下的设备" delegate:nil cancelButtonTitle:@"Done" otherButtonTitles:nil, nil];
-       [alertView show];
        [self.refreshControl endRefreshing];
      });
 }
