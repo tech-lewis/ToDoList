@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface BiDAppDelegate : UIResponder <UIApplicationDelegate>
-
+@property (nonatomic, strong) NSDictionary *launchOptions;
 @property (strong, nonatomic) UIWindow *window;
 
 @end
