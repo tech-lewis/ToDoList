@@ -28,7 +28,6 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   [UITabBar appearance].barTintColor = [UIColor whiteColor];
-  [UITabBar appearance].translucent = NO ;
   self.delegate = self ;
   // barTintColor
   
