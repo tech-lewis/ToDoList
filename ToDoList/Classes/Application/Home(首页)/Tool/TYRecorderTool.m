@@ -37,41 +37,43 @@ AVAudioPlayerDelegate
 
 - (instancetype)init {
     if (self = [super init]) {
-        
-        NSString *tmpDir = NSTemporaryDirectory();
-        NSString *filePath = [tmpDir stringByAppendingPathComponent:@"memo.caf"];
-        NSURL *fileURL = [NSURL fileURLWithPath:filePath];
-        
-        NSDictionary *settings = @{
-                                   // 音频格式
-                                   AVFormatIDKey : @(kAudioFormatAppleIMA4),
-                                   // 采样率
-                                   AVSampleRateKey : @44100.0f,
-                                   // 单声道录制
-                                   AVNumberOfChannelsKey : @1,
-                                   // 位元深度
-                                   AVEncoderBitDepthHintKey : @16,
-                                   // 采样率转换的音频质量
-                                   AVEncoderAudioQualityKey : @(AVAudioQualityMedium)
-                                   };
-        
-        NSError *error;
-        self.audioRecorder = [[AVAudioRecorder alloc] initWithURL:fileURL settings:settings error:&error];
-        
-        if (self.audioRecorder) {
-            self.audioRecorder.delegate = self;
-            // 开启音频测量
-            self.audioRecorder.meteringEnabled = YES;
-            [self.audioRecorder prepareToRecord];
-        } else {
-            NSLog(@"Error: %@",[error localizedDescription]);
-        }
-        
-        _meterTable = [[TYMeterTable alloc] init];
-        
-        
-    }
-    return self;
+      AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+      [audioSession setCategory:AVAudioSessionCategoryPlayAndRecord error:NULL];
+      [audioSession setActive:true error:NULL];
+      NSString *tmpDir = NSTemporaryDirectory();
+      NSString *filePath = [tmpDir stringByAppendingPathComponent:@"memo.caf"];
+      NSURL *fileURL = [NSURL fileURLWithPath:filePath];
+      
+      NSDictionary *settings = @{
+                                 // 音频格式
+                                 AVFormatIDKey : @(kAudioFormatAppleIMA4),
+                                 // 采样率
+                                 AVSampleRateKey : @44100.0f,
+                                 // 单声道录制
+                                 AVNumberOfChannelsKey : @1,
+                                 // 位元深度
+                                 AVEncoderBitDepthHintKey : @16,
+                                 // 采样率转换的音频质量
+                                 AVEncoderAudioQualityKey : @(AVAudioQualityMedium)
+                                 };
+      
+      NSError *error;
+      self.audioRecorder = [[AVAudioRecorder alloc] initWithURL:fileURL settings:settings error:&error];
+      
+      if (self.audioRecorder) {
+          self.audioRecorder.delegate = self;
+          // 开启音频测量
+          self.audioRecorder.meteringEnabled = YES;
+          [self.audioRecorder prepareToRecord];
+      } else {
+          NSLog(@"Error: %@",[error localizedDescription]);
+      }
+      
+      _meterTable = [[TYMeterTable alloc] init];
+      
+      
+  }
+  return self;
 }
 
 #pragma mark - Custom Method

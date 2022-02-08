@@ -7,18 +7,35 @@
 //
 
 #import "CU_LoginController.h"
-
+// #import "RCTRootView.h"
+#import "BiDAppDelegate.h"
 @interface CU_LoginController ()
 
 @end
 
 @implementation CU_LoginController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+- (void)loadView
+{
+  [super loadView];
+//  NSURL * jsCodeLocation = [NSURL URLWithString:@"http://192.168.8.234:8081/index.ios.bundle?platform=ios&dev=true"];
+//  NSDictionary *launchOptions = [(BiDAppDelegate *)[UIApplication sharedApplication].delegate launchOptions];
+//  RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
+//                                                      moduleName:@"AImageDemo"
+//                                               initialProperties:nil
+//                                                   launchOptions:launchOptions];
+  // self.view = rootView;
 }
 
+- (void)viewDidLoad {
+  self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(retry)];
+}
+
+- (void)retry
+{
+  if (self.block) self.block();
+  // [self.navigationController popViewControllerAnimated:true];
+}
 /*
 #pragma mark - Navigation
 

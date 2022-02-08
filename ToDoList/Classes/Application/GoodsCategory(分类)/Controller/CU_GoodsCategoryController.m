@@ -32,9 +32,9 @@
 }
 
 ////切换语言通知处理
-//- (void)changeLanguage:(NSNotification *) notification{
-//    self.gk_navTitle = kLocalLanguage(@"Category_Tab") ;
-//}
+- (void)changeLanguage:(NSNotification *) notification{
+    self.navigationItem.title = kLocalLanguage(@"Category_Tab") ;
+}
 
 
 
@@ -123,5 +123,4 @@
     
     
 }
-
 @end

@@ -9,7 +9,8 @@
 #import "TYVoiceMemoCell.h"
 #import "TYMemo.h"
 #import "TYRecorderTool.h"
-
+#import <AVFAudio/AVFAudio.h>
+#import <AVFoundation/AVFoundation.h>
 #define TYSCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
 #define TYSCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 
@@ -38,8 +39,22 @@
     _memo = memo;
     
     self.cellTitileLabel.text = [NSString stringWithFormat:@"%@",memo.name];
-    self.cellTimeLabel.text = [NSString stringWithFormat:@"%@",memo.recordVoiceTime];
+  NSLog(@"%@", [memo url].absoluteString);
+    self.cellTimeLabel.text = [NSString stringWithFormat:@"%.2f", [self audioDurationFromURL:[memo url].absoluteString]];
     
+}
+
+- (float)audioDurationFromURL:(NSString *)url {
+    AVURLAsset *audioAsset = nil;
+    NSDictionary *dic = @{AVURLAssetPreferPreciseDurationAndTimingKey:@(YES)};
+    if ([url hasPrefix:@"http://"]) {
+        audioAsset = [AVURLAsset URLAssetWithURL:[NSURL URLWithString:url] options:dic];
+    }else {
+        audioAsset = [AVURLAsset URLAssetWithURL:[NSURL fileURLWithPath:url] options:dic];
+    }
+    CMTime audioDuration = audioAsset.duration;
+    float audioDurationSeconds = CMTimeGetSeconds(audioDuration);
+    return audioDurationSeconds;
 }
 
 #pragma mark - Button Method
@@ -62,23 +77,19 @@
     } else {
         [button setSelected:NO];
         [button setImage:[UIImage imageNamed:@"cell-play"] forState:UIControlStateSelected];
-        
-        
-        
     }
 }
 
 - (void)deleteBtnClick:(UIButton *)button {
-    
 }
 
 #pragma mark - UI
 - (void)setupUI {
-  self.backgroundColor = [UIColor blackColor];
-  self.cellTitileLabel.frame = CGRectMake(20, 15, 100, 30);
+  self.backgroundColor = [UIColor whiteColor];
+  self.cellTitileLabel.frame = CGRectMake(20, 15, 300, 30);
   [self addSubview:self.cellTitileLabel];
   
-  self.cellTimeLabel.frame = CGRectMake(TYSCREEN_WIDTH - 12 - 100, 15, 100, 30);
+  self.cellTimeLabel.frame = CGRectMake(TYSCREEN_WIDTH - 50, 15, 100, 30);
   [self addSubview:self.cellTimeLabel];
   
   self.playBtn.frame = CGRectMake(20, 60 + 5, 20, 20);
@@ -122,7 +133,7 @@
 - (UIButton *)deleteBtn {
     if (nil == _deleteBtn) {
         _deleteBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_deleteBtn setImage:[UIImage imageNamed:@"delete"] forState:UIControlStateNormal];
+        [_deleteBtn setImage:[UIImage imageNamed:@"cell-pause1"] forState:UIControlStateNormal];
         [_deleteBtn addTarget:self action:@selector(deleteBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _deleteBtn;

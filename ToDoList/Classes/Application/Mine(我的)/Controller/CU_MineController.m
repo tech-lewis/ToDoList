@@ -10,6 +10,7 @@
 #import "CU_ChangeLanguageTool.h"
 #import "CU_Define.h"
 #import "CU_Const.h"
+#import "CU_LoginController.h"
 @interface CU_MineController ()
 
 @property (nonatomic,strong) UILabel *testLab ;
@@ -24,9 +25,20 @@
   self.navigationItem.title = kLocalLanguage(@"Mine_Tab") ;
   // NSLog(@"%@", [CU_ChangeLanguageTool userLanguage]);
   //UI布局
+  self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Login" style:UIBarButtonItemStylePlain target:self action:@selector(clickLoginButton)];
   [self configUI] ;
   //注册切换语言通知
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeLanguage:) name:kChangeLanguageNotice object:nil];
+}
+
+- (void)clickLoginButton
+{
+  CU_LoginController *controller = [[CU_LoginController alloc] init];
+  controller.block = ^{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"RCTShowDevMenuNotification" object:nil];
+  };
+  self.navigationItem.leftBarButtonItem = nil;
+  // [self.navigationController pushViewController:controller animated:true];
 }
 
 //切换语言通知处理

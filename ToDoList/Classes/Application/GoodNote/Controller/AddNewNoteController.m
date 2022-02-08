@@ -183,50 +183,52 @@
 - (void)setupUI
 {
   CGFloat statusHeight =  self.navigationController.navigationBar.frame.size.height;
-  self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"homeBG"]];
+  // self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"homeBG"]];
+  self.view.backgroundColor = [UIColor lightGrayColor];
   self.navigationItem.title = @"Addition";
   
   self.titleLabel = [[UILabel alloc] init];
   [self.view addSubview:_titleLabel];
-  _titleLabel.textColor = [UIColor grayColor];
+  _titleLabel.textColor = [UIColor whiteColor];
   _titleLabel.font = [UIFont boldSystemFontOfSize:15.0];
   _titleLabel.text = @"文章标题";
   [_titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
     make.top.mas_equalTo([UIApplication sharedApplication].statusBarFrame.size.height + statusHeight);
     make.centerX.equalTo(self.view);
     make.height.mas_equalTo(30.0);
-    make.width.mas_equalTo(300.0);
+    make.width.mas_equalTo(290.0);
   }];
   
   self.titleTF = [[UITextField alloc] init];
+  self.titleTF.placeholder = @"请输入文章标题";
   [self.view addSubview:_titleTF];
   self.titleTF.backgroundColor = [UIColor clearColor];
   [self.titleTF mas_makeConstraints:^(MASConstraintMaker *make) {
     make.top.equalTo(self.titleLabel.mas_bottom);
     make.centerX.equalTo(self.view);
     make.height.mas_equalTo(30.0);
-    make.width.mas_equalTo(300.0);
+    make.width.mas_equalTo(290.0);
   }];
   
   UIView *titleBottomBorder = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"home_line"]];
   [self.titleTF addSubview:titleBottomBorder];
   [titleBottomBorder mas_makeConstraints:^(MASConstraintMaker *make) {
     make.top.equalTo(self.titleTF.mas_top).mas_offset(20);
-    make.width.equalTo(self.titleTF.mas_width);
+    make.width.equalTo(self.view);
     make.centerX.equalTo(self.view);
     make.height.equalTo(self.titleTF);
   }];
   
   self.subtitleLabel = [[UILabel alloc] init];
   [self.view addSubview:_subtitleLabel];
-  _subtitleLabel.textColor = [UIColor grayColor];
+  _subtitleLabel.textColor = [UIColor whiteColor];
   _subtitleLabel.font = [UIFont boldSystemFontOfSize:11];
   _subtitleLabel.text = @"文章副标题";
   [_subtitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
     make.top.equalTo(self.titleTF.mas_bottom).mas_offset(8);
     make.centerX.equalTo(self.view);
     make.height.mas_equalTo(30.0);
-    make.width.mas_equalTo(300.0);
+    make.width.mas_equalTo(290.0);
   }];
 
   self.subtitleTF = [[UITextField alloc] init];
@@ -236,29 +238,29 @@
     make.top.equalTo(self.subtitleLabel.mas_bottom);
     make.centerX.equalTo(self.view);
     make.height.mas_equalTo(30.0);
-    make.width.mas_equalTo(300.0);
+    make.width.mas_equalTo(290.0);
   }];
 
   UIView *titleBottomBorder2 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"home_line"]];
   
   [_subtitleTF addSubview:titleBottomBorder2];
   [titleBottomBorder2 mas_makeConstraints:^(MASConstraintMaker *make) {
-    make.top.equalTo(self.subtitleTF.mas_top).mas_offset(20);;
-    make.width.equalTo(self.subtitleTF.mas_width);
+    make.top.equalTo(self.subtitleTF.mas_top).mas_offset(20);
+    make.width.equalTo(self.view);
     make.centerX.equalTo(self.view);
     make.height.equalTo(self.subtitleTF);
   }];
   
   self.detailLabel = [[UILabel alloc] init];
   [self.view addSubview:_detailLabel];
-  _detailLabel.textColor = [UIColor grayColor];
+  _detailLabel.textColor = [UIColor whiteColor];
   _detailLabel.font = [UIFont boldSystemFontOfSize:11.0];
   _detailLabel.text = @"请输入描述";
   [_detailLabel mas_makeConstraints:^(MASConstraintMaker *make) {
     make.top.equalTo(self.subtitleTF.mas_bottom).mas_offset(8);
     make.centerX.equalTo(self.view);
     make.height.mas_equalTo(30.0);
-    make.width.mas_equalTo(300.0);
+    make.width.mas_equalTo(290.0);
   }];
   
   self.detailTextarea = [[NoteEditTextField alloc] init];
@@ -279,21 +281,21 @@
     make.top.equalTo(self.detailLabel.mas_bottom);
     make.centerX.equalTo(self.view);
     make.height.mas_equalTo(30.0);
-    make.width.mas_equalTo(300.0);
+    make.width.mas_equalTo(290.0);
   }];
   
   UIView *detailBottomBorder = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"home_line"]];
   [self.view addSubview:detailBottomBorder];
   [detailBottomBorder mas_makeConstraints:^(MASConstraintMaker *make) {
     make.top.equalTo(self.detailTextarea.mas_top).mas_offset(20);
-    make.width.equalTo(self.detailTextarea.mas_width);
+    make.width.equalTo(self.view);
     make.centerX.equalTo(self.view);
     make.height.equalTo(self.detailTextarea.mas_height);
   }];
   
   self.createTime = [[UILabel alloc] init];;
   [self.view addSubview:_createTime];
-  _createTime.textColor = [UIColor grayColor];
+  _createTime.textColor = [UIColor whiteColor];
   _createTime.font = [UIFont boldSystemFontOfSize:11];
   NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
   fmt.dateFormat = @"yyyy-MM-dd hh:mm";
@@ -302,12 +304,12 @@
     make.top.equalTo(self.detailTextarea.mas_bottom).mas_offset(8);
     make.centerX.equalTo(self.view);
     make.height.mas_equalTo(30.0);
-    make.width.mas_equalTo(300.0);
+    make.width.mas_equalTo(290.0);
   }];
 
   self.categoryText = [[UILabel alloc] init];
   [self.view addSubview:_categoryText];
-  _categoryText.textColor = [UIColor grayColor];
+  _categoryText.textColor = [UIColor whiteColor];
   _categoryText.font = [UIFont boldSystemFontOfSize:11];
   _categoryText.text = @"未选择分类(默认=其他)";
   [_categoryText mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -346,7 +348,7 @@
   
   self.remindTimeLabel = [[UILabel alloc] init];
   [self.view addSubview:_remindTimeLabel];
-  _remindTimeLabel.textColor = [UIColor grayColor];
+  _remindTimeLabel.textColor = [UIColor whiteColor];
   _remindTimeLabel.font = [UIFont boldSystemFontOfSize:11.0];
   _remindTimeLabel.text = @"Choose remind time";
   [_remindTimeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
