@@ -8,7 +8,7 @@
 
 #ifndef CU_Define_h
 #define CU_Define_h
-static NSString *const TFY_CacheFileTitle = @"缓存文件";
+// static NSString *const TFY_CacheFileTitle = @"缓存文件";
 
 /**
  *  默认显示文件
