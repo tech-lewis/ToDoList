@@ -21,6 +21,7 @@
 		22530C2227916B8C00C25072 /* YYKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 22530C1B27916B8C00C25072 /* YYKVStorage.m */; };
 		22530C2327916B8C00C25072 /* YYDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 22530C1C27916B8C00C25072 /* YYDiskCache.m */; };
 		2277DE61275B571200FE30A0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2277DE60275B571200FE30A0 /* icon.png */; };
+		22995FDA27B23E7F00973DD7 /* VoiceRecognizeTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22995FD927B23E7F00973DD7 /* VoiceRecognizeTextView.m */; };
 		22B0F10027A26172001248CE /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B0F0FF27A26172001248CE /* API.m */; };
 		22B0F10327A2618F001248CE /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B0F10227A2618F001248CE /* Project.m */; };
 		22B0F10727A263BB001248CE /* NavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B0F10627A263BB001248CE /* NavigationView.m */; };
@@ -244,6 +245,8 @@
 		22530C1E27916B8C00C25072 /* YYMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMemoryCache.h; sourceTree = "<group>"; };
 		22530C1F27916B8C00C25072 /* YYDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYDiskCache.h; sourceTree = "<group>"; };
 		2277DE60275B571200FE30A0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		22995FD827B23E7F00973DD7 /* VoiceRecognizeTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceRecognizeTextView.h; sourceTree = "<group>"; };
+		22995FD927B23E7F00973DD7 /* VoiceRecognizeTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceRecognizeTextView.m; sourceTree = "<group>"; };
 		22B0F0FE27A26172001248CE /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
 		22B0F0FF27A26172001248CE /* API.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = API.m; sourceTree = "<group>"; };
 		22B0F10127A2618F001248CE /* Project.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
@@ -708,6 +711,8 @@
 		22B0F10D27A27502001248CE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				22995FD827B23E7F00973DD7 /* VoiceRecognizeTextView.h */,
+				22995FD927B23E7F00973DD7 /* VoiceRecognizeTextView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1750,6 +1755,7 @@
 				22F9FE57278E8EFF00FE1A00 /* AFNetworkReachabilityManager.m in Sources */,
 				22E39A14279FE5AC004D960B /* CU_PublicWebViewJSBridge.m in Sources */,
 				22F9FE1F278E836000FE1A00 /* MASViewConstraint.m in Sources */,
+				22995FDA27B23E7F00973DD7 /* VoiceRecognizeTextView.m in Sources */,
 				4D70CE3727A196D00049B5E5 /* NoteListModel.m in Sources */,
 				22E39A11279FE5AC004D960B /* UIView+Extension.m in Sources */,
 				22F9FE4B278E8EFF00FE1A00 /* UIRefreshControl+AFNetworking.m in Sources */,
@@ -1969,7 +1975,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = YSYEV7MGT7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ToDoList/ToDoList-Prefix.pch";
@@ -1979,7 +1985,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ToDoList/Libs/ReactKit",
 				);
-				MARKETING_VERSION = 1.1.3;
+				MARKETING_VERSION = 1.1.2;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = om.TechLewis.ToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1996,7 +2002,7 @@
 				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = YSYEV7MGT7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ToDoList/ToDoList-Prefix.pch";
@@ -2006,7 +2012,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ToDoList/Libs/ReactKit",
 				);
-				MARKETING_VERSION = 1.1.3;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = om.TechLewis.ToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

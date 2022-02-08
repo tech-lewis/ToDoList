@@ -7,6 +7,9 @@
 //
 
 #import "MjExplorerViewController.h"
+#import "CU_ChangeLanguageTool.h"
+#import "CU_Const.h"
+#import "CU_Define.h"
 #import "TFY_CacheFileTable.h"
 #import "TFY_CacheFileCollection.h"
 #import "TFY_CacheFileManager.h"
@@ -33,7 +36,7 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   self.view.backgroundColor = UIColor.whiteColor;
-  self.navigationItem.title = (_cacheTitle ? _cacheTitle : TFY_CacheFileTitle);
+  self.navigationItem.title = (_cacheTitle ? _cacheTitle : kLocalLanguage(@"TFY_CacheFileTitle_Text"));
   
   [self setUI];
   [self loadData];
@@ -64,8 +67,16 @@
       self.cacheTable.hidden = YES;
       self.cacheCollection.hidden = NO;
   }
+  
+  //注册切换语言通知
+  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeLanguage:) name:kChangeLanguageNotice object:nil];
+  
 }
 
+- (void)changeLanguage:(NSNotification *)notif
+{
+  self.navigationItem.title = (_cacheTitle ? _cacheTitle : kLocalLanguage(@"TFY_CacheFileTitle_Text"));
+}
 #pragma mark - 视频图片保存
 - (void)video:(NSString *)videoPath didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo
 {
