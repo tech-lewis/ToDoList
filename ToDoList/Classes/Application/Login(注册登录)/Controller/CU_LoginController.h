@@ -8,10 +8,7 @@
 
 #import "CU_BaseViewController.h"
 
-NS_ASSUME_NONNULL_BEGIN
-
+typedef void(^PopAndEnterLoginBlock)(void);
 @interface CU_LoginController : CU_BaseViewController
-
+@property (nonatomic, copy) PopAndEnterLoginBlock block;
 @end
-
-NS_ASSUME_NONNULL_END
