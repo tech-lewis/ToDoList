@@ -31,6 +31,7 @@ static NSString * const cellID = @"recordCell";
 @property (nonatomic, assign) BOOL isOpen;
 @property (nonatomic, strong) TYVoiceMemoCell *lastSelectedCell;
 @property (nonatomic, assign) NSInteger lastSelectedIndexPath_Row;
+@property (nonatomic, strong) UIRefreshControl *refreshControl;
 @property (nonatomic, strong) UILongPressGestureRecognizer *lpGesture;
 @end
 
@@ -45,6 +46,10 @@ static NSString * const cellID = @"recordCell";
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(TYNotification_SaveVoiceSuccess:) name:@"TYNotification_SaveVoiceSuccess" object:nil];
   //注册切换语言通知
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeLanguage:) name:kChangeLanguageNotice object:nil];
+  // 添加下拉刷新
+  self.refreshControl = [[UIRefreshControl alloc] init];
+  [self.refreshControl addTarget:self action:@selector(pulldownTableViewHandle) forControlEvents:UIControlEventValueChanged];
+  [self.tableView addSubview:self.refreshControl];
   
   // add long press gesture
   self.lpGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressedCell:)];
@@ -56,6 +61,18 @@ static NSString * const cellID = @"recordCell";
   self.navigationItem.title = kLocalLanguage(@"Home_Tab") ;
 }
 
+- (void)pulldownTableViewHandle
+{
+  self.memoInstanceMutArray = nil;
+  [self.tableView reloadData];
+  double delayInSeconds = 0.35;
+     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+       UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"I‘m Sorry" message:@"应用不支持iOS 7.0以下的设备" delegate:nil cancelButtonTitle:@"Done" otherButtonTitles:nil, nil];
+       [alertView show];
+       [self.refreshControl endRefreshing];
+     });
+}
 
 #pragma mark - 通知方法
 - (void)TYNotification_SaveVoiceSuccess:(NSNotification *)notif {

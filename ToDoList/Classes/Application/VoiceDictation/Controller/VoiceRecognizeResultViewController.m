@@ -7,9 +7,9 @@
 //
 
 #import "VoiceRecognizeResultViewController.h"
-
+#import "VoiceRecognizeTextView.h"
 @interface VoiceRecognizeResultViewController ()
-@property (nonatomic, strong) UITextView * detailTextarea;
+@property (nonatomic, strong) VoiceRecognizeTextView * detailTextarea;
 @end
 
 @implementation VoiceRecognizeResultViewController
@@ -18,8 +18,8 @@
   [super viewDidLoad];
   // Do any additional setup after loading the view.
   self.view.backgroundColor = [UIColor grayColor];
-  self.navigationItem.title = @"✅";
-  self.detailTextarea = [[UITextView alloc] init];
+  self.navigationItem.title = @"✅识别成功";
+  self.detailTextarea = [[VoiceRecognizeTextView alloc] init];
   self.detailTextarea.text = self.recogText;
   [self.view addSubview:self.detailTextarea];
   [self.detailTextarea mas_makeConstraints:^(MASConstraintMaker *make) {
