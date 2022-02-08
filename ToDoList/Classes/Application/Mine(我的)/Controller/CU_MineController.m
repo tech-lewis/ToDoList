@@ -37,7 +37,8 @@
   controller.block = ^{
     [[NSNotificationCenter defaultCenter] postNotificationName:@"RCTShowDevMenuNotification" object:nil];
   };
-  [self.navigationController pushViewController:controller animated:true];
+  self.navigationItem.leftBarButtonItem = nil;
+  // [self.navigationController pushViewController:controller animated:true];
 }
 
 //切换语言通知处理
