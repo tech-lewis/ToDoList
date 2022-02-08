@@ -21,6 +21,7 @@
 		22530C2227916B8C00C25072 /* YYKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 22530C1B27916B8C00C25072 /* YYKVStorage.m */; };
 		22530C2327916B8C00C25072 /* YYDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 22530C1C27916B8C00C25072 /* YYDiskCache.m */; };
 		2277DE61275B571200FE30A0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2277DE60275B571200FE30A0 /* icon.png */; };
+		227F07B627B275CC004A2D48 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 227F07B527B275CC004A2D48 /* CoreMedia.framework */; };
 		22995FDA27B23E7F00973DD7 /* VoiceRecognizeTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22995FD927B23E7F00973DD7 /* VoiceRecognizeTextView.m */; };
 		22B0F10027A26172001248CE /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B0F0FF27A26172001248CE /* API.m */; };
 		22B0F10327A2618F001248CE /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B0F10227A2618F001248CE /* Project.m */; };
@@ -245,6 +246,7 @@
 		22530C1E27916B8C00C25072 /* YYMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMemoryCache.h; sourceTree = "<group>"; };
 		22530C1F27916B8C00C25072 /* YYDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYDiskCache.h; sourceTree = "<group>"; };
 		2277DE60275B571200FE30A0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		227F07B527B275CC004A2D48 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		22995FD827B23E7F00973DD7 /* VoiceRecognizeTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceRecognizeTextView.h; sourceTree = "<group>"; };
 		22995FD927B23E7F00973DD7 /* VoiceRecognizeTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceRecognizeTextView.m; sourceTree = "<group>"; };
 		22B0F0FE27A26172001248CE /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
@@ -591,6 +593,7 @@
 				C5161EA91ACFCA76005E9CF6 /* UIKit.framework in Frameworks */,
 				C5161EA71ACFCA76005E9CF6 /* CoreGraphics.framework in Frameworks */,
 				C58847C11B8F4C8000966CA5 /* AVFoundation.framework in Frameworks */,
+				227F07B627B275CC004A2D48 /* CoreMedia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1490,6 +1493,7 @@
 		C5161EA31ACFCA76005E9CF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				227F07B527B275CC004A2D48 /* CoreMedia.framework */,
 				C58847C01B8F4C8000966CA5 /* AVFoundation.framework */,
 				C5161EA41ACFCA76005E9CF6 /* Foundation.framework */,
 				C5161EA61ACFCA76005E9CF6 /* CoreGraphics.framework */,
