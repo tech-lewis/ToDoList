@@ -7,11 +7,29 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TYLevelPairs.h"
 
-NS_ASSUME_NONNULL_BEGIN
+typedef void(^MJRecordingStopCompletionHandler)(BOOL);
+typedef void(^MJRecordingSaveCompletionHandler)(BOOL, id);
+typedef void(^MJAudioPlayerStopPlayingCompletionHandler)(BOOL);
 
+@class TYMemo;
 @interface MJRecorderTool : NSObject
 
-@end
++ (instancetype)shareInstance;
 
-NS_ASSUME_NONNULL_END
+@property (nonatomic, copy, readonly) NSString *formattedCurrentTime;
+@property (nonatomic, copy) MJAudioPlayerStopPlayingCompletionHandler audioPlayerStopPlayingCompletionHandler;
+
+- (BOOL)record;
+- (void)pause;
+
+- (void)stopWithCompletionHandler:(MJRecordingStopCompletionHandler)handler;
+- (void)saveRecordingWithName:(NSString *)name completionHandler:(MJRecordingSaveCompletionHandler)handler;
+
+- (BOOL)playbackMemo:(TYMemo *)memo;
+- (void)audioPlayerStopPlaying:(MJAudioPlayerStopPlayingCompletionHandler)stopPlayingHandler;
+
+- (TYLevelPairs *)levels;
+
+@end

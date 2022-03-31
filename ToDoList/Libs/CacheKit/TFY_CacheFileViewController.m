@@ -26,7 +26,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.whiteColor;
     
-    self.navigationItem.title = (_cacheTitle ? _cacheTitle : TFY_CacheFileTitle);
+    // self.navigationItem.title = (_cacheTitle ? _cacheTitle : TFY_CacheFileTitle_Text);
     
     [self setUI];
     [self loadData];

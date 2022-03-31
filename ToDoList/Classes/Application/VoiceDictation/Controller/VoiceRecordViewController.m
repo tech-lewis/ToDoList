@@ -125,7 +125,7 @@ static NSString * const cellID = @"recordCell";
     _memoInstanceMutArray = [NSMutableArray array];
     for (NSString *filePath in [[NSFileManager defaultManager] enumeratorAtPath:[self documentsPath]])
     {
-      if ([filePath.pathExtension isEqualToString:@"caf"])
+      if ([filePath.pathExtension isEqualToString:@"wav"])
       {
         NSURL *fileURL = [NSURL fileURLWithPath:[[self documentsPath] stringByAppendingPathComponent:filePath]];
         TYMemo *meno = [TYMemo memoWithTitle:filePath url:fileURL];
@@ -168,7 +168,7 @@ static NSString * const cellID = @"recordCell";
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return self.isOpen ? 100 : 60;
+    return 100.0;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
@@ -235,6 +235,7 @@ static NSString * const cellID = @"recordCell";
 }
 #pragma mark - UI
 - (void)setupUI {
+  self.isOpen = true;
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
 }

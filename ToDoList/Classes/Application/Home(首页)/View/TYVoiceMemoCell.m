@@ -18,7 +18,6 @@
 
 @property (nonatomic, strong) UILabel *cellTitileLabel;
 @property (nonatomic, strong) UILabel *cellTimeLabel;
-
 @property (nonatomic, strong) UIButton *playBtn;
 @property (nonatomic, strong) UIButton *deleteBtn;
 

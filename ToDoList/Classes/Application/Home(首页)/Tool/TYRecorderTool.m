@@ -37,11 +37,19 @@ AVAudioPlayerDelegate
 
 - (instancetype)init {
     if (self = [super init]) {
+      
       AVAudioSession *audioSession = [AVAudioSession sharedInstance];
       [audioSession setCategory:AVAudioSessionCategoryPlayAndRecord error:NULL];
-      [audioSession setActive:true error:NULL];
+      [audioSession setActive:YES error:NULL];
+      if ([audioSession respondsToSelector:@selector(requestRecordPermission:)]) {
+        [audioSession performSelector:@selector(requestRecordPermission:) withObject:^(BOOL granted) {
+          if (granted) {
+            // enable
+          }// else disable microphone
+        }];
+      }
       NSString *tmpDir = NSTemporaryDirectory();
-      NSString *filePath = [tmpDir stringByAppendingPathComponent:@"memo.caf"];
+      NSString *filePath = [tmpDir stringByAppendingPathComponent:@"memo.wav"];
       NSURL *fileURL = [NSURL fileURLWithPath:filePath];
       
       NSDictionary *settings = @{
@@ -56,17 +64,29 @@ AVAudioPlayerDelegate
                                  // 采样率转换的音频质量
                                  AVEncoderAudioQualityKey : @(AVAudioQualityMedium)
                                  };
-      
-      NSError *error;
-      self.audioRecorder = [[AVAudioRecorder alloc] initWithURL:fileURL settings:settings error:&error];
-      
+      NSMutableDictionary *recordSettings = [[NSMutableDictionary alloc] init];
+      //设置录制音频的格式
+      [recordSettings setObject:[NSNumber numberWithInt:kAudioFormatLinearPCM] forKey:AVFormatIDKey];
+      //设置录制音频的采样率
+      //        [recordSettings setObject:[NSNumber numberWithFloat:@"1".floatValue] forKey:AVSampleRateKey];
+      //设置录制音频的通道数
+      [recordSettings setObject:[NSNumber numberWithInt:1] forKey:AVNumberOfChannelsKey];
+      //设置录制音频采用高位优先的记录格式
+      [recordSettings setObject:[NSNumber numberWithBool:YES] forKey:AVLinearPCMIsBigEndianKey];
+      //设置采样信号采用浮点数
+      [recordSettings setObject:[NSNumber numberWithBool:YES] forKey:AVLinearPCMIsFloatKey];
+      NSError *recorderSetupError = nil;
+      NSLog(@"%@", settings);
+      #pragma mark 到这里开始实例化录音对象
+      //初始化AVAudioRecorder
+      self.audioRecorder = [[AVAudioRecorder alloc] initWithURL:fileURL settings:recordSettings error:&recorderSetupError];
       if (self.audioRecorder) {
           self.audioRecorder.delegate = self;
           // 开启音频测量
           self.audioRecorder.meteringEnabled = YES;
           [self.audioRecorder prepareToRecord];
       } else {
-          NSLog(@"Error: %@",[error localizedDescription]);
+          NSLog(@"Error: %@",[recorderSetupError localizedDescription]);
       }
       
       _meterTable = [[TYMeterTable alloc] init];
@@ -92,7 +112,7 @@ AVAudioPlayerDelegate
 
 - (void)saveRecordingWithName:(NSString *)name completionHandler:(TYRecordingSaveCompletionHandler)handler {
     NSTimeInterval timestamp = [NSDate timeIntervalSinceReferenceDate];
-    NSString *filename = [NSString stringWithFormat:@"%@-%f.caf", name, timestamp];
+    NSString *filename = [NSString stringWithFormat:@"%@-%f.wav", name, timestamp];
     NSString *docsDir = [self documentsDirectory];
     NSString *destPath = [docsDir stringByAppendingPathComponent:filename];
     NSURL *srcURL = self.audioRecorder.url;
